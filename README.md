@@ -60,22 +60,52 @@ TODO add note somewhere about server start being bound to `getting-started` exis
 4. Open your Space in Storyblok (https://app.storyblok.com)
 5. Go into the projects "Settings", and open the entry "Visual Editor"
 6. Add a new "Preview URL" called "Development", and set its value to `https://localhost:3010/api/preview/`
-7. On the main "Content" pane, open the page "Getting Started", that was created on initial project setup
-8. At the top of the window, inside the simulated address bar of the page preview, click on the small settings icon to the right... and select your "Development" Preview URL
-9. Et voila... you should see your locally hosted page preview
+7. Save your changes by hitting "Save" at the top right
+8. On the main "Content" pane, open the page "Getting Started", that was created on initial project setup
+9. At the top of the window, inside the simulated address bar of the page preview, click on the small settings icon to the right... and select your "Development" Preview URL
+10. Et voila... you should see your locally hosted page preview
 
 TODO: check initial `npm run init` locally again... failed for `push-components` in initial try, because of missing environment variable `NEXT_STORYBLOK_SPACE_ID` in `push-components` script
+
+#### Netlify Hosting
+
+1. Add a new site in your Netlify dashboard, choose "Import an existing project"
+2. Select the repository you forked here, presumably from Github
+3. Choose a fitting name, and while leaving the rest of the settings as is... do add the following variables through "New variable" in "Environment variables":
+   - `NEXT_STORYBLOK_API_TOKEN`: TODO don't repeat explanations, see local setup above
+   - `NEXT_STORYBLOK_OAUTH_TOKEN`: TODO don't repeat explanations, see local setup above
+   - `NEXT_STORYBLOK_SPACE_ID`: TODO don't repeat explanations, see local setup above
+   - `STORYBLOK_LOGIN_EMAIL`: the email for the account you created the Space with
+   - `STORYBLOK_REGION`: region your Space is hosted in. You should have selected this when creating it
+4. Run the first deployment for your project by hitting the final button
+5. You should be able to open the site url configured in Netlify now, adding `/getting-started` to it to open the initial demo page
+
+#### Netlify Webhook on Storyblok change
+
+1. Open the settings for your Netlify site ("Site configuration"), and switch to "Build & deploy" -> "Continuous deployment". Scroll down to the section titled "Build hooks", and click "Add build hook"
+2. Give that hook a distinct name (e.g. "Storyblok"), and probably keep `main` as the branch to build from
+3. Save and copy the generated hook URL
+4. Open your Storyblok Space "Settings", and switch to "Webhooks"
+5. Click "+ New Webhook", and give hook a distinct name, too (e.g. "Netlify")
+6. Replace the "Endpoint URL" with the copied URL from Netlify
+7. For "Triggers", open "Story" and select all 4 entries
+8. Save the hook
+
+From now on your build process in Netlify should be automatically triggered, deploying a new version of the site in the background, whenever an editor adds, deletes or changes a Story in Storyblok.
+
+#### Storyblok hosted preview
+
+1. Open the Storyblok Spaces "Settings", and switch to "Visual Editor"
+2. For "Location (default environment)" enter the site URL configured in Netlify, with `/api/preview` added to it (e.g. if your site URL happens to be `https://storyblok.netlify.app`, the URL you'd enter would have to be `https://storyblok.netlify.app/api/preview/`)
+3. Save your changes by hitting "Save" at the top right
+4. On the main "Content" pane, open the page "Getting Started", that was created on initial project setup
+5. If you already went through configuring a local preview URL, you will most likely have to change back to the default preview environment now by clicking on the settings icons (cogs) on the top right of the preview frame
 
 ### Netlify Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kickstartDS/storyblok-starter)
 
 ## Local Development
-
-### Dependencies
-
-- [`mkcert`](https://github.com/FiloSottile/mkcert#installation)
-- `npm` (unless you opt for devcontainer)
 
 ### Setup
 
@@ -86,6 +116,9 @@ TODO: check initial `npm run init` locally again... failed for `push-components`
 - HTML lang
 - (robots.txt)
 - initial branding seems broken currently, at least for Premium Starter. Maybe a consequence of failed merges with Lughausen repository
+- add general note that nothing here _needs_ to be done with Github and / or Netlify, and while some commands might change slightly... everything should be much the same no matter where you want to host
+- maybe add info about exit preview-URL, to preview / compare with published content... and to remove the cookie that might stick outside of the preview, too
+- move initial demo page to slug `/`?
 
 ### Adding initial content
 
