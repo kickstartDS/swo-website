@@ -32,12 +32,12 @@
     "storyblok-login": "storyblok login"
   },
   "dependencies": {
-    "@kickstartds/base": "4.0.6-canary.7015.af6e090.0",
-    "@kickstartds/blog": "4.0.6-canary.7015.af6e090.0",
+    "@kickstartds/base": "4.0.2",
+    "@kickstartds/blog": "4.0.2",
     "@kickstartds/content": "^4.0.0",
-    "@kickstartds/core": "4.0.6-canary.7015.af6e090.0",
-    "@kickstartds/ds-agency-premium": "^1.3.14",
-    "@kickstartds/form": "4.0.6-canary.7015.af6e090.0",
+    "@kickstartds/core": "4.0.2",
+    "@kickstartds/ds-agency-premium": "^1.3.17",
+    "@kickstartds/form": "4.0.2",
     "@storyblok/react": "^3.0.9",
     "@unpic/pixels": "^1.2.2",
     "@unpic/placeholder": "^0.1.2",

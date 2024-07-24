@@ -1,13 +1,13 @@
 {
   "color": {
-    "primary": "#5435d2",
-    "primary-inverted": "#e21879",
-    "secondary": "#e21879",
-    "secondary-inverted": "#5435d2",
-    "background": "#06081F",
-    "foreground": "#fff",
-    "bg": "#06081F",
-    "bg-inverted": "#fff",
+    "primary": "#2C5D5D",
+    "primary-inverted": "#FF9E42",
+    "secondary": "#F95606",
+    "secondary-inverted": "#F95606",
+    "background": "#fff",
+    "background-inverted": "#212327",
+    "foreground": "#212327",
+    "foreground-inverted": "#fff",
     "link": "#B7A5FF",
     "link-inverted": "#6642F6",
     "positive": "#6EDB64",
@@ -21,20 +21,20 @@
   },
   "font": {
     "display": {
-      "family": "Fredoka, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
-      "font-size": 20,
+      "family": "Metropolis, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "font-size": 18,
       "line-height": 1.15,
       "scale-ratio": 1.225,
       "bp-factor": {
         "phone": 1.125,
         "tablet": 1.25,
-        "laptop": 1.5,
-        "desktop": 1.75
+        "laptop": 1.35,
+        "desktop": 1.35
       }
     },
     "copy": {
-      "family": "Mulish, 'Helvetica Neue', Helvetica, Arial, sans-serif",
-      "font-size": 18,
+      "family": "system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "font-size": 16,
       "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
@@ -42,7 +42,7 @@
       }
     },
     "interface": {
-      "family": "Mulish, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+      "family": "system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
       "font-size": 16,
       "line-height": 1.5,
       "scale-ratio": 1.225,
@@ -52,7 +52,7 @@
     },
     "mono": {
       "family": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace",
-      "font-size": 18,
+      "font-size": 16,
       "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
@@ -63,7 +63,7 @@
   "font-weight": {
     "light": 300,
     "regular": 400,
-    "semi-bold": 500,
+    "semi-bold": 600,
     "bold": 700
   },
   "spacing": {
@@ -71,7 +71,7 @@
     "scale-ratio": 1.45,
     "bp-ratio": 1.25
   },
-  "border-radius": "2px",
+  "border-radius": "16px",
   "box-shadow": {
     "blur": "2.75px"
   },

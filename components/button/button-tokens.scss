@@ -1,0 +1,30 @@
+.dsa-button {
+  --dsa-button--border-radius: var(--ks-border-radius-control);
+  --dsa-button--text-transform: uppercase;
+  --dsa-button--font-weight: var(--ks-font-weight-bold);
+  --dsa-button--border-width: var(--ks-border-width-emphasized);
+
+  --dsa-button_secondary--color: var(--ks-text-color-primary);
+  --dsa-button_secondary--color_hover: var(--ks-text-color-primary);
+  --dsa-button_secondary--color_active: var(--ks-text-color-primary);
+
+  --dsa-button_secondary--background-color: var(--ks-color-primary-alpha-8);
+  --dsa-button_secondary--background-color_hover: var(--ks-color-primary-alpha-8);
+  --dsa-button_secondary--background-color_active: var(--ks-color-primary-alpha-8);
+
+  --dsa-button_secondary--border-color: transparent;
+  --dsa-button_secondary--border-color_hover: transparent;
+  --dsa-button_secondary--border-color_active: transparent;
+
+  --dsa-button_primary--color: var(--ks-text-color-primary);
+  --dsa-button_primary--color_hover: var(--ks-text-color-primary);
+  --dsa-button_primary--color_active: var(--ks-text-color-primary);
+
+  --dsa-button_primary--background-color: transparent;
+  --dsa-button_primary--background-color_hover: transparent;
+  --dsa-button_primary--background-color_active: transparent;
+
+  --dsa-button_primary--border-color: var(--ks-border-color-primary-interactive);
+  --dsa-button_primary--border-color_hover: var(--ks-border-color-primary-interactive-hover);
+  --dsa-button_primary--border-color_active: var(--ks-border-color-primary-interactive-active);
+}
