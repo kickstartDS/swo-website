@@ -15,7 +15,7 @@
       },
       "accent-inverted": {
         "base": {
-          "value": "{ks.color.primary.to-fg.7.base}",
+          "value": "{ks.color.primary.base}",
           "attributes": {
             "category": "color"
           },
@@ -39,7 +39,7 @@
       },
       "bold-inverted": {
         "base": {
-          "value": "{ks.color.primary.to-fg.5.base}",
+          "value": "{ks.color.secondary-inverted.base}",
           "attributes": {
             "category": "color"
           },
