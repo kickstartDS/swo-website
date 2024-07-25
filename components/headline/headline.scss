@@ -1,1 +1,22 @@
 @import "./headline-tokens.scss";
+
+.dsa-headline {
+  &--align-center {
+    &:after {
+      margin: auto;
+    }
+  }
+
+  &--h1,
+  &--h2 {
+    &:after {
+      content: "";
+      background-color: var(--ks-color-secondary);
+      height: 4px;
+      width: 20%;
+      min-width: 1rem;
+      max-width: 4rem;
+      margin-top: var(--ks-spacing-stack-s);
+    }
+  }
+}
