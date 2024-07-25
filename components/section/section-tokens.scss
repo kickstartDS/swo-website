@@ -16,8 +16,8 @@
 
   --dsa-section_horizontal-gradient--background-image: linear-gradient(
     50deg,
-    var(--ks-background-color-accent) 0%,
-    var(--ks-background-color-bold) 100%
+    var(--ks-background-color-accent) 70%,
+    var(--ks-background-color-bold) 30%
   );
 
   --dsa-section_vertical-gradient--background-image: linear-gradient(
@@ -34,7 +34,7 @@
     radial-gradient(20% 50% at 0% 50%, var(--ks-background-color-bold) 0%, transparent 100%),
     linear-gradient(var(--ks-background-color-accent), var(--ks-background-color-accent));
 
-  --dsa-section__spotlight--blur: 100%;
+  --dsa-section__spotlight--blur: 0%;
   --dsa-section__spotlight--size: 200px;
   --dsa-section__spotlight--color: var(--ks-background-color-bold);
 }
