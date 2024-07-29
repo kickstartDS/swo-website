@@ -17,53 +17,53 @@
 
   --dsa-section_stagelights--background-image: radial-gradient(
       20vw 20vw at 100% 0%,
-      var(--ks-background-color-bold) 100%,
+      var(--ks-color-secondary) 100%,
       transparent 100%
     ),
-    radial-gradient(20vw 20vw at 0% 0%, var(--ks-background-color-bold) 100%, transparent 100%);
+    radial-gradient(20vw 20vw at 0% 0%, var(--ks-color-secondary) 100%, transparent 100%);
 
   --dsa-section_anchor-glow--background-image: radial-gradient(
     600px 600px at 50% calc(100% + 520px),
-    var(--ks-background-color-bold) 100%,
+    var(--ks-color-secondary) 100%,
     transparent 100%
   );
 
   @media (min-width: 48rem) {
     --dsa-section_anchor-glow--background-image: radial-gradient(
       100vw 100vw at 50% calc(100% + 94vw),
-      var(--ks-background-color-bold) 100%,
+      var(--ks-color-secondary) 100%,
       transparent 100%
     );
   }
 
   --dsa-section_horizontal-gradient--background-image: linear-gradient(
     50deg,
-    var(--ks-background-color-bold) 0%,
-    var(--ks-background-color-bold) 15%,
+    var(--ks-color-secondary) 0%,
+    var(--ks-color-secondary) 15%,
     transparent 15%,
     transparent 85%,
-    var(--ks-background-color-bold) 85%,
-    var(--ks-background-color-bold) 100%
+    var(--ks-color-secondary) 85%,
+    var(--ks-color-secondary) 100%
   );
 
   --dsa-section_vertical-gradient--background-image: linear-gradient(
     -10deg,
-    var(--ks-background-color-bold) 0%,
-    var(--ks-background-color-bold) 15%,
+    var(--ks-color-secondary) 0%,
+    var(--ks-color-secondary) 15%,
     transparent 15%,
     transparent 85%,
-    var(--ks-background-color-bold) 85%,
-    var(--ks-background-color-bold) 100%
+    var(--ks-color-secondary) 85%,
+    var(--ks-color-secondary) 100%
   );
 
   --dsa-section_symmetric-glow--background-image: radial-gradient(
       20vw 20vw at 0% 10%,
-      var(--ks-background-color-bold) 100%,
+      var(--ks-color-secondary) 100%,
       transparent 100%
     ),
-    radial-gradient(20vw 20vw at 100% 90%, var(--ks-background-color-bold) 100%, transparent 100%);
+    radial-gradient(20vw 20vw at 100% 90%, var(--ks-color-secondary) 100%, transparent 100%);
 
   --dsa-section__spotlight--blur: 0%;
   --dsa-section__spotlight--size: 200px;
-  --dsa-section__spotlight--color: var(--ks-background-color-bold);
+  --dsa-section__spotlight--color: var(--ks-color-secondary);
 }
