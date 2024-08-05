@@ -58,6 +58,8 @@ export default function App({
     return () => router.events.off("routeChangeStart", handleRouteChange);
   }, [router.events]);
 
+  console.log(story);
+
   return (
     <BlurHashProvider blurHashes={blurHashes}>
       <DsaProviders>
@@ -72,8 +74,8 @@ export default function App({
             <Header
               logo={{}}
               {...unflatten(headerProps)}
-              inverted={story.header?.inverted?.toString() || false}
-              floating={story.header?.floating?.toString() || false}
+              inverted={story.content.header_inverted.toString() || false}
+              floating={story.content.header_floating.toString() || false}
             />
           )}
           <Component {...pageProps} />
@@ -81,7 +83,7 @@ export default function App({
             <Footer
               logo={{}}
               {...unflatten(footerProps)}
-              inverted={story.footer?.inverted?.toString() || false}
+              inverted={story.content?.footer_inverted.toString() || false}
             />
           )}
         </StoryblokProviders>
