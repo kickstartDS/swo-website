@@ -8,7 +8,7 @@
     "background-inverted": "#212327",
     "foreground": "#212327",
     "foreground-inverted": "#fff",
-    "link": "#212327",
+    "link": "#000",
     "link-inverted": "#fff",
     "positive": "#6EDB64",
     "positive-inverted": "#23831B",

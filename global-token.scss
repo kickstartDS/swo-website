@@ -1,9 +1,4 @@
 :root,
 [ks-inverted] {
   --dsa-logo--height: 1.75rem;
-  --dsa-link--color: var(--ks-link-color);
-
-  a:not(.c-button) {
-    color: var(--ks-color-link);
-  }
 }
