@@ -1,4 +1,7 @@
 :root,
 [ks-inverted] {
   --dsa-logo--height: 1.75rem;
+  --dsa-topic--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-link--text-decoration: underline;
+  --dsa-link--text-decoration_hover: none;
 }

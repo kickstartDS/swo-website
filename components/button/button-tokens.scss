@@ -17,13 +17,13 @@
   --dsa-button_primary--border-color_hover: transparent;
   --dsa-button_primary--border-color_active: transparent;
 
-  --dsa-button_secondary--color: var(--ks-text-color-primary-interactive);
-  --dsa-button_secondary--color_hover: var(--ks-text-color-primary-interactive-hover);
-  --dsa-button_secondary--color_active: var(--ks-text-color-primary-interactive-active);
+  --dsa-button_secondary--color: var(--ks-color-primary);
+  --dsa-button_secondary--color_hover: var(--ks-color-primary);
+  --dsa-button_secondary--color_active: var(--ks-color-primary);
 
-  --dsa-button_secondary--background-color: transparent;
-  --dsa-button_secondary--background-color_hover: transparent;
-  --dsa-button_secondary--background-color_active: transparent;
+  --dsa-button_secondary--background-color: var(--ks-color-primary-alpha-8);
+  --dsa-button_secondary--background-color_hover: var(--ks-color-primary-alpha-7);
+  --dsa-button_secondary--background-color_active: var(--ks-color-primary-alpha-6);
 
   --dsa-button_secondary--border-color: var(--ks-border-color-primary-interactive);
   --dsa-button_secondary--border-color_hover: var(--ks-border-color-primary-interactive-hover);
