@@ -1,1 +1,31 @@
 @import "./teaser-tokens.scss";
+
+.dsa-teaser-card {
+  .c-teaser__topic {
+    transition-property: padding-left;
+    transition: var(--ks-transition-hover);
+    position: relative;
+    padding-left: 0em;
+
+    &::before {
+      content: "";
+      transition: var(--ks-transition-hover);
+      transition-property: width;
+      width: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      background-color: var(--ks-color-secondary);
+    }
+  }
+
+  &:hover {
+    .c-teaser__topic {
+      padding-left: 0.5em;
+
+      &::before {
+        width: 4px;
+      }
+    }
+  }
+}
