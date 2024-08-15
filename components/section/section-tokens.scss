@@ -37,13 +37,9 @@
   }
 
   --dsa-section_horizontal-gradient--background-image: linear-gradient(
-    50deg,
-    var(--ks-color-secondary) 0%,
-    var(--ks-color-secondary) 15%,
-    transparent 15%,
-    transparent 85%,
-    var(--ks-color-secondary) 85%,
-    var(--ks-color-secondary) 100%
+    90deg,
+    var(--ks-color-bg),
+    var(--ks-color-bg-to-fg-2)
   );
 
   --dsa-section_vertical-gradient--background-image: linear-gradient(
@@ -63,7 +59,7 @@
     ),
     radial-gradient(20vw 20vw at 100% 90%, var(--ks-color-secondary) 100%, transparent 100%);
 
-  --dsa-section__spotlight--blur: 0%;
+  --dsa-section__spotlight--blur: 100%;
   --dsa-section__spotlight--size: 200px;
   --dsa-section__spotlight--color: var(--ks-color-secondary);
 }

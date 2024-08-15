@@ -7,16 +7,46 @@
     }
   }
 
+  .dsa-headline__subheadline {
+    margin-top: var(--headline-spacing);
+  }
+
+  &--h1 {
+    --headline-spacing: calc(var(--ks-font-size-display-xxl) * 0.5);
+  }
+
+  &--h2 {
+    --headline-spacing: calc(var(--ks-font-size-display-xl) * 0.5);
+  }
+
   &--h1,
   &--h2 {
-    &:after {
-      content: "";
-      background-color: var(--ks-color-secondary);
-      height: 4px;
-      width: 20%;
-      min-width: 1rem;
-      max-width: 4rem;
-      margin-top: var(--ks-spacing-stack-s);
+    .dsa-headline__headline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:after {
+        content: "";
+        background-color: var(--ks-color-secondary);
+        height: 8px;
+        width: 20%;
+        min-width: 1rem;
+        max-width: 4rem;
+        margin-top: var(--headline-spacing);
+      }
+    }
+
+    &.dsa-headline--align-left {
+      .dsa-headline__headline {
+        align-items: flex-start;
+      }
+    }
+
+    &.dsa-headline--align-right {
+      .dsa-headline__headline {
+        align-items: flex-end;
+      }
     }
   }
 }
