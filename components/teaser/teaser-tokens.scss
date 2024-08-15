@@ -1,9 +1,16 @@
 .dsa-teaser-card {
   --dsa-teaser-card--shadow: none;
 
-  // --dsa-teaser-card--border-color: transparent;
-  // --dsa-teaser-card--border-color_hover: transparent;
-  --dsa-teaser-card--shadow_hover: transparent;
+  --dsa-teaser-card--border-color: var(--ks-background-color-accent);
+  --dsa-teaser-card--border-color_hover: var(--ks-background-color-accent);
 
-  --dsa-teaser-card--padding: var(--ks-spacing-inset-stretch-s);
+  --dsa-teaser-card--padding: var(--ks-spacing-inset-stretch-m);
+}
+
+.dsa-section-style--accent,
+.dsa-section-style--bold {
+  .dsa-teaser-card {
+    --dsa-teaser-card--border-color: transparent;
+    --dsa-teaser-card--border-color_hover: transparent;
+  }
 }
