@@ -19,7 +19,7 @@ const BlogPost: React.FC<PageProps> = ({ blok }) => {
   if (blok) {
     const { cta, seo, aside, head, content } = blok;
     const blogPost = {
-      cta: cta && cta[0] ? unflatten(cta?.[0]) : {},
+      cta: cta && cta[0] && cta[0].content ? unflatten(cta?.[0].content) : {},
       seo: seo && seo[0] ? unflatten(seo?.[0]) : {},
       aside: aside && aside[0] ? unflatten(aside?.[0]) : {},
       head: head && head[0] ? unflatten(head?.[0]) : {},

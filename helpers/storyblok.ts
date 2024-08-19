@@ -26,6 +26,7 @@ export const sbParams = (
   version: draft ? "draft" : "published",
   cv: lastContentVersion,
   resolve_links: "url",
+  resolve_relations: "blog-post.cta",
   ...params,
 });
 
