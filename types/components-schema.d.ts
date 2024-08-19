@@ -61,7 +61,8 @@ export interface BlogPostStoryblok {
   head?: BlogHeadStoryblok[];
   aside?: BlogAsideStoryblok[];
   content?: string;
-  cta?: CtaStoryblok[];
+  section?: SectionStoryblok[];
+  cta?: (StoryblokStory<CtaStoryblok> | string)[];
   seo?: SeoStoryblok[];
   type?: string;
   _uid: string;
@@ -180,11 +181,14 @@ export interface FeaturesStoryblok {
 }
 
 export interface FooterStoryblok {
+  logo_homepageHref?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
   logo_src?: AssetStoryblok;
+  logo_srcInverted?: AssetStoryblok;
   logo_alt?: string;
   logo_width?: string;
   logo_height?: string;
-  logoHref?: MultilinkStoryblok;
+  byline?: string;
+  inverted?: boolean;
   navItems?: NavItemsStoryblok[];
   type?: string;
   _uid: string;
@@ -204,14 +208,17 @@ export interface GalleryStoryblok {
 }
 
 export interface HeaderStoryblok {
+  floating?: boolean;
+  inverted?: boolean;
+  flyoutInverted?: boolean;
+  navItems?: NavItemsStoryblok[];
+  type?: string;
+  logo_homepageHref?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
   logo_src?: AssetStoryblok;
+  logo_srcInverted?: AssetStoryblok;
   logo_alt?: string;
   logo_width?: string;
   logo_height?: string;
-  logoHref?: MultilinkStoryblok;
-  floating?: boolean;
-  navItems?: NavItemsStoryblok[];
-  type?: string;
   _uid: string;
   component: "header";
   [k: string]: any;
@@ -251,17 +258,18 @@ export interface ImagesStoryblok {
 
 export interface ImageStoryStoryblok {
   headline?: string;
+  image_aspectRatio?: "" | "wide" | "square" | "landscape" | "unset";
   largeHeadline?: boolean;
   sub?: string;
   text?: string;
   layout?: "" | "textLeft" | "imageLeft";
   padding?: boolean;
   buttons?: ButtonsStoryblok[];
-  image_src?: AssetStoryblok;
-  image_ratio?: "" | "VALUE_4_3" | "VALUE_3_2" | "VALUE_16_9" | "VALUE_1_1" | "none";
-  image_alt?: string;
   textAlign?: "" | "left" | "center";
   type?: string;
+  image_src?: AssetStoryblok;
+  image_alt?: string;
+  image_vAlign?: "" | "top" | "center" | "bottom";
   _uid: string;
   component: "image-story";
   [k: string]: any;
@@ -327,6 +335,9 @@ export interface PageStoryblok {
   section?: SectionStoryblok[];
   seo?: SeoStoryblok[];
   type?: string;
+  header_floating?: boolean;
+  header_inverted?: boolean;
+  footer_inverted?: boolean;
   _uid: string;
   component: "page";
   uuid?: string;

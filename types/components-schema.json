@@ -331,7 +331,7 @@
       "name": "blog-post",
       "display_name": "Blog Post",
       "created_at": "2024-07-17T09:28:54.011Z",
-      "updated_at": "2024-07-17T09:28:54.011Z",
+      "updated_at": "2024-08-19T12:02:58.121Z",
       "id": 6059569,
       "schema": {
         "head": {
@@ -349,7 +349,7 @@
         },
         "aside": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "Aside",
           "key": "aside",
           "type": "bloks",
@@ -362,29 +362,50 @@
         },
         "content": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "Content",
           "key": "content",
           "type": "markdown",
           "description": "Body text for the blog post",
           "required": false
         },
+        "section": {
+          "type": "bloks",
+          "pos": 3,
+          "display_name": "Section",
+          "description": "Component used to layout components into blog posts",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "section"
+          ]
+        },
         "cta": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Cta",
           "key": "cta",
-          "type": "bloks",
+          "type": "options",
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
             "cta"
           ],
-          "description": "Cta"
+          "description": "Cta",
+          "is_reference_type": true,
+          "source": "internal_stories",
+          "entry_appearance": "card",
+          "allow_advanced_search": true,
+          "folder_slug": "",
+          "filter_content_type": [
+            "cta"
+          ],
+          "min_options": "1",
+          "max_options": "1"
         },
         "seo": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Seo",
           "key": "seo",
           "type": "bloks",
@@ -397,7 +418,7 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 6,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -616,7 +637,7 @@
       "name": "buttons",
       "display_name": "Buttons",
       "created_at": "2024-07-17T09:28:21.405Z",
-      "updated_at": "2024-07-17T09:28:21.405Z",
+      "updated_at": "2024-08-14T08:52:09.054Z",
       "id": 6059539,
       "schema": {
         "label": {
@@ -635,7 +656,8 @@
           "key": "icon",
           "type": "text",
           "description": "Choose an icon",
-          "required": false
+          "required": false,
+          "default_value": ""
         },
         "target": {
           "id": 0,
@@ -670,7 +692,7 @@
       "name": "cta",
       "display_name": "Cta",
       "created_at": "2024-07-17T09:28:21.539Z",
-      "updated_at": "2024-07-17T09:28:21.539Z",
+      "updated_at": "2024-08-17T16:33:28.150Z",
       "id": 6059540,
       "schema": {
         "headline": {
@@ -696,7 +718,7 @@
           "pos": 0,
           "display_name": "Text",
           "key": "text",
-          "type": "text",
+          "type": "textarea",
           "description": "Info text for the component element",
           "required": false
         },
@@ -899,7 +921,7 @@
       },
       "image": "//a.storyblok.com/f/297364/1000x472/02ec2c0c36/components-cta-banner.png",
       "preview_field": null,
-      "is_root": false,
+      "is_root": true,
       "preview_tmpl": null,
       "is_nestable": true,
       "all_presets": [
@@ -1437,27 +1459,16 @@
       "name": "footer",
       "display_name": "Footer",
       "created_at": "2024-07-17T09:28:53.415Z",
-      "updated_at": "2024-07-17T09:28:53.415Z",
+      "updated_at": "2024-08-05T10:56:18.491Z",
       "id": 6059568,
       "schema": {
-        "tab-7d6038ed-80ed-4d94-9327-8a46fcff8501": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Logo",
-          "key": "tab-7d6038ed-80ed-4d94-9327-8a46fcff8501",
-          "keys": [
-            "logo_src",
-            "logo_alt",
-            "logo_width",
-            "logo_height"
-          ],
-          "type": "tab",
-          "description": "Logo",
-          "required": false
+        "logo_homepageHref": {
+          "type": "multilink",
+          "pos": 0
         },
         "logo_src": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "Src",
           "key": "logo_src",
           "type": "asset",
@@ -1467,9 +1478,16 @@
           "description": "Picture source",
           "required": false
         },
+        "logo_srcInverted": {
+          "type": "asset",
+          "pos": 2,
+          "filetypes": [
+            "images"
+          ]
+        },
         "logo_alt": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "Alt",
           "key": "logo_alt",
           "type": "text",
@@ -1478,7 +1496,7 @@
         },
         "logo_width": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Width",
           "key": "logo_width",
           "type": "number",
@@ -1487,29 +1505,30 @@
         },
         "logo_height": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Height",
           "key": "logo_height",
           "type": "number",
           "description": "Height of the picture",
           "required": false
         },
-        "logoHref": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "LogoHref",
-          "key": "logoHref",
-          "type": "multilink",
-          "allow_target_blank": true,
-          "email_link_type": true,
-          "asset_link_type": true,
-          "show_anchor": true,
-          "default_value": "/",
-          "required": false
+        "byline": {
+          "type": "text",
+          "pos": 6,
+          "display_name": "Byline",
+          "description": "Small line of text displayed below the logo",
+          "default_value": "© 2024 systemics Inc. All rights reserved."
+        },
+        "inverted": {
+          "type": "boolean",
+          "pos": 7,
+          "display_name": "Inverted",
+          "description": "Invert the color scheme of the footer",
+          "default_value": true
         },
         "navItems": {
           "id": 0,
-          "pos": 0,
+          "pos": 8,
           "display_name": "NavItems",
           "key": "navItems",
           "type": "bloks",
@@ -1521,12 +1540,29 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 9,
           "display_name": "Type",
           "key": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "footer"
+        },
+        "tab-7d6038ed-80ed-4d94-9327-8a46fcff8501": {
+          "id": 0,
+          "pos": 10,
+          "display_name": "Logo",
+          "key": "tab-7d6038ed-80ed-4d94-9327-8a46fcff8501",
+          "keys": [
+            "logo_src",
+            "logo_alt",
+            "logo_width",
+            "logo_height",
+            "logo_homepageHref",
+            "logo_srcInverted"
+          ],
+          "type": "tab",
+          "description": "Logo",
+          "required": false
         }
       },
       "image": "//a.storyblok.com/f/297364/1280x371/043885fbe6/layout-footer-footer.png",
@@ -1707,76 +1743,9 @@
       "name": "header",
       "display_name": "Header",
       "created_at": "2024-07-17T09:28:52.606Z",
-      "updated_at": "2024-07-17T09:28:52.606Z",
+      "updated_at": "2024-08-01T11:41:18.555Z",
       "id": 6059567,
       "schema": {
-        "tab-098a906f-ccdc-40d1-a141-62105d0cb73e": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Logo",
-          "key": "tab-098a906f-ccdc-40d1-a141-62105d0cb73e",
-          "keys": [
-            "logo_src",
-            "logo_alt",
-            "logo_width",
-            "logo_height"
-          ],
-          "type": "tab",
-          "description": "Logo",
-          "required": false
-        },
-        "logo_src": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Src",
-          "key": "logo_src",
-          "type": "asset",
-          "filetypes": [
-            "images"
-          ],
-          "description": "Picture source",
-          "required": false
-        },
-        "logo_alt": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Alt",
-          "key": "logo_alt",
-          "type": "text",
-          "description": "Alt text to display for picture",
-          "required": false
-        },
-        "logo_width": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Width",
-          "key": "logo_width",
-          "type": "number",
-          "description": "Width of the picture",
-          "required": false
-        },
-        "logo_height": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Height",
-          "key": "logo_height",
-          "type": "number",
-          "description": "Height of the picture",
-          "required": false
-        },
-        "logoHref": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "LogoHref",
-          "key": "logoHref",
-          "type": "multilink",
-          "allow_target_blank": true,
-          "email_link_type": true,
-          "asset_link_type": true,
-          "show_anchor": true,
-          "default_value": "/",
-          "required": false
-        },
         "floating": {
           "id": 0,
           "pos": 0,
@@ -1786,9 +1755,19 @@
           "description": "Make the header float over the first Section",
           "required": false
         },
+        "inverted": {
+          "type": "boolean",
+          "pos": 1,
+          "display_name": "Inverted",
+          "description": "Invert the color scheme of the header"
+        },
+        "flyoutInverted": {
+          "type": "boolean",
+          "pos": 2
+        },
         "navItems": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "NavItems",
           "key": "navItems",
           "type": "bloks",
@@ -1800,12 +1779,80 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Type",
           "key": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "header"
+        },
+        "logo_homepageHref": {
+          "type": "multilink",
+          "pos": 5
+        },
+        "logo_src": {
+          "id": 0,
+          "pos": 6,
+          "display_name": "Src",
+          "key": "logo_src",
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "Picture source",
+          "required": false
+        },
+        "logo_srcInverted": {
+          "type": "asset",
+          "pos": 7,
+          "display_name": "Src Inverted",
+          "filetypes": [
+            "images"
+          ]
+        },
+        "logo_alt": {
+          "id": 0,
+          "pos": 8,
+          "display_name": "Alt",
+          "key": "logo_alt",
+          "type": "text",
+          "description": "Alt text to display for picture",
+          "required": false
+        },
+        "logo_width": {
+          "id": 0,
+          "pos": 9,
+          "display_name": "Width",
+          "key": "logo_width",
+          "type": "number",
+          "description": "Width of the picture",
+          "required": false
+        },
+        "logo_height": {
+          "id": 0,
+          "pos": 10,
+          "display_name": "Height",
+          "key": "logo_height",
+          "type": "number",
+          "description": "Height of the picture",
+          "required": false
+        },
+        "tab-098a906f-ccdc-40d1-a141-62105d0cb73e": {
+          "id": 0,
+          "pos": 11,
+          "display_name": "Logo",
+          "key": "tab-098a906f-ccdc-40d1-a141-62105d0cb73e",
+          "keys": [
+            "logo_src",
+            "logo_alt",
+            "logo_width",
+            "logo_height",
+            "logo_srcInverted",
+            "logo_homepageHref"
+          ],
+          "type": "tab",
+          "description": "Logo",
+          "required": false
         }
       },
       "image": "//a.storyblok.com/f/297364/1280x255/50166b3127/layout-header-header.png",
@@ -2193,7 +2240,7 @@
       "name": "image-story",
       "display_name": "Image Story",
       "created_at": "2024-07-17T09:28:34.408Z",
-      "updated_at": "2024-07-17T09:28:34.408Z",
+      "updated_at": "2024-08-05T10:39:07.935Z",
       "id": 6059554,
       "schema": {
         "headline": {
@@ -2205,9 +2252,41 @@
           "description": "Headline for the module element",
           "required": false
         },
+        "image_aspectRatio": {
+          "id": 0,
+          "pos": 1,
+          "display_name": "Image Aspect Ratio",
+          "key": "image_ratio",
+          "type": "option",
+          "default_value": "unset",
+          "description": "Select an aspect ratio to use for cropping and displaying the image",
+          "options": [
+            {
+              "name": "wide",
+              "value": "wide",
+              "_uid": "a48b2abf-c4bd-4c26-bc71-40f4d5b8a79e"
+            },
+            {
+              "name": "square",
+              "value": "square",
+              "_uid": "37816c3d-a919-417e-b30a-f6413d464d85"
+            },
+            {
+              "name": "landscape",
+              "value": "landscape",
+              "_uid": "519ee2ab-efbe-451a-9b1f-ddf5f98d7d6a"
+            },
+            {
+              "name": "unset",
+              "value": "unset",
+              "_uid": "1677bf2a-37a9-4a09-84f5-be13f88f3952"
+            }
+          ],
+          "required": false
+        },
         "largeHeadline": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "LargeHeadline",
           "key": "largeHeadline",
           "type": "boolean",
@@ -2216,7 +2295,7 @@
         },
         "sub": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "Sub",
           "key": "sub",
           "type": "text",
@@ -2225,7 +2304,7 @@
         },
         "text": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Text",
           "key": "text",
           "type": "text",
@@ -2234,7 +2313,7 @@
         },
         "layout": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Layout",
           "key": "layout",
           "type": "option",
@@ -2256,7 +2335,7 @@
         },
         "padding": {
           "id": 0,
-          "pos": 0,
+          "pos": 6,
           "display_name": "Padding",
           "key": "padding",
           "type": "boolean",
@@ -2265,7 +2344,7 @@
         },
         "buttons": {
           "id": 0,
-          "pos": 0,
+          "pos": 7,
           "display_name": "Buttons",
           "key": "buttons",
           "type": "bloks",
@@ -2276,81 +2355,9 @@
           ],
           "description": "Component used for user interaction"
         },
-        "tab-0464fea0-678a-4e66-8b49-940ac5e27f76": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Image",
-          "key": "tab-0464fea0-678a-4e66-8b49-940ac5e27f76",
-          "keys": [
-            "image_src",
-            "image_ratio",
-            "image_alt"
-          ],
-          "type": "tab",
-          "description": "Image displayed alongside the text content",
-          "required": false
-        },
-        "image_src": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Src",
-          "key": "image_src",
-          "type": "asset",
-          "filetypes": [
-            "images"
-          ],
-          "description": "Image source to use",
-          "required": false
-        },
-        "image_ratio": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Ratio",
-          "key": "image_ratio",
-          "type": "option",
-          "default_value": "none",
-          "description": "Select an aspect ratio to use for cropping and displaying the image",
-          "options": [
-            {
-              "name": "4:3",
-              "value": "VALUE_4_3",
-              "_uid": "a48b2abf-c4bd-4c26-bc71-40f4d5b8a79e"
-            },
-            {
-              "name": "3:2",
-              "value": "VALUE_3_2",
-              "_uid": "37816c3d-a919-417e-b30a-f6413d464d85"
-            },
-            {
-              "name": "16:9",
-              "value": "VALUE_16_9",
-              "_uid": "519ee2ab-efbe-451a-9b1f-ddf5f98d7d6a"
-            },
-            {
-              "name": "1:1",
-              "value": "VALUE_1_1",
-              "_uid": "1677bf2a-37a9-4a09-84f5-be13f88f3952"
-            },
-            {
-              "name": "none",
-              "value": "none",
-              "_uid": "3e2e1464-c03e-40d0-a9a0-eb2a2eb251c1"
-            }
-          ],
-          "required": false
-        },
-        "image_alt": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Alt",
-          "key": "image_alt",
-          "type": "text",
-          "description": "Image description",
-          "required": false
-        },
         "textAlign": {
           "id": 0,
-          "pos": 0,
+          "pos": 8,
           "display_name": "TextAlign",
           "key": "textAlign",
           "type": "option",
@@ -2372,12 +2379,72 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 9,
           "display_name": "Type",
           "key": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "image-story"
+        },
+        "tab-0464fea0-678a-4e66-8b49-940ac5e27f76": {
+          "id": 0,
+          "pos": 10,
+          "display_name": "Image",
+          "key": "tab-0464fea0-678a-4e66-8b49-940ac5e27f76",
+          "keys": [
+            "image_src",
+            "image_ratio",
+            "image_alt",
+            "image_aspectRatio",
+            "image_vAlign"
+          ],
+          "type": "tab",
+          "description": "Image displayed alongside the text content",
+          "required": false
+        },
+        "image_src": {
+          "id": 0,
+          "pos": 11,
+          "display_name": "Src",
+          "key": "image_src",
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "Image source to use",
+          "required": false
+        },
+        "image_alt": {
+          "id": 0,
+          "pos": 12,
+          "display_name": "Alt",
+          "key": "image_alt",
+          "type": "text",
+          "description": "Image description",
+          "required": false
+        },
+        "image_vAlign": {
+          "type": "option",
+          "pos": 13,
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "6844b23b-59f5-49e4-8003-f0e1be568b2b",
+              "name": "top",
+              "value": "top"
+            },
+            {
+              "_uid": "34e9daaa-1a9b-4d8a-be97-d718a73ff346",
+              "value": "center",
+              "name": "center"
+            },
+            {
+              "_uid": "1307d4d9-dc90-4da9-a815-b8a8368038d9",
+              "value": "bottom",
+              "name": "bottom"
+            }
+          ],
+          "display_name": "Vertical Align"
         }
       },
       "image": "//a.storyblok.com/f/297364/1160x960/d8af9044d3/components-image-story-sticky-image-next-to-scrolling-text.png",
@@ -2949,7 +3016,7 @@
       "name": "page",
       "display_name": "Page",
       "created_at": "2024-07-17T09:02:34.459Z",
-      "updated_at": "2024-07-17T09:02:52.961Z",
+      "updated_at": "2024-07-31T09:46:48.773Z",
       "id": 6059299,
       "schema": {
         "section": {
@@ -2986,6 +3053,41 @@
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "page"
+        },
+        "tab-82f93228-8136-4267-8695-5e86766a3c07": {
+          "display_name": "Header",
+          "keys": [
+            "header_floating",
+            "header_inverted"
+          ],
+          "pos": 0,
+          "type": "tab"
+        },
+        "tab-e970a16b-8f6a-444c-b3ac-c7be4598ee13": {
+          "display_name": "Footer",
+          "keys": [
+            "footer_inverted"
+          ],
+          "pos": 0,
+          "type": "tab"
+        },
+        "header_floating": {
+          "type": "boolean",
+          "pos": 5,
+          "display_name": "Floating",
+          "description": "Whether the header should float on scroll"
+        },
+        "header_inverted": {
+          "type": "boolean",
+          "pos": 6,
+          "display_name": "Inverted",
+          "description": "Whether the header should have an inverted color scheme"
+        },
+        "footer_inverted": {
+          "type": "boolean",
+          "pos": 7,
+          "display_name": "Inverted",
+          "description": "Whether the footer should have an inverted color scheme"
         }
       },
       "image": null,
