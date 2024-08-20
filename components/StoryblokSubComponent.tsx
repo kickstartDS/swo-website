@@ -22,7 +22,7 @@ export const StoryblokSubComponent = forwardRef<HTMLElement>((props, ref) => {
       delete parent[key];
     }
   });
-  console.log(props);
+
   return (
     <StoryblokComponent
       blok={unflatten(isStoryblokComponent(props) ? props.content : props)}

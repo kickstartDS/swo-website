@@ -1,5 +1,5 @@
 {
-  "name": "@kickstartds/storyblok-starter-premium",
+  "name": "@kickstartds/ruhmesmeile",
   "version": "1.0.0",
   "license": "(MIT OR Apache-2.0)",
   "author": {
@@ -20,6 +20,8 @@
     "blurhashes": "mkdir -p public/blurhashes && node scripts/createBlurHashes.js",
     "init": "rimraf tmp && mkdir -p tmp/images && node scripts/prepareProject.js && npm run push-components && npm run generate-content-types",
     "update-previews": "node scripts/updatePreviews.js",
+    "dereference-schemas": "kickstartDS schema dereference --components-path node_modules/@kickstartds/ds-agency-premium/dist/components --cms-path components",
+    "generate-props": "kickstartDS schema types --components-path node_modules/@kickstartds/ds-agency-premium/dist/components --cms-path components --merge-schemas true",
     "start": "next start",
     "lint": "next lint",
     "init-tokens": "kickstartDS tokens init --token-dictionary-path token/dictionary --branding-token-path token/branding-token.json",
@@ -27,7 +29,7 @@
     "pull-content-schema": "storyblok pull-components --space $NEXT_STORYBLOK_SPACE_ID -p types/ && mv types/components.$NEXT_STORYBLOK_SPACE_ID.json types/components-schema.json && mv types/presets.$NEXT_STORYBLOK_SPACE_ID.json types/components-presets.json",
     "generate-content-types": "npm run pull-content-schema && storyblok-generate-ts source=./types/components-schema.json target=./types/components-schema",
     "push-components": "storyblok push-components cms/components.123456.json --space $NEXT_STORYBLOK_SPACE_ID --presets-source cms/presets.123456.json",
-    "create-storyblok-config": "kickstartDS cms storyblok --components-path node_modules/@kickstartds/ds-agency-premium/dist/components --configuration-path cms --components cta faq features gallery image-text logos stats teaser-card testimonials text blog-teaser hero mosaic video-curtain image-story slider",
+    "create-storyblok-config": "kickstartDS cms storyblok --components-path node_modules/@kickstartds/ds-agency-premium/dist/components --cms-path components --configuration-path cms --components cta faq features gallery image-text logos stats teaser-card testimonials text blog-teaser hero mosaic video-curtain image-story slider",
     "storyblok-logout": "storyblok logout",
     "storyblok-login": "storyblok login"
   },
@@ -52,7 +54,8 @@
     "storyblok-rich-text-react-renderer": "^2.9.0"
   },
   "devDependencies": {
-    "@kickstartds/jsonschema2storyblok": "^1.5.20",
+    "@kickstartds/jsonschema2storyblok": "^1.5.34",
+    "@kickstartds/jsonschema2types": "^1.1.51",
     "@kickstartds/style-dictionary": "^4.0.2",
     "@netlify/plugin-nextjs": "^5.2.2",
     "@types/ffprobe": "^1.1.8",
@@ -71,7 +74,7 @@
     "import-meta-resolve": "~3.0.0",
     "json-schema-typed": "~8.0.1",
     "jsonpointer": "^5.0.1",
-    "kickstartds": "^3.0.0",
+    "kickstartds": "3.1.0--canary.52.285.0",
     "local-ssl-proxy": "^2.0.5",
     "next": "13.5.6",
     "npm-run-all": "^4.1.5",
