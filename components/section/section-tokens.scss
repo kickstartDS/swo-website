@@ -54,10 +54,10 @@
 
   --dsa-section_symmetric-glow--background-image: radial-gradient(
       20vw 20vw at 0% 10%,
-      var(--ks-color-secondary) 100%,
+      var(--ks-color-secondary) 0%,
       transparent 100%
     ),
-    radial-gradient(20vw 20vw at 100% 90%, var(--ks-color-secondary) 100%, transparent 100%);
+    radial-gradient(20vw 20vw at 100% 90%, var(--ks-color-secondary) 0%, transparent 100%);
 
   --dsa-section__spotlight--blur: 100%;
   --dsa-section__spotlight--size: 200px;
