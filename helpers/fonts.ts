@@ -73,12 +73,12 @@ const displayFontPreview = localFont({
       style: "normal",
     },
     {
-      path: "../token/fonts/metropolis-thin.woff2",
+      path: "../token/fonts/Metropolis-Thin.woff2",
       weight: "100",
       style: "normal",
     },
     {
-      path: "../token/fonts/metropolis-thin.woff",
+      path: "../token/fonts/Metropolis-Thin.woff",
       weight: "100",
       style: "normal",
     },
