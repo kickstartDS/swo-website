@@ -3,64 +3,28 @@ import localFont from "next/font/local";
 const displayFont = localFont({
   src: [
     {
+      path: "../token/fonts/Metropolis-Thin.woff2",
+      weight: "100",
+    },
+    {
+      path: "../token/fonts/Metropolis-Thin.woff",
+      weight: "100",
+    },
+    {
       path: "../token/fonts/Metropolis-Regular.woff2",
       weight: "400",
-      style: "normal",
     },
     {
       path: "../token/fonts/Metropolis-Regular.woff",
       weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-SemiBold.woff2",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-SemiBold.woff",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-Medium.woff",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-Light.woff2",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-Light.woff",
-      weight: "300",
-      style: "normal",
     },
     {
       path: "../token/fonts/Metropolis-Bold.woff2",
-      weight: "bold",
-      style: "normal",
+      weight: "700",
     },
     {
       path: "../token/fonts/Metropolis-Bold.woff",
-      weight: "bold",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-Black.woff2",
-      weight: "900",
-      style: "normal",
-    },
-    {
-      path: "../token/fonts/Metropolis-Black.woff",
-      weight: "900",
-      style: "normal",
+      weight: "700",
     },
   ],
   preload: true,
