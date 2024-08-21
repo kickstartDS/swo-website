@@ -109,14 +109,14 @@ const Picture = forwardRef<
       src={fileUrl}
       width={parseInt(width, 10)}
       height={parseInt(height, 10)}
-      alt={isStoryblokAsset(src) ? src.alt || "" : props.alt || ""}
+      alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
       lazy={lazy}
     />
   ) : (
     <Image
       ref={internalRef}
       {...props}
-      alt={isStoryblokAsset(src) ? src.alt || "" : props.alt || ""}
+      alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
       src={priority ? `${fileUrl}/m/filters:quality(50)` : fileUrl}
       width={autoSize ? undefined : parseInt(width, 10)}
       height={autoSize ? undefined : parseInt(height, 10)}
