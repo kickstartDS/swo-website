@@ -2,6 +2,7 @@
 import {
   AnchorHTMLAttributes,
   FC,
+  HTMLAttributes,
   ImgHTMLAttributes,
   PropsWithChildren,
   forwardRef,
@@ -19,6 +20,10 @@ import {
 } from "@kickstartds/base/lib/picture";
 import { LinkContext, LinkProps } from "@kickstartds/base/lib/link";
 import { PictureProps } from "@kickstartds/base/lib/picture/typing";
+import {
+  StorytellingContext,
+  StorytellingContextDefault,
+} from "@kickstartds/content/lib/storytelling";
 
 import { BlogTeaserContext } from "@kickstartds/ds-agency-premium/blog-teaser";
 import { BlogAsideContext } from "@kickstartds/ds-agency-premium/blog-aside";
@@ -35,6 +40,7 @@ import { TeaserProvider } from "./TeaserProvider";
 import { useBlurHashes } from "./BlurHashContext";
 import { useImagePriority } from "./ImagePriorityContext";
 import { AssetStoryblok, MultilinkStoryblok } from "@/types/components-schema";
+import { StorytellingProps } from "@kickstartds/content/lib/storytelling/typing";
 
 function isStoryblokLink(object: unknown): object is MultilinkStoryblok {
   return (object as MultilinkStoryblok)?.linktype !== undefined;
@@ -141,35 +147,58 @@ const PictureProvider: FC<PropsWithChildren> = (props) => (
   <PictureContext.Provider {...props} value={Picture} />
 );
 
+const Storytelling = forwardRef<
+  HTMLDivElement,
+  StorytellingProps & HTMLAttributes<HTMLDivElement>
+>(({ backgroundImage, ...props }, ref) => {
+  return (
+    <StorytellingContextDefault
+      {...props}
+      backgroundImage={
+        isStoryblokAsset(backgroundImage)
+          ? backgroundImage.filename
+          : backgroundImage
+      }
+      ref={ref}
+    />
+  );
+});
+
+const StorytellingProvider: FC<PropsWithChildren> = (props) => (
+  <StorytellingContext.Provider {...props} value={Storytelling} />
+);
+
 const Providers = (props: PropsWithChildren) => (
-  <PictureProvider>
-    <LinkProvider>
-      <TeaserProvider>
-        {/* @ts-expect-error */}
-        <CtaContext.Provider value={StoryblokSubComponent}>
+  <StorytellingProvider>
+    <PictureProvider>
+      <LinkProvider>
+        <TeaserProvider>
           {/* @ts-expect-error */}
-          <FeatureContext.Provider value={StoryblokSubComponent}>
+          <CtaContext.Provider value={StoryblokSubComponent}>
             {/* @ts-expect-error */}
-            <StatContext.Provider value={StoryblokSubComponent}>
+            <FeatureContext.Provider value={StoryblokSubComponent}>
               {/* @ts-expect-error */}
-              <TestimonialContext.Provider value={StoryblokSubComponent}>
+              <StatContext.Provider value={StoryblokSubComponent}>
                 {/* @ts-expect-error */}
-                <BlogHeadContext.Provider value={StoryblokSubComponent}>
+                <TestimonialContext.Provider value={StoryblokSubComponent}>
                   {/* @ts-expect-error */}
-                  <BlogAsideContext.Provider value={StoryblokSubComponent}>
+                  <BlogHeadContext.Provider value={StoryblokSubComponent}>
                     {/* @ts-expect-error */}
-                    <BlogTeaserContext.Provider value={StoryblokSubComponent}>
-                      {props.children}
-                    </BlogTeaserContext.Provider>
-                  </BlogAsideContext.Provider>
-                </BlogHeadContext.Provider>
-              </TestimonialContext.Provider>
-            </StatContext.Provider>
-          </FeatureContext.Provider>
-        </CtaContext.Provider>
-      </TeaserProvider>
-    </LinkProvider>
-  </PictureProvider>
+                    <BlogAsideContext.Provider value={StoryblokSubComponent}>
+                      {/* @ts-expect-error */}
+                      <BlogTeaserContext.Provider value={StoryblokSubComponent}>
+                        {props.children}
+                      </BlogTeaserContext.Provider>
+                    </BlogAsideContext.Provider>
+                  </BlogHeadContext.Provider>
+                </TestimonialContext.Provider>
+              </StatContext.Provider>
+            </FeatureContext.Provider>
+          </CtaContext.Provider>
+        </TeaserProvider>
+      </LinkProvider>
+    </PictureProvider>
+  </StorytellingProvider>
 );
 
 export default Providers;
