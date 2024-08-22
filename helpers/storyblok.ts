@@ -6,8 +6,11 @@ import {
   storyblokInit,
   ISbStory,
   StoryblokClient,
+  ISbStoryData,
+  ISbStoryParams,
 } from "@storyblok/react";
 import { components } from "@/components";
+import { traverse } from "object-traversal";
 
 export function initStoryblok(accessToken?: string) {
   storyblokInit({
@@ -21,17 +24,56 @@ let lastContentVersion: number | undefined = undefined;
 
 export const sbParams = (
   draft: boolean,
-  params: ISbStoriesParams = {}
-): ISbStoriesParams => ({
+  params: ISbStoriesParams | ISbStoryParams = {}
+): ISbStoriesParams | ISbStoryParams => ({
   version: draft ? "draft" : "published",
   cv: lastContentVersion,
   resolve_links: "url",
-  resolve_relations: "blog-post.cta",
   ...params,
 });
 
+export async function fetchUuid(uuid: string, storyblokApi?: StoryblokClient) {
+  const storyblok = storyblokApi || getStoryblokApi();
+
+  const response: ISbStory = await storyblok.get(
+    `cdn/stories/${uuid}`,
+    sbParams(!!storyblokApi, { find_by: "uuid" })
+  );
+
+  return response.data.story;
+}
+
+export async function resolveStoryUuids(
+  story: ISbStoryData,
+  storyblokApi?: StoryblokClient
+) {
+  const promises: Promise<any>[] = [];
+  traverse(story, ({ parent, key, value }) => {
+    if (
+      parent &&
+      key &&
+      !["_uid", "uuid", "group_id", "id"].includes(key) &&
+      typeof value === "string" &&
+      value.match(
+        /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/
+      )
+    ) {
+      promises.push(
+        fetchUuid(value, storyblokApi).then((data) => {
+          parent[key] = data.content;
+
+          resolveStoryUuids(data, storyblokApi);
+        })
+      );
+    }
+  });
+
+  await Promise.all(promises);
+}
+
 export async function fetchStory(
   slug: string,
+  resolveUuids: boolean = false,
   previewStoryblokApi?: StoryblokClient
 ) {
   const storyblokApi = previewStoryblokApi || getStoryblokApi();
@@ -41,12 +83,16 @@ export async function fetchStory(
   );
 
   lastContentVersion = response.data.cv;
+
+  if (resolveUuids) await resolveStoryUuids(response.data.story, storyblokApi);
+
   return response;
 }
 
 // TODO: https://www.storyblok.com/docs/api/content-delivery/v2#topics/pagination
 export async function fetchStories(
   params?: ISbStoriesParams,
+  resolveUuids: boolean = false,
   previewStoryblokApi?: StoryblokClient
 ) {
   const storyblokApi = previewStoryblokApi || getStoryblokApi();
@@ -54,6 +100,12 @@ export async function fetchStories(
     `cdn/stories`,
     sbParams(!!previewStoryblokApi, params)
   );
+
+  if (resolveUuids) {
+    for (const story of response.data.stories) {
+      await resolveStoryUuids(story, storyblokApi);
+    }
+  }
 
   lastContentVersion = response.data.cv;
   return response;
@@ -81,8 +133,8 @@ export async function fetchPageProps(
   previewStoryblokApi?: StoryblokClient
 ) {
   const [{ data: pageData }, { data: settingsData }] = await Promise.all([
-    fetchStory(slug, previewStoryblokApi),
-    fetchStories({ content_type: "settings" }, previewStoryblokApi),
+    fetchStory(slug, true, previewStoryblokApi),
+    fetchStories({ content_type: "settings" }, false, previewStoryblokApi),
   ]);
   return { pageData, settingsData };
 }
