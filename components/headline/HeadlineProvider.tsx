@@ -9,7 +9,7 @@ export const HeadlineProvider: FC<PropsWithChildren> = (props) => {
     const computedLevel = useHeadlineLevel();
     const nextLevel =
       level !== "p" && computedLevel ? "h" + computedLevel : level;
-    return <PrevHeadline {...props} level={nextLevel} ref={ref} />;
+    return <PrevHeadline {...props} text="Lorem" level={nextLevel} ref={ref} />;
   });
   return <HeadlineContext.Provider {...props} value={Headline} />;
 };

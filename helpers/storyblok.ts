@@ -20,6 +20,29 @@ export function initStoryblok(accessToken?: string) {
   });
 }
 
+export function isStoryblokComponent(
+  blok: any
+): blok is { content: Record<string, any> } {
+  return blok.content !== undefined && blok.id !== undefined;
+}
+
+export function removeEmptyImages(blok: Record<string, any>) {
+  traverse(blok, ({ parent, key, value }) => {
+    if (
+      parent &&
+      key &&
+      value &&
+      typeof value === "object" &&
+      value.fieldtype === "asset" &&
+      value.id === null
+    ) {
+      delete parent[key];
+    }
+  });
+
+  return blok;
+}
+
 let lastContentVersion: number | undefined = undefined;
 
 export const sbParams = (
@@ -62,7 +85,7 @@ export async function resolveStoryUuids(
         fetchUuid(value, storyblokApi).then((data) => {
           parent[key] = data.content;
 
-          resolveStoryUuids(data, storyblokApi);
+          return resolveStoryUuids(data, storyblokApi);
         })
       );
     }
@@ -85,6 +108,7 @@ export async function fetchStory(
   lastContentVersion = response.data.cv;
 
   if (resolveUuids) await resolveStoryUuids(response.data.story, storyblokApi);
+  removeEmptyImages(response.data.story.content);
 
   return response;
 }
@@ -104,6 +128,7 @@ export async function fetchStories(
   if (resolveUuids) {
     for (const story of response.data.stories) {
       await resolveStoryUuids(story, storyblokApi);
+      removeEmptyImages(story.content);
     }
   }
 
