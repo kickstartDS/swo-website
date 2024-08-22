@@ -207,6 +207,38 @@ export interface GalleryStoryblok {
   [k: string]: any;
 }
 
+export interface GlobalStoryblok {
+  global?: (
+    | BlogTeaserStoryblok
+    | CtaStoryblok
+    | FaqStoryblok
+    | FeaturesStoryblok
+    | GalleryStoryblok
+    | HeroStoryblok
+    | ImageStoryStoryblok
+    | ImageTextStoryblok
+    | LogosStoryblok
+    | MosaicStoryblok
+    | SliderStoryblok
+    | StatsStoryblok
+    | TeaserCardStoryblok
+    | TestimonialsStoryblok
+    | TextStoryblok
+    | VideoCurtainStoryblok
+  )[];
+  _uid: string;
+  component: "global";
+  uuid?: string;
+  [k: string]: any;
+}
+
+export interface GlobalReferenceStoryblok {
+  reference?: any[];
+  _uid: string;
+  component: "global_reference";
+  [k: string]: any;
+}
+
 export interface HeaderStoryblok {
   floating?: boolean;
   inverted?: boolean;
@@ -326,8 +358,17 @@ export interface NavItemsStoryblok {
   href?: MultilinkStoryblok;
   label?: string;
   active?: boolean;
+  items?: NavSubItemsStoryblok[];
   _uid: string;
   component: "navItems";
+  [k: string]: any;
+}
+
+export interface NavSubItemsStoryblok {
+  href?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  label?: string;
+  _uid: string;
+  component: "navSubItems";
   [k: string]: any;
 }
 
@@ -398,6 +439,7 @@ export interface SectionStoryblok {
     | TestimonialsStoryblok
     | TextStoryblok
     | VideoCurtainStoryblok
+    | GlobalReferenceStoryblok
   )[];
   buttons?: ButtonsStoryblok[];
   type?: string;

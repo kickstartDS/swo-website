@@ -10,7 +10,11 @@ import { Section } from "@kickstartds/ds-agency-premium/section";
 import { Slider } from "@kickstartds/ds-agency-premium/slider";
 import editablePage from "./Page";
 import { ImageAutoSizeProvider } from "./ImageAutoSizeProvider";
-import { isStoryblokComponent } from "@/helpers/storyblok";
+import {
+  isGlobal,
+  isGlobalReference,
+  isStoryblokComponent,
+} from "@/helpers/storyblok";
 
 export const editable =
   (Component: React.ComponentType<any>, nestedBloksKey?: string) =>
@@ -19,13 +23,35 @@ export const editable =
     const { component, components, type, typeProp, _uid, ...props } = unflatten(
       isStoryblokComponent(blok) ? blok.content : blok
     );
+
     return (
       <Component {...storyblokEditable(blok)} {...props} type={typeProp}>
         {nestedBloksKey &&
           (blok[nestedBloksKey] as SbBlokData[] | undefined)?.map(
-            (nestedBlok) => (
-              <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-            )
+            (nestedBlok, index) => {
+              if (isGlobalReference(nestedBlok)) {
+                return (
+                  <div key={index}>
+                    {nestedBlok.reference?.map((reference) => {
+                      if (isGlobal(reference)) {
+                        return reference.global?.map((global) => {
+                          return (
+                            <StoryblokComponent
+                              blok={global}
+                              key={global._uid}
+                            />
+                          );
+                        });
+                      }
+                    })}
+                  </div>
+                );
+              }
+
+              return (
+                <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+              );
+            }
           )}
       </Component>
     );

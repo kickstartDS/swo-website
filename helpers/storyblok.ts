@@ -11,6 +11,10 @@ import {
 } from "@storyblok/react";
 import { components } from "@/components";
 import { traverse } from "object-traversal";
+import {
+  GlobalReferenceStoryblok,
+  GlobalStoryblok,
+} from "@/types/components-schema";
 
 export function initStoryblok(accessToken?: string) {
   storyblokInit({
@@ -24,6 +28,14 @@ export function isStoryblokComponent(
   blok: any
 ): blok is { content: Record<string, any> } {
   return blok.content !== undefined && blok.id !== undefined;
+}
+
+export function isGlobalReference(blok: any): blok is GlobalReferenceStoryblok {
+  return blok.component === "global_reference";
+}
+
+export function isGlobal(blok: any): blok is GlobalStoryblok {
+  return blok.component === "global";
 }
 
 export function removeEmptyImages(blok: Record<string, any>) {
