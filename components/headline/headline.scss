@@ -23,6 +23,7 @@
     &--h1,
     &--h2 {
       .dsa-headline__headline:not(:last-child),
+      .dsa-headline__headline:only-child,
       .dsa-headline__subheadline:not(:last-child) {
         display: flex;
         flex-direction: column;
