@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import { ComponentProps, FC } from "react";
 import dynamic from "next/dynamic";
 import {
   SbBlokData,
@@ -15,6 +15,33 @@ import {
   isGlobalReference,
   isStoryblokComponent,
 } from "@/helpers/storyblok";
+import {
+  GlobalReferenceStoryblok,
+  GlobalStoryblok,
+} from "@/types/components-schema";
+
+export const Global: FC<GlobalStoryblok> = (props) =>
+  isGlobal(props.blok) &&
+  props.blok.global && (
+    <div>
+      {props.blok.global.map((global) => (
+        <StoryblokComponent blok={global} key={global._uid} />
+      ))}
+    </div>
+  );
+
+export const GlobalReference: FC<GlobalReferenceStoryblok> = (props) => (
+  <div>
+    {isGlobalReference(props.blok) &&
+      props.blok.reference?.map(
+        (reference) =>
+          isGlobal(reference) &&
+          reference.global?.map((global) => (
+            <StoryblokComponent blok={global} key={global._uid} />
+          ))
+      )}
+  </div>
+);
 
 export const editable =
   (Component: React.ComponentType<any>, nestedBloksKey?: string) =>
@@ -24,6 +51,20 @@ export const editable =
       isStoryblokComponent(blok) ? blok.content : blok
     );
 
+    if (isGlobalReference(blok)) {
+      return (
+        <div>
+          {blok.reference?.map(
+            (reference) =>
+              isGlobal(reference) &&
+              reference.global?.map((global) => (
+                <StoryblokComponent blok={global} key={global._uid} />
+              ))
+          )}
+        </div>
+      );
+    }
+
     return (
       <Component {...storyblokEditable(blok)} {...props} type={typeProp}>
         {nestedBloksKey &&
@@ -32,18 +73,13 @@ export const editable =
               if (isGlobalReference(nestedBlok)) {
                 return (
                   <div key={index}>
-                    {nestedBlok.reference?.map((reference) => {
-                      if (isGlobal(reference)) {
-                        return reference.global?.map((global) => {
-                          return (
-                            <StoryblokComponent
-                              blok={global}
-                              key={global._uid}
-                            />
-                          );
-                        });
-                      }
-                    })}
+                    {nestedBlok.reference?.map(
+                      (reference) =>
+                        isGlobal(reference) &&
+                        reference.global?.map((global) => (
+                          <StoryblokComponent blok={global} key={global._uid} />
+                        ))
+                    )}
                   </div>
                 );
               }
@@ -65,6 +101,8 @@ const Hero = dynamic(() =>
 
 export const components = {
   page: editablePage,
+  global: Global,
+  global_reference: GlobalReference,
   "blog-overview": dynamic(() => import("./BlogOverview")),
   "blog-post": dynamic(() => import("./BlogPost")),
   "blog-teaser": editable(
