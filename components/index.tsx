@@ -22,26 +22,20 @@ import {
 
 export const Global: FC<GlobalStoryblok> = (props) =>
   isGlobal(props.blok) &&
-  props.blok.global && (
-    <div>
-      {props.blok.global.map((global) => (
-        <StoryblokComponent blok={global} key={global._uid} />
-      ))}
-    </div>
-  );
+  props.blok.global &&
+  props.blok.global.map((global) => (
+    <StoryblokComponent blok={global} key={global._uid} />
+  ));
 
-export const GlobalReference: FC<GlobalReferenceStoryblok> = (props) => (
-  <div>
-    {isGlobalReference(props.blok) &&
-      props.blok.reference?.map(
-        (reference) =>
-          isGlobal(reference) &&
-          reference.global?.map((global) => (
-            <StoryblokComponent blok={global} key={global._uid} />
-          ))
-      )}
-  </div>
-);
+export const GlobalReference: FC<GlobalReferenceStoryblok> = (props) =>
+  isGlobalReference(props.blok) &&
+  props.blok.reference?.map(
+    (reference) =>
+      isGlobal(reference) &&
+      reference.global?.map((global) => (
+        <StoryblokComponent blok={global} key={global._uid} />
+      ))
+  );
 
 export const editable =
   (Component: React.ComponentType<any>, nestedBloksKey?: string) =>
@@ -53,7 +47,7 @@ export const editable =
 
     if (isGlobalReference(blok)) {
       return (
-        <div>
+        <div className="editable">
           {blok.reference?.map(
             (reference) =>
               isGlobal(reference) &&
@@ -69,18 +63,14 @@ export const editable =
       <Component {...storyblokEditable(blok)} {...props} type={typeProp}>
         {nestedBloksKey &&
           (blok[nestedBloksKey] as SbBlokData[] | undefined)?.map(
-            (nestedBlok, index) => {
+            (nestedBlok) => {
               if (isGlobalReference(nestedBlok)) {
-                return (
-                  <div key={index}>
-                    {nestedBlok.reference?.map(
-                      (reference) =>
-                        isGlobal(reference) &&
-                        reference.global?.map((global) => (
-                          <StoryblokComponent blok={global} key={global._uid} />
-                        ))
-                    )}
-                  </div>
+                return nestedBlok.reference?.map(
+                  (reference) =>
+                    isGlobal(reference) &&
+                    reference.global?.map((global) => (
+                      <StoryblokComponent blok={global} key={global._uid} />
+                    ))
                 );
               }
 
