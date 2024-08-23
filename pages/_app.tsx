@@ -33,9 +33,16 @@ const handleRouteChange = (url: string) => {
 const setActiveNavItem = (navItems: any[] = [], currentRoute: string) => {
   for (const navItem of navItems) {
     navItem.active =
-      navItem.href.linktype === "story" &&
-      ("/" + navItem.href.story.url === currentRoute ||
-        navItem.href.story.url === currentRoute);
+      navItem.href?.linktype === "story" &&
+      ("/" + navItem.href?.story?.url === currentRoute ||
+        navItem.href?.story?.url === currentRoute);
+
+    for (const item of navItem.items) {
+      item.active =
+        item.href?.linktype === "story" &&
+        ("/" + item.href?.story?.url === currentRoute ||
+          item.href?.story?.url === currentRoute);
+    }
   }
 };
 
@@ -61,8 +68,8 @@ export default function App({
     ? !footerProps?.inverted || true
     : footerProps?.inverted || false;
 
-  // setActiveNavItem(headerProps?.navItems, router.asPath);
-  // setActiveNavItem(footerProps?.navItems, router.asPath);
+  setActiveNavItem(headerProps?.navItems, router.asPath);
+  setActiveNavItem(footerProps?.navItems, router.asPath);
 
   useEffect(() => {
     router.events.on("routeChangeStart", handleRouteChange);
