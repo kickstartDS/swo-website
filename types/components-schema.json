@@ -1740,10 +1740,76 @@
       "component_group_name": "Components"
     },
     {
+      "name": "global",
+      "display_name": null,
+      "created_at": "2024-08-22T12:38:26.648Z",
+      "updated_at": "2024-08-22T12:47:39.389Z",
+      "id": 6198231,
+      "schema": {
+        "global": {
+          "type": "bloks",
+          "pos": 0,
+          "restrict_type": "groups",
+          "restrict_components": true,
+          "component_whitelist": [],
+          "component_group_whitelist": [
+            "a3c44207-2b1a-4ed4-9113-6fdfb114ca95"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "global",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "global_reference",
+      "display_name": null,
+      "created_at": "2024-08-22T12:46:16.134Z",
+      "updated_at": "2024-08-22T12:47:26.569Z",
+      "id": 6198236,
+      "schema": {
+        "reference": {
+          "type": "options",
+          "pos": 0,
+          "is_reference_type": true,
+          "source": "internal_stories",
+          "entry_appearance": "card",
+          "allow_advanced_search": true,
+          "folder_slug": "global/"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "global_reference",
+      "component_group_uuid": "3f8469ab-bd4a-4a74-af42-8de26db501cd",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Global"
+    },
+    {
       "name": "header",
       "display_name": "Header",
       "created_at": "2024-07-17T09:28:52.606Z",
-      "updated_at": "2024-08-01T11:41:18.555Z",
+      "updated_at": "2024-08-20T11:15:47.208Z",
       "id": 6059567,
       "schema": {
         "floating": {
@@ -2965,7 +3031,7 @@
       "name": "navItems",
       "display_name": "NavItems",
       "created_at": "2024-07-17T09:28:52.415Z",
-      "updated_at": "2024-07-17T09:28:52.415Z",
+      "updated_at": "2024-08-22T15:03:12.650Z",
       "id": 6059566,
       "schema": {
         "href": {
@@ -2995,6 +3061,15 @@
           "key": "active",
           "type": "boolean",
           "required": false
+        },
+        "items": {
+          "type": "bloks",
+          "pos": 3,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "navSubItems"
+          ]
         }
       },
       "image": null,
@@ -3008,6 +3083,37 @@
       "component_group_uuid": null,
       "color": "#05566a",
       "icon": "block-wallet",
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "navSubItems",
+      "display_name": null,
+      "created_at": "2024-08-22T14:55:55.868Z",
+      "updated_at": "2024-08-22T14:56:31.744Z",
+      "id": 6199070,
+      "schema": {
+        "href": {
+          "type": "multilink",
+          "pos": 0
+        },
+        "label": {
+          "type": "text",
+          "pos": 1
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "navSubItems",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
       "internal_tags_list": [],
       "internal_tag_ids": [],
       "content_type_asset_preview": null
@@ -3150,7 +3256,7 @@
       "name": "section",
       "display_name": "Section",
       "created_at": "2024-07-17T09:28:48.026Z",
-      "updated_at": "2024-07-17T09:28:48.026Z",
+      "updated_at": "2024-08-22T12:43:03.026Z",
       "id": 6059565,
       "schema": {
         "width": {
@@ -3666,7 +3772,8 @@
           "restrict_type": "groups",
           "restrict_components": true,
           "component_group_whitelist": [
-            "a3c44207-2b1a-4ed4-9113-6fdfb114ca95"
+            "a3c44207-2b1a-4ed4-9113-6fdfb114ca95",
+            "3f8469ab-bd4a-4a74-af42-8de26db501cd"
           ],
           "description": "Abstracts a page concept into JSON schema",
           "required": false

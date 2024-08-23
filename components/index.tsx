@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import { ComponentProps, FC } from "react";
 import dynamic from "next/dynamic";
 import {
   SbBlokData,
@@ -10,45 +10,84 @@ import { Section } from "@kickstartds/ds-agency-premium/section";
 import { Slider } from "@kickstartds/ds-agency-premium/slider";
 import editablePage from "./Page";
 import { ImageAutoSizeProvider } from "./ImageAutoSizeProvider";
-import { traverse } from "object-traversal";
+import {
+  isGlobal,
+  isGlobalReference,
+  isStoryblokComponent,
+} from "@/helpers/storyblok";
+import {
+  GlobalReferenceStoryblok,
+  GlobalStoryblok,
+} from "@/types/components-schema";
 
-const removeEmptyImages = (blok: Record<string, any>) => {
-  traverse(blok, ({ parent, key, value }) => {
-    if (
-      parent &&
-      key &&
-      value &&
-      typeof value === "object" &&
-      value.fieldtype === "asset" &&
-      value.id === null
-    ) {
-      delete parent[key];
-    }
-  });
+export const Global: FC<GlobalStoryblok> = (props) =>
+  isGlobal(props.blok) &&
+  props.blok.global && (
+    <div>
+      {props.blok.global.map((global) => (
+        <StoryblokComponent blok={global} key={global._uid} />
+      ))}
+    </div>
+  );
 
-  return blok;
-};
-
-export const isStoryblokComponent = (
-  blok: any
-): blok is { content: Record<string, any> } =>
-  blok.content !== undefined && blok.id !== undefined;
+export const GlobalReference: FC<GlobalReferenceStoryblok> = (props) => (
+  <div>
+    {isGlobalReference(props.blok) &&
+      props.blok.reference?.map(
+        (reference) =>
+          isGlobal(reference) &&
+          reference.global?.map((global) => (
+            <StoryblokComponent blok={global} key={global._uid} />
+          ))
+      )}
+  </div>
+);
 
 export const editable =
   (Component: React.ComponentType<any>, nestedBloksKey?: string) =>
   // eslint-disable-next-line react/display-name
   ({ blok }: { blok: SbBlokData }) => {
-    const { component, components, type, typeProp, _uid, ...props } =
-      removeEmptyImages(
-        unflatten(isStoryblokComponent(blok) ? blok.content : blok)
+    const { component, components, type, typeProp, _uid, ...props } = unflatten(
+      isStoryblokComponent(blok) ? blok.content : blok
+    );
+
+    if (isGlobalReference(blok)) {
+      return (
+        <div>
+          {blok.reference?.map(
+            (reference) =>
+              isGlobal(reference) &&
+              reference.global?.map((global) => (
+                <StoryblokComponent blok={global} key={global._uid} />
+              ))
+          )}
+        </div>
       );
+    }
+
     return (
       <Component {...storyblokEditable(blok)} {...props} type={typeProp}>
         {nestedBloksKey &&
           (blok[nestedBloksKey] as SbBlokData[] | undefined)?.map(
-            (nestedBlok) => (
-              <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-            )
+            (nestedBlok, index) => {
+              if (isGlobalReference(nestedBlok)) {
+                return (
+                  <div key={index}>
+                    {nestedBlok.reference?.map(
+                      (reference) =>
+                        isGlobal(reference) &&
+                        reference.global?.map((global) => (
+                          <StoryblokComponent blok={global} key={global._uid} />
+                        ))
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+              );
+            }
           )}
       </Component>
     );
@@ -62,6 +101,8 @@ const Hero = dynamic(() =>
 
 export const components = {
   page: editablePage,
+  global: Global,
+  global_reference: GlobalReference,
   "blog-overview": dynamic(() => import("./BlogOverview")),
   "blog-post": dynamic(() => import("./BlogPost")),
   "blog-teaser": editable(
