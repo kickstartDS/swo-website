@@ -2,7 +2,11 @@
 [ks-inverted],
 [ks-theme] {
   // Logo
-  --dsa-logo--height: 1.75rem;
+  --dsa-logo--height: 1.5rem;
+
+  @media (min-width: 48em) {
+    --dsa-logo--height: 1.75rem;
+  }
 
   // Link
   --dsa-topic--font-weight: var(--ks-font-weight-medium);
