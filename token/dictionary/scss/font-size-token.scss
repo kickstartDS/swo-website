@@ -10,17 +10,21 @@
 
   --font-size-display-bp-factor: 1.02;
 
-  --font-size-copy-shrink-factor: 0.8;
-  --font-size-copy-grow-factor: 1.125;
+  --common-shrink-factor: 0.9;
+  --common-grow-factor: 1.125;
+  --common-bp-factor: 1.0075;
 
-  --font-size-copy-bp-factor: 1.0075;
+  --font-size-copy-shrink-factor: var(--common-shrink-factor);
+  --font-size-copy-grow-factor: var(--common-grow-factor);
 
-  --font-size-interface-shrink-factor: 0.8;
+  --font-size-copy-bp-factor: var(--common-bg-factor);
+
+  --font-size-interface-shrink-factor: var(--common-shrink-factor);
   --font-size-interface-grow-factor: 1.125;
 
   --font-size-interface-bp-factor: 1.0075;
 
-  --font-size-mono-shrink-factor: 0.8;
+  --font-size-mono-shrink-factor: var(--common-shrink-factor);
   --font-size-mono-grow-factor: 1.125;
 
   --font-size-mono-bp-factor: 1.0075;
