@@ -61,8 +61,8 @@ export default function App({
     ? !footerProps?.inverted || true
     : footerProps?.inverted || false;
 
-  setActiveNavItem(headerProps?.navItems, router.asPath);
-  setActiveNavItem(footerProps?.navItems, router.asPath);
+  // setActiveNavItem(headerProps?.navItems, router.asPath);
+  // setActiveNavItem(footerProps?.navItems, router.asPath);
 
   useEffect(() => {
     router.events.on("routeChangeStart", handleRouteChange);
