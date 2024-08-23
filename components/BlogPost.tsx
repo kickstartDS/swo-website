@@ -18,6 +18,7 @@ const BlogPost: React.FC<PageProps> = ({ blok }) => {
   if (blok) {
     const { cta, seo, aside, head, content } = blok;
 
+    // TODO fix types (mostly just Tag)
     return (
       <main {...storyblokEditable(blok)}>
         {/* @ts-expect-error */}

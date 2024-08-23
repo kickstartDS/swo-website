@@ -16,8 +16,10 @@ const Tag = ({ label, ...props }: any) => (
 
 const BlogOverview: React.FC<PageProps> = ({ blok }) => {
   if (blok) {
-    const { seo, latest, list, cta, more } = blok;
+    const { seo, latest, latestTitle, list, listTitle, cta, more, moreTitle } =
+      blok;
 
+    // TODO fix types (mostly just Tag)
     return (
       <main {...storyblokEditable(blok)}>
         {/* @ts-expect-error */}
@@ -25,14 +27,17 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
           <BlogOverviewComponent
             // @ts-expect-error
             latest={latest && latest[0]}
+            latestTitle={latestTitle}
             // @ts-expect-error
             list={list}
+            listTitle={listTitle}
             // @ts-expect-error
             cta={cta && cta[0]}
             // @ts-expect-error
             seo={seo && seo[0]}
             // @ts-expect-error
             more={more}
+            moreTitle={moreTitle}
           >
             {blok.section?.map((nestedBlok) => (
               <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
