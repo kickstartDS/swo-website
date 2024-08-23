@@ -71,7 +71,7 @@ const Link = forwardRef<
       <NextLink
         {...props}
         ref={ref}
-        href={linkTarget || ""}
+        href={`${linkTarget}${href.anchor ? `#${href.anchor}` : ""}` || ""}
         target={href.target}
       />
     );
