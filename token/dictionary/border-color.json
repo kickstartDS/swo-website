@@ -315,7 +315,7 @@
       },
       "card": {
         "base": {
-          "value": "{ks.color.fg.alpha.9.base}",
+          "value": "{ks.color.fg.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
@@ -387,7 +387,7 @@
       },
       "card-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.alpha.9.base}",
+          "value": "{ks.color.fg-inverted.alpha.8.base}",
           "attributes": {
             "category": "color"
           },

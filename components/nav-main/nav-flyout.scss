@@ -1,1 +1,7 @@
 @import "./nav-flyout-tokens.scss";
+
+.dsa-nav-flyout {
+  .dsa-nav-flyout__label {
+    font-family: var(--ks-font-family-display);
+  }
+}
