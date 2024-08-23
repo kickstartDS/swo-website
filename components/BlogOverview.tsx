@@ -1,4 +1,4 @@
-import { storyblokEditable } from "@storyblok/react";
+import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 import {
   TagLabelContext,
   TagLabelContextDefault,
@@ -16,19 +16,28 @@ const Tag = ({ label, ...props }: any) => (
 
 const BlogOverview: React.FC<PageProps> = ({ blok }) => {
   if (blok) {
-    const { seo, latest, more } = blok;
+    const { seo, latest, list, cta, more } = blok;
+
     return (
       <main {...storyblokEditable(blok)}>
         {/* @ts-expect-error */}
         <TagLabelContext.Provider value={Tag}>
           <BlogOverviewComponent
             // @ts-expect-error
-            latest={latest?.[0]}
+            latest={latest && latest[0]}
             // @ts-expect-error
-            seo={seo?.[0]}
+            list={list}
+            // @ts-expect-error
+            cta={cta && cta[0]}
+            // @ts-expect-error
+            seo={seo && seo[0]}
             // @ts-expect-error
             more={more}
-          />
+          >
+            {blok.section?.map((nestedBlok) => (
+              <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+            ))}
+          </BlogOverviewComponent>
         </TagLabelContext.Provider>
       </main>
     );

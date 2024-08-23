@@ -46,6 +46,7 @@ export interface BlogHeadStoryblok {
 }
 
 export interface BlogOverviewStoryblok {
+  section?: SectionStoryblok[];
   latest?: BlogTeaserStoryblok[];
   list?: BlogTeaserStoryblok[];
   more?: BlogTeaserStoryblok[];
@@ -62,7 +63,7 @@ export interface BlogPostStoryblok {
   aside?: BlogAsideStoryblok[];
   content?: string;
   section?: SectionStoryblok[];
-  cta?: (StoryblokStory<CtaStoryblok> | string)[];
+  cta?: GlobalReferenceStoryblok[];
   seo?: SeoStoryblok[];
   type?: string;
   _uid: string;
@@ -243,6 +244,7 @@ export interface HeaderStoryblok {
   floating?: boolean;
   inverted?: boolean;
   flyoutInverted?: boolean;
+  dropdownInverted?: boolean;
   navItems?: NavItemsStoryblok[];
   type?: string;
   logo_homepageHref?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;

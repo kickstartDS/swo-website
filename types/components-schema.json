@@ -234,12 +234,22 @@
       "name": "blog-overview",
       "display_name": "Blog Overview",
       "created_at": "2024-07-17T09:28:54.414Z",
-      "updated_at": "2024-07-17T09:28:54.414Z",
+      "updated_at": "2024-08-23T20:32:19.730Z",
       "id": 6059570,
       "schema": {
+        "section": {
+          "type": "bloks",
+          "pos": 0,
+          "display_name": "Intro",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "section"
+          ]
+        },
         "latest": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "Latest",
           "key": "latest",
           "type": "bloks",
@@ -252,7 +262,7 @@
         },
         "list": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "List",
           "key": "list",
           "type": "bloks",
@@ -265,7 +275,7 @@
         },
         "more": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "More",
           "key": "more",
           "type": "bloks",
@@ -278,7 +288,7 @@
         },
         "cta": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Cta",
           "key": "cta",
           "type": "bloks",
@@ -291,7 +301,7 @@
         },
         "seo": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Seo",
           "key": "seo",
           "type": "bloks",
@@ -304,7 +314,7 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 6,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -331,7 +341,7 @@
       "name": "blog-post",
       "display_name": "Blog Post",
       "created_at": "2024-07-17T09:28:54.011Z",
-      "updated_at": "2024-08-19T12:02:58.121Z",
+      "updated_at": "2024-08-22T20:43:04.889Z",
       "id": 6059569,
       "schema": {
         "head": {
@@ -385,23 +395,17 @@
           "pos": 4,
           "display_name": "Cta",
           "key": "cta",
-          "type": "options",
+          "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
-            "cta"
+            "global_reference"
           ],
           "description": "Cta",
-          "is_reference_type": true,
-          "source": "internal_stories",
-          "entry_appearance": "card",
-          "allow_advanced_search": true,
-          "folder_slug": "",
-          "filter_content_type": [
-            "cta"
-          ],
-          "min_options": "1",
-          "max_options": "1"
+          "folder_slug": "global/",
+          "filter_content_type": [],
+          "min_options": "",
+          "max_options": ""
         },
         "seo": {
           "id": 0,
@@ -692,7 +696,7 @@
       "name": "cta",
       "display_name": "Cta",
       "created_at": "2024-07-17T09:28:21.539Z",
-      "updated_at": "2024-08-17T16:33:28.150Z",
+      "updated_at": "2024-08-22T17:41:55.395Z",
       "id": 6059540,
       "schema": {
         "headline": {
@@ -921,7 +925,7 @@
       },
       "image": "//a.storyblok.com/f/297364/1000x472/02ec2c0c36/components-cta-banner.png",
       "preview_field": null,
-      "is_root": true,
+      "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
       "all_presets": [
@@ -1809,7 +1813,7 @@
       "name": "header",
       "display_name": "Header",
       "created_at": "2024-07-17T09:28:52.606Z",
-      "updated_at": "2024-08-20T11:15:47.208Z",
+      "updated_at": "2024-08-23T08:30:47.215Z",
       "id": 6059567,
       "schema": {
         "floating": {
@@ -1829,11 +1833,16 @@
         },
         "flyoutInverted": {
           "type": "boolean",
-          "pos": 2
+          "pos": 2,
+          "default_value": true
+        },
+        "dropdownInverted": {
+          "type": "boolean",
+          "pos": 3
         },
         "navItems": {
           "id": 0,
-          "pos": 3,
+          "pos": 4,
           "display_name": "NavItems",
           "key": "navItems",
           "type": "bloks",
@@ -1845,7 +1854,7 @@
         },
         "type": {
           "id": 0,
-          "pos": 4,
+          "pos": 5,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -1854,11 +1863,11 @@
         },
         "logo_homepageHref": {
           "type": "multilink",
-          "pos": 5
+          "pos": 6
         },
         "logo_src": {
           "id": 0,
-          "pos": 6,
+          "pos": 7,
           "display_name": "Src",
           "key": "logo_src",
           "type": "asset",
@@ -1870,7 +1879,7 @@
         },
         "logo_srcInverted": {
           "type": "asset",
-          "pos": 7,
+          "pos": 8,
           "display_name": "Src Inverted",
           "filetypes": [
             "images"
@@ -1878,7 +1887,7 @@
         },
         "logo_alt": {
           "id": 0,
-          "pos": 8,
+          "pos": 9,
           "display_name": "Alt",
           "key": "logo_alt",
           "type": "text",
@@ -1887,7 +1896,7 @@
         },
         "logo_width": {
           "id": 0,
-          "pos": 9,
+          "pos": 10,
           "display_name": "Width",
           "key": "logo_width",
           "type": "number",
@@ -1896,7 +1905,7 @@
         },
         "logo_height": {
           "id": 0,
-          "pos": 10,
+          "pos": 11,
           "display_name": "Height",
           "key": "logo_height",
           "type": "number",
@@ -1905,7 +1914,7 @@
         },
         "tab-098a906f-ccdc-40d1-a141-62105d0cb73e": {
           "id": 0,
-          "pos": 11,
+          "pos": 12,
           "display_name": "Logo",
           "key": "tab-098a906f-ccdc-40d1-a141-62105d0cb73e",
           "keys": [
