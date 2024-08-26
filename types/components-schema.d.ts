@@ -47,8 +47,11 @@ export interface BlogHeadStoryblok {
 
 export interface BlogOverviewStoryblok {
   section?: SectionStoryblok[];
-  latest?: BlogTeaserStoryblok[];
+  latestTitle?: string;
+  latest?: (StoryblokStory<BlogPostStoryblok> | string)[];
+  listTitle?: string;
   list?: BlogTeaserStoryblok[];
+  moreTitle?: string;
   more?: BlogTeaserStoryblok[];
   cta?: CtaStoryblok[];
   seo?: SeoStoryblok[];
@@ -516,7 +519,7 @@ export interface StatsStoryblok {
 }
 
 export interface TagsStoryblok {
-  entry?: string;
+  entry: string;
   _uid: string;
   component: "tags";
   [k: string]: any;
