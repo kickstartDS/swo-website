@@ -101,8 +101,8 @@ export type MultilinkStoryblok =
 export interface BlogTeaserStoryblok {
   date?: string;
   tags?: TagsStoryblok[];
-  headline?: string;
-  teaserText?: string;
+  headline: string;
+  teaserText: string;
   image?: AssetStoryblok;
   link_url?: MultilinkStoryblok;
   link_label?: string;

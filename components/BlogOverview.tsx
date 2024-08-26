@@ -43,7 +43,8 @@ const BlogTeaserPost = forwardRef<
       readingTime: props.aside[0].readingTime,
     };
     return <BlogTeaserContextDefault {...teaserProps} ref={ref} />;
-  } else {
+  } else if (!isBlogPost(props)) {
+    // @ts-expect-error
     return <BlogTeaserContextDefault {...props} ref={ref} />;
   }
 });
@@ -66,12 +67,14 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
           ))}
           {latest && latest[0] && (
             <Section width="wide" headline={{ text: latestTitle }}>
+              {/* @ts-expect-error */}
               <BlogTeaser {...latest[0]} />
             </Section>
           )}
           {list && list.length > 0 && (
             <Section headline={{ text: listTitle }} content={{ mode: "list" }}>
               {list.map((article) => (
+                // @ts-expect-error
                 <BlogTeaser {...article} key={article.headline} />
               ))}
             </Section>
@@ -80,6 +83,7 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
           {more && more.length > 0 && (
             <Section headline={{ text: moreTitle }}>
               {more.map((article) => (
+                // @ts-expect-error
                 <BlogTeaser {...article} key={article.headline} />
               ))}
             </Section>
