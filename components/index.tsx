@@ -98,7 +98,7 @@ export const components = {
   "blog-teaser": editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/blog-teaser").then(
-        (mod) => mod.BlogTeaserContextDefault
+        (mod) => mod.BlogTeaser
       )
     )
   ),

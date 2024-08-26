@@ -1,49 +1,95 @@
 import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 import {
-  TagLabelContext,
-  TagLabelContextDefault,
-} from "@kickstartds/base/lib/tag-label";
-import { BlogOverview as BlogOverviewComponent } from "@kickstartds/ds-agency-premium/blog-overview";
-import { BlogOverviewStoryblok } from "@/types/components-schema";
+  BlogOverviewStoryblok,
+  BlogPostStoryblok,
+  BlogTeaserStoryblok,
+} from "@/types/components-schema";
+import { Section } from "@kickstartds/ds-agency-premium/components/section/index.js";
+import {
+  BlogTeaser,
+  BlogTeaserContext,
+  BlogTeaserContextDefault,
+} from "@kickstartds/ds-agency-premium/components/blog-teaser/index.js";
+import { Cta } from "@kickstartds/ds-agency-premium/components/cta/index.js";
+import { FC, forwardRef, HTMLAttributes, PropsWithChildren } from "react";
 
 type PageProps = {
   blok: BlogOverviewStoryblok;
 };
 
-const Tag = ({ label, ...props }: any) => (
-  <TagLabelContextDefault label={label?.entry} {...props} />
+export function isBlogPost(blok: any): blok is BlogPostStoryblok {
+  return blok.type === "blog-post";
+}
+
+const BlogTeaserPost = forwardRef<
+  HTMLDivElement,
+  | (BlogTeaserStoryblok & HTMLAttributes<HTMLDivElement>)
+  | (BlogPostStoryblok & HTMLAttributes<HTMLDivElement>)
+>((props, ref) => {
+  if (
+    isBlogPost(props) &&
+    props.head &&
+    props.head[0] &&
+    props.aside &&
+    props.aside[0]
+  ) {
+    const teaserProps = {
+      date: props.head[0].date,
+      headline: props.head[0].headline || "",
+      teaserText: props.head[0].headline || "",
+      image: props.head[0].image || "",
+      tags: props.head[0].tags || [],
+      readingTime: props.aside[0].readingTime,
+    };
+    return <BlogTeaserContextDefault {...teaserProps} ref={ref} />;
+  } else {
+    return <BlogTeaserContextDefault {...props} ref={ref} />;
+  }
+});
+BlogTeaserPost.displayName = "BlogTeaserPost";
+
+const BlogTeaserPostProvider: FC<PropsWithChildren> = (props) => (
+  <BlogTeaserContext.Provider {...props} value={BlogTeaserPost} />
 );
 
 const BlogOverview: React.FC<PageProps> = ({ blok }) => {
   if (blok) {
-    const { seo, latest, latestTitle, list, listTitle, cta, more, moreTitle } =
-      blok;
+    const { latest, latestTitle, list, listTitle, cta, more, moreTitle } = blok;
 
     // TODO fix types (mostly just Tag)
     return (
       <main {...storyblokEditable(blok)}>
-        {/* @ts-expect-error */}
-        <TagLabelContext.Provider value={Tag}>
-          <BlogOverviewComponent
-            // @ts-expect-error
-            latest={latest && latest[0]}
-            latestTitle={latestTitle}
-            // @ts-expect-error
-            list={list}
-            listTitle={listTitle}
-            // @ts-expect-error
-            cta={cta && cta[0]}
-            // @ts-expect-error
-            seo={seo && seo[0]}
-            // @ts-expect-error
-            more={more}
-            moreTitle={moreTitle}
-          >
-            {blok.section?.map((nestedBlok) => (
-              <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-            ))}
-          </BlogOverviewComponent>
-        </TagLabelContext.Provider>
+        <BlogTeaserPostProvider>
+          {blok.section?.map((nestedBlok) => (
+            <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+          ))}
+          {latest && latest[0] && (
+            <Section width="wide" headline={{ text: latestTitle }}>
+              <BlogTeaser {...latest[0]} />
+            </Section>
+          )}
+          {list && list.length > 0 && (
+            <Section headline={{ text: listTitle }} content={{ mode: "list" }}>
+              {list.map((article) => (
+                <BlogTeaser {...article} key={article.headline} />
+              ))}
+            </Section>
+          )}
+          <hr />
+          {more && more.length > 0 && (
+            <Section headline={{ text: moreTitle }}>
+              {more.map((article) => (
+                <BlogTeaser {...article} key={article.headline} />
+              ))}
+            </Section>
+          )}
+          {cta && cta[0] && (
+            <Section content={{ mode: "list" }}>
+              {/* @ts-expect-error */}
+              <Cta {...cta[0]} />
+            </Section>
+          )}
+        </BlogTeaserPostProvider>
       </main>
     );
   }
