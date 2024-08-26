@@ -35,11 +35,11 @@ const BlogTeaserPost = forwardRef<
     props.aside[0]
   ) {
     const teaserProps: BlogTeaserProps = {
-      date: props.head[0].date,
-      headline: props.head[0].headline || "",
-      teaserText: props.head[0].headline || "",
-      image: (props.head[0].image as unknown as string) || "",
-      tags: props.head[0].tags || [],
+      date: props.head[0]?.date,
+      headline: props.head[0]?.headline || "",
+      teaserText: props.head[0]?.headline || "",
+      image: (props.head[0]?.image as unknown as string) || "",
+      tags: props.head[0]?.tags || [],
       readingTime: props.aside[0].readingTime,
     };
     return <BlogTeaserContextDefault {...teaserProps} ref={ref} />;

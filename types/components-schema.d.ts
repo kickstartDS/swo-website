@@ -37,7 +37,7 @@ export interface BlogAsideStoryblok {
 export interface BlogHeadStoryblok {
   date?: string;
   tags?: TagsStoryblok[];
-  headline?: string;
+  headline: string;
   image?: AssetStoryblok;
   type?: string;
   _uid: string;

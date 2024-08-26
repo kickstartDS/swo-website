@@ -149,7 +149,7 @@
       "name": "blog-head",
       "display_name": "Blog Head",
       "created_at": "2024-07-17T09:28:19.529Z",
-      "updated_at": "2024-07-17T09:28:19.529Z",
+      "updated_at": "2024-08-26T15:50:31.019Z",
       "id": 6059536,
       "schema": {
         "date": {
@@ -181,7 +181,7 @@
           "key": "headline",
           "type": "markdown",
           "description": "The headline of the blog post",
-          "required": false
+          "required": true
         },
         "image": {
           "id": 0,
