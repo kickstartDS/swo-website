@@ -8,7 +8,6 @@
     }
 
     .dsa-headline__subheadline:not(:first-child),
-    .dsa-headline__headline:only-child,
     .dsa-headline__headline:not(:first-child) {
       margin-top: var(--headline-spacing);
     }
