@@ -11,13 +11,13 @@
   --font-size-display-bp-factor: 1.02;
 
   --common-shrink-factor: 0.9;
-  --common-grow-factor: 1.125;
-  --common-bp-factor: 1.0075;
+  --common-grow-factor: 1.115;
+  --common-bp-factor: 1.0085;
 
   --font-size-copy-shrink-factor: var(--common-shrink-factor);
   --font-size-copy-grow-factor: var(--common-grow-factor);
 
-  --font-size-copy-bp-factor: var(--common-bg-factor);
+  --font-size-copy-bp-factor: var(--common-bp-factor);
 
   --font-size-interface-shrink-factor: var(--common-shrink-factor);
   --font-size-interface-grow-factor: 1.125;

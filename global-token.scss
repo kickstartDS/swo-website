@@ -1,6 +1,9 @@
 :root,
 [ks-inverted],
 [ks-theme] {
+  --dsa-text-color-on-primary: var(--ks-color-fg-inverted);
+  --dsa-text_highlight--font: var(--ks-font-copy-xl) !important;
+
   // Logo
   --dsa-logo--height: 1.5rem;
 

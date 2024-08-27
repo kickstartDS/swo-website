@@ -1,64 +1,61 @@
 :root {
   .dsa-section {
-    --dsa-section_accent-transition--background-image: linear-gradient(
-      178deg,
-      transparent 0%,
-      transparent 83%,
-      var(--ks-background-color-accent) 83%,
-      var(--ks-background-color-accent) 100%
-    );
-
-    --dsa-section_bold-transition--background-image: linear-gradient(
-      178deg,
-      transparent 0%,
-      transparent 83%,
-      var(--ks-background-color-bold) 83%,
-      var(--ks-background-color-bold) 100%
-    );
-
     --dsa-section_stagelights--background-image: radial-gradient(
-        20vw 20vw at 100% 0%,
-        var(--ks-color-secondary) 100%,
+        50% 150% at 100% -50%,
+        var(--ks-color-primary-alpha-3-base) 0%,
         transparent 100%
       ),
-      radial-gradient(20vw 20vw at 0% 0%, var(--ks-color-secondary) 100%, transparent 100%);
+      radial-gradient(50% 150% at 0% -50%, var(--ks-color-primary-alpha-3-base) 0%, transparent 100%);
 
     --dsa-section_anchor-glow--background-image: radial-gradient(
-      600px 600px at 50% calc(100% + 520px),
-      var(--ks-color-secondary) 100%,
+      50% 50% at 50% 100%,
+      var(--ks-background-color-bold) 0%,
       transparent 100%
     );
 
-    @media (min-width: 48rem) {
-      --dsa-section_anchor-glow--background-image: radial-gradient(
-        100vw 100vw at 50% calc(100% + 94vw),
-        var(--ks-color-secondary) 100%,
-        transparent 100%
+    --dsa-section_horizontal-gradient--background-image: linear-gradient(
+      90deg,
+      var(--ks-color-primary-alpha-7-base),
+      var(--ks-color-secondary-alpha-7-base)
+    );
+
+    &[ks-inverted="true"] {
+      --dsa-section_horizontal-gradient--background-image: linear-gradient(
+        90deg,
+        var(--ks-color-bg),
+        var(--ks-color-bg-to-fg-3)
       );
     }
 
-    --dsa-section_horizontal-gradient--background-image: linear-gradient(
-      90deg,
-      var(--ks-color-bg),
-      var(--ks-color-bg-to-fg-2)
+    --dsa-section_vertical-gradient--background-image: linear-gradient(
+      0deg,
+      var(--ks-color-primary-alpha-7-base),
+      var(--ks-color-secondary-alpha-7-base)
     );
 
-    --dsa-section_vertical-gradient--background-image: linear-gradient(
-      -10deg,
-      var(--ks-color-secondary) 0%,
-      var(--ks-color-secondary) 15%,
-      transparent 15%,
-      transparent 85%,
-      var(--ks-color-secondary) 85%,
-      var(--ks-color-secondary) 100%
-    );
+    &[ks-inverted="true"] {
+      --dsa-section_vertical-gradient--background-image: linear-gradient(
+        0deg,
+        var(--ks-color-bg),
+        var(--ks-color-bg-to-fg-3)
+      );
+    }
 
     --dsa-section_symmetric-glow--background-image: radial-gradient(
         20vw 20vw at 0% 10%,
-        var(--ks-color-secondary) 0%,
+        var(--ks-color-primary-alpha-7-base) 0%,
         transparent 100%
       ),
-      radial-gradient(20vw 20vw at 100% 90%, var(--ks-color-secondary) 0%, transparent 100%);
+      radial-gradient(20vw 20vw at 100% 90%, var(--ks-color-primary-alpha-7-base) 0%, transparent 100%);
+
+    &[ks-inverted="true"] {
+      --dsa-section_symmetric-glow--background-image: radial-gradient(
+          20vw 20vw at 0% 10%,
+          var(--ks-color-primary-alpha-4-base) 0%,
+          transparent 100%
+        ),
+        radial-gradient(20vw 20vw at 100% 90%, var(--ks-color-primary-alpha-4-base) 0%, transparent 100%);
+    }
 
     --dsa-section__spotlight--blur: 100%;
     --dsa-section__spotlight--size: 200px;
