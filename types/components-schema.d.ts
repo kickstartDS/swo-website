@@ -37,7 +37,7 @@ export interface BlogAsideStoryblok {
 export interface BlogHeadStoryblok {
   date?: string;
   tags?: TagsStoryblok[];
-  headline?: string;
+  headline: string;
   image?: AssetStoryblok;
   type?: string;
   _uid: string;
@@ -47,8 +47,11 @@ export interface BlogHeadStoryblok {
 
 export interface BlogOverviewStoryblok {
   section?: SectionStoryblok[];
-  latest?: BlogTeaserStoryblok[];
+  latestTitle?: string;
+  latest?: (StoryblokStory<BlogPostStoryblok> | string)[];
+  listTitle?: string;
   list?: BlogTeaserStoryblok[];
+  moreTitle?: string;
   more?: BlogTeaserStoryblok[];
   cta?: CtaStoryblok[];
   seo?: SeoStoryblok[];
@@ -98,8 +101,8 @@ export type MultilinkStoryblok =
 export interface BlogTeaserStoryblok {
   date?: string;
   tags?: TagsStoryblok[];
-  headline?: string;
-  teaserText?: string;
+  headline: string;
+  teaserText: string;
   image?: AssetStoryblok;
   link_url?: MultilinkStoryblok;
   link_label?: string;
@@ -516,7 +519,7 @@ export interface StatsStoryblok {
 }
 
 export interface TagsStoryblok {
-  entry?: string;
+  entry: string;
   _uid: string;
   component: "tags";
   [k: string]: any;

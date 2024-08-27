@@ -30,7 +30,6 @@ import {
   NavTopbarContext,
 } from "@kickstartds/ds-agency-premium/nav-topbar";
 
-import { BlogTeaserContext } from "@kickstartds/ds-agency-premium/blog-teaser";
 import { BlogAsideContext } from "@kickstartds/ds-agency-premium/blog-aside";
 import { BlogHeadContext } from "@kickstartds/ds-agency-premium/blog-head";
 import { CtaContext } from "@kickstartds/ds-agency-premium/cta";
@@ -113,7 +112,6 @@ const Picture = forwardRef<
   const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
   const [width, height] = fileUrl.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
 
-  // Don't optimize SVG images - https://github.com/kickstartDS/storyblok-starter/issues/19
   return fileUrl.endsWith(".svg") ? (
     <PictureContextDefault
       ref={internalRef}
@@ -205,14 +203,11 @@ const Providers = (props: PropsWithChildren) => (
                   <TestimonialContext.Provider value={StoryblokSubComponent}>
                     {/* @ts-expect-error */}
                     <BlogHeadContext.Provider value={StoryblokSubComponent}>
-                      {/* @ts-expect-error */}
-                      <BlogAsideContext.Provider value={StoryblokSubComponent}>
-                        <BlogTeaserContext.Provider
-                          // @ts-expect-error
-                          value={StoryblokSubComponent}
-                        >
-                          {props.children}
-                        </BlogTeaserContext.Provider>
+                      <BlogAsideContext.Provider
+                        // @ts-expect-error
+                        value={StoryblokSubComponent}
+                      >
+                        {props.children}
                       </BlogAsideContext.Provider>
                     </BlogHeadContext.Provider>
                   </TestimonialContext.Provider>

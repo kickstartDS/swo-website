@@ -149,7 +149,7 @@
       "name": "blog-head",
       "display_name": "Blog Head",
       "created_at": "2024-07-17T09:28:19.529Z",
-      "updated_at": "2024-07-17T09:28:19.529Z",
+      "updated_at": "2024-08-26T15:50:31.019Z",
       "id": 6059536,
       "schema": {
         "date": {
@@ -181,7 +181,7 @@
           "key": "headline",
           "type": "markdown",
           "description": "The headline of the blog post",
-          "required": false
+          "required": true
         },
         "image": {
           "id": 0,
@@ -234,7 +234,7 @@
       "name": "blog-overview",
       "display_name": "Blog Overview",
       "created_at": "2024-07-17T09:28:54.414Z",
-      "updated_at": "2024-08-23T20:32:19.730Z",
+      "updated_at": "2024-08-26T15:41:42.829Z",
       "id": 6059570,
       "schema": {
         "section": {
@@ -247,22 +247,39 @@
             "section"
           ]
         },
+        "latestTitle": {
+          "type": "text",
+          "pos": 1
+        },
         "latest": {
           "id": 0,
-          "pos": 1,
+          "pos": 2,
           "display_name": "Latest",
           "key": "latest",
-          "type": "bloks",
+          "type": "options",
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
             "blog-teaser"
           ],
-          "description": "Display a blog teaser with date, tags, headline, teaser text and author"
+          "description": "Display a blog teaser with date, tags, headline, teaser text and author",
+          "filter_content_type": [
+            "blog-post"
+          ],
+          "is_reference_type": true,
+          "source": "internal_stories",
+          "entry_appearance": "card",
+          "allow_advanced_search": true,
+          "min_options": "0",
+          "max_options": "1"
+        },
+        "listTitle": {
+          "type": "text",
+          "pos": 3
         },
         "list": {
           "id": 0,
-          "pos": 2,
+          "pos": 4,
           "display_name": "List",
           "key": "list",
           "type": "bloks",
@@ -271,11 +288,20 @@
           "component_whitelist": [
             "blog-teaser"
           ],
-          "description": "Display a blog teaser with date, tags, headline, teaser text and author"
+          "description": "Display a blog teaser with date, tags, headline, teaser text and author",
+          "filter_content_type": [
+            "blog-post"
+          ],
+          "min_options": "",
+          "max_options": "5"
+        },
+        "moreTitle": {
+          "type": "text",
+          "pos": 5
         },
         "more": {
           "id": 0,
-          "pos": 3,
+          "pos": 6,
           "display_name": "More",
           "key": "more",
           "type": "bloks",
@@ -288,7 +314,7 @@
         },
         "cta": {
           "id": 0,
-          "pos": 4,
+          "pos": 7,
           "display_name": "Cta",
           "key": "cta",
           "type": "bloks",
@@ -301,7 +327,7 @@
         },
         "seo": {
           "id": 0,
-          "pos": 5,
+          "pos": 8,
           "display_name": "Seo",
           "key": "seo",
           "type": "bloks",
@@ -314,7 +340,7 @@
         },
         "type": {
           "id": 0,
-          "pos": 6,
+          "pos": 9,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -341,7 +367,7 @@
       "name": "blog-post",
       "display_name": "Blog Post",
       "created_at": "2024-07-17T09:28:54.011Z",
-      "updated_at": "2024-08-22T20:43:04.889Z",
+      "updated_at": "2024-08-26T09:55:42.164Z",
       "id": 6059569,
       "schema": {
         "head": {
@@ -449,7 +475,7 @@
       "name": "blog-teaser",
       "display_name": "Blog Teaser",
       "created_at": "2024-07-17T09:28:25.410Z",
-      "updated_at": "2024-07-17T09:28:25.410Z",
+      "updated_at": "2024-08-26T15:58:26.236Z",
       "id": 6059542,
       "schema": {
         "date": {
@@ -481,7 +507,7 @@
           "key": "headline",
           "type": "markdown",
           "description": "The headline of the blog post",
-          "required": false
+          "required": true
         },
         "teaserText": {
           "id": 0,
@@ -490,7 +516,7 @@
           "key": "teaserText",
           "type": "markdown",
           "description": "The teaser text of the blog post",
-          "required": false
+          "required": true
         },
         "image": {
           "id": 0,
@@ -4432,7 +4458,7 @@
       "name": "tags",
       "display_name": "Tags",
       "created_at": "2024-07-17T09:28:19.405Z",
-      "updated_at": "2024-07-17T09:28:19.405Z",
+      "updated_at": "2024-08-26T15:36:55.628Z",
       "id": 6059535,
       "schema": {
         "entry": {
@@ -4441,7 +4467,7 @@
           "display_name": "Tags",
           "key": "tags",
           "type": "text",
-          "required": false
+          "required": true
         }
       },
       "image": null,

@@ -840,6 +840,45 @@
       "description": null
     },
     {
+      "id": 2229317,
+      "name": "Default",
+      "preset": {
+        "_uid": "e5768ae3-27db-4dbf-9252-6cac4e839f82",
+        "date": "12/30/2022",
+        "tags": [
+          {
+            "_uid": "b6548c27-e156-4d1c-b1ab-eb13355dc3a8",
+            "entry": "kickstartDS",
+            "component": "tags"
+          },
+          {
+            "_uid": "90ab0820-7d2b-4a79-a037-dab0ffde0cd8",
+            "entry": "Design System",
+            "component": "tags"
+          }
+        ],
+        "type": "blog-teaser",
+        "image": "//a.storyblok.com/f/297364/1260x840/0fc1a60eed/close-up-young-business-team-working.png",
+        "headline": "The Future of AI",
+        "link_url": "https://example.com",
+        "component": "blog-teaser",
+        "link_label": "Read more",
+        "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
+        "author_name": "Jane Smith",
+        "readingTime": "5 min read",
+        "author_image": "//a.storyblok.com/f/297364/250x250/ca6e532871/author-emily.png",
+        "author_title": "Senior AI Researcher"
+      },
+      "component_id": 6059542,
+      "space_id": 297364,
+      "created_at": "2024-07-17T09:28:25.527Z",
+      "updated_at": "2024-08-26T14:56:15.028Z",
+      "image": "//a.storyblok.com/f/297364/1000x504/bff361dcf9/blog-blog-teaser-default.png",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
       "id": 2229307,
       "name": "Default",
       "preset": {
@@ -885,53 +924,42 @@
       "id": 2229306,
       "name": "Default",
       "preset": {
-        "_uid": "3ba93613-b39a-43ec-a563-777e2f92ea24",
-        "date": "12/30/2022",
+        "_uid": "e9f7e788-b8d4-4794-82d0-cd52b7c49cac",
+        "date": "2023-08-09 00:00",
         "tags": [
-          "Technology",
-          "AI"
+          {
+            "_uid": "c1d32eaa-b20a-47ab-8c39-1b63ca3b9786",
+            "entry": "Design System",
+            "component": "tags"
+          },
+          {
+            "_uid": "89d58012-e53a-4be7-bbce-2ff7d6d1c6a8",
+            "entry": "kickstartDS",
+            "component": "tags"
+          }
         ],
         "type": "blog-head",
-        "image": "//a.storyblok.com/f/297364/1260x840/0fc1a60eed/close-up-young-business-team-working.png",
-        "headline": "The Future of AI",
+        "image": {
+          "id": 16873860,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/297364/880x462/729524126d/rm_ksds_teaser_with-logo.png",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "headline": "Warum entwickeln wir kickstartDS?",
         "component": "blog-head"
       },
       "component_id": 6059536,
       "space_id": 297364,
       "created_at": "2024-07-17T09:28:19.619Z",
-      "updated_at": "2024-07-17T09:28:19.619Z",
+      "updated_at": "2024-08-26T14:55:11.823Z",
       "image": "//a.storyblok.com/f/297364/1000x863/3c6c1913a9/blog-blog-head-default.png",
-      "color": null,
-      "icon": null,
-      "description": null
-    },
-    {
-      "id": 2229317,
-      "name": "Default",
-      "preset": {
-        "_uid": "f98ebb92-11c3-479d-81fb-199fd8107e26",
-        "date": "12/30/2022",
-        "tags": [
-          "Technology",
-          "AI"
-        ],
-        "type": "blog-teaser",
-        "image": "//a.storyblok.com/f/297364/1260x840/0fc1a60eed/close-up-young-business-team-working.png",
-        "headline": "The Future of AI",
-        "link_url": "https://example.com",
-        "component": "blog-teaser",
-        "link_label": "Read more",
-        "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
-        "author_name": "Jane Smith",
-        "readingTime": "5 min read",
-        "author_image": "//a.storyblok.com/f/297364/250x250/ca6e532871/author-emily.png",
-        "author_title": "Senior AI Researcher"
-      },
-      "component_id": 6059542,
-      "space_id": 297364,
-      "created_at": "2024-07-17T09:28:25.527Z",
-      "updated_at": "2024-07-17T09:28:25.527Z",
-      "image": "//a.storyblok.com/f/297364/1000x504/bff361dcf9/blog-blog-teaser-default.png",
       "color": null,
       "icon": null,
       "description": null
@@ -1778,42 +1806,6 @@
       "description": null
     },
     {
-      "id": 2229374,
-      "name": "ListLayout",
-      "preset": {
-        "_uid": "6cb1bf8f-4a09-4cb9-84a3-a1803f7c18f0",
-        "type": "section",
-        "style": "default",
-        "width": "default",
-        "buttons": [],
-        "inverted": false,
-        "component": "section",
-        "spotlight": false,
-        "spaceAfter": "default",
-        "spaceBefore": "default",
-        "content_mode": "list",
-        "headline_sub": "We can create something shining for you too!",
-        "content_align": "center",
-        "content_width": "unset",
-        "headerSpacing": false,
-        "headline_text": "Happy Customers Showcases",
-        "content_gutter": "default",
-        "headline_align": "center",
-        "headline_large": false,
-        "headline_width": "unset",
-        "backgroundColor": "default",
-        "content_tileWidth": "default"
-      },
-      "component_id": 6059565,
-      "space_id": 297364,
-      "created_at": "2024-07-17T09:28:52.005Z",
-      "updated_at": "2024-07-17T09:28:52.005Z",
-      "image": "//a.storyblok.com/f/297364/1440x1658/e3c1fb88ee/layout-section-list-layout.png",
-      "color": null,
-      "icon": null,
-      "description": null
-    },
-    {
       "id": 2229352,
       "name": "ListLayout",
       "preset": {
@@ -1862,6 +1854,42 @@
       "created_at": "2024-07-17T09:28:43.593Z",
       "updated_at": "2024-07-17T09:28:43.593Z",
       "image": "//a.storyblok.com/f/297364/1000x1080/65561c0bb6/components-testimonials-list-layout.png",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 2229374,
+      "name": "ListLayout",
+      "preset": {
+        "_uid": "6cb1bf8f-4a09-4cb9-84a3-a1803f7c18f0",
+        "type": "section",
+        "style": "default",
+        "width": "default",
+        "buttons": [],
+        "inverted": false,
+        "component": "section",
+        "spotlight": false,
+        "spaceAfter": "default",
+        "spaceBefore": "default",
+        "content_mode": "list",
+        "headline_sub": "We can create something shining for you too!",
+        "content_align": "center",
+        "content_width": "unset",
+        "headerSpacing": false,
+        "headline_text": "Happy Customers Showcases",
+        "content_gutter": "default",
+        "headline_align": "center",
+        "headline_large": false,
+        "headline_width": "unset",
+        "backgroundColor": "default",
+        "content_tileWidth": "default"
+      },
+      "component_id": 6059565,
+      "space_id": 297364,
+      "created_at": "2024-07-17T09:28:52.005Z",
+      "updated_at": "2024-07-17T09:28:52.005Z",
+      "image": "//a.storyblok.com/f/297364/1440x1658/e3c1fb88ee/layout-section-list-layout.png",
       "color": null,
       "icon": null,
       "description": null
