@@ -25,10 +25,9 @@ import {
   StorytellingContext,
   StorytellingContextDefault,
 } from "@kickstartds/content/lib/storytelling";
-import {
-  NavTopbarContextDefault as DsaNavTopbar,
-  NavTopbarContext,
-} from "@kickstartds/ds-agency-premium/nav-topbar";
+
+import { NavTopbarProvider } from "./nav-main/topbar/NavTopbarComponent";
+import { NavFlyoutProvider } from "./nav-main/flyout/NavFlyoutComponent";
 
 import { BlogAsideContext } from "@kickstartds/ds-agency-premium/blog-aside";
 import { BlogHeadContext } from "@kickstartds/ds-agency-premium/blog-head";
@@ -45,7 +44,6 @@ import { useBlurHashes } from "./BlurHashContext";
 import { useImagePriority } from "./ImagePriorityContext";
 import { AssetStoryblok, MultilinkStoryblok } from "@/types/components-schema";
 import { StorytellingProps } from "@kickstartds/content/lib/storytelling/typing";
-import { Button } from "@kickstartds/ds-agency-premium/components/button/index.js";
 
 function isStoryblokLink(object: unknown): object is MultilinkStoryblok {
   return (object as MultilinkStoryblok)?.linktype !== undefined;
@@ -172,53 +170,40 @@ const StorytellingProvider: FC<PropsWithChildren> = (props) => (
   <StorytellingContext.Provider {...props} value={Storytelling} />
 );
 
-const NavTopbar = forwardRef<HTMLElement, ComponentProps<typeof DsaNavTopbar>>(
-  (props, ref) => {
-    return (
-      <>
-        <DsaNavTopbar {...props} ref={ref} />
-        <Button label="Lorem" />
-      </>
-    );
-  }
-);
-
-const NavTopbarProvider: FC<PropsWithChildren> = (props) => (
-  <NavTopbarContext.Provider {...props} value={NavTopbar} />
-);
-
 const Providers = (props: PropsWithChildren) => (
-  <NavTopbarProvider>
-    <StorytellingProvider>
-      <PictureProvider>
-        <LinkProvider>
-          <TeaserProvider>
-            {/* @ts-expect-error */}
-            <CtaContext.Provider value={StoryblokSubComponent}>
+  <StorytellingProvider>
+    <PictureProvider>
+      <LinkProvider>
+        <NavTopbarProvider>
+          <NavFlyoutProvider>
+            <TeaserProvider>
               {/* @ts-expect-error */}
-              <FeatureContext.Provider value={StoryblokSubComponent}>
+              <CtaContext.Provider value={StoryblokSubComponent}>
                 {/* @ts-expect-error */}
-                <StatContext.Provider value={StoryblokSubComponent}>
+                <FeatureContext.Provider value={StoryblokSubComponent}>
                   {/* @ts-expect-error */}
-                  <TestimonialContext.Provider value={StoryblokSubComponent}>
+                  <StatContext.Provider value={StoryblokSubComponent}>
                     {/* @ts-expect-error */}
-                    <BlogHeadContext.Provider value={StoryblokSubComponent}>
-                      <BlogAsideContext.Provider
-                        // @ts-expect-error
-                        value={StoryblokSubComponent}
-                      >
-                        {props.children}
-                      </BlogAsideContext.Provider>
-                    </BlogHeadContext.Provider>
-                  </TestimonialContext.Provider>
-                </StatContext.Provider>
-              </FeatureContext.Provider>
-            </CtaContext.Provider>
-          </TeaserProvider>
-        </LinkProvider>
-      </PictureProvider>
-    </StorytellingProvider>
-  </NavTopbarProvider>
+                    <TestimonialContext.Provider value={StoryblokSubComponent}>
+                      {/* @ts-expect-error */}
+                      <BlogHeadContext.Provider value={StoryblokSubComponent}>
+                        <BlogAsideContext.Provider
+                          // @ts-expect-error
+                          value={StoryblokSubComponent}
+                        >
+                          {props.children}
+                        </BlogAsideContext.Provider>
+                      </BlogHeadContext.Provider>
+                    </TestimonialContext.Provider>
+                  </StatContext.Provider>
+                </FeatureContext.Provider>
+              </CtaContext.Provider>
+            </TeaserProvider>
+          </NavFlyoutProvider>
+        </NavTopbarProvider>
+      </LinkProvider>
+    </PictureProvider>
+  </StorytellingProvider>
 );
 
 export default Providers;
