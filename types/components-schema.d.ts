@@ -11,11 +11,8 @@ export interface AssetStoryblok {
   filename: string;
   copyright?: string;
   fieldtype?: string;
-  meta_data?: null | {
-    [k: string]: any;
-  };
+  meta_data?: null | {};
   is_external_url?: boolean;
-  [k: string]: any;
 }
 
 export interface BlogAsideStoryblok {
@@ -31,7 +28,6 @@ export interface BlogAsideStoryblok {
   type?: string;
   _uid: string;
   component: "blog-aside";
-  [k: string]: any;
 }
 
 export interface BlogHeadStoryblok {
@@ -42,7 +38,6 @@ export interface BlogHeadStoryblok {
   type?: string;
   _uid: string;
   component: "blog-head";
-  [k: string]: any;
 }
 
 export interface BlogOverviewStoryblok {
@@ -58,11 +53,10 @@ export interface BlogOverviewStoryblok {
   type?: string;
   _uid: string;
   component: "blog-overview";
-  [k: string]: any;
 }
 
 export interface BlogPostStoryblok {
-  head?: BlogHeadStoryblok[];
+  head: BlogHeadStoryblok[];
   aside?: BlogAsideStoryblok[];
   content?: string;
   section?: SectionStoryblok[];
@@ -71,7 +65,6 @@ export interface BlogPostStoryblok {
   type?: string;
   _uid: string;
   component: "blog-post";
-  [k: string]: any;
 }
 
 export type MultilinkStoryblok =
@@ -81,7 +74,6 @@ export type MultilinkStoryblok =
       anchor?: string;
       linktype?: "story";
       target?: "_self" | "_blank";
-      [k: string]: any;
     }
   | {
       url?: string;
@@ -89,13 +81,11 @@ export type MultilinkStoryblok =
       anchor?: string;
       linktype?: "asset" | "url";
       target?: "_self" | "_blank";
-      [k: string]: any;
     }
   | {
       email?: string;
       linktype?: "email";
       target?: "_self" | "_blank";
-      [k: string]: any;
     };
 
 export interface BlogTeaserStoryblok {
@@ -114,7 +104,6 @@ export interface BlogTeaserStoryblok {
   type?: string;
   _uid: string;
   component: "blog-teaser";
-  [k: string]: any;
 }
 
 export interface ButtonsStoryblok {
@@ -123,7 +112,6 @@ export interface ButtonsStoryblok {
   target?: MultilinkStoryblok;
   _uid: string;
   component: "buttons";
-  [k: string]: any;
 }
 
 export interface CtaStoryblok {
@@ -146,7 +134,6 @@ export interface CtaStoryblok {
   type?: string;
   _uid: string;
   component: "cta";
-  [k: string]: any;
 }
 
 export interface FaqStoryblok {
@@ -154,7 +141,6 @@ export interface FaqStoryblok {
   type?: string;
   _uid: string;
   component: "faq";
-  [k: string]: any;
 }
 
 export interface FeatureStoryblok {
@@ -169,7 +155,6 @@ export interface FeatureStoryblok {
   type?: string;
   _uid: string;
   component: "feature";
-  [k: string]: any;
 }
 
 export interface FeaturesStoryblok {
@@ -181,7 +166,6 @@ export interface FeaturesStoryblok {
   type?: string;
   _uid: string;
   component: "features";
-  [k: string]: any;
 }
 
 export interface FooterStoryblok {
@@ -197,7 +181,6 @@ export interface FooterStoryblok {
   type?: string;
   _uid: string;
   component: "footer";
-  [k: string]: any;
 }
 
 export interface GalleryStoryblok {
@@ -208,7 +191,6 @@ export interface GalleryStoryblok {
   type?: string;
   _uid: string;
   component: "gallery";
-  [k: string]: any;
 }
 
 export interface GlobalStoryblok {
@@ -233,14 +215,12 @@ export interface GlobalStoryblok {
   _uid: string;
   component: "global";
   uuid?: string;
-  [k: string]: any;
 }
 
 export interface GlobalReferenceStoryblok {
-  reference?: any[];
+  reference?: unknown[];
   _uid: string;
   component: "global_reference";
-  [k: string]: any;
 }
 
 export interface HeaderStoryblok {
@@ -258,7 +238,6 @@ export interface HeaderStoryblok {
   logo_height?: string;
   _uid: string;
   component: "header";
-  [k: string]: any;
 }
 
 export interface HeroStoryblok {
@@ -281,7 +260,6 @@ export interface HeroStoryblok {
   type?: string;
   _uid: string;
   component: "hero";
-  [k: string]: any;
 }
 
 export interface ImagesStoryblok {
@@ -290,7 +268,6 @@ export interface ImagesStoryblok {
   caption?: string;
   _uid: string;
   component: "images";
-  [k: string]: any;
 }
 
 export interface ImageStoryStoryblok {
@@ -309,7 +286,6 @@ export interface ImageStoryStoryblok {
   image_vAlign?: "" | "top" | "center" | "bottom";
   _uid: string;
   component: "image-story";
-  [k: string]: any;
 }
 
 export interface ImageTextStoryblok {
@@ -321,7 +297,6 @@ export interface ImageTextStoryblok {
   type?: string;
   _uid: string;
   component: "image-text";
-  [k: string]: any;
 }
 
 export interface LogoStoryblok {
@@ -330,7 +305,6 @@ export interface LogoStoryblok {
   type?: string;
   _uid: string;
   component: "logo";
-  [k: string]: any;
 }
 
 export interface LogosStoryblok {
@@ -346,7 +320,6 @@ export interface LogosStoryblok {
   type?: string;
   _uid: string;
   component: "logos";
-  [k: string]: any;
 }
 
 export interface MosaicStoryblok {
@@ -356,7 +329,6 @@ export interface MosaicStoryblok {
   type?: string;
   _uid: string;
   component: "mosaic";
-  [k: string]: any;
 }
 
 export interface NavItemsStoryblok {
@@ -366,7 +338,6 @@ export interface NavItemsStoryblok {
   items?: NavSubItemsStoryblok[];
   _uid: string;
   component: "navItems";
-  [k: string]: any;
 }
 
 export interface NavSubItemsStoryblok {
@@ -374,7 +345,6 @@ export interface NavSubItemsStoryblok {
   label?: string;
   _uid: string;
   component: "navSubItems";
-  [k: string]: any;
 }
 
 export interface PageStoryblok {
@@ -387,7 +357,6 @@ export interface PageStoryblok {
   _uid: string;
   component: "page";
   uuid?: string;
-  [k: string]: any;
 }
 
 export interface QuestionsStoryblok {
@@ -395,7 +364,6 @@ export interface QuestionsStoryblok {
   answer?: string;
   _uid: string;
   component: "questions";
-  [k: string]: any;
 }
 
 export interface SectionStoryblok {
@@ -450,7 +418,6 @@ export interface SectionStoryblok {
   type?: string;
   _uid: string;
   component: "section";
-  [k: string]: any;
 }
 
 export interface SeoStoryblok {
@@ -462,7 +429,6 @@ export interface SeoStoryblok {
   type?: string;
   _uid: string;
   component: "seo";
-  [k: string]: any;
 }
 
 export interface SettingsStoryblok {
@@ -472,7 +438,6 @@ export interface SettingsStoryblok {
   type?: string;
   _uid: string;
   component: "settings";
-  [k: string]: any;
 }
 
 export interface SliderStoryblok {
@@ -487,7 +452,6 @@ export interface SliderStoryblok {
   typeProp?: "" | "slider" | "carousel";
   _uid: string;
   component: "slider";
-  [k: string]: any;
 }
 
 export interface SocialSharingStoryblok {
@@ -496,7 +460,6 @@ export interface SocialSharingStoryblok {
   title?: string;
   _uid: string;
   component: "socialSharing";
-  [k: string]: any;
 }
 
 export interface StatStoryblok {
@@ -507,7 +470,6 @@ export interface StatStoryblok {
   type?: string;
   _uid: string;
   component: "stat";
-  [k: string]: any;
 }
 
 export interface StatsStoryblok {
@@ -515,14 +477,12 @@ export interface StatsStoryblok {
   type?: string;
   _uid: string;
   component: "stats";
-  [k: string]: any;
 }
 
 export interface TagsStoryblok {
   entry: string;
   _uid: string;
   component: "tags";
-  [k: string]: any;
 }
 
 export interface TeaserCardStoryblok {
@@ -539,7 +499,6 @@ export interface TeaserCardStoryblok {
   type?: string;
   _uid: string;
   component: "teaser-card";
-  [k: string]: any;
 }
 
 export interface TestimonialStoryblok {
@@ -552,7 +511,6 @@ export interface TestimonialStoryblok {
   type?: string;
   _uid: string;
   component: "testimonial";
-  [k: string]: any;
 }
 
 export interface TestimonialsStoryblok {
@@ -561,7 +519,6 @@ export interface TestimonialsStoryblok {
   type?: string;
   _uid: string;
   component: "testimonials";
-  [k: string]: any;
 }
 
 export interface TextStoryblok {
@@ -572,7 +529,6 @@ export interface TextStoryblok {
   type?: string;
   _uid: string;
   component: "text";
-  [k: string]: any;
 }
 
 export interface TilesStoryblok {
@@ -590,7 +546,6 @@ export interface TilesStoryblok {
   textColor?: string;
   _uid: string;
   component: "tiles";
-  [k: string]: any;
 }
 
 export interface VideoCurtainStoryblok {
@@ -608,5 +563,4 @@ export interface VideoCurtainStoryblok {
   type?: string;
   _uid: string;
   component: "video-curtain";
-  [k: string]: any;
 }

@@ -367,7 +367,7 @@
       "name": "blog-post",
       "display_name": "Blog Post",
       "created_at": "2024-07-17T09:28:54.011Z",
-      "updated_at": "2024-08-26T09:55:42.164Z",
+      "updated_at": "2024-08-28T10:37:36.876Z",
       "id": 6059569,
       "schema": {
         "head": {
@@ -381,7 +381,10 @@
           "component_whitelist": [
             "blog-head"
           ],
-          "description": "Intro portion of a singular blog entry"
+          "description": "Intro portion of a singular blog entry",
+          "required": true,
+          "minimum": 1,
+          "maximum": 1
         },
         "aside": {
           "id": 0,
@@ -4696,7 +4699,7 @@
       "name": "testimonial",
       "display_name": "Testimonial",
       "created_at": "2024-07-17T09:28:27.627Z",
-      "updated_at": "2024-07-17T09:28:27.627Z",
+      "updated_at": "2024-08-27T12:53:16.830Z",
       "id": 6059549,
       "schema": {
         "quote": {
@@ -4722,7 +4725,7 @@
           "pos": 0,
           "display_name": "Title",
           "key": "title",
-          "type": "text",
+          "type": "markdown",
           "description": "The title of the quote author",
           "required": false
         },

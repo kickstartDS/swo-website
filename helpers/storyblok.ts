@@ -9,11 +9,14 @@ import {
   ISbStoryData,
   ISbStoryParams,
 } from "@storyblok/react";
+import { ISbLinkURLObject } from "storyblok-js-client";
 import { components } from "@/components";
-import { traverse } from "object-traversal";
+import { TraversalCallbackContext, traverse } from "object-traversal";
 import {
+  AssetStoryblok,
   GlobalReferenceStoryblok,
   GlobalStoryblok,
+  MultilinkStoryblok,
 } from "@/types/components-schema";
 
 export function initStoryblok(accessToken?: string) {
@@ -38,18 +41,118 @@ export function isGlobal(blok: any): blok is GlobalStoryblok {
   return blok.component === "global";
 }
 
-export function removeEmptyImages(blok: Record<string, any>) {
-  traverse(blok, ({ parent, key, value }) => {
-    if (
-      parent &&
-      key &&
-      value &&
-      typeof value === "object" &&
-      value.fieldtype === "asset" &&
-      value.id === null
-    ) {
-      delete parent[key];
+export function isStoryblokLink(object: any): object is MultilinkStoryblok {
+  return object?.linktype !== undefined;
+}
+
+export function isStoryblokAsset(object: any): object is AssetStoryblok {
+  return object && object.filename !== undefined;
+}
+
+export function isStoryblokStoryLinkObject(
+  object: any
+): object is MultilinkStoryblok & {
+  story: ISbLinkURLObject;
+  linktype: "story";
+} {
+  return (
+    object &&
+    typeof object === "object" &&
+    object.linktype &&
+    object.linktype === "story" &&
+    object.story !== undefined &&
+    typeof object.story === "object" &&
+    object.story.uuid !== undefined &&
+    object.story.full_slug !== undefined &&
+    object.story.id !== undefined &&
+    object.story.slug !== undefined &&
+    object.story.url !== undefined
+  );
+}
+
+export function removeEmptyImages({
+  parent,
+  key,
+  value,
+}: TraversalCallbackContext) {
+  if (
+    parent &&
+    key &&
+    value &&
+    typeof value === "object" &&
+    value.fieldtype === "asset" &&
+    value.id === null
+  ) {
+    delete parent[key];
+  }
+}
+
+export function mapStoryblokLinks({
+  parent,
+  key,
+  value,
+}: TraversalCallbackContext) {
+  if (parent && key) {
+    if (isStoryblokStoryLinkObject(value)) {
+      parent[key] = `${
+        value.story?.full_slug === INDEX_SLUG
+          ? "/"
+          : value.cached_url || value.story?.full_slug
+      }${value.anchor ? `#${value.anchor}` : ""}`;
+    } else if (isStoryblokLink(value)) {
+      if (value.linktype === "email") {
+        parent[key] = `mailto:${value.email}`;
+      } else if (value.linktype === "url") {
+        parent[key] = `${value.url}${value.anchor ? `#${value.anchor}` : ""}`;
+      } else {
+        parent[key] = "#";
+      }
     }
+  }
+}
+
+export function mapStoryblokAssets({
+  parent,
+  key,
+  value,
+}: TraversalCallbackContext) {
+  if (
+    parent &&
+    key &&
+    value &&
+    value.id &&
+    value.filename &&
+    value.fieldtype === "asset"
+  ) {
+    parent[key] = !value.filename.startsWith("http")
+      ? `https:${value.filename}`
+      : value.filename;
+
+    if (key.includes("_")) {
+      const [groupName] = key.split("_");
+      if (parent.hasOwnProperty(`${groupName}_alt`)) {
+        parent[`${groupName}_alt`] ||= value.alt;
+      }
+    }
+
+    // console.log("asset", value, key, parent);
+  }
+}
+
+export function mapBloksEntries({
+  parent,
+  key,
+  value,
+}: TraversalCallbackContext) {
+  //
+}
+
+export function storyProcessing(blok: Record<string, any>) {
+  traverse(blok, (context) => {
+    removeEmptyImages(context);
+    mapStoryblokLinks(context);
+    mapStoryblokAssets(context);
+    mapBloksEntries(context);
   });
 
   return blok;
@@ -69,6 +172,8 @@ export const sbParams = (
 
 export async function fetchUuid(uuid: string, storyblokApi?: StoryblokClient) {
   const storyblok = storyblokApi || getStoryblokApi();
+
+  console.log("fetchUuid", storyblok, storyblokApi);
 
   const response: ISbStory = await storyblok.get(
     `cdn/stories/${uuid}`,
@@ -120,7 +225,7 @@ export async function fetchStory(
   lastContentVersion = response.data.cv;
 
   if (resolveUuids) await resolveStoryUuids(response.data.story, storyblokApi);
-  removeEmptyImages(response.data.story.content);
+  storyProcessing(response.data.story.content);
 
   return response;
 }
@@ -137,11 +242,11 @@ export async function fetchStories(
     sbParams(!!previewStoryblokApi, params)
   );
 
-  if (resolveUuids) {
-    for (const story of response.data.stories) {
+  for (const story of response.data.stories) {
+    if (resolveUuids) {
       await resolveStoryUuids(story, storyblokApi);
-      removeEmptyImages(story.content);
     }
+    storyProcessing(story.content);
   }
 
   lastContentVersion = response.data.cv;
