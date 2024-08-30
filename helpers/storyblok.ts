@@ -134,7 +134,7 @@ export async function fetchStories(
   const storyblokApi = previewStoryblokApi || getStoryblokApi();
   const response: ISbStories = await storyblokApi.get(
     `cdn/stories`,
-    sbParams(!!previewStoryblokApi, params)
+    sbParams(!!previewStoryblokApi, { per_page: 100, ...params })
   );
 
   if (resolveUuids) {
