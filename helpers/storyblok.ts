@@ -167,6 +167,7 @@ export const sbParams = (
   version: draft ? "draft" : "published",
   cv: lastContentVersion,
   resolve_links: "url",
+  resolve_relations: "global_reference.reference,global.global",
   ...params,
 });
 
@@ -239,7 +240,7 @@ export async function fetchStories(
   const storyblokApi = previewStoryblokApi || getStoryblokApi();
   const response: ISbStories = await storyblokApi.get(
     `cdn/stories`,
-    sbParams(!!previewStoryblokApi, params)
+    sbParams(!!previewStoryblokApi, { per_page: 100, ...params })
   );
 
   for (const story of response.data.stories) {
@@ -275,7 +276,7 @@ export async function fetchPageProps(
   previewStoryblokApi?: StoryblokClient
 ) {
   const [{ data: pageData }, { data: settingsData }] = await Promise.all([
-    fetchStory(slug, true, previewStoryblokApi),
+    fetchStory(slug, false, previewStoryblokApi),
     fetchStories({ content_type: "settings" }, false, previewStoryblokApi),
   ]);
   return { pageData, settingsData };

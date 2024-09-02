@@ -4,53 +4,22 @@ import {
   StoryblokComponent,
   ISbStory,
   ISbStoryData,
-  useStoryblokApi,
-  getStoryblokApi,
-  useStoryblokBridge,
-  StoryblokBridgeV2,
 } from "@storyblok/react";
-import {
-  fetchPageProps,
-  fetchPaths,
-  resolveStoryUuids,
-  sbParams,
-  storyProcessing,
-} from "@/helpers/storyblok";
+import { fetchPageProps, fetchPaths, sbParams } from "@/helpers/storyblok";
 import { fontClassNamesPreview } from "@/helpers/fonts";
-import { useEffect, useMemo } from "react";
 
 type PageProps = ISbStory["data"] & {
   settings?: ISbStoryData["content"];
 };
 
 const Page: NextPage<PageProps> = ({ story: initialStory }) => {
-  const api = getStoryblokApi();
-  const story = useStoryblokState(initialStory, sbParams(true));
+  const story = useStoryblokState(initialStory, {
+    resolveRelations: "global_reference.reference,global.global",
+  });
 
-  useEffect(() => {
-    console.log("test", window.storyblokRegisterEvent);
-    window.storyblokRegisterEvent(() => {
-      console.log("registering");
-      const sbBridge: StoryblokBridgeV2 = new window.StoryblokBridge();
-      console.log("bridge", sbBridge);
-      sbBridge.on(["input", "published", "change"], (event) => {
-        console.log("EVENT", event);
-      });
-    });
-  }, []);
-
-  const memoizedStory = useMemo(() => {
-    if (story) {
-      if (api) resolveStoryUuids(story, api);
-      if (api) console.log("API", api);
-
-      return storyProcessing(story);
-    }
-  }, [story, api]);
-
-  return memoizedStory ? (
+  return story ? (
     <StoryblokComponent
-      blok={memoizedStory.content}
+      blok={story.content}
       data-font-class-names={fontClassNamesPreview}
     />
   ) : null;
