@@ -33,8 +33,8 @@ export const GlobalReference: FC<GlobalReferenceStoryblok & SbBlokData> = (
   isGlobalReference(props.blok) &&
   props.blok.reference?.map(
     (reference) =>
-      isGlobal(reference.content) &&
-      reference.content.global?.map((global) => (
+      isGlobal(reference) &&
+      reference.global?.map((global) => (
         <StoryblokComponent blok={global} key={global._uid} />
       ))
   );
@@ -68,9 +68,9 @@ export const editable =
             (nestedBlok) => {
               if (isGlobalReference(nestedBlok)) {
                 return nestedBlok.reference?.map((reference) =>
-                  reference.content
-                    ? isGlobal(reference.content) &&
-                      reference.content.global?.map((global) => (
+                  reference
+                    ? isGlobal(reference) &&
+                      reference.global?.map((global) => (
                         <StoryblokComponent blok={global} key={global._uid} />
                       ))
                     : ""

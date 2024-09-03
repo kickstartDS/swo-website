@@ -1,13 +1,15 @@
 import {
+  ComponentProps,
+  FC,
+  forwardRef,
+  HTMLAttributes,
+  PropsWithChildren,
+} from "react";
+import {
   SbBlokData,
   StoryblokComponent,
   storyblokEditable,
 } from "@storyblok/react";
-import {
-  // BlogOverviewStoryblok,
-  BlogPostStoryblok,
-  BlogTeaserStoryblok,
-} from "@/types/components-schema";
 import { Section } from "@kickstartds/ds-agency-premium/components/section/index.js";
 import {
   BlogTeaser,
@@ -15,45 +17,41 @@ import {
   BlogTeaserContextDefault,
 } from "@kickstartds/ds-agency-premium/components/blog-teaser/index.js";
 import { Cta } from "@kickstartds/ds-agency-premium/components/cta/index.js";
-import { FC, forwardRef, HTMLAttributes, PropsWithChildren } from "react";
-import { BlogTeaserProps } from "@kickstartds/ds-agency-premium/BlogTeaserProps-f5855e93.js";
-import { BlogOverviewProps } from "@kickstartds/ds-agency-premium/BlogOverviewProps-9f207f1c.js";
-
-// type PageProps = {
-//   blok: BlogOverviewStoryblok & SbBlokData;
-// };
+import { BlogPost } from "@kickstartds/ds-agency-premium/components/blog-post/index.js";
+import { BlogOverview as DsaBlogOverview } from "@kickstartds/ds-agency-premium/components/blog-overview/index.js";
 
 type PageProps = {
-  blok: BlogOverviewProps & SbBlokData;
+  blok: Omit<ComponentProps<typeof DsaBlogOverview>, "section"> &
+    SbBlokData & {
+      section?: (ComponentProps<typeof DsaBlogOverview>["section"] & {
+        _uid: string;
+      })[];
+    };
 };
-
-export function isBlogPost(blok: any): blok is BlogPostStoryblok {
-  return blok.type === "blog-post";
-}
-
-export function isBlogTeaser(blok: any): blok is BlogTeaserStoryblok {
-  return blok.type === "blog-teaser";
-}
 
 const BlogTeaserPost = forwardRef<
   HTMLDivElement,
-  | (BlogTeaserStoryblok & HTMLAttributes<HTMLDivElement>)
-  | (BlogPostStoryblok & HTMLAttributes<HTMLDivElement>)
+  | (ComponentProps<typeof BlogTeaser> & HTMLAttributes<HTMLDivElement>)
+  | (ComponentProps<typeof BlogPost> & HTMLAttributes<HTMLDivElement>)
 >((props, ref) => {
-  if (
-    isBlogPost(props) &&
-    props.head &&
-    props.head[0] &&
-    props.aside &&
-    props.aside[0]
-  ) {
-    const teaserProps: BlogTeaserProps = {
-      date: props.head[0]?.date,
-      headline: props.head[0]?.headline || "",
-      teaserText: props.head[0]?.headline || "",
-      image: (props.head[0]?.image as unknown as string) || "",
-      tags: props.head[0]?.tags || [],
-      readingTime: props.aside[0].readingTime,
+  function isBlogPost(object: any): object is ComponentProps<typeof BlogPost> {
+    return object.type === "blog-post";
+  }
+
+  function isBlogTeaser(
+    object: any
+  ): object is ComponentProps<typeof BlogTeaser> {
+    return object.type === "blog-teaser";
+  }
+
+  if (isBlogPost(props) && props.head && props.aside) {
+    const teaserProps: ComponentProps<typeof BlogTeaser> = {
+      date: props.head.date,
+      headline: props.head.headline || "",
+      teaserText: props.seo.description || "",
+      image: props.head.image || "",
+      tags: props.head.tags || [],
+      readingTime: props.aside.readingTime,
     };
     return <BlogTeaserContextDefault {...teaserProps} ref={ref} />;
   } else if (isBlogTeaser(props)) {
@@ -76,9 +74,9 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
           {blok.section?.map((nestedBlok) => (
             <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
           ))}
-          {latest && latest[0] && (
+          {latest && (
             <Section width="wide" headline={{ text: latestTitle }}>
-              <BlogTeaser {...latest[0]} />
+              <BlogTeaser {...latest} />
             </Section>
           )}
           {list && list.length > 0 && (
@@ -96,9 +94,9 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
               ))}
             </Section>
           )}
-          {cta && cta[0] && (
+          {cta && (
             <Section content={{ mode: "list" }}>
-              <Cta {...cta[0]} />
+              <Cta {...cta} />
             </Section>
           )}
         </BlogTeaserPostProvider>

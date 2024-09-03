@@ -12,12 +12,14 @@ import {
 import { ISbLinkURLObject } from "storyblok-js-client";
 import { components } from "@/components";
 import { TraversalCallbackContext, traverse } from "object-traversal";
+import { IStoryblokBlock } from "@kickstartds/jsonschema2storyblok";
 import {
   AssetStoryblok,
   GlobalReferenceStoryblok,
   GlobalStoryblok,
   MultilinkStoryblok,
 } from "@/types/components-schema";
+import componentsSchema from "@/types/components-schema.json";
 
 export function initStoryblok(accessToken?: string) {
   storyblokInit({
@@ -30,19 +32,25 @@ export function initStoryblok(accessToken?: string) {
 export function isStoryblokComponent(
   blok: any
 ): blok is { content: Record<string, any> } {
-  return blok.content !== undefined && blok.id !== undefined;
+  return blok && blok.content !== undefined && blok.id !== undefined;
+}
+
+export function isStoryblokComponentSchema(
+  object: any
+): object is IStoryblokBlock {
+  return object && object.schema && object.id;
 }
 
 export function isGlobalReference(blok: any): blok is GlobalReferenceStoryblok {
-  return blok.component === "global_reference";
+  return blok && blok.component === "global_reference";
 }
 
 export function isGlobal(blok: any): blok is GlobalStoryblok {
-  return blok.component === "global";
+  return blok && blok.component === "global";
 }
 
 export function isStoryblokLink(object: any): object is MultilinkStoryblok {
-  return object?.linktype !== undefined;
+  return object && object?.linktype !== undefined;
 }
 
 export function isStoryblokAsset(object: any): object is AssetStoryblok {
@@ -70,95 +78,123 @@ export function isStoryblokStoryLinkObject(
   );
 }
 
-export function removeEmptyImages({
-  parent,
-  key,
-  value,
-}: TraversalCallbackContext) {
-  if (
-    parent &&
-    key &&
-    value &&
-    typeof value === "object" &&
-    value.fieldtype === "asset" &&
-    value.id === null
-  ) {
-    delete parent[key];
-  }
-}
-
-export function mapStoryblokLinks({
-  parent,
-  key,
-  value,
-}: TraversalCallbackContext) {
-  if (parent && key) {
-    if (isStoryblokStoryLinkObject(value)) {
-      parent[key] = `${
-        value.story?.full_slug === INDEX_SLUG
-          ? "/"
-          : value.cached_url || value.story?.full_slug
-      }${value.anchor ? `#${value.anchor}` : ""}`;
-    } else if (isStoryblokLink(value)) {
-      if (value.linktype === "email") {
-        parent[key] = `mailto:${value.email}`;
-      } else if (value.linktype === "url") {
-        parent[key] = `${value.url}${value.anchor ? `#${value.anchor}` : ""}`;
-      } else {
-        parent[key] = "#";
-      }
-    }
-  }
-}
-
-export function mapStoryblokAssets({
-  parent,
-  key,
-  value,
-}: TraversalCallbackContext) {
-  if (
-    parent &&
-    key &&
-    value &&
-    value.id &&
-    value.filename &&
-    value.fieldtype === "asset"
-  ) {
-    parent[key] = !value.filename.startsWith("http")
-      ? `https:${value.filename}`
-      : value.filename;
-
-    if (key.includes("_")) {
-      const [groupName] = key.split("_");
-      if (parent.hasOwnProperty(`${groupName}_alt`)) {
-        parent[`${groupName}_alt`] ||= value.alt;
-      }
-    }
-
-    // console.log("asset", value, key, parent);
-  }
-}
-
-export function mapBloksEntries({
-  parent,
-  key,
-  value,
-}: TraversalCallbackContext) {
-  //
-}
-
 export function storyProcessing(blok: Record<string, any>) {
+  function removeEmptyImages({ parent, key, value }: TraversalCallbackContext) {
+    if (
+      parent &&
+      key &&
+      value &&
+      typeof value === "object" &&
+      value.fieldtype === "asset" &&
+      value.id === null
+    ) {
+      delete parent[key];
+    }
+  }
+
+  function mapStoryblokLinks({ parent, key, value }: TraversalCallbackContext) {
+    if (parent && key) {
+      if (isStoryblokStoryLinkObject(value)) {
+        parent[key] = `${
+          value.story?.full_slug === INDEX_SLUG
+            ? "/"
+            : value.cached_url || value.story?.full_slug
+        }${value.anchor ? `#${value.anchor}` : ""}`;
+      } else if (isStoryblokLink(value)) {
+        if (value.linktype === "email") {
+          parent[key] = `mailto:${value.email}`;
+        } else if (value.linktype === "url") {
+          parent[key] = `${value.url}${value.anchor ? `#${value.anchor}` : ""}`;
+        } else {
+          parent[key] = "#";
+        }
+      }
+    }
+  }
+
+  function mapStoryblokAssets({
+    parent,
+    key,
+    value,
+  }: TraversalCallbackContext) {
+    if (
+      parent &&
+      key &&
+      value &&
+      value.id &&
+      value.filename &&
+      value.fieldtype === "asset"
+    ) {
+      parent[key] = !value.filename.startsWith("http")
+        ? `https:${value.filename}`
+        : value.filename;
+
+      if (key.includes("_")) {
+        const [groupName] = key.split("_");
+        if (parent.hasOwnProperty(`${groupName}_alt`)) {
+          parent[`${groupName}_alt`] ||= value.alt;
+        }
+      }
+    }
+  }
+
+  function mapResolvedEntries({
+    parent,
+    key,
+    value,
+  }: TraversalCallbackContext) {
+    if (parent && key && value && value.content && value.uuid) {
+      parent[key] = value.content;
+    }
+  }
+
+  function mapBlokEntries({ parent, key, value }: TraversalCallbackContext) {
+    if (parent && parent.component && key && Array.isArray(value)) {
+      const componentSchema = componentsSchema.components.find((component) => {
+        return component.name === parent.component;
+      });
+
+      if (
+        componentSchema &&
+        isStoryblokComponentSchema(componentSchema as unknown as any)
+      ) {
+        const propSchema = (componentSchema as unknown as any).schema[key];
+
+        if (
+          propSchema &&
+          (propSchema.type === "bloks" || propSchema.type === "options") &&
+          (propSchema.maximum === 1 || propSchema.max_options === "1")
+        ) {
+          if (value[0]) {
+            parent[key] = isStoryblokComponent(value[0])
+              ? value[0].content
+              : value[0];
+          } else {
+            delete parent[key];
+          }
+        }
+      }
+    }
+  }
+
   traverse(blok, (context) => {
     removeEmptyImages(context);
     mapStoryblokLinks(context);
     mapStoryblokAssets(context);
-    mapBloksEntries(context);
+    mapResolvedEntries(context);
+    mapBlokEntries(context);
   });
 
   return blok;
 }
 
 let lastContentVersion: number | undefined = undefined;
+
+export const resolvableRelations = [
+  "global_reference.reference",
+  "global.global",
+  "blog-overview.latest",
+];
 
 export const sbParams = (
   draft: boolean,
@@ -167,14 +203,12 @@ export const sbParams = (
   version: draft ? "draft" : "published",
   cv: lastContentVersion,
   resolve_links: "url",
-  resolve_relations: "global_reference.reference,global.global",
+  resolve_relations: resolvableRelations.join(","),
   ...params,
 });
 
 export async function fetchUuid(uuid: string, storyblokApi?: StoryblokClient) {
   const storyblok = storyblokApi || getStoryblokApi();
-
-  console.log("fetchUuid", storyblok, storyblokApi);
 
   const response: ISbStory = await storyblok.get(
     `cdn/stories/${uuid}`,
@@ -276,7 +310,7 @@ export async function fetchPageProps(
   previewStoryblokApi?: StoryblokClient
 ) {
   const [{ data: pageData }, { data: settingsData }] = await Promise.all([
-    fetchStory(slug, false, previewStoryblokApi),
+    fetchStory(slug, true, previewStoryblokApi),
     fetchStories({ content_type: "settings" }, false, previewStoryblokApi),
   ]);
   return { pageData, settingsData };

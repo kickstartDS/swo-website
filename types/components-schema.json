@@ -234,7 +234,7 @@
       "name": "blog-overview",
       "display_name": "Blog Overview",
       "created_at": "2024-07-17T09:28:54.414Z",
-      "updated_at": "2024-08-26T15:41:42.829Z",
+      "updated_at": "2024-09-02T14:46:11.364Z",
       "id": 6059570,
       "schema": {
         "section": {
@@ -270,7 +270,7 @@
           "source": "internal_stories",
           "entry_appearance": "card",
           "allow_advanced_search": true,
-          "min_options": "0",
+          "min_options": "",
           "max_options": "1"
         },
         "listTitle": {
@@ -323,7 +323,8 @@
           "component_whitelist": [
             "cta"
           ],
-          "description": "Cta"
+          "description": "Cta",
+          "maximum": 1
         },
         "seo": {
           "id": 0,
@@ -336,7 +337,8 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -367,7 +369,7 @@
       "name": "blog-post",
       "display_name": "Blog Post",
       "created_at": "2024-07-17T09:28:54.011Z",
-      "updated_at": "2024-08-28T10:37:36.876Z",
+      "updated_at": "2024-09-02T14:46:53.575Z",
       "id": 6059569,
       "schema": {
         "head": {
@@ -397,7 +399,9 @@
           "component_whitelist": [
             "blog-aside"
           ],
-          "description": "Meta info for a singular blog entry"
+          "description": "Meta info for a singular blog entry",
+          "maximum": 1,
+          "required": false
         },
         "content": {
           "id": 0,
@@ -434,7 +438,8 @@
           "folder_slug": "global/",
           "filter_content_type": [],
           "min_options": "",
-          "max_options": ""
+          "max_options": "",
+          "maximum": 1
         },
         "seo": {
           "id": 0,
@@ -447,7 +452,8 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -2344,7 +2350,7 @@
       "name": "image-story",
       "display_name": "Image Story",
       "created_at": "2024-07-17T09:28:34.408Z",
-      "updated_at": "2024-08-05T10:39:07.935Z",
+      "updated_at": "2024-08-29T20:29:46.316Z",
       "id": 6059554,
       "schema": {
         "headline": {
@@ -2352,7 +2358,7 @@
           "pos": 0,
           "display_name": "Headline",
           "key": "headline",
-          "type": "text",
+          "type": "markdown",
           "description": "Headline for the module element",
           "required": false
         },
@@ -2402,7 +2408,7 @@
           "pos": 3,
           "display_name": "Sub",
           "key": "sub",
-          "type": "text",
+          "type": "markdown",
           "description": "Subheadline below the module headline",
           "required": false
         },
@@ -2411,7 +2417,7 @@
           "pos": 4,
           "display_name": "Text",
           "key": "text",
-          "type": "text",
+          "type": "markdown",
           "description": "Info text for the module element",
           "required": false
         },
@@ -3160,7 +3166,7 @@
       "name": "page",
       "display_name": "Page",
       "created_at": "2024-07-17T09:02:34.459Z",
-      "updated_at": "2024-07-31T09:46:48.773Z",
+      "updated_at": "2024-09-02T14:47:06.683Z",
       "id": 6059299,
       "schema": {
         "section": {
@@ -3187,7 +3193,8 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -4047,7 +4054,7 @@
       "name": "settings",
       "display_name": "Settings",
       "created_at": "2024-07-17T09:28:55.645Z",
-      "updated_at": "2024-07-17T09:28:55.645Z",
+      "updated_at": "2024-09-02T14:04:36.602Z",
       "id": 6059571,
       "schema": {
         "header": {
@@ -4061,7 +4068,9 @@
           "component_whitelist": [
             "header"
           ],
-          "description": "Header"
+          "description": "Header",
+          "minimum": 1,
+          "maximum": 1
         },
         "footer": {
           "id": 0,
@@ -4074,7 +4083,9 @@
           "component_whitelist": [
             "footer"
           ],
-          "description": "Footer"
+          "description": "Footer",
+          "minimum": 1,
+          "maximum": 1
         },
         "seo": {
           "id": 0,
@@ -4087,7 +4098,9 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "minimum": 1,
+          "maximum": 1
         },
         "type": {
           "id": 0,
