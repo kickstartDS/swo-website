@@ -1,14 +1,24 @@
-import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
-import { BlogPostStoryblok } from "@/types/components-schema";
+import { ComponentProps } from "react";
+import {
+  SbBlokData,
+  StoryblokComponent,
+  storyblokEditable,
+} from "@storyblok/react";
 import { Section } from "@kickstartds/ds-agency-premium/components/section/index.js";
 import { Split } from "@kickstartds/ds-agency-premium/components/split/index.js";
 import { BlogAside } from "@kickstartds/ds-agency-premium/components/blog-aside/index.js";
 import { Text } from "@kickstartds/ds-agency-premium/components/text/index.js";
 import { BlogHead } from "@kickstartds/ds-agency-premium/components/blog-head/index.js";
 import { Cta } from "@kickstartds/ds-agency-premium/components/cta/index.js";
+import { BlogPost as DsaBlogPost } from "@kickstartds/ds-agency-premium/components/blog-post/index.js";
 
 type PageProps = {
-  blok: BlogPostStoryblok;
+  blok: Omit<ComponentProps<typeof DsaBlogPost>, "section"> &
+    SbBlokData & {
+      section?: (ComponentProps<typeof DsaBlogPost>["section"] & {
+        _uid: string;
+      })[];
+    };
 };
 
 const BlogPost: React.FC<PageProps> = ({ blok }) => {
@@ -20,8 +30,7 @@ const BlogPost: React.FC<PageProps> = ({ blok }) => {
         <Section width="wide">
           <Split layout="sidebarRight">
             <div>
-              {/* @ts-expect-error */}
-              {head && head[0] && <BlogHead {...head[0]} />}
+              {head && <BlogHead {...head} />}
               {content ? (
                 <Text text={content} />
               ) : (
@@ -30,14 +39,12 @@ const BlogPost: React.FC<PageProps> = ({ blok }) => {
                 ))
               )}
             </div>
-            {/* @ts-expect-error */}
-            <BlogAside {...aside} />
+            {aside && <BlogAside {...aside} />}
           </Split>
         </Section>
-        {cta && cta[0] && (
+        {cta && (
           <Section content={{ mode: "list" }}>
-            {/* @ts-expect-error */}
-            <Cta {...cta[0]} />
+            <Cta {...cta} />
           </Section>
         )}
       </main>

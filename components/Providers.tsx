@@ -36,46 +36,20 @@ import { FeatureContext } from "@kickstartds/ds-agency-premium/feature";
 import { StatContext } from "@kickstartds/ds-agency-premium/stat";
 import { TestimonialContext } from "@kickstartds/ds-agency-premium/testimonial";
 
-import { INDEX_SLUG } from "@/helpers/storyblok";
+import { isStoryblokAsset } from "@/helpers/storyblok";
 
 import { StoryblokSubComponent } from "./StoryblokSubComponent";
 import { TeaserProvider } from "./TeaserProvider";
 import { useBlurHashes } from "./BlurHashContext";
 import { useImagePriority } from "./ImagePriorityContext";
-import { AssetStoryblok, MultilinkStoryblok } from "@/types/components-schema";
 import { StorytellingProps } from "@kickstartds/content/lib/storytelling/typing";
-
-function isStoryblokLink(object: unknown): object is MultilinkStoryblok {
-  return (object as MultilinkStoryblok)?.linktype !== undefined;
-}
-
-function isStoryblokAsset(object: unknown): object is AssetStoryblok {
-  return (object as AssetStoryblok)?.filename !== undefined;
-}
 
 const Link = forwardRef<
   HTMLAnchorElement,
   LinkProps & AnchorHTMLAttributes<HTMLAnchorElement>
->(({ href, ...props }, ref) => {
-  if (isStoryblokLink(href)) {
-    const linkTarget =
-      href.linktype === "email"
-        ? `mailto:${href.email}`
-        : href.story?.full_slug === INDEX_SLUG
-        ? "/"
-        : href.cached_url || href.story?.full_slug;
-    return (
-      <NextLink
-        {...props}
-        ref={ref}
-        href={`${linkTarget}${href.anchor ? `#${href.anchor}` : ""}` || ""}
-        target={href.target}
-      />
-    );
-  }
-
-  return <NextLink ref={ref} {...props} href={href || ""} />;
-});
+>(({ href, ...props }, ref) => (
+  <NextLink ref={ref} href={href || "#"} {...props} />
+));
 
 const LinkProvider: FC<PropsWithChildren> = (props) => (
   <LinkContext.Provider value={Link} {...props} />
@@ -105,16 +79,17 @@ const Picture = forwardRef<
     if (internalRef.current) resetBackgroundBlurHash(internalRef.current);
   }, []);
 
-  if (!src || (isStoryblokAsset(src) && !src.filename)) return;
-  const source = isStoryblokAsset(src) ? src.filename : src;
-  const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
-  const [width, height] = fileUrl.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
+  if (!src) return;
+  // const source = isStoryblokAsset(src) ? src.filename : src;
+  // const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
+  // console.log("src props", typeof src, src, props);
+  const [width, height] = src.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
 
-  return fileUrl.endsWith(".svg") ? (
+  return src.endsWith(".svg") ? (
     <PictureContextDefault
       ref={internalRef}
       {...props}
-      src={fileUrl}
+      src={src}
       width={parseInt(width, 10)}
       height={parseInt(height, 10)}
       alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
@@ -125,7 +100,7 @@ const Picture = forwardRef<
       ref={internalRef}
       {...props}
       alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
-      src={priority ? `${fileUrl}/m/filters:quality(50)` : fileUrl}
+      src={priority ? `${src}/m/filters:quality(50)` : src}
       width={autoSize ? undefined : parseInt(width, 10)}
       height={autoSize ? undefined : parseInt(height, 10)}
       priority={lazy === false || priority}
@@ -135,8 +110,8 @@ const Picture = forwardRef<
         }
       }}
       background={
-        blurHashes[fileUrl]
-          ? blurhashToCssGradientString(blurHashes[fileUrl])
+        blurHashes[src]
+          ? blurhashToCssGradientString(blurHashes[src])
           : undefined
       }
       // @ts-expect-error `null` is not documented

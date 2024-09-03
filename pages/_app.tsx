@@ -53,8 +53,8 @@ export default function App({
   Component: NextPage;
 }) {
   const { settings, story, blurHashes } = pageProps;
-  const headerProps = settings?.header[0] ? unflatten(settings?.header[0]) : {};
-  const footerProps = settings?.footer[0] ? unflatten(settings?.footer[0]) : {};
+  const headerProps = settings?.header ? unflatten(settings?.header) : {};
+  const footerProps = settings?.footer ? unflatten(settings?.footer) : {};
   const storyProps = story?.content ? unflatten(story?.content) : {};
   const router = useRouter();
 
@@ -81,8 +81,8 @@ export default function App({
       <DsaProviders>
         <StoryblokProviders>
           <Meta
-            globalSeo={settings?.seo[0]}
-            pageSeo={story?.content.seo?.[0]}
+            globalSeo={settings?.seo}
+            pageSeo={story?.content.seo}
             fallbackName={story?.name}
           />
           <IconSprite />

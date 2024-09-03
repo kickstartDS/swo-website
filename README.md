@@ -115,10 +115,12 @@ From now on your build process in Netlify should be automatically triggered, dep
 - Fonts
 - HTML lang
 - (robots.txt)
+- 404 / 500
 - initial branding seems broken currently, at least for Premium Starter. Maybe a consequence of failed merges with Lughausen repository
 - add general note that nothing here _needs_ to be done with Github and / or Netlify, and while some commands might change slightly... everything should be much the same no matter where you want to host
 - maybe add info about exit preview-URL, to preview / compare with published content... and to remove the cookie that might stick outside of the preview, too
 - move initial demo page to slug `/`?
+- add section pointing at and explaining DSA DS
 
 ### Adding initial content
 
@@ -138,7 +140,7 @@ TODO
 
 `YOUR_WEBSITE` should be the path pointing to your website project, the one you want to update the previews for.
 
-1. Clone the Design System this is based on locally: https://github.com/kickstartDS/ds-agency
+1. Clone the Design System this is based on locally: https://github.com/kickstartDS/ds-agency-premium
 2. Switch to the freshly cloned directory, and inside:
    1. `yarn` to install dependencies
    2. `rm -rf src/token` to remove the existing default theme

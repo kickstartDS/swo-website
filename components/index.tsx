@@ -20,14 +20,16 @@ import {
   GlobalStoryblok,
 } from "@/types/components-schema";
 
-export const Global: FC<GlobalStoryblok> = (props) =>
+export const Global: FC<GlobalStoryblok & SbBlokData> = (props) =>
   isGlobal(props.blok) &&
   props.blok.global &&
   props.blok.global.map((global) => (
     <StoryblokComponent blok={global} key={global._uid} />
   ));
 
-export const GlobalReference: FC<GlobalReferenceStoryblok> = (props) =>
+export const GlobalReference: FC<GlobalReferenceStoryblok & SbBlokData> = (
+  props
+) =>
   isGlobalReference(props.blok) &&
   props.blok.reference?.map(
     (reference) =>
@@ -65,12 +67,13 @@ export const editable =
           (blok[nestedBloksKey] as SbBlokData[] | undefined)?.map(
             (nestedBlok) => {
               if (isGlobalReference(nestedBlok)) {
-                return nestedBlok.reference?.map(
-                  (reference) =>
-                    isGlobal(reference) &&
-                    reference.global?.map((global) => (
-                      <StoryblokComponent blok={global} key={global._uid} />
-                    ))
+                return nestedBlok.reference?.map((reference) =>
+                  reference
+                    ? isGlobal(reference) &&
+                      reference.global?.map((global) => (
+                        <StoryblokComponent blok={global} key={global._uid} />
+                      ))
+                    : ""
                 );
               }
 
