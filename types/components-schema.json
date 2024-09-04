@@ -4,76 +4,23 @@
       "name": "blog-aside",
       "display_name": "Blog Aside",
       "created_at": "2024-07-17T09:28:20.527Z",
-      "updated_at": "2024-07-17T09:28:20.527Z",
+      "updated_at": "2024-09-04T07:03:38.852Z",
       "id": 6059538,
       "schema": {
-        "tab-63de4da7-b363-499a-a71d-fb1216341ce9": {
-          "id": 0,
+        "author": {
+          "type": "bloks",
           "pos": 0,
-          "display_name": "Author",
-          "key": "tab-63de4da7-b363-499a-a71d-fb1216341ce9",
-          "keys": [
-            "author_name",
-            "author_byline",
-            "author_image",
-            "author_twitter",
-            "author_email"
-          ],
-          "type": "tab",
-          "description": "The author of the blog post",
-          "required": false
-        },
-        "author_name": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Name",
-          "key": "author_name",
-          "type": "text",
-          "description": "The name of the author",
-          "required": false
-        },
-        "author_byline": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Byline",
-          "key": "author_byline",
-          "type": "text",
-          "description": "The byline of the author",
-          "required": false
-        },
-        "author_image": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Image",
-          "key": "author_image",
-          "type": "asset",
-          "filetypes": [
-            "images"
-          ],
-          "description": "The image URL of the author",
-          "required": false
-        },
-        "author_twitter": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Twitter",
-          "key": "author_twitter",
-          "type": "text",
-          "description": "The Twitter name of the author",
-          "required": false
-        },
-        "author_email": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Email",
-          "key": "author_email",
-          "type": "text",
-          "description": "The Email of the author",
-          "required": false
+          "maximum": 1,
+          "minimum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "blog-author"
+          ]
         },
         "socialSharing": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "SocialSharing",
           "key": "socialSharing",
           "type": "bloks",
@@ -85,7 +32,7 @@
         },
         "readingTime": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "ReadingTime",
           "key": "readingTime",
           "type": "text",
@@ -94,7 +41,7 @@
         },
         "date": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "Date",
           "key": "date",
           "type": "datetime",
@@ -104,7 +51,7 @@
         },
         "className": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "ClassName",
           "key": "className",
           "type": "text",
@@ -112,7 +59,7 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -141,6 +88,106 @@
       "component_group_uuid": null,
       "color": "#05566a",
       "icon": "block-wallet",
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "blog-author",
+      "display_name": null,
+      "created_at": "2024-09-03T16:24:19.332Z",
+      "updated_at": "2024-09-03T17:42:48.710Z",
+      "id": 6247707,
+      "schema": {
+        "name": {
+          "type": "text",
+          "pos": 0,
+          "display_name": "Name"
+        },
+        "tab-d67ad2f7-e63a-4b26-ba74-3240151b0431": {
+          "display_name": "Image",
+          "keys": [
+            "image_src",
+            "image_alt",
+            "image_fullWidth",
+            "image_aspectRatio"
+          ],
+          "pos": 0,
+          "type": "tab"
+        },
+        "byline": {
+          "type": "text",
+          "pos": 1,
+          "display_name": "Byline"
+        },
+        "image_src": {
+          "type": "asset",
+          "pos": 3,
+          "display_name": "Src",
+          "filetypes": [
+            "images"
+          ]
+        },
+        "image_alt": {
+          "type": "text",
+          "pos": 4,
+          "display_name": "Alt"
+        },
+        "image_fullWidth": {
+          "type": "boolean",
+          "pos": 5,
+          "display_name": "Full Width"
+        },
+        "image_aspectRatio": {
+          "type": "option",
+          "pos": 6,
+          "use_uuid": true,
+          "display_name": "Aspect Ratio",
+          "options": [
+            {
+              "_uid": "dbbc7788-9721-4cf6-921b-e462a19147ad",
+              "name": "wide",
+              "value": "wide"
+            },
+            {
+              "_uid": "2dced25a-2ee3-40af-9cd2-886d01315ceb",
+              "value": "square",
+              "name": "square"
+            },
+            {
+              "_uid": "bcbc8423-0ba0-4140-9c67-1d53e1ff11c2",
+              "value": "vertical",
+              "name": "vertical"
+            }
+          ],
+          "default_value": "square"
+        },
+        "links": {
+          "type": "bloks",
+          "pos": 7,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "links"
+          ]
+        },
+        "type": {
+          "type": "text",
+          "pos": 8,
+          "default_value": "blog-author"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "blog-author",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
       "internal_tags_list": [],
       "internal_tag_ids": [],
       "content_type_asset_preview": null
@@ -369,7 +416,7 @@
       "name": "blog-post",
       "display_name": "Blog Post",
       "created_at": "2024-07-17T09:28:54.011Z",
-      "updated_at": "2024-09-02T14:46:53.575Z",
+      "updated_at": "2024-09-04T08:41:51.821Z",
       "id": 6059569,
       "schema": {
         "head": {
@@ -426,7 +473,7 @@
         "cta": {
           "id": 0,
           "pos": 4,
-          "display_name": "Cta",
+          "display_name": "Contact",
           "key": "cta",
           "type": "bloks",
           "restrict_type": "",
@@ -434,7 +481,7 @@
           "component_whitelist": [
             "global_reference"
           ],
-          "description": "Cta",
+          "description": "Contact",
           "folder_slug": "global/",
           "filter_content_type": [],
           "min_options": "",
@@ -726,6 +773,109 @@
       "internal_tags_list": [],
       "internal_tag_ids": [],
       "content_type_asset_preview": null
+    },
+    {
+      "name": "contact",
+      "display_name": null,
+      "created_at": "2024-09-04T07:24:44.325Z",
+      "updated_at": "2024-09-04T08:25:45.369Z",
+      "id": 6249490,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
+        "tab-97f5b820-9efd-4b7d-ba83-4d44882daac4": {
+          "display_name": "Image",
+          "keys": [
+            "image_src",
+            "image_alt",
+            "image_fullWidth",
+            "image_aspectRatio"
+          ],
+          "pos": 0,
+          "type": "tab"
+        },
+        "subtitle": {
+          "type": "text",
+          "pos": 1
+        },
+        "links": {
+          "type": "bloks",
+          "pos": 2,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "links"
+          ]
+        },
+        "copy": {
+          "type": "text",
+          "pos": 3
+        },
+        "className": {
+          "type": "text",
+          "pos": 4
+        },
+        "type": {
+          "type": "text",
+          "pos": 5,
+          "default_value": "contact"
+        },
+        "image_src": {
+          "type": "asset",
+          "pos": 7,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "image_alt": {
+          "type": "text",
+          "pos": 8
+        },
+        "image_fullWidth": {
+          "type": "boolean",
+          "pos": 9
+        },
+        "image_aspectRatio": {
+          "type": "option",
+          "pos": 10,
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "ac16c67c-5264-4f58-a1af-e90c24fa52de",
+              "name": "wide",
+              "value": "wide"
+            },
+            {
+              "_uid": "7d9f0c3e-df8a-4d6b-a05c-9a9086a735bb",
+              "value": "square",
+              "name": "square"
+            },
+            {
+              "_uid": "4dc139ee-85ed-4a25-a71b-5081d612f80e",
+              "value": "vertical",
+              "name": "vertical"
+            }
+          ],
+          "default_value": "square"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "contact",
+      "component_group_uuid": "a3c44207-2b1a-4ed4-9113-6fdfb114ca95",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Components"
     },
     {
       "name": "cta",
@@ -2716,6 +2866,55 @@
       "internal_tag_ids": [],
       "content_type_asset_preview": null,
       "component_group_name": "Components"
+    },
+    {
+      "name": "links",
+      "display_name": null,
+      "created_at": "2024-09-03T16:29:18.442Z",
+      "updated_at": "2024-09-04T07:04:56.457Z",
+      "id": 6247708,
+      "schema": {
+        "icon": {
+          "type": "text",
+          "pos": 0
+        },
+        "label": {
+          "type": "text",
+          "pos": 1
+        },
+        "href": {
+          "type": "multilink",
+          "pos": 2,
+          "allow_target_blank": true,
+          "email_link_type": true,
+          "asset_link_type": true,
+          "show_anchor": true,
+          "allow_custom_attributes": true
+        },
+        "newTab": {
+          "type": "boolean",
+          "pos": 3
+        },
+        "type": {
+          "type": "text",
+          "pos": 4,
+          "default_value": "links"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "links",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
     },
     {
       "name": "logo",

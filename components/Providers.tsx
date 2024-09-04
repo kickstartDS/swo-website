@@ -1,7 +1,6 @@
 /*  eslint react/display-name: 0 */
 import {
   AnchorHTMLAttributes,
-  ComponentProps,
   FC,
   HTMLAttributes,
   ImgHTMLAttributes,
@@ -30,6 +29,7 @@ import { NavTopbarProvider } from "./nav-main/topbar/NavTopbarComponent";
 import { NavFlyoutProvider } from "./nav-main/flyout/NavFlyoutComponent";
 
 import { BlogAsideContext } from "@kickstartds/ds-agency-premium/blog-aside";
+import { BlogAuthorContext } from "@kickstartds/ds-agency-premium/blog-author";
 import { BlogHeadContext } from "@kickstartds/ds-agency-premium/blog-head";
 import { CtaContext } from "@kickstartds/ds-agency-premium/cta";
 import { FeatureContext } from "@kickstartds/ds-agency-premium/feature";
@@ -80,9 +80,6 @@ const Picture = forwardRef<
   }, []);
 
   if (!src) return;
-  // const source = isStoryblokAsset(src) ? src.filename : src;
-  // const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
-  // console.log("src props", typeof src, src, props);
   const [width, height] = src.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
 
   return src.endsWith(".svg") ? (
@@ -166,7 +163,12 @@ const Providers = (props: PropsWithChildren) => (
                           // @ts-expect-error
                           value={StoryblokSubComponent}
                         >
-                          {props.children}
+                          <BlogAuthorContext.Provider
+                            // @ts-expect-error
+                            value={StoryblokSubComponent}
+                          >
+                            {props.children}
+                          </BlogAuthorContext.Provider>
                         </BlogAsideContext.Provider>
                       </BlogHeadContext.Provider>
                     </TestimonialContext.Provider>

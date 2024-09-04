@@ -24,7 +24,7 @@ export const NavFlyoutContextDefault = forwardRef<
   items && items.length > 0 ? (
     <nav
       className="dsa-nav-flyout"
-      ks-inverted={inverted}
+      ks-inverted={inverted?.toString()}
       id="dsa-nav-flyout"
       aria-label="Hauptnavigation"
       ref={ref}

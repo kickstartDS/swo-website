@@ -112,6 +112,13 @@ export const components = {
       )
     )
   ),
+  "blog-author": editable(
+    dynamic(() =>
+      import("@kickstartds/ds-agency-premium/blog-author").then(
+        (mod) => mod.BlogAuthorContextDefault
+      )
+    )
+  ),
   "blog-head": editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/blog-head").then(
@@ -120,6 +127,13 @@ export const components = {
     )
   ),
   section: editable(Section, "components"),
+  contact: editable(
+    dynamic(() =>
+      import("@kickstartds/ds-agency-premium/contact").then(
+        (mod) => mod.ContactContextDefault
+      )
+    )
+  ),
   cta: editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/cta").then(

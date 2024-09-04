@@ -1,5 +1,16 @@
 import {StoryblokStory} from 'storyblok-generate-ts'
 
+export interface BlogAsideStoryblok {
+  author?: BlogAuthorStoryblok[];
+  socialSharing?: SocialSharingStoryblok[];
+  readingTime?: string;
+  date?: string;
+  className?: string;
+  type?: string;
+  _uid: string;
+  component: "blog-aside";
+}
+
 export interface AssetStoryblok {
   _uid?: string;
   id: number;
@@ -15,19 +26,17 @@ export interface AssetStoryblok {
   is_external_url?: boolean;
 }
 
-export interface BlogAsideStoryblok {
-  author_name?: string;
-  author_byline?: string;
-  author_image?: AssetStoryblok;
-  author_twitter?: string;
-  author_email?: string;
-  socialSharing?: SocialSharingStoryblok[];
-  readingTime?: string;
-  date?: string;
-  className?: string;
+export interface BlogAuthorStoryblok {
+  name?: string;
+  byline?: string;
+  image_src?: AssetStoryblok;
+  image_alt?: string;
+  image_fullWidth?: boolean;
+  image_aspectRatio?: "" | "wide" | "square" | "vertical";
+  links?: LinksStoryblok[];
   type?: string;
   _uid: string;
-  component: "blog-aside";
+  component: "blog-author";
 }
 
 export interface BlogHeadStoryblok {
@@ -114,6 +123,21 @@ export interface ButtonsStoryblok {
   component: "buttons";
 }
 
+export interface ContactStoryblok {
+  title?: string;
+  subtitle?: string;
+  links?: LinksStoryblok[];
+  copy?: string;
+  className?: string;
+  type?: string;
+  image_src?: AssetStoryblok;
+  image_alt?: string;
+  image_fullWidth?: boolean;
+  image_aspectRatio?: "" | "wide" | "square" | "vertical";
+  _uid: string;
+  component: "contact";
+}
+
 export interface CtaStoryblok {
   headline?: string;
   sub?: string;
@@ -196,6 +220,7 @@ export interface GalleryStoryblok {
 export interface GlobalStoryblok {
   global?: (
     | BlogTeaserStoryblok
+    | ContactStoryblok
     | CtaStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
@@ -299,6 +324,16 @@ export interface ImageTextStoryblok {
   component: "image-text";
 }
 
+export interface LinksStoryblok {
+  icon?: string;
+  label?: string;
+  href?: MultilinkStoryblok;
+  newTab?: boolean;
+  type?: string;
+  _uid: string;
+  component: "links";
+}
+
 export interface LogoStoryblok {
   src?: AssetStoryblok;
   alt?: string;
@@ -397,6 +432,7 @@ export interface SectionStoryblok {
   content_tileWidth?: "" | "smallest" | "default" | "medium" | "large" | "largest";
   components?: (
     | BlogTeaserStoryblok
+    | ContactStoryblok
     | CtaStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
