@@ -11,7 +11,8 @@ import { unflatten } from "@/helpers/unflatten";
 import Meta from "@/components/Meta";
 import "lazysizes/plugins/attrchange/ls.attrchange";
 
-import StoryblokProviders from "@/components/Providers";
+import ComponentProviders from "@/components/ComponentProviders";
+import ImageSizeProviders from "@/components/ImageSizeProviders";
 
 import palette from "@kickstartds/ds-agency-premium/global.client.js";
 import "@kickstartds/ds-agency-premium/global.css";
@@ -59,14 +60,14 @@ export default function App({
   const router = useRouter();
 
   const invertHeader = storyProps?.header?.inverted
-    ? !headerProps?.inverted || true
-    : headerProps?.inverted || false;
+    ? !headerProps?.inverted
+    : headerProps?.inverted;
   const floatHeader = storyProps?.header?.floating
-    ? !headerProps?.floating || true
-    : headerProps?.floating || false;
+    ? !headerProps?.floating
+    : headerProps?.floating;
   const invertFooter = storyProps?.footer?.inverted
-    ? !footerProps?.inverted || true
-    : footerProps?.inverted || false;
+    ? !footerProps?.inverted
+    : footerProps?.inverted;
 
   setActiveNavItem(headerProps?.navItems, router.asPath);
   setActiveNavItem(footerProps?.navItems, router.asPath);
@@ -79,26 +80,28 @@ export default function App({
   return (
     <BlurHashProvider blurHashes={blurHashes}>
       <DsaProviders>
-        <StoryblokProviders>
-          <Meta
-            globalSeo={settings?.seo}
-            pageSeo={story?.content.seo}
-            fallbackName={story?.name}
-          />
-          <IconSprite />
-          {headerProps && (
-            <Header
-              logo={{}}
-              {...headerProps}
-              inverted={invertHeader}
-              floating={floatHeader}
+        <ComponentProviders>
+          <ImageSizeProviders>
+            <Meta
+              globalSeo={settings?.seo}
+              pageSeo={story?.content.seo}
+              fallbackName={story?.name}
             />
-          )}
-          <Component {...pageProps} />
-          {footerProps && (
-            <Footer logo={{}} {...footerProps} inverted={invertFooter} />
-          )}
-        </StoryblokProviders>
+            <IconSprite />
+            {headerProps && (
+              <Header
+                logo={{}}
+                {...headerProps}
+                inverted={invertHeader}
+                floating={floatHeader}
+              />
+            )}
+            <Component {...pageProps} />
+            {footerProps && (
+              <Footer logo={{}} {...footerProps} inverted={invertFooter} />
+            )}
+          </ImageSizeProviders>
+        </ComponentProviders>
       </DsaProviders>
     </BlurHashProvider>
   );
