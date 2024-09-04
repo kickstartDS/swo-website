@@ -34,15 +34,11 @@ const handleRouteChange = (url: string) => {
 const setActiveNavItem = (navItems: any[] = [], currentRoute: string) => {
   for (const navItem of navItems) {
     navItem.active =
-      navItem.href?.linktype === "story" &&
-      ("/" + navItem.href?.story?.url === currentRoute ||
-        navItem.href?.story?.url === currentRoute);
+      "/" + navItem.href === currentRoute || navItem.href === currentRoute;
 
     for (const item of navItem.items) {
       item.active =
-        item.href?.linktype === "story" &&
-        ("/" + item.href?.story?.url === currentRoute ||
-          item.href?.story?.url === currentRoute);
+        "/" + item.href === currentRoute || item.href === currentRoute;
     }
   }
 };
