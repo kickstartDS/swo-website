@@ -1,0 +1,10 @@
+@use "./teaser-card-tokens.scss";
+.c-teaser.dsa-teaser-card {
+  transition-property: border-color, background-color, box-shadow, transform;
+
+  &:hover {
+    --c-teaser--border: var(--dsa-teaser-card--border-color_hover, var(--ks-background-color-card-interactive))
+      var(--dsa-teaser-card--border-width) solid;
+    transform: translateY(-0.5em);
+  }
+}

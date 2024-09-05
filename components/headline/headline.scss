@@ -1,4 +1,1 @@
-:root,
-[ks-inverted] {
-  --dsa-headline--higlight-gradient: var(--ks-text-color-primary);
-}
+@use "./headline-tokens.scss";
