@@ -1887,6 +1887,72 @@
       "component_group_name": "Components"
     },
     {
+      "name": "global",
+      "display_name": null,
+      "created_at": "2024-09-05T11:28:27.708Z",
+      "updated_at": "2024-09-05T11:28:51.236Z",
+      "id": 6257450,
+      "schema": {
+        "global": {
+          "type": "bloks",
+          "pos": 0,
+          "restrict_type": "groups",
+          "restrict_components": true,
+          "component_whitelist": [],
+          "component_group_whitelist": [
+            "bed7508e-f5dd-444c-b6f2-ac5176848f9e"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "global",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "global_reference",
+      "display_name": null,
+      "created_at": "2024-09-05T11:29:46.153Z",
+      "updated_at": "2024-09-05T11:30:16.114Z",
+      "id": 6257482,
+      "schema": {
+        "reference": {
+          "type": "options",
+          "pos": 0,
+          "is_reference_type": true,
+          "source": "internal_stories",
+          "entry_appearance": "card",
+          "allow_advanced_search": true,
+          "folder_slug": "global/"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "global_reference",
+      "component_group_uuid": "619b1b1f-d05d-4b59-90c5-cbf769f4d8b3",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Global"
+    },
+    {
       "name": "header",
       "display_name": "Header",
       "created_at": "2024-09-05T10:55:03.987Z",
@@ -3462,7 +3528,7 @@
       "name": "section",
       "display_name": "Section",
       "created_at": "2024-09-05T10:54:54.987Z",
-      "updated_at": "2024-09-05T10:54:54.987Z",
+      "updated_at": "2024-09-05T11:30:46.877Z",
       "id": 6257238,
       "schema": {
         "width": {
@@ -3978,7 +4044,8 @@
           "restrict_type": "groups",
           "restrict_components": true,
           "component_group_whitelist": [
-            "bed7508e-f5dd-444c-b6f2-ac5176848f9e"
+            "bed7508e-f5dd-444c-b6f2-ac5176848f9e",
+            "619b1b1f-d05d-4b59-90c5-cbf769f4d8b3"
           ],
           "description": "Abstracts a blog overview concept into JSON schema",
           "required": false
