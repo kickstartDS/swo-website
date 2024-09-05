@@ -430,7 +430,6 @@ export interface SectionStoryblok {
     | TestimonialsStoryblok
     | TextStoryblok
     | VideoCurtainStoryblok
-    | GlobalReferenceStoryblok
   )[];
   buttons?: ButtonsStoryblok[];
   type?: string;
