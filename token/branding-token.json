@@ -1,15 +1,13 @@
 {
   "color": {
-    "primary": "#e21879",
-    "primary-inverted": "#4d25ef",
-    "secondary": "#4d25ef",
-    "secondary-inverted": "#e21879",
-    "background": "#06081F",
-    "background-inverted": "#f1f1f3",
-    "foreground": "#fff",
-    "foreground-inverted": "#06081f",
-    "link": "#B7A5FF",
-    "link-inverted": "#6642F6",
+    "primary": "#003278",
+    "primary-inverted": "#3daffa",
+    "background": "#fff",
+    "background-inverted": "#001434",
+    "foreground": "#041226",
+    "foreground-inverted": "#fff",
+    "link": "#003278",
+    "link-inverted": "#fff",
     "positive": "#6EDB64",
     "positive-inverted": "#23831B",
     "informative": "#64C2DB",
@@ -21,7 +19,7 @@
   },
   "font": {
     "display": {
-      "family": "Fredoka, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "value": "TitilliumWeb, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
       "font-size": 20,
       "line-height": 1.15,
       "scale-ratio": 1.225,
@@ -33,7 +31,7 @@
       }
     },
     "copy": {
-      "family": "Mulish, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "family": "Helvetica, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
       "font-size": 18,
       "line-height": 1.5,
       "scale-ratio": 1.225,
@@ -42,7 +40,7 @@
       }
     },
     "interface": {
-      "family": "Mulish, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+      "value": "TitilliumWeb, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
       "font-size": 16,
       "line-height": 1.5,
       "scale-ratio": 1.225,
@@ -67,9 +65,9 @@
     "bold": 700
   },
   "spacing": {
-    "base": 12,
-    "scale-ratio": 1.45,
-    "bp-ratio": 1.25
+    "base": 14,
+    "scale-ratio": 1.425,
+    "bp-ratio": 1.225
   },
   "border-radius": "16px",
   "box-shadow": {

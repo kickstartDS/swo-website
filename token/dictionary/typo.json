@@ -2,21 +2,21 @@
   "ks": {
     "font-family": {
       "display": {
-        "value": "Fredoka, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+        "value": "TitilliumWeb, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
       "copy": {
-        "value": "Mulish, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "value": "Helvetica, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
       "interface": {
-        "value": "Mulish, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+        "value": "TitilliumWeb, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
@@ -71,16 +71,16 @@
       "display": {
         "bp-factor": {
           "phone": {
-            "value": 1.125
-          },
-          "tablet": {
             "value": 1.25
           },
-          "laptop": {
+          "tablet": {
             "value": 1.5
           },
-          "desktop": {
+          "laptop": {
             "value": 1.75
+          },
+          "desktop": {
+            "value": 2
           }
         },
         "xxs-base": {
