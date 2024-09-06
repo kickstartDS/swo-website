@@ -102,8 +102,8 @@ const Picture = forwardRef<
       ref={internalRef}
       {...props}
       src={fileUrl}
-      width={maxWidth}
-      height={maxHeight}
+      width={Math.floor(maxWidth)}
+      height={Math.floor(maxHeight)}
       alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
       lazy={lazy}
       fetchPriority="high"
@@ -120,8 +120,8 @@ const Picture = forwardRef<
             }filters:quality(50)`
           : fileUrl
       }
-      width={autoSize ? undefined : maxWidth}
-      height={autoSize ? undefined : maxHeight}
+      width={autoSize ? undefined : Math.floor(maxWidth)}
+      height={autoSize ? undefined : Math.floor(maxHeight)}
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
