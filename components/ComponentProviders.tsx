@@ -120,8 +120,20 @@ const Picture = forwardRef<
             }filters:quality(50)`
           : fileUrl
       }
-      width={autoSize ? undefined : Math.floor(maxWidth)}
-      height={autoSize ? undefined : Math.floor(maxHeight)}
+      width={
+        autoSize
+          ? undefined
+          : fileUrl.includes("teaser_")
+          ? parseInt(width)
+          : Math.floor(maxWidth)
+      }
+      height={
+        autoSize
+          ? undefined
+          : fileUrl.includes("teaser_")
+          ? parseInt(height)
+          : Math.floor(maxHeight)
+      }
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
