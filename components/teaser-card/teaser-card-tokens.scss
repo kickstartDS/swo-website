@@ -1,14 +1,16 @@
-.dsa-teaser-card {
-  --dsa-teaser-card--border-width: 0;
-  --dsa-teaser-card--border-color: transparent;
+:root {
+  .dsa-teaser-card {
+    --dsa-teaser-card--border-width: 0;
+    --dsa-teaser-card--border-color: transparent;
 
-  .l-section--accent &,
-  .l-section--bold & {
-    --dsa-teaser-card--background: var(--ks-background-color-default);
-  }
+    .l-section--accent &,
+    .l-section--bold & {
+      --dsa-teaser-card--background: var(--ks-background-color-default);
+    }
 
-  @media (min-width: 48em) {
-    //Scaling for Desktop Breakpoint SmallTiles
-    --dsa-teaser-card--padding: var(--ks-spacing-inset-m);
+    @media (min-width: 48em) {
+      //Scaling for Desktop Breakpoint SmallTiles
+      --dsa-teaser-card--padding: var(--ks-spacing-inset-m);
+    }
   }
 }
