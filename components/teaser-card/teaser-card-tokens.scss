@@ -12,5 +12,8 @@
       //Scaling for Desktop Breakpoint SmallTiles
       --dsa-teaser-card--padding: var(--ks-spacing-inset-m);
     }
+
+    --dsa-teaser-card__label--background-color: var(--ks-color-primary-to-bg-7);
+    --dsa-teaser-card__label--color: var(--ks-text-color-primary);
   }
 }

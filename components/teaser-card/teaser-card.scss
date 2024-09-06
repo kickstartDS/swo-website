@@ -8,5 +8,14 @@
         var(--dsa-teaser-card--border-width) solid;
       transform: translateY(-0.5em);
     }
+    .c-button.c-button--clear.dsa-button {
+      --dsa-button_secondary--color: var(--dsa-button_primary--color);
+      --dsa-button_secondary--color_hover: var(--dsa-button_primary--color_hover);
+      --dsa-button_secondary--color_active: var(--dsa-button_primary--color_active);
+
+      --dsa-button_secondary--background-color: var(--dsa-button_primary--background-color);
+      --dsa-button_secondary--background-color_hover: var(--dsa-button_primary--background-color_hover);
+      --dsa-button_secondary--background-color_active: var(--dsa-button_primary--background-color_active);
+    }
   }
 }
