@@ -1,5 +1,6 @@
 import {
   Children,
+  ComponentProps,
   FC,
   forwardRef,
   HTMLAttributes,
@@ -24,13 +25,11 @@ import {
   ImageStoryContext,
   ImageStoryContextDefault,
 } from "@kickstartds/ds-agency-premium/components/image-story/index.js";
-import { LogosProps } from "@kickstartds/ds-agency-premium/LogosProps-f9474fe2.js";
-import { SectionProps } from "@kickstartds/ds-agency-premium/SectionProps-83d399b4.js";
-import { ImageStoryProps } from "@kickstartds/ds-agency-premium/ImageStoryProps-e853e1e7.js";
 
 const Section = forwardRef<
   HTMLDivElement,
-  SectionProps & Omit<HTMLAttributes<HTMLElement>, "style" | "content">
+  ComponentProps<typeof SectionContextDefault> &
+    Omit<HTMLAttributes<HTMLElement>, "style" | "content">
 >((props, ref) => {
   const sectionWidthName =
     props.content?.width === "unset"
@@ -62,7 +61,7 @@ const SectionProvider: FC<PropsWithChildren> = (props) => (
 
 const Logos = forwardRef<
   HTMLDivElement,
-  LogosProps & HTMLAttributes<HTMLDivElement>
+  ComponentProps<typeof LogosContextDefault> & HTMLAttributes<HTMLDivElement>
 >((props, ref) => {
   const size = useImageSize();
   const gapSize = getPxSize(
@@ -86,7 +85,8 @@ const LogosProvider: FC<PropsWithChildren> = (props) => (
 
 const ImageStory = forwardRef<
   HTMLDivElement,
-  ImageStoryProps & HTMLAttributes<HTMLDivElement>
+  ComponentProps<typeof ImageStoryContextDefault> &
+    HTMLAttributes<HTMLDivElement>
 >((props, ref) => {
   const size = useImageSize();
   const gapSize = getPxSize(
