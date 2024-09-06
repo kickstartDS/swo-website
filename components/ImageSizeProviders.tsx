@@ -45,7 +45,7 @@ const Section = forwardRef<
       ? sectionWidth
       : props.content?.mode === "slider"
       ? sectionWidth
-      : sectionWidth / Children.count(props.children);
+      : sectionWidth / 2;
 
   return (
     <ImageSizeProvider size={componentWidth}>

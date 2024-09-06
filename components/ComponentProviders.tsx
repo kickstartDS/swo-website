@@ -90,7 +90,7 @@ const Picture = forwardRef<
   const source = isStoryblokAsset(src) ? src.filename : src;
   const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
   const [width, height] = fileUrl.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
-  const maxWidth = parseInt(width) > size ? size : parseInt(width);
+  const maxWidth = parseInt(width) > size ? Math.floor(size) : parseInt(width);
   const maxHeight =
     parseInt(width) > size
       ? Math.floor((parseInt(height) * size) / parseInt(width))
@@ -102,8 +102,8 @@ const Picture = forwardRef<
       ref={internalRef}
       {...props}
       src={fileUrl}
-      width={Math.floor(maxWidth)}
-      height={Math.floor(maxHeight)}
+      width={maxWidth}
+      height={maxHeight}
       alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
       lazy={lazy}
       fetchPriority="high"
@@ -120,20 +120,8 @@ const Picture = forwardRef<
             }filters:quality(50)`
           : fileUrl
       }
-      width={
-        autoSize
-          ? undefined
-          : fileUrl.includes("teaser_")
-          ? parseInt(width)
-          : Math.floor(maxWidth)
-      }
-      height={
-        autoSize
-          ? undefined
-          : fileUrl.includes("teaser_")
-          ? parseInt(height)
-          : Math.floor(maxHeight)
-      }
+      width={autoSize ? undefined : maxWidth}
+      height={autoSize ? undefined : maxHeight}
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
