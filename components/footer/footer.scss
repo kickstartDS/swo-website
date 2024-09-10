@@ -1,0 +1,53 @@
+@import "./footer-tokens.scss";
+
+.dsa-footer {
+  flex-direction: column;
+
+  .dsa-footer__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dsa-footer__links {
+    margin: 0;
+    padding: 0;
+
+    &--bottom {
+      .dsa-footer__link {
+        font: var(--ks-font-copy-xs);
+        color: var(--ks-color-fg-to-bg-3);
+      }
+    }
+  }
+
+  .dsa-footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+
+    .dsa-footer__address__item {
+      color: var(--ks-color-fg-to-bg-3);
+      font: var(--ks-font-copy-xs);
+      text-decoration: none;
+
+      &:first-child {
+        font-weight: var(--ks-font-weight-bold);
+        margin-bottom: 0.5em;
+      }
+    }
+    .dsa-footer__address__link {
+      color: var(--ks-color-fg-to-bg-3);
+      font: var(--ks-font-copy-xs);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--ks-color-fg);
+      }
+
+      &:last-of-type {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}

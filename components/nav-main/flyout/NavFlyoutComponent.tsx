@@ -11,8 +11,6 @@ import {
   NavFlyoutContextDefault as DsaNavFlyout,
   NavFlyoutContext,
 } from "@kickstartds/ds-agency-premium/nav-flyout";
-
-import { Icon } from "@kickstartds/base/lib/icon";
 import { Link } from "@kickstartds/base/lib/link";
 import { Logo } from "@kickstartds/ds-agency-premium/components/logo/index.js";
 import { Button } from "@kickstartds/ds-agency-premium/components/button/index.js";
