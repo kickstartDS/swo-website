@@ -60,10 +60,18 @@ export const FooterContextDefault = forwardRef<
       </div>
       <div className="dsa-footer__content dsa-footer__content--bottom">
         <ul className="dsa-footer__links dsa-footer__links--bottom">
-          <Link className="dsa-footer__link">Kontakt</Link>
-          <Link className="dsa-footer__link">Impressum</Link>
-          <Link className="dsa-footer__link">Datenschutz</Link>
-          <Link className="dsa-footer__link">Cookie-Liste</Link>
+          <Link className="dsa-footer__link" href="ueber-uns/kontakt">
+            Kontakt
+          </Link>
+          <Link className="dsa-footer__link" href="#">
+            Impressum
+          </Link>
+          <Link className="dsa-footer__link" href="#">
+            Datenschutz
+          </Link>
+          <Link className="dsa-footer__link" href="#">
+            Cookie-Liste
+          </Link>
         </ul>
         <ul className="dsa-footer__social">
           <Link className="dsa-footer__link">

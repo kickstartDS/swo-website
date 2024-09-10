@@ -71,7 +71,7 @@ export const NavTopbarContextDefault = forwardRef<
           className="dsa-nav-topbar__cta"
           label="Projektanfrage"
           icon="chevron-right"
-          target="/kontakt"
+          target="ueber-uns/kontakt"
           size="small"
         />
       </ul>
