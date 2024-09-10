@@ -78,7 +78,13 @@ export const NavFlyoutContextDefault = forwardRef<
             </li>
           );
         })}
-        <Button className="dsa-nav-flyout__cta" label="Nav Main CTA" />
+        <Button
+          className="dsa-nav-flyout__cta"
+          label="Projektanfrage"
+          icon="chevron-right"
+          target="/kontakt"
+          size="small"
+        />
       </ul>
     </nav>
   ) : null
