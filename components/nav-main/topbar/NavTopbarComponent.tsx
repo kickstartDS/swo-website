@@ -67,7 +67,12 @@ export const NavTopbarContextDefault = forwardRef<
           );
         })}
 
-        <Button className="dsa-nav-topbar__cta" label="Nav Main CTA" />
+        <Button
+          className="dsa-nav-topbar__cta"
+          label="Projektanfrage"
+          icon="chevron-right"
+          size="small"
+        />
       </ul>
     </nav>
   ) : null

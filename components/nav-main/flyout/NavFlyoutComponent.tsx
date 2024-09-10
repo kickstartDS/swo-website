@@ -44,14 +44,6 @@ export const NavFlyoutContextDefault = forwardRef<
               {subItems?.length ? (
                 <span tabIndex={0} className="dsa-nav-flyout__label">
                   {label}
-                  {subItems?.length ? (
-                    <Icon
-                      className="dsa-nav-flyout__label__icon"
-                      icon="chevron-down"
-                    />
-                  ) : (
-                    ""
-                  )}
                 </span>
               ) : (
                 <Link

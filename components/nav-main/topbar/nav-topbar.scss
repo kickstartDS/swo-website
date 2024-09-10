@@ -1,7 +1,7 @@
 @import "./nav-topbar-tokens.scss";
 
 .dsa-nav-topbar {
-  &__label {
+  .dsa-nav-topbar__label {
     font-family: var(--ks-font-family-display);
   }
   &__cta {
@@ -21,5 +21,11 @@
         bottom: 0;
       }
     }
+  }
+
+  .dsa-button.dsa-nav-topbar__cta {
+    padding: 0.35em 0.25em 0.35em 0.75em;
+    height: fit-content;
+    align-self: center;
   }
 }

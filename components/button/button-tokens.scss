@@ -6,6 +6,10 @@
     --dsa-button--border-width: var(--ks-border-width-emphasized);
     --dsa-button--padding: 0.5em 1em;
 
+    &:has(.icon) {
+      --dsa-button--padding: 0.5em 0.75em 0.5em 1em;
+    }
+
     --dsa-button_primary--color: var(--ks-color-fg-inverted);
     --dsa-button_primary--color_hover: var(--ks-color-fg-inverted);
     --dsa-button_primary--color_active: var(--ks-color-fg-inverted);

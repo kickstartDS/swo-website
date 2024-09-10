@@ -80,7 +80,11 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
             </Section>
           )}
           {list && list.length > 0 && (
-            <Section headline={{ text: listTitle }} content={{ mode: "list" }}>
+            <Section
+              headline={{ text: listTitle }}
+              content={{ mode: "list" }}
+              spaceBefore="small"
+            >
               {list.map((article) => (
                 <BlogTeaser {...article} key={article.headline} />
               ))}
@@ -95,7 +99,11 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
             </Section>
           )}
           {cta && (
-            <Section content={{ mode: "list" }}>
+            <Section
+              backgroundColor="accent"
+              spaceAfter="none"
+              spaceBefore="none"
+            >
               <Cta {...cta} />
             </Section>
           )}
