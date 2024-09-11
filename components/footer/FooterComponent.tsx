@@ -12,7 +12,6 @@ import {
   FooterContext,
 } from "@kickstartds/ds-agency-premium/footer";
 import { Link } from "@kickstartds/base/lib/link";
-import { Logo } from "@kickstartds/ds-agency-premium/components/logo/index.js";
 import { Icon } from "@kickstartds/base/lib/icon";
 
 export const FooterContextDefault = forwardRef<
@@ -63,10 +62,10 @@ export const FooterContextDefault = forwardRef<
           <Link className="dsa-footer__link" href="ueber-uns/kontakt">
             Kontakt
           </Link>
-          <Link className="dsa-footer__link" href="#">
+          <Link className="dsa-footer__link" href="/impressum">
             Impressum
           </Link>
-          <Link className="dsa-footer__link" href="#">
+          <Link className="dsa-footer__link" href="/datenschutz">
             Datenschutz
           </Link>
           <Link className="dsa-footer__link" href="#">
@@ -74,7 +73,11 @@ export const FooterContextDefault = forwardRef<
           </Link>
         </ul>
         <ul className="dsa-footer__social">
-          <Link className="dsa-footer__link">
+          <Link
+            className="dsa-footer__link"
+            href="https://www.linkedin.com/company/ruhmesmeile/"
+            target="_blank"
+          >
             <Icon icon="linkedin" />
           </Link>
         </ul>
