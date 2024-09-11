@@ -25,7 +25,7 @@ export const FooterContextDefault = forwardRef<
       ref={ref}
     >
       <div className="dsa-footer__content dsa-footer__content--top">
-        <address className="dsa-footer__column dsa-footer__adress">
+        <address className="dsa-footer__column dsa-footer__address">
           <ul className="dsa-footer__contact">
             <Link className="dsa-footer__headline" href="tel:+49 228 30412660">
               +49 228 30412660
