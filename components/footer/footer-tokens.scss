@@ -1,5 +1,7 @@
 :root {
   .dsa-footer {
+    --dsa-footer__links--gap: var(--ks-spacing-xxs) var(--ks-spacing-inline-m);
+
     --dsa-footer__link--font-weight: var(--ks-font-weight-regular);
     --dsa-footer__link--text-tecoration_hover: none;
     --dsa-footer__link--color_hover: var(--ks-color-fg);

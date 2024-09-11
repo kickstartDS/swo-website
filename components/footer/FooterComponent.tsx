@@ -68,6 +68,9 @@ export const FooterContextDefault = forwardRef<
           <Link className="dsa-footer__link" href="/datenschutz">
             Datenschutz
           </Link>
+          <Link className="dsa-footer__link" href="/glossar">
+            Glossar
+          </Link>
           <Link className="dsa-footer__link" href="#">
             Cookie-Liste
           </Link>
