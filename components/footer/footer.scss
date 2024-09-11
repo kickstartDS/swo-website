@@ -38,14 +38,15 @@
 
     &.dsa-footer__adress {
       flex-shrink: 1;
-      flex-basis: min-content;
+      flex-grow: 0;
+      flex-basis: max-content;
     }
   }
 
   .dsa-footer__links--top {
     margin: 0;
     padding: 0;
-    flex-basis: 530px;
+    flex-basis: 540px;
     grid-gap: var(--ks-spacing-s) var(--ks-spacing-m);
   }
 
