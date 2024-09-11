@@ -1,11 +1,5 @@
 :root {
   .dsa-footer {
-    --dsa-footer__column--min-widhth: 20em;
-
-    @media (min-width: "600px") {
-      --dsa-footer__column--min-widhth: 10em;
-    }
-
     --dsa-footer--gap-vertical: var(--ks-spacing-inline-xl);
     --dsa-footer__links--gap: var(--ks-spacing-s) var(--ks-spacing-inline-m);
     --dsa-footer__content--border: 1px solid var(--ks-border-color-default);
