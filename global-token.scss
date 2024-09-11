@@ -7,7 +7,11 @@
   // Logo
   --dsa-logo--height: 1.5rem;
 
-  @media (min-width: 48em) {
+  @media (min-width: "94rem") {
+    --dsa-logo--height: 1.35rem;
+  }
+
+  @media (min-width: "102rem") {
     --dsa-logo--height: 1.75rem;
   }
 

@@ -24,8 +24,14 @@
   }
 
   .dsa-button.dsa-nav-topbar__cta {
+    font: var(--dsa-nav-topbar__label--font);
+    font-weight: var(--dsa-button--font-weight);
     padding: 0.35em 0.25em 0.35em 0.75em;
     height: fit-content;
     align-self: center;
+    margin: var(--dsa-nav-topbar__label--padding);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }

@@ -4,19 +4,21 @@
   .dsa-nav-main {
     .dsa-nav-toggle {
       display: block;
-      @media (min-width: "94rem") {
+
+      @media (min-width: "88em") {
         display: none;
       }
     }
     .dsa-nav-flyout {
       display: flex;
-      @media (min-width: "94rem") {
+
+      @media (min-width: "88em") {
         display: none;
       }
     }
 
     .dsa-nav-topbar {
-      @media (max-width: "94rem") {
+      @media (max-width: "88em") {
         display: none;
       }
     }
