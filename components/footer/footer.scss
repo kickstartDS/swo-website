@@ -4,6 +4,11 @@
   --dsa-footer--border-top: var(--dsa-footer__content--border);
   flex-direction: column;
 
+  ul,
+  li {
+    list-style: none;
+  }
+
   .dsa-footer__content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -51,6 +56,10 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+
+    li {
+      display: flex;
+    }
   }
 
   .dsa-footer__links--top {
@@ -70,6 +79,10 @@
   .dsa-footer__item {
     color: var(--dsa-footer__link--color);
     font: var(--dsa-footer__link--font);
+  }
+
+  .dsa-footer__link {
+    padding: 0.15em 0;
   }
 
   .dsa-footer__contact {

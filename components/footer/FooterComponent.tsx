@@ -27,22 +27,29 @@ export const FooterContextDefault = forwardRef<
       <div className="dsa-footer__content dsa-footer__content--top">
         <address className="dsa-footer__column dsa-footer__address">
           <ul className="dsa-footer__contact">
-            <Link
-              className="dsa-footer__headline"
-              href="mailto:mail@ruhmesmeile.com"
-            >
-              mail@ruhmesmeile.com
-            </Link>
-            <Link className="dsa-footer__headline" href="tel:+49 228 30412660">
-              +49 228 30412660
-            </Link>
+            <li>
+              <Link
+                className="dsa-footer__headline"
+                href="mailto:mail@ruhmesmeile.com"
+              >
+                mail@ruhmesmeile.com
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="dsa-footer__headline"
+                href="tel:+49 228 30412660"
+              >
+                +49 228 30412660
+              </Link>
+            </li>
           </ul>
           <span className="dsa-footer__item">ruhmesmeile GmbH</span>
           <span className="dsa-footer__item">Mozartstraße 4 - 10</span>
           <span className="dsa-footer__item">53115 Bonn</span>
         </address>
 
-        <nav className="dsa-footer__links dsa-footer__links--top">
+        <ul className="dsa-footer__links dsa-footer__links--top">
           <li className="dsa-footer__column">
             <Link
               className="dsa-footer__headline"
@@ -51,21 +58,30 @@ export const FooterContextDefault = forwardRef<
               Design System Services
             </Link>
             <ul className="dsa-footer__sublist">
-              <Link
-                className="dsa-footer__link"
-                href="/design-system-services/brauche-ich-ein-design-system"
-              >
-                Beratung
-              </Link>
-              <Link
-                className="dsa-footer__link"
-                href="/design-system-services/vorteile-eines-design-systems"
-              >
-                Design System Vorteile
-              </Link>
-              <Link className="dsa-footer__link" href="/ux-strategie-beratung">
-                UX-Strategie
-              </Link>
+              <li>
+                <Link
+                  className="dsa-footer__link"
+                  href="/design-system-services/brauche-ich-ein-design-system"
+                >
+                  Beratung
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="dsa-footer__link"
+                  href="/design-system-services/vorteile-eines-design-systems"
+                >
+                  Design System Vorteile
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="dsa-footer__link"
+                  href="/ux-strategie-beratung"
+                >
+                  UX-Strategie
+                </Link>
+              </li>
             </ul>
           </li>
           <li className="dsa-footer__column">
@@ -76,21 +92,27 @@ export const FooterContextDefault = forwardRef<
               Headless CMS
             </Link>
             <ul className="dsa-footer__sublist">
-              <Link
-                className="dsa-footer__link"
-                href="/headless-cms/was-ist-ein-headless-cms"
-              >
-                Wissenswertes
-              </Link>
-              <Link className="dsa-footer__link" href="/cms-starter-paket">
-                CMS Starter
-              </Link>
-              <Link
-                className="dsa-footer__link"
-                href="/headless-cms/storyblok-websites"
-              >
-                Storyblok Agentur
-              </Link>
+              <li>
+                <Link
+                  className="dsa-footer__link"
+                  href="/headless-cms/was-ist-ein-headless-cms"
+                >
+                  Wissenswertes
+                </Link>
+              </li>
+              <li>
+                <Link className="dsa-footer__link" href="/cms-starter-paket">
+                  CMS Starter
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="dsa-footer__link"
+                  href="/headless-cms/storyblok-websites"
+                >
+                  Storyblok Agentur
+                </Link>
+              </li>
             </ul>
           </li>
           <li className="dsa-footer__column">
@@ -101,45 +123,62 @@ export const FooterContextDefault = forwardRef<
               Agentur & Beratung
             </Link>
             <ul className="dsa-footer__sublist">
-              <Link
-                className="dsa-footer__link"
-                href="/ueber-uns/design-system-agentur-beratung"
-              >
-                Über uns
-              </Link>
-              <Link className="dsa-footer__link" href="#">
-                Insights LINK FEHLT
-              </Link>
-              <Link className="dsa-footer__link" href="/ueber-uns/kontakt">
-                Kontakt
-              </Link>
+              <li>
+                <Link
+                  className="dsa-footer__link"
+                  href="/ueber-uns/design-system-agentur-beratung"
+                >
+                  Über uns
+                </Link>
+              </li>
+              <li>
+                <Link className="dsa-footer__link" href="#">
+                  Insights LINK FEHLT
+                </Link>
+              </li>
+              <li>
+                <Link className="dsa-footer__link" href="/ueber-uns/kontakt">
+                  Kontakt
+                </Link>
+              </li>
             </ul>
           </li>
-        </nav>
+        </ul>
       </div>
       <div className="dsa-footer__content dsa-footer__content--bottom">
         <ul className="dsa-footer__links dsa-footer__links--bottom">
-          <Link className="dsa-footer__link" href="/impressum">
-            Impressum
-          </Link>
-          <Link className="dsa-footer__link" href="/datenschutz">
-            Datenschutz
-          </Link>
-          <Link className="dsa-footer__link" href="/glossar">
-            Glossar
-          </Link>
-          <Link className="dsa-footer__link" href="#">
-            Cookie-Liste
-          </Link>
+          <li>
+            <Link className="dsa-footer__link" href="/impressum">
+              Impressum
+            </Link>
+          </li>
+          <li>
+            <Link className="dsa-footer__link" href="/datenschutz">
+              Datenschutz
+            </Link>
+          </li>
+          <li>
+            <Link className="dsa-footer__link" href="/glossar">
+              Glossar
+            </Link>
+          </li>
+          <li>
+            <Link className="dsa-footer__link" href="#">
+              Cookie-Liste
+            </Link>
+          </li>
         </ul>
         <ul className="dsa-footer__social">
-          <Link
-            className="dsa-footer__link"
-            href="https://www.linkedin.com/company/ruhmesmeile/"
-            target="_blank"
-          >
-            <Icon icon="linkedin" />
-          </Link>
+          <li>
+            <Link
+              className="dsa-footer__link"
+              href="https://www.linkedin.com/company/ruhmesmeile/"
+              target="_blank"
+              aria-label="Visit our LinkedIn"
+            >
+              <Icon icon="linkedin" />
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
