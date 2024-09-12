@@ -17,6 +17,7 @@
     &--bottom {
       padding: var(--ks-spacing-stack-s) var(--dsa-content--spacing);
       align-items: center;
+      gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-m);
     }
 
     &--top {

@@ -66,14 +66,15 @@ export const NavTopbarContextDefault = forwardRef<
             </li>
           );
         })}
-
-        <Button
-          className="dsa-nav-topbar__cta"
-          label="Projektanfrage"
-          icon="chevron-right"
-          target="ueber-uns/kontakt"
-          size="small"
-        />
+        <li className="dsa-nav-topbar__item">
+          <Button
+            className="dsa-nav-topbar__cta"
+            label="Projektanfrage"
+            icon="chevron-right"
+            target="ueber-uns/kontakt"
+            size="small"
+          />
+        </li>
       </ul>
     </nav>
   ) : null
