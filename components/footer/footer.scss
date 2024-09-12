@@ -46,6 +46,13 @@
     }
   }
 
+  .dsa-footer__sublist {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
   .dsa-footer__links--top {
     margin: 0;
     padding: 0;

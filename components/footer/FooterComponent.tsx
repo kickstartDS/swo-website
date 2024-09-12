@@ -17,7 +17,7 @@ import { Icon } from "@kickstartds/base/lib/icon";
 export const FooterContextDefault = forwardRef<
   HTMLDivElement,
   ComponentProps<typeof DsaFooter> & HTMLAttributes<HTMLDivElement>
->(({ navItems, inverted, logo }, ref) =>
+>(({ navItems, inverted }, ref) =>
   navItems && navItems.length > 0 ? (
     <div
       className={classnames("dsa-footer")}
@@ -27,14 +27,14 @@ export const FooterContextDefault = forwardRef<
       <div className="dsa-footer__content dsa-footer__content--top">
         <address className="dsa-footer__column dsa-footer__address">
           <ul className="dsa-footer__contact">
-            <Link className="dsa-footer__headline" href="tel:+49 228 30412660">
-              +49 228 30412660
-            </Link>
             <Link
               className="dsa-footer__headline"
               href="mailto:mail@ruhmesmeile.com"
             >
               mail@ruhmesmeile.com
+            </Link>
+            <Link className="dsa-footer__headline" href="tel:+49 228 30412660">
+              +49 228 30412660
             </Link>
           </ul>
           <span className="dsa-footer__item">ruhmesmeile GmbH</span>
@@ -43,24 +43,78 @@ export const FooterContextDefault = forwardRef<
         </address>
 
         <nav className="dsa-footer__links dsa-footer__links--top">
-          <ul className="dsa-footer__column">
-            <span className="dsa-footer__headline">Design System Services</span>
-            <Link className="dsa-footer__link">Beratung</Link>
-            <Link className="dsa-footer__link">Design System Training</Link>
-            <Link className="dsa-footer__link">UX-Strategie</Link>
-          </ul>
-          <ul className="dsa-footer__column">
-            <span className="dsa-footer__headline">Headless CMS</span>
-            <Link className="dsa-footer__link">Wissenswertes</Link>
-            <Link className="dsa-footer__link">CMS Starter</Link>
-            <Link className="dsa-footer__link">Storyblok Agentur</Link>
-          </ul>
-          <ul className="dsa-footer__column">
-            <span className="dsa-footer__headline">Agentur & Beratung</span>
-            <Link className="dsa-footer__link">Über uns</Link>
-            <Link className="dsa-footer__link">Insights</Link>
-            <Link className="dsa-footer__link">Kontakt</Link>
-          </ul>
+          <li className="dsa-footer__column">
+            <Link
+              className="dsa-footer__headline"
+              href="/design-system-services/design-system-services"
+            >
+              Design System Services
+            </Link>
+            <ul className="dsa-footer__sublist">
+              <Link
+                className="dsa-footer__link"
+                href="/design-system-services/brauche-ich-ein-design-system"
+              >
+                Beratung
+              </Link>
+              <Link
+                className="dsa-footer__link"
+                href="/design-system-services/vorteile-eines-design-systems"
+              >
+                Design System Vorteile
+              </Link>
+              <Link className="dsa-footer__link" href="/ux-strategie-beratung">
+                UX-Strategie
+              </Link>
+            </ul>
+          </li>
+          <li className="dsa-footer__column">
+            <Link
+              className="dsa-footer__headline"
+              href="/headless-cms/was-ist-ein-headless-cms"
+            >
+              Headless CMS
+            </Link>
+            <ul className="dsa-footer__sublist">
+              <Link
+                className="dsa-footer__link"
+                href="/headless-cms/was-ist-ein-headless-cms"
+              >
+                Wissenswertes
+              </Link>
+              <Link className="dsa-footer__link" href="/cms-starter-paket">
+                CMS Starter
+              </Link>
+              <Link
+                className="dsa-footer__link"
+                href="/headless-cms/storyblok-websites"
+              >
+                Storyblok Agentur
+              </Link>
+            </ul>
+          </li>
+          <li className="dsa-footer__column">
+            <Link
+              className="dsa-footer__headline"
+              href="/ueber-uns/design-system-agentur-beratung"
+            >
+              Agentur & Beratung
+            </Link>
+            <ul className="dsa-footer__sublist">
+              <Link
+                className="dsa-footer__link"
+                href="/ueber-uns/design-system-agentur-beratung"
+              >
+                Über uns
+              </Link>
+              <Link className="dsa-footer__link" href="#">
+                Insights LINK FEHLT
+              </Link>
+              <Link className="dsa-footer__link" href="/ueber-uns/kontakt">
+                Kontakt
+              </Link>
+            </ul>
+          </li>
         </nav>
       </div>
       <div className="dsa-footer__content dsa-footer__content--bottom">
