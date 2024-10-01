@@ -193,6 +193,13 @@ export const components = {
       )
     )
   ),
+  "info-table": editable(
+    dynamic(() =>
+      import("./info-table/InfoTableComponent").then(
+        (mod) => mod.InfoTableContextDefault
+      )
+    )
+  ),
   "teaser-card": editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/teaser-card").then(
