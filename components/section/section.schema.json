@@ -36,7 +36,7 @@
                 "$ref": "http://schema.mydesignsystem.com/image-text.schema.json"
               },
               {
-                "$ref": "http://schema.mydesignsystem.com/info-table.schema.json"
+                "$ref": "http://cms.schema.mydesignsystem.com/info-table.schema.json"
               },
               {
                 "$ref": "http://schema.mydesignsystem.com/logos.schema.json"
