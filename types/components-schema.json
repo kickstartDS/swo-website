@@ -774,7 +774,7 @@
       "name": "buttons",
       "display_name": "Buttons",
       "created_at": "2024-09-05T10:54:29.750Z",
-      "updated_at": "2024-09-05T10:54:29.750Z",
+      "updated_at": "2024-09-12T13:15:25.843Z",
       "id": 6257215,
       "schema": {
         "label": {
@@ -791,9 +791,11 @@
           "pos": 0,
           "display_name": "Icon",
           "key": "icon",
-          "type": "text",
+          "type": "custom",
           "description": "Choose an icon",
-          "required": false
+          "required": false,
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": []
         },
         "target": {
           "id": 0,
@@ -2862,6 +2864,39 @@
       "component_group_name": "Components"
     },
     {
+      "name": "info-table",
+      "display_name": "Info Table",
+      "created_at": "2024-09-30T17:44:09.888Z",
+      "updated_at": "2024-09-30T17:53:30.349Z",
+      "id": 6356531,
+      "schema": {
+        "data": {
+          "type": "table",
+          "pos": 0
+        },
+        "type": {
+          "type": "text",
+          "pos": 1,
+          "default_value": "table"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Info Table",
+      "component_group_uuid": "bed7508e-f5dd-444c-b6f2-ac5176848f9e",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Components"
+    },
+    {
       "name": "items",
       "display_name": "Items",
       "created_at": "2024-09-05T10:55:03.774Z",
@@ -4292,7 +4327,7 @@
       "name": "settings",
       "display_name": "Settings",
       "created_at": "2024-09-05T10:55:06.892Z",
-      "updated_at": "2024-09-05T13:20:18.445Z",
+      "updated_at": "2024-09-12T13:02:56.039Z",
       "id": 6257253,
       "schema": {
         "header": {
@@ -4345,6 +4380,10 @@
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "settings"
+        },
+        "iconSprite": {
+          "type": "textarea",
+          "pos": 4
         }
       },
       "image": null,

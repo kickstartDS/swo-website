@@ -858,42 +858,64 @@
       "description": null
     },
     {
-      "id": 2277543,
+      "id": 2277546,
       "name": "Default",
       "preset": {
-        "_uid": "4fe5f85f-7a94-4368-a06f-d3f0c6d781ac",
+        "_uid": "977d89ef-9408-4059-b735-2dc19b5debe3",
         "date": "12/30/2022",
-        "tags": [
+        "type": "blog-aside",
+        "title": "Blog Post",
+        "component": "blog-aside",
+        "author__uid": "949fce95-d0c3-42b3-ab39-73054a7aedf2",
+        "author_name": "Jane Smith",
+        "author_type": "blog-author",
+        "readingTime": "5 min read",
+        "author_image": {
+          "alt": "Picture of Jane Smith",
+          "src": "//a.storyblok.com/f/303819/250x250/7166103a9f/author-emily.png",
+          "fullWidth": false,
+          "aspectRatio": "square"
+        },
+        "author_links": [
           {
-            "_uid": "9f0527a4-fae2-4adc-9214-37e08a09e7df",
-            "type": "tags",
-            "entry": "Technology",
-            "component": "tags"
+            "href": "tel:+4922868896620",
+            "icon": "twitter",
+            "label": "jane_smith",
+            "newTab": false
           },
           {
-            "_uid": "2f2b99b0-8513-4ab5-a000-82ce554c3d39",
-            "type": "tags",
-            "entry": "AI",
-            "component": "tags"
+            "href": "mailto:mail@example.com",
+            "icon": "email",
+            "label": "jane.smith@example.com",
+            "newTab": false
           }
         ],
-        "type": "blog-teaser",
-        "image": "//a.storyblok.com/f/303819/1260x840/25c98333fb/close-up-young-business-team-working.png",
-        "headline": "The Future of AI",
-        "link_url": "https://example.com",
-        "component": "blog-teaser",
-        "link_label": "Read more",
-        "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
-        "author_name": "Jane Smith",
-        "readingTime": "5 min read",
-        "author_image": "//a.storyblok.com/f/303819/250x250/7166103a9f/author-emily.png",
-        "author_title": "Senior AI Researcher"
+        "author_byline": "CEO at Company",
+        "socialSharing": [
+          {
+            "_uid": "9ab54040-0abf-49f5-8997-42706e097b86",
+            "href": "https://twitter.com/share?text=The%20Future%20of%20AI&url=https://example.com/blog/the-future-of-ai",
+            "icon": "twitter",
+            "type": "socialSharing",
+            "title": "Share on Twitter",
+            "component": "socialSharing"
+          },
+          {
+            "_uid": "6c14d751-d1ea-439d-a580-eb9380e9c071",
+            "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/blog/the-future-of-ai&title=The%20Future%20of%20AI&summary=The%20Future%20of%20AI&source=LinkedIn",
+            "icon": "linkedin",
+            "type": "socialSharing",
+            "title": "Share on LinkedIn",
+            "component": "socialSharing"
+          }
+        ],
+        "author_component": "blog-author"
       },
-      "component_id": 6257240,
+      "component_id": 6257246,
       "space_id": 303819,
-      "created_at": "2024-09-05T10:55:00.011Z",
-      "updated_at": "2024-09-05T10:55:00.011Z",
-      "image": "//a.storyblok.com/f/303819/1000x504/9e533dfe80/blog-blog-teaser-default.png",
+      "created_at": "2024-09-05T10:55:02.982Z",
+      "updated_at": "2024-09-05T10:55:02.982Z",
+      "image": "//a.storyblok.com/f/303819/390x646/89a7c36bfb/blog-blog-aside-default.png",
       "color": null,
       "icon": null,
       "description": null
@@ -976,64 +998,42 @@
       "description": null
     },
     {
-      "id": 2277546,
+      "id": 2277543,
       "name": "Default",
       "preset": {
-        "_uid": "977d89ef-9408-4059-b735-2dc19b5debe3",
+        "_uid": "4fe5f85f-7a94-4368-a06f-d3f0c6d781ac",
         "date": "12/30/2022",
-        "type": "blog-aside",
-        "title": "Blog Post",
-        "component": "blog-aside",
-        "author__uid": "949fce95-d0c3-42b3-ab39-73054a7aedf2",
+        "tags": [
+          {
+            "_uid": "9f0527a4-fae2-4adc-9214-37e08a09e7df",
+            "type": "tags",
+            "entry": "Technology",
+            "component": "tags"
+          },
+          {
+            "_uid": "2f2b99b0-8513-4ab5-a000-82ce554c3d39",
+            "type": "tags",
+            "entry": "AI",
+            "component": "tags"
+          }
+        ],
+        "type": "blog-teaser",
+        "image": "//a.storyblok.com/f/303819/1260x840/25c98333fb/close-up-young-business-team-working.png",
+        "headline": "The Future of AI",
+        "link_url": "https://example.com",
+        "component": "blog-teaser",
+        "link_label": "Read more",
+        "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
         "author_name": "Jane Smith",
-        "author_type": "blog-author",
         "readingTime": "5 min read",
-        "author_image": {
-          "alt": "Picture of Jane Smith",
-          "src": "//a.storyblok.com/f/303819/250x250/7166103a9f/author-emily.png",
-          "fullWidth": false,
-          "aspectRatio": "square"
-        },
-        "author_links": [
-          {
-            "href": "tel:+4922868896620",
-            "icon": "twitter",
-            "label": "jane_smith",
-            "newTab": false
-          },
-          {
-            "href": "mailto:mail@example.com",
-            "icon": "email",
-            "label": "jane.smith@example.com",
-            "newTab": false
-          }
-        ],
-        "author_byline": "CEO at Company",
-        "socialSharing": [
-          {
-            "_uid": "9ab54040-0abf-49f5-8997-42706e097b86",
-            "href": "https://twitter.com/share?text=The%20Future%20of%20AI&url=https://example.com/blog/the-future-of-ai",
-            "icon": "twitter",
-            "type": "socialSharing",
-            "title": "Share on Twitter",
-            "component": "socialSharing"
-          },
-          {
-            "_uid": "6c14d751-d1ea-439d-a580-eb9380e9c071",
-            "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/blog/the-future-of-ai&title=The%20Future%20of%20AI&summary=The%20Future%20of%20AI&source=LinkedIn",
-            "icon": "linkedin",
-            "type": "socialSharing",
-            "title": "Share on LinkedIn",
-            "component": "socialSharing"
-          }
-        ],
-        "author_component": "blog-author"
+        "author_image": "//a.storyblok.com/f/303819/250x250/7166103a9f/author-emily.png",
+        "author_title": "Senior AI Researcher"
       },
-      "component_id": 6257246,
+      "component_id": 6257240,
       "space_id": 303819,
-      "created_at": "2024-09-05T10:55:02.982Z",
-      "updated_at": "2024-09-05T10:55:02.982Z",
-      "image": "//a.storyblok.com/f/303819/390x646/89a7c36bfb/blog-blog-aside-default.png",
+      "created_at": "2024-09-05T10:55:00.011Z",
+      "updated_at": "2024-09-05T10:55:00.011Z",
+      "image": "//a.storyblok.com/f/303819/1000x504/9e533dfe80/blog-blog-teaser-default.png",
       "color": null,
       "icon": null,
       "description": null
@@ -1921,6 +1921,42 @@
       "description": null
     },
     {
+      "id": 2277542,
+      "name": "ListLayout",
+      "preset": {
+        "_uid": "72b3f5cf-6735-43a4-9ebc-f7a4de39d48d",
+        "type": "section",
+        "style": "default",
+        "width": "default",
+        "buttons": [],
+        "inverted": false,
+        "component": "section",
+        "spotlight": false,
+        "spaceAfter": "default",
+        "spaceBefore": "default",
+        "content_mode": "list",
+        "headline_sub": "We can create something shining for you too!",
+        "content_align": "center",
+        "content_width": "unset",
+        "headerSpacing": false,
+        "headline_text": "Happy Customers Showcases",
+        "content_gutter": "default",
+        "headline_align": "center",
+        "headline_large": false,
+        "headline_width": "unset",
+        "backgroundColor": "default",
+        "content_tileWidth": "default"
+      },
+      "component_id": 6257238,
+      "space_id": 303819,
+      "created_at": "2024-09-05T10:54:58.988Z",
+      "updated_at": "2024-09-05T10:54:58.988Z",
+      "image": "//a.storyblok.com/f/303819/1440x1658/abd99fdaf3/layout-section-list-layout.png",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
       "id": 2277511,
       "name": "ListLayout",
       "preset": {
@@ -1969,42 +2005,6 @@
       "created_at": "2024-09-05T10:54:46.757Z",
       "updated_at": "2024-09-05T10:54:46.757Z",
       "image": "//a.storyblok.com/f/303819/1000x1080/4c9921d814/components-testimonials-list-layout.png",
-      "color": null,
-      "icon": null,
-      "description": null
-    },
-    {
-      "id": 2277542,
-      "name": "ListLayout",
-      "preset": {
-        "_uid": "72b3f5cf-6735-43a4-9ebc-f7a4de39d48d",
-        "type": "section",
-        "style": "default",
-        "width": "default",
-        "buttons": [],
-        "inverted": false,
-        "component": "section",
-        "spotlight": false,
-        "spaceAfter": "default",
-        "spaceBefore": "default",
-        "content_mode": "list",
-        "headline_sub": "We can create something shining for you too!",
-        "content_align": "center",
-        "content_width": "unset",
-        "headerSpacing": false,
-        "headline_text": "Happy Customers Showcases",
-        "content_gutter": "default",
-        "headline_align": "center",
-        "headline_large": false,
-        "headline_width": "unset",
-        "backgroundColor": "default",
-        "content_tileWidth": "default"
-      },
-      "component_id": 6257238,
-      "space_id": 303819,
-      "created_at": "2024-09-05T10:54:58.988Z",
-      "updated_at": "2024-09-05T10:54:58.988Z",
-      "image": "//a.storyblok.com/f/303819/1440x1658/abd99fdaf3/layout-section-list-layout.png",
       "color": null,
       "icon": null,
       "description": null
