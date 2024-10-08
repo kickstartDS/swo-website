@@ -1,0 +1,34 @@
+@use "./lightbox-tokens.scss";
+.pswp {
+  .pswp__button {
+    &:hover {
+      svg.pswp__icn {
+        opacity: 1;
+      }
+    }
+    svg.pswp__icn {
+      transition: var(--ks-transition-hover);
+      transition-property: opacity;
+      opacity: 0.85;
+      background: var(--ks-color-fg-alpha-5);
+
+      border-radius: var(--ks-border-radius-control);
+      display: flex;
+    }
+    &--arrow {
+      .pswp__icn {
+        path {
+          transform: translateX(15%);
+        }
+      }
+    }
+  }
+
+  .pswp__counter {
+    text-shadow: 1px 1px 3px var(--ks-color-fg-alpha-1);
+  }
+}
+
+.lightbox-image__zoom-icon {
+  filter: drop-shadow(0 2px 4px var(--ks-color-fg-alpha-4));
+}
