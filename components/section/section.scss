@@ -1,1 +1,7 @@
 @use "./section-tokens.scss";
+
+.dsa-section {
+  .l-section__content.l-section__content--slider {
+    padding-top: 2rem;
+  }
+}
