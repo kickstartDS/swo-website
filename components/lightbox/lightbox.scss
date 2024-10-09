@@ -30,5 +30,7 @@
 }
 
 .lightbox-image__zoom-icon {
-  filter: drop-shadow(0 2px 4px var(--ks-color-fg-alpha-4));
+  background: var(--ks-color-fg-alpha-5);
+  padding: 0.25em;
+  border-radius: var(--ks-border-radius-control);
 }
