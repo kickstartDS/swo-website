@@ -1,5 +1,8 @@
 :root {
   .dsa-section {
+    --dsa-section__slider-arrow--background: var(--ks-color-fg-alpha-4);
+    --dsa-section__slider-arrow--color: var(--ks-color-bg);
+
     --dsa-section_stagelights--background-image: radial-gradient(
         50% 100% at 100% -50%,
         var(--ks-color-primary-alpha-5) 0%,

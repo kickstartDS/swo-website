@@ -49,6 +49,7 @@ import { useImagePriority } from "./ImagePriorityContext";
 import { useImageSize } from "./ImageSizeContext";
 import { NavTopbarProvider } from "./nav-topbar/NavTopbarComponent";
 import { NavFlyoutProvider } from "./nav-flyout/NavFlyoutComponent";
+import { FooterProvider } from "./footer/FooterComponent";
 
 const Link = forwardRef<
   HTMLAnchorElement,
@@ -227,45 +228,49 @@ const ComponentProviders = (props: PropsWithChildren) => (
     <PictureProvider>
       <HeroProvider>
         <LinkProvider>
-          <NavTopbarProvider>
-            <NavFlyoutProvider>
-              <TeaserProvider>
-                {/* @ts-expect-error */}
-                <CtaContext.Provider value={StoryblokSubComponent}>
+          <FooterProvider>
+            <NavTopbarProvider>
+              <NavFlyoutProvider>
+                <TeaserProvider>
                   {/* @ts-expect-error */}
-                  <FeatureContext.Provider value={StoryblokSubComponent}>
+                  <CtaContext.Provider value={StoryblokSubComponent}>
                     {/* @ts-expect-error */}
-                    <StatContext.Provider value={StoryblokSubComponent}>
-                      <TestimonialContext.Provider
-                        // @ts-expect-error
-                        value={StoryblokSubComponent}
-                      >
-                        {/* @ts-expect-error */}
-                        <BlogHeadContext.Provider value={StoryblokSubComponent}>
-                          <BlogAsideContext.Provider
-                            // @ts-expect-error
+                    <FeatureContext.Provider value={StoryblokSubComponent}>
+                      {/* @ts-expect-error */}
+                      <StatContext.Provider value={StoryblokSubComponent}>
+                        <TestimonialContext.Provider
+                          // @ts-expect-error
+                          value={StoryblokSubComponent}
+                        >
+                          <BlogHeadContext.Provider
+                            /* @ts-expect-error */
                             value={StoryblokSubComponent}
                           >
-                            <BlogTeaserContext.Provider
+                            <BlogAsideContext.Provider
                               // @ts-expect-error
                               value={StoryblokSubComponent}
                             >
-                              <BlogAuthorContext.Provider
+                              <BlogTeaserContext.Provider
                                 // @ts-expect-error
                                 value={StoryblokSubComponent}
                               >
-                                {props.children}
-                              </BlogAuthorContext.Provider>
-                            </BlogTeaserContext.Provider>
-                          </BlogAsideContext.Provider>
-                        </BlogHeadContext.Provider>
-                      </TestimonialContext.Provider>
-                    </StatContext.Provider>
-                  </FeatureContext.Provider>
-                </CtaContext.Provider>
-              </TeaserProvider>
-            </NavFlyoutProvider>
-          </NavTopbarProvider>
+                                <BlogAuthorContext.Provider
+                                  // @ts-expect-error
+                                  value={StoryblokSubComponent}
+                                >
+                                  {props.children}
+                                </BlogAuthorContext.Provider>
+                              </BlogTeaserContext.Provider>
+                            </BlogAsideContext.Provider>
+                          </BlogHeadContext.Provider>
+                        </TestimonialContext.Provider>
+                      </StatContext.Provider>
+                    </FeatureContext.Provider>
+                  </CtaContext.Provider>
+                </TeaserProvider>
+              </NavFlyoutProvider>
+            </NavTopbarProvider>
+          </FooterProvider>
         </LinkProvider>
       </HeroProvider>
     </PictureProvider>
