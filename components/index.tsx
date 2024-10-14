@@ -139,6 +139,13 @@ export const components = {
       )
     )
   ),
+  divider: editable(
+    dynamic(() =>
+      import("@kickstartds/ds-agency-premium/divider").then(
+        (mod) => mod.DividerContextDefault
+      )
+    )
+  ),
   faq: editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/faq").then(

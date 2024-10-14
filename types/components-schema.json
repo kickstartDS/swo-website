@@ -1156,6 +1156,49 @@
       "component_group_name": "Components"
     },
     {
+      "name": "divider",
+      "display_name": null,
+      "created_at": "2024-10-14T14:57:01.516Z",
+      "updated_at": "2024-10-14T14:57:41.723Z",
+      "id": 6419280,
+      "schema": {
+        "variant": {
+          "type": "option",
+          "pos": 0,
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "59071c9b-0a21-47c8-a4ca-c2a1a00a9249",
+              "name": "Default",
+              "value": "default"
+            },
+            {
+              "_uid": "fa966bae-e587-48da-b1a0-edb23c975d4e",
+              "value": "accent",
+              "name": "Accent"
+            }
+          ],
+          "exclude_empty_option": true,
+          "default_value": "default"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "divider",
+      "component_group_uuid": "bed7508e-f5dd-444c-b6f2-ac5176848f9e",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Components"
+    },
+    {
       "name": "faq",
       "display_name": "Faq",
       "created_at": "2024-09-05T10:54:49.755Z",
@@ -3572,7 +3615,7 @@
       "name": "section",
       "display_name": "Section",
       "created_at": "2024-09-05T10:54:54.987Z",
-      "updated_at": "2024-09-05T11:34:53.343Z",
+      "updated_at": "2024-10-14T11:11:09.393Z",
       "id": 6257238,
       "schema": {
         "width": {
@@ -4088,7 +4131,8 @@
           "restrict_type": "groups",
           "restrict_components": true,
           "component_group_whitelist": [
-            "bed7508e-f5dd-444c-b6f2-ac5176848f9e"
+            "bed7508e-f5dd-444c-b6f2-ac5176848f9e",
+            "619b1b1f-d05d-4b59-90c5-cbf769f4d8b3"
           ],
           "description": "Abstracts a blog overview concept into JSON schema",
           "required": false
@@ -4119,7 +4163,7 @@
       "image": "//a.storyblok.com/f/303819/1440x928/41f21c45ec/layout-section-cards.png",
       "preview_field": null,
       "is_root": false,
-      "preview_tmpl": null,
+      "preview_tmpl": "{{@each(it.components) =&gt; val, index}}\n  {{@if(index === 0)}}\n    {{@if(val.type)}}{{val.type}}\n    {{#else}}global reference\n    {{/if}}\n  {{#else}}\n    {{@if(val.type)}}, {{val.type}}\n    {{#else}}, global reference\n    {{/if}}\n  {{/if}}\n{{/each}}",
       "is_nestable": true,
       "all_presets": [
         {
