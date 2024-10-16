@@ -1,5 +1,7 @@
 @use "./header-tokens.scss";
 
-.dsa-header {
-  z-index: 999;
+:root {
+  .dsa-header {
+    z-index: 999;
+  }
 }
