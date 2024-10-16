@@ -95,9 +95,9 @@ export const FooterContextDefault = forwardRef<
               <li>
                 <Link
                   className="dsa-footer__link"
-                  href="/headless-cms/was-ist-ein-headless-cms"
+                  href="/headless-cms/headless-cms-services"
                 >
-                  Wissenswertes
+                  Services
                 </Link>
               </li>
               <li>
