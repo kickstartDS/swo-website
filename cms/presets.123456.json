@@ -27,6 +27,7 @@
         ],
         "readingTime": "5 min read",
         "date": "12/30/2022",
+        "title": "Blog Post",
         "author_name": "Jane Smith",
         "author_byline": "CEO at Company",
         "author_image": "//a.storyblok.com/f/297364/250x250/ca6e532871/author-emily.png",
@@ -50,10 +51,6 @@
         "type": "blog-head",
         "component": "blog-head",
         "date": "12/30/2022",
-        "tags": [
-          "Technology",
-          "AI"
-        ],
         "headline": "The Future of AI",
         "image": "//a.storyblok.com/f/297364/1260x840/0fc1a60eed/close-up-young-business-team-working.png"
       },
@@ -74,14 +71,24 @@
         "type": "blog-teaser",
         "component": "blog-teaser",
         "date": "12/30/2022",
-        "tags": [
-          "Technology",
-          "AI"
-        ],
         "headline": "The Future of AI",
         "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
         "image": "//a.storyblok.com/f/297364/1260x840/0fc1a60eed/close-up-young-business-team-working.png",
         "readingTime": "5 min read",
+        "tags": [
+          {
+            "entry": "Technology",
+            "_uid": "9f0527a4-fae2-4adc-9214-37e08a09e7df",
+            "type": "tags",
+            "component": "tags"
+          },
+          {
+            "entry": "AI",
+            "_uid": "2f2b99b0-8513-4ab5-a000-82ce554c3d39",
+            "type": "tags",
+            "component": "tags"
+          }
+        ],
         "link_url": "https://example.com",
         "link_label": "Read more",
         "author_name": "Jane Smith",

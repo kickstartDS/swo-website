@@ -1,4 +1,4 @@
-import {StoryblokStory} from 'storyblok-generate-ts'
+import { StoryblokStory } from "storyblok-generate-ts";
 
 export interface BlogAsideStoryblok {
   author?: BlogAuthorStoryblok[];
@@ -193,7 +193,10 @@ export interface FeaturesStoryblok {
 }
 
 export interface FooterStoryblok {
-  logo_homepageHref?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  logo_homepageHref?: Exclude<
+    MultilinkStoryblok,
+    { linktype?: "email" } | { linktype?: "asset" }
+  >;
   logo_src?: AssetStoryblok;
   logo_srcInverted?: AssetStoryblok;
   logo_alt?: string;
@@ -255,7 +258,10 @@ export interface HeaderStoryblok {
   dropdownInverted?: boolean;
   navItems?: NavItemsStoryblok[];
   type?: string;
-  logo_homepageHref?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  logo_homepageHref?: Exclude<
+    MultilinkStoryblok,
+    { linktype?: "email" } | { linktype?: "asset" }
+  >;
   logo_src?: AssetStoryblok;
   logo_srcInverted?: AssetStoryblok;
   logo_alt?: string;
@@ -376,7 +382,10 @@ export interface NavItemsStoryblok {
 }
 
 export interface NavSubItemsStoryblok {
-  href?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  href?: Exclude<
+    MultilinkStoryblok,
+    { linktype?: "email" } | { linktype?: "asset" }
+  >;
   label?: string;
   _uid: string;
   component: "navSubItems";
@@ -429,7 +438,13 @@ export interface SectionStoryblok {
   content_align?: "" | "left" | "center" | "right";
   content_gutter?: "" | "large" | "default" | "small" | "none";
   content_mode?: "" | "default" | "tile" | "list" | "slider";
-  content_tileWidth?: "" | "smallest" | "default" | "medium" | "large" | "largest";
+  content_tileWidth?:
+    | ""
+    | "smallest"
+    | "default"
+    | "medium"
+    | "large"
+    | "largest";
   components?: (
     | BlogTeaserStoryblok
     | ContactStoryblok

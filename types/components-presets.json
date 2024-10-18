@@ -885,8 +885,11 @@
         "_uid": "070b9ec2-0377-4c52-bb36-268042c87c4c",
         "date": "12/30/2022",
         "type": "blog-aside",
+        "title": "Blog Post",
         "component": "blog-aside",
+        "author__uid": "949fce95-d0c3-42b3-ab39-73054a7aedf2",
         "author_name": "Jane Smith",
+        "author_type": "blog-author",
         "readingTime": "5 min read",
         "author_email": "jane.smith@example.com",
         "author_image": "//a.storyblok.com/f/297364/250x250/ca6e532871/author-emily.png",
@@ -909,7 +912,7 @@
             "component": "socialSharing"
           }
         ],
-        "author_twitter": "jane_smith"
+        "author_component": "blog-author"
       },
       "component_id": 6059538,
       "space_id": 297364,
@@ -1071,7 +1074,7 @@
             "_uid": "da491ff4-32f8-4331-906a-61e186e94c91",
             "href": "#",
             "type": "navItems",
-            "label": "Another Item",
+            "label": "Navigation Item",
             "component": "navItems"
           },
           {
@@ -1212,7 +1215,7 @@
             "_uid": "6eade8a8-4d51-4cdc-bcc0-c84cbbdc7644",
             "href": "#",
             "type": "navItems",
-            "label": "Another Item",
+            "label": "Navigation Item",
             "component": "navItems"
           },
           {
