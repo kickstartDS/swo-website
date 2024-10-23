@@ -103,8 +103,9 @@ const Picture = forwardRef<
       width={maxWidth}
       height={maxHeight}
       alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
-      lazy={lazy}
+      lazy={priority ? false : lazy}
       fetchPriority="high"
+      loading={priority ? "eager" : "lazy"}
     />
   ) : (
     <Image
@@ -236,8 +237,10 @@ const ComponentProviders = (props: PropsWithChildren) => (
                     // @ts-expect-error
                     value={StoryblokSubComponent}
                   >
-                    {/* @ts-expect-error */}
-                    <BlogHeadContext.Provider value={StoryblokSubComponent}>
+                    <BlogHeadContext.Provider
+                      // @ts-expect-error
+                      value={StoryblokSubComponent}
+                    >
                       <BlogAsideContext.Provider
                         // @ts-expect-error
                         value={StoryblokSubComponent}

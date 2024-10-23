@@ -296,7 +296,6 @@ const prepare = async () => {
                 ? jsonpointer
                     .get(preset.preset, `/${meta.nodePath}`)
                     .map((entry) => {
-                      console.log("mapping entry", entry);
                       if (typeof entry !== "object") return entry;
                       return {
                         ...entry,

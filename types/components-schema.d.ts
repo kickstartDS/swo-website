@@ -104,7 +104,6 @@ export interface BlogTeaserStoryblok {
   teaserText?: string;
   image?: AssetStoryblok;
   link_url?: MultilinkStoryblok;
-  link_label?: string;
   readingTime?: string;
   author_name?: string;
   author_title?: string;
@@ -143,6 +142,14 @@ export interface CtaStoryblok {
   type?: string;
   _uid: string;
   component: "cta";
+}
+
+export interface DividerStoryblok {
+  variant?: "" | "default" | "accent";
+  className?: string;
+  component: "divider";
+  type?: string;
+  _uid: string;
 }
 
 export interface FaqStoryblok {
@@ -239,6 +246,14 @@ export interface HeroStoryblok {
   type?: string;
   _uid: string;
   component: "hero";
+}
+
+export interface HtmlStoryblok {
+  html?: string;
+  className?: string;
+  component: "html";
+  type?: string;
+  _uid: string;
 }
 
 export interface ImagesStoryblok {
@@ -386,10 +401,12 @@ export interface SectionStoryblok {
   components?: (
     | BlogTeaserStoryblok
     | CtaStoryblok
+    | DividerStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
     | GalleryStoryblok
     | HeroStoryblok
+    | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
     | LogosStoryblok
@@ -439,10 +456,12 @@ export interface SliderStoryblok {
   components?: (
     | BlogTeaserStoryblok
     | CtaStoryblok
+    | DividerStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
     | GalleryStoryblok
     | HeroStoryblok
+    | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
     | LogosStoryblok
