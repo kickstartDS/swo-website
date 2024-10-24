@@ -207,6 +207,39 @@ export interface GalleryStoryblok {
   component: "gallery";
 }
 
+export interface GlobalStoryblok {
+  global?: (
+    | BlogTeaserStoryblok
+    | CtaStoryblok
+    | DividerStoryblok
+    | FaqStoryblok
+    | FeaturesStoryblok
+    | GalleryStoryblok
+    | HeroStoryblok
+    | HtmlStoryblok
+    | ImageStoryStoryblok
+    | ImageTextStoryblok
+    | InfoTableStoryblok
+    | LogosStoryblok
+    | MosaicStoryblok
+    | SliderStoryblok
+    | StatsStoryblok
+    | TeaserCardStoryblok
+    | TestimonialsStoryblok
+    | TextStoryblok
+    | VideoCurtainStoryblok
+  )[];
+  _uid: string;
+  component: "global";
+  uuid?: string;
+}
+
+export interface GlobalReferenceStoryblok {
+  reference?: unknown[];
+  _uid: string;
+  component: "global_reference";
+}
+
 export interface HeaderStoryblok {
   logo_src?: AssetStoryblok;
   logo_srcInverted?: AssetStoryblok;
