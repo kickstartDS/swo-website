@@ -88,7 +88,7 @@ const Picture = forwardRef<
   const source = isStoryblokAsset(src) ? src.filename : src;
   const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
   const [width, height] = fileUrl.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
-  const maxWidth = parseInt(width) > size ? size : parseInt(width);
+  const maxWidth = parseInt(width) > size ? Math.floor(size) : parseInt(width);
   const maxHeight =
     parseInt(width) > size
       ? Math.floor((parseInt(height) * size) / parseInt(width))
@@ -238,7 +238,7 @@ const ComponentProviders = (props: PropsWithChildren) => (
                     value={StoryblokSubComponent}
                   >
                     <BlogHeadContext.Provider
-                      // @ts-expect-error
+                      /* @ts-expect-error */
                       value={StoryblokSubComponent}
                     >
                       <BlogAsideContext.Provider

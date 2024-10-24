@@ -116,7 +116,6 @@ export interface BlogTeaserStoryblok {
 
 export interface ButtonsStoryblok {
   label?: string;
-  icon?: string;
   target?: MultilinkStoryblok;
   _uid: string;
   component: "buttons";
@@ -160,7 +159,6 @@ export interface FaqStoryblok {
 }
 
 export interface FeatureStoryblok {
-  icon?: string;
   title?: string;
   text?: string;
   style?: "" | "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
@@ -293,6 +291,30 @@ export interface ImageTextStoryblok {
   component: "image-text";
 }
 
+export interface TableStoryblok {
+  thead: {
+    _uid: string;
+    value?: string;
+    component: number;
+  }[];
+  tbody: {
+    _uid: string;
+    body: {
+      _uid?: string;
+      value?: string;
+      component?: number;
+    }[];
+    component: number;
+  }[];
+}
+
+export interface InfoTableStoryblok {
+  data?: TableStoryblok;
+  type?: string;
+  _uid: string;
+  component: "info-table";
+}
+
 export interface ItemsStoryblok {
   href?: MultilinkStoryblok;
   label?: string;
@@ -302,7 +324,6 @@ export interface ItemsStoryblok {
 }
 
 export interface LinksStoryblok {
-  icon?: string;
   label?: string;
   href?: MultilinkStoryblok;
   newTab?: boolean;
@@ -370,6 +391,7 @@ export interface QuestionsStoryblok {
 }
 
 export interface SectionStoryblok {
+  type?: string;
   width?: "" | "full" | "max" | "wide" | "default" | "narrow";
   style?:
     | ""
@@ -409,6 +431,7 @@ export interface SectionStoryblok {
     | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
+    | InfoTableStoryblok
     | LogosStoryblok
     | MosaicStoryblok
     | SliderStoryblok
@@ -419,7 +442,6 @@ export interface SectionStoryblok {
     | VideoCurtainStoryblok
   )[];
   buttons?: ButtonsStoryblok[];
-  type?: string;
   _uid: string;
   component: "section";
 }
@@ -464,6 +486,7 @@ export interface SliderStoryblok {
     | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
+    | InfoTableStoryblok
     | LogosStoryblok
     | MosaicStoryblok
     | SliderStoryblok
@@ -479,7 +502,6 @@ export interface SliderStoryblok {
 }
 
 export interface SocialSharingStoryblok {
-  icon?: string;
   href?: MultilinkStoryblok;
   title?: string;
   _uid: string;
@@ -490,7 +512,6 @@ export interface StatStoryblok {
   number?: string;
   description?: string;
   title?: string;
-  icon?: string;
   type?: string;
   _uid: string;
   component: "stat";
@@ -565,7 +586,6 @@ export interface TileStoryblok {
   button_toggle?: boolean;
   button_label?: string;
   button_target?: MultilinkStoryblok;
-  button_icon?: string;
   backgroundColor?: string;
   backgroundImage?: AssetStoryblok;
   textColor?: string;

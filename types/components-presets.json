@@ -1,50 +1,50 @@
 {
   "presets": [
     {
-      "id": 2329100,
+      "id": 2329913,
       "name": "AboveLayout",
       "preset": {
-        "_uid": "b5ef9582-904a-4d84-bc8b-f9f4e5ccaf6b",
+        "_uid": "c05798a6-8899-48e6-a97b-f328d6623d68",
         "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
         "type": "image-text",
         "layout": "above",
         "component": "image-text",
         "image_alt": "Agency",
-        "image_src": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
+        "image_src": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
         "highlightText": false
       },
-      "component_id": 6464129,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:10.904Z",
-      "updated_at": "2024-10-23T16:50:10.904Z",
-      "image": "//a.storyblok.com/f/310410/760x829/bb7c87de47/components-image-text-above-layout.png",
+      "component_id": 6467119,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:27.379Z",
+      "updated_at": "2024-10-24T08:59:27.379Z",
+      "image": "//a.storyblok.com/f/310500/760x829/ce5dfe046d/components-image-text-above-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329120,
+      "id": 2329933,
       "name": "Accent",
       "preset": {
-        "_uid": "18044990-8d67-49ec-9f3e-be36b09c67e9",
+        "_uid": "ac9b660a-42e3-4b61-97bd-9b847e824cb9",
         "type": "divider",
         "variant": "accent",
         "component": "divider"
       },
-      "component_id": 6464135,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:19.986Z",
-      "updated_at": "2024-10-23T16:50:19.986Z",
-      "image": "//a.storyblok.com/f/310410/770x100/1dc889230c/layout-divider-accent.png",
+      "component_id": 6467125,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:36.411Z",
+      "updated_at": "2024-10-24T08:59:36.411Z",
+      "image": "//a.storyblok.com/f/310500/770x100/ac18083e56/layout-divider-accent.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329139,
+      "id": 2329952,
       "name": "AccentBackground",
       "preset": {
-        "_uid": "310a8d48-1e70-4344-b01b-8253db9c0637",
+        "_uid": "f6fa62c2-f206-4192-8237-ae4da1422e7d",
         "type": "section",
         "style": "default",
         "width": "default",
@@ -67,27 +67,27 @@
         "backgroundColor": "accent",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:28.739Z",
-      "updated_at": "2024-10-23T16:50:28.739Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/2b57954e0d/layout-section-accent-background.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:45.413Z",
+      "updated_at": "2024-10-24T08:59:45.413Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/4e4335020f/layout-section-accent-background.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329086,
+      "id": 2329899,
       "name": "AlignBottom",
       "preset": {
         "sub": "Subheadline",
-        "_uid": "cd5f4ad8-c838-4170-802e-27920d42131f",
+        "_uid": "b7397046-cc20-4d06-ace9-79ac6d4355a5",
         "text": "At Systemics, we believe in the power of technology to transform businesses. Our team of experienced professionals is dedicated to providing innovative solutions that meet the unique needs of your business.\n\nWe understand that every business is different, and that's why we offer custom solutions tailored to your specific business needs and requirements.",
         "type": "cta",
         "width": "wide",
         "buttons": [
           {
-            "_uid": "1bafc913-2129-4bd3-a986-7f842c5f8e1b",
+            "_uid": "28e901e7-4f3c-4698-a551-3daf755d7451",
             "icon": "person",
             "type": "buttons",
             "label": "Contact us",
@@ -95,7 +95,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "df48318e-7128-4719-ac4f-cf4504ea770b",
+            "_uid": "01a7ddd5-772f-4783-b70c-cfcd54982f7d",
             "icon": "date",
             "type": "buttons",
             "label": "Book a meeting",
@@ -106,36 +106,36 @@
         "headline": "Custom Solutions",
         "component": "cta",
         "fullWidth": true,
-        "image_src": "//a.storyblok.com/f/310410/1109x1325/d2f9eb319b/offset-image.png",
+        "image_src": "//a.storyblok.com/f/310500/1109x1325/ff3269db93/offset-image.png",
         "textAlign": "left",
         "colorNeutral": false,
         "contentAlign": "bottom",
         "highlightText": false,
         "image_padding": true,
-        "backgroundImage": "//a.storyblok.com/f/310410/1650x800/d32b27bc21/grid-bg.svg",
+        "backgroundImage": "//a.storyblok.com/f/310500/1650x800/e749ed9348/grid-bg.svg",
         "order_mobileImageLast": false,
         "order_desktopImageLast": false
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:04.900Z",
-      "updated_at": "2024-10-23T16:50:04.900Z",
-      "image": "//a.storyblok.com/f/310410/1680x1040/c0135faae2/components-cta-align-bottom.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:21.375Z",
+      "updated_at": "2024-10-24T08:59:21.375Z",
+      "image": "//a.storyblok.com/f/310500/1680x1040/cf747bc099/components-cta-align-bottom.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329115,
+      "id": 2329928,
       "name": "AlternatingLayout",
       "preset": {
-        "_uid": "a393bde8-3f08-4566-9092-65904f6e5cd2",
+        "_uid": "95051610-b2c2-48eb-95b4-27b4052c1a79",
         "type": "testimonials",
         "layout": "alternating",
         "component": "testimonials",
         "testimonial": [
           {
-            "_uid": "c32ccf9d-b806-4baf-a7c6-6a581b97307a",
+            "_uid": "5aead629-5b2c-4dbe-929b-dae2a25f1018",
             "name": "Emily Johnson",
             "type": "testimonial",
             "quote": "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
@@ -143,10 +143,10 @@
             "rating": 5,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 1",
-            "image_src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png"
           },
           {
-            "_uid": "f47d72f5-76d2-4052-9489-5496018bca33",
+            "_uid": "7f85c69a-3a70-4f4f-8ec7-6fcc8977fb09",
             "name": "John Smith",
             "type": "testimonial",
             "quote": "Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.",
@@ -154,10 +154,10 @@
             "rating": 4,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 2",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e047d36650/author-john.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/ff706a47fe/author-john.png"
           },
           {
-            "_uid": "1c8781b4-8cd7-4a28-8524-a65a3a0be8cd",
+            "_uid": "b431b08e-d744-40bf-a883-582dc7cf40ee",
             "name": "Alex Chen",
             "type": "testimonial",
             "quote": "As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.",
@@ -165,31 +165,31 @@
             "rating": 5,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 3",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e70992669a/author-alex.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/016a4fc416/author-alex.png"
           }
         ]
       },
-      "component_id": 6464133,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:17.730Z",
-      "updated_at": "2024-10-23T16:50:17.730Z",
-      "image": "//a.storyblok.com/f/310410/1000x1080/282abdfa78/components-testimonials-alternating-layout.png",
+      "component_id": 6467123,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:34.019Z",
+      "updated_at": "2024-10-24T08:59:34.019Z",
+      "image": "//a.storyblok.com/f/310500/1000x1080/a828dbf916/components-testimonials-alternating-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329084,
+      "id": 2329897,
       "name": "AngledImage",
       "preset": {
         "sub": "Subheadline",
-        "_uid": "8c05481b-91b7-4820-a0de-6202bb04253c",
+        "_uid": "8a529c5b-68fa-43e5-9322-eebabc31ffb2",
         "text": "We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems.\n\nThis tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster.",
         "type": "cta",
         "width": "wide",
         "buttons": [
           {
-            "_uid": "f9472a4f-f9e4-4fd7-a713-b8ac4f4a0d93",
+            "_uid": "4c636086-445a-4cf3-be3f-69afd2f781d7",
             "icon": "person",
             "type": "buttons",
             "label": "Contact us",
@@ -197,7 +197,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "d44d832e-be98-4d3e-a62f-dc1488b0ed58",
+            "_uid": "30643044-97c8-44d4-a36f-04e907d7619b",
             "icon": "date",
             "type": "buttons",
             "label": "Book a meeting",
@@ -208,7 +208,7 @@
         "headline": "Our **Approach** to Design Systems",
         "component": "cta",
         "fullWidth": true,
-        "image_src": "//a.storyblok.com/f/310410/1363x1761/a73eb7c1ef/angled-image.png",
+        "image_src": "//a.storyblok.com/f/310500/1363x1761/401d013fd0/angled-image.png",
         "textAlign": "left",
         "colorNeutral": false,
         "contentAlign": "center",
@@ -217,26 +217,26 @@
         "order_mobileImageLast": false,
         "order_desktopImageLast": true
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:04.693Z",
-      "updated_at": "2024-10-23T16:50:04.693Z",
-      "image": "//a.storyblok.com/f/310410/1670x910/29fa6a46f5/components-cta-angled-image.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:21.010Z",
+      "updated_at": "2024-10-24T08:59:21.010Z",
+      "image": "//a.storyblok.com/f/310500/1670x910/6878a45b6a/components-cta-angled-image.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329131,
+      "id": 2329944,
       "name": "AtmosphericVideoWithOverlay",
       "preset": {
         "sub": "Where Creativity Meets Technology",
-        "_uid": "477d2e4b-2230-4084-9412-7bb69bfd4505",
+        "_uid": "df924ebd-7782-4105-9b26-ce90f503f04f",
         "text": "Experience the fusion of creativity and technology in our state-of-the-art office.",
         "type": "video-curtain",
         "buttons": [
           {
-            "_uid": "e93a9d0d-dab2-41c4-b3b8-dc0eef0f71c5",
+            "_uid": "4f68562d-8691-40f1-8da3-34fbe2772d7c",
             "type": "buttons",
             "label": "Explore More",
             "component": "buttons"
@@ -248,30 +248,30 @@
         "colorNeutral": false,
         "textPosition": "center",
         "highlightText": false,
-        "video_srcMobile": "//a.storyblok.com/f/310410/1280x720/22d0334c51/video-720.mp4",
-        "video_srcTablet": "//a.storyblok.com/f/310410/1280x720/22d0334c51/video-720.mp4",
-        "video_srcDesktop": "//a.storyblok.com/f/310410/1280x720/22d0334c51/video-720.mp4"
+        "video_srcMobile": "//a.storyblok.com/f/310500/1280x720/bb2a3e922f/video-720.mp4",
+        "video_srcTablet": "//a.storyblok.com/f/310500/1280x720/bb2a3e922f/video-720.mp4",
+        "video_srcDesktop": "//a.storyblok.com/f/310500/1280x720/bb2a3e922f/video-720.mp4"
       },
-      "component_id": 6464141,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:25.750Z",
-      "updated_at": "2024-10-23T16:50:25.750Z",
-      "image": "//a.storyblok.com/f/310410/1559x720/099b6e19d4/components-video-curtain-atmospheric-video-with-overlay.png",
+      "component_id": 6467131,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:42.029Z",
+      "updated_at": "2024-10-24T08:59:42.029Z",
+      "image": "//a.storyblok.com/f/310500/1559x720/f08e8d4dc3/components-video-curtain-atmospheric-video-with-overlay.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329078,
+      "id": 2329891,
       "name": "Banner",
       "preset": {
         "sub": "Start your journey today.",
-        "_uid": "5d73b6fe-734f-4909-b9c8-8c3cc91f23da",
+        "_uid": "6d1ab431-1764-4248-b320-4a26bc64d053",
         "text": "Get started with our design system today and experience a new level of efficiency and consistency in your projects.",
         "type": "cta",
         "buttons": [
           {
-            "_uid": "37a86b82-51f3-41fb-a7b0-a292d8937933",
+            "_uid": "901a61de-4ad3-45db-89f1-8b7f893e47cd",
             "icon": "person",
             "type": "buttons",
             "label": "Contact Us",
@@ -279,7 +279,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "b2c4a2fe-4106-434c-a360-4b03f1009bd9",
+            "_uid": "04f0fe8d-2046-4dfb-9c6d-82f79b8c5a42",
             "icon": "date",
             "type": "buttons",
             "label": "Learn More",
@@ -298,42 +298,42 @@
         "order_mobileImageLast": false,
         "order_desktopImageLast": true
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:02.692Z",
-      "updated_at": "2024-10-23T16:50:02.692Z",
-      "image": "//a.storyblok.com/f/310410/1000x472/ac0557cb92/components-cta-banner.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:19.016Z",
+      "updated_at": "2024-10-24T08:59:19.016Z",
+      "image": "//a.storyblok.com/f/310500/1000x472/b7f9b33a9b/components-cta-banner.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329099,
+      "id": 2329912,
       "name": "BesideRightLayout",
       "preset": {
-        "_uid": "6d84f04e-b14c-4594-923d-d67bf60384f2",
+        "_uid": "772e549b-2cc4-4e66-a5d6-5bfca2490d65",
         "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
         "type": "image-text",
         "layout": "beside-right",
         "component": "image-text",
         "image_alt": "Agency",
-        "image_src": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
+        "image_src": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
         "highlightText": false
       },
-      "component_id": 6464129,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:10.805Z",
-      "updated_at": "2024-10-23T16:50:10.805Z",
-      "image": "//a.storyblok.com/f/310410/1240x515/152a7bf7d1/components-image-text-beside-right-layout.png",
+      "component_id": 6467119,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:27.274Z",
+      "updated_at": "2024-10-24T08:59:27.274Z",
+      "image": "//a.storyblok.com/f/310500/1240x515/cf063737c6/components-image-text-beside-right-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329140,
+      "id": 2329953,
       "name": "BoldBackground",
       "preset": {
-        "_uid": "66cfb153-6711-49e7-9b34-ad1f64c44467",
+        "_uid": "b3f99b07-5e24-4565-a9ee-967674a476df",
         "type": "section",
         "style": "default",
         "width": "default",
@@ -356,20 +356,20 @@
         "backgroundColor": "bold",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:28.991Z",
-      "updated_at": "2024-10-23T16:50:28.991Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/95f09fa4e7/layout-section-bold-background.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:45.670Z",
+      "updated_at": "2024-10-24T08:59:45.670Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/a88452a763/layout-section-bold-background.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329134,
+      "id": 2329947,
       "name": "Cards",
       "preset": {
-        "_uid": "7aa9c7f9-3f04-44ff-9f7b-29c9ea4eae59",
+        "_uid": "32eed38c-b8b8-4213-b3d3-c202d9071260",
         "type": "section",
         "style": "default",
         "width": "default",
@@ -391,20 +391,20 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:26.986Z",
-      "updated_at": "2024-10-23T16:50:26.986Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/bd1a30ca0b/layout-section-cards.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:43.616Z",
+      "updated_at": "2024-10-24T08:59:43.616Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/12884854c2/layout-section-cards.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329117,
+      "id": 2329930,
       "name": "Centered",
       "preset": {
-        "_uid": "a053a3cf-5318-428b-ae4d-7820cf16dd52",
+        "_uid": "66d06e42-a2ad-4fa0-a57b-ef1310e96c2d",
         "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
         "type": "text",
         "align": "center",
@@ -412,60 +412,60 @@
         "component": "text",
         "highlightText": false
       },
-      "component_id": 6464134,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:18.728Z",
-      "updated_at": "2024-10-23T16:50:18.728Z",
-      "image": "//a.storyblok.com/f/310410/1000x407/dd60df6d56/components-text-centered.png",
+      "component_id": 6467124,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:35.020Z",
+      "updated_at": "2024-10-24T08:59:35.020Z",
+      "image": "//a.storyblok.com/f/310500/1000x407/e1c2aafc59/components-text-centered.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329101,
+      "id": 2329914,
       "name": "CenteredWithButton",
       "preset": {
-        "_uid": "48376d27-980a-473c-a1fe-164e3d639354",
+        "_uid": "231a9067-ade6-40f8-bb6c-40842de3ef08",
         "logo": [
           {
             "alt": "Logo 1",
-            "src": "//a.storyblok.com/f/310410/132x35/b32d01f563/logoipsum-212.svg",
-            "_uid": "53255213-ae56-4bf2-87e9-0e0d8a721073",
+            "src": "//a.storyblok.com/f/310500/132x35/e96934ce34/logoipsum-212.svg",
+            "_uid": "1b50f931-198c-4b2d-96a6-90c1e2ee0204",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 2",
-            "src": "//a.storyblok.com/f/310410/124x32/272f064d9d/logoipsum-217.svg",
-            "_uid": "5f071bea-263a-4348-9335-67eaf6832e2c",
+            "src": "//a.storyblok.com/f/310500/124x32/62bf5e4d74/logoipsum-217.svg",
+            "_uid": "3b2589f7-d8c0-4492-bd71-2d31a1f9aff1",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 3",
-            "src": "//a.storyblok.com/f/310410/154x44/2eb45e0f24/logoipsum-239.svg",
-            "_uid": "98217e18-5387-46ca-bfa0-e6873b76851a",
+            "src": "//a.storyblok.com/f/310500/154x44/93a7674e70/logoipsum-239.svg",
+            "_uid": "173c51f1-193c-49a0-9c24-c4f9eb4cd56d",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 4",
-            "src": "//a.storyblok.com/f/310410/155x40/b52c58a4a9/logoipsum-244.svg",
-            "_uid": "f4eaf654-9ce9-410b-9b2a-9e8b3b8591e6",
+            "src": "//a.storyblok.com/f/310500/155x40/75540ddce8/logoipsum-244.svg",
+            "_uid": "486c9e89-a817-4dfe-804e-551d0efe6a5f",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 5",
-            "src": "//a.storyblok.com/f/310410/171x32/852b0f134d/logoipsum-250.svg",
-            "_uid": "fa15a47c-e5eb-4cf7-a952-21fe5d7d745d",
+            "src": "//a.storyblok.com/f/310500/171x32/0f8efa1801/logoipsum-250.svg",
+            "_uid": "50a71b2b-21b2-4f02-97b0-018b19911228",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 6",
-            "src": "//a.storyblok.com/f/310410/218x40/2946cdc9ba/logoipsum-286.svg",
-            "_uid": "5eae12f8-c5d3-4610-b908-6964237d546f",
+            "src": "//a.storyblok.com/f/310500/218x40/ec9451dde4/logoipsum-286.svg",
+            "_uid": "1d501e05-37d9-4207-a66b-453d53e073bd",
             "type": "logo",
             "component": "logo"
           }
@@ -481,33 +481,33 @@
         "cta_toggle": true,
         "logosPerRow": 5
       },
-      "component_id": 6464130,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:11.805Z",
-      "updated_at": "2024-10-23T16:50:11.805Z",
-      "image": "//a.storyblok.com/f/310410/1000x598/b324cbf06a/components-logos-centered-with-button.png",
+      "component_id": 6467120,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:28.233Z",
+      "updated_at": "2024-10-24T08:59:28.233Z",
+      "image": "//a.storyblok.com/f/310500/1000x598/d5d9f1e8b6/components-logos-centered-with-button.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329085,
+      "id": 2329898,
       "name": "ColoredBanner",
       "preset": {
         "sub": "Subheadline",
-        "_uid": "af234b76-6fcc-46d9-b6ac-c535be62be96",
+        "_uid": "d0d1762e-d5ba-4abc-b79c-c68de882fdc0",
         "text": "Leverage our expertise in creating scalable and robust applications using modern technologies.",
         "type": "cta",
         "buttons": [
           {
-            "_uid": "4196a4a2-b3fd-46b2-8102-497cf1e4efa8",
+            "_uid": "1013ed78-8589-417f-8229-4b6624df9394",
             "type": "buttons",
             "label": "Learn More",
             "target": "#",
             "component": "buttons"
           },
           {
-            "_uid": "26ba9ba7-a8db-431d-820c-72c9d0d30741",
+            "_uid": "ef37c617-6d4a-468f-be3f-be8dce9baf06",
             "type": "buttons",
             "label": "Contact Us",
             "target": "#",
@@ -526,20 +526,20 @@
         "order_mobileImageLast": false,
         "order_desktopImageLast": true
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:04.807Z",
-      "updated_at": "2024-10-23T16:50:04.807Z",
-      "image": "//a.storyblok.com/f/310410/1350x500/9851556ab6/components-cta-colored-banner.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:21.156Z",
+      "updated_at": "2024-10-24T08:59:21.156Z",
+      "image": "//a.storyblok.com/f/310500/1350x500/5365b0d6e0/components-cta-colored-banner.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329141,
+      "id": 2329954,
       "name": "ColorfulGradient",
       "preset": {
-        "_uid": "e6ae0b39-cbe6-4667-b069-d50e66fc2f86",
+        "_uid": "780c8f0b-ed4e-473d-a2b8-a5bc668900da",
         "type": "section",
         "style": "horizontalGradient",
         "width": "default",
@@ -562,50 +562,50 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:29.428Z",
-      "updated_at": "2024-10-23T16:50:29.428Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/0ca505c7d2/layout-section-colorful-gradient.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:46.066Z",
+      "updated_at": "2024-10-24T08:59:46.066Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/c18201b0b0/layout-section-colorful-gradient.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329126,
+      "id": 2329939,
       "name": "ColorfulTextWithIllustrations",
       "preset": {
-        "_uid": "2c699b55-a6be-4d96-8010-e34f2e77256f",
+        "_uid": "bec61d07-166f-4395-867d-b9c7daa8c364",
         "tile": [
           {
             "sub": "We believe in clear and effective communication. Our team members are always ready to share ideas and solutions.",
-            "_uid": "bde8be4a-6bc2-4fc8-bda0-2a14517cb121",
+            "_uid": "6f2911c6-b35f-4aec-8460-6a8ca8161a82",
             "type": "tile",
             "headline": "Effective Communication",
             "component": "tile",
-            "image_src": "//a.storyblok.com/f/310410/679x679/38593ee561/mosaic-2_1.svg",
+            "image_src": "//a.storyblok.com/f/310500/679x679/ba0a6c58ff/mosaic-2_1.svg",
             "textColor": "#FCFF7D",
             "button_label": "Book a meeting",
             "button_toggle": false
           },
           {
             "sub": "We make decisions based on data. Our strategies are always backed by solid facts and figures.",
-            "_uid": "c013c310-a050-468a-909e-684879bb26f5",
+            "_uid": "34f4cc9e-b37b-44f3-8094-b09e87c5a3e5",
             "type": "tile",
             "headline": "Data-Driven Decisions",
             "component": "tile",
-            "image_src": "//a.storyblok.com/f/310410/679x679/1cdce98065/mosaic-2_2.svg",
+            "image_src": "//a.storyblok.com/f/310500/679x679/4f0071732b/mosaic-2_2.svg",
             "textColor": "#7DD0FF",
             "button_label": "Book a meeting",
             "button_toggle": false
           },
           {
             "sub": "We are committed to creating innovative designs. Our team is always exploring new ways to improve user experience.",
-            "_uid": "c4c55740-f3fa-415f-83c0-ef190bdf68f1",
+            "_uid": "ec71ec50-bdc3-4a6e-8315-e46d98dab9fb",
             "type": "tile",
             "headline": "Innovative Design",
             "component": "tile",
-            "image_src": "//a.storyblok.com/f/310410/679x679/037c74af26/mosaic-2_3.svg",
+            "image_src": "//a.storyblok.com/f/310500/679x679/5598ea28f9/mosaic-2_3.svg",
             "textColor": "#FF7DC3",
             "button_label": "Book a meeting",
             "button_toggle": false
@@ -616,50 +616,50 @@
         "component": "mosaic",
         "largeHeadlines": false
       },
-      "component_id": 6464139,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:23.168Z",
-      "updated_at": "2024-10-23T16:50:23.168Z",
-      "image": "//a.storyblok.com/f/310410/1010x1520/f921c7adfa/components-mosaic-colorful-text-with-illustrations.png",
+      "component_id": 6467129,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:39.612Z",
+      "updated_at": "2024-10-24T08:59:39.612Z",
+      "image": "//a.storyblok.com/f/310500/1010x1520/05e98ec0c4/components-mosaic-colorful-text-with-illustrations.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329125,
+      "id": 2329938,
       "name": "ColorfulTiles",
       "preset": {
-        "_uid": "fb94be49-f0d5-47bc-b7eb-a636c6348cc0",
+        "_uid": "6838bd5a-8552-4c3d-8ec3-f94cd1590dc3",
         "tile": [
           {
-            "_uid": "8295a8fb-7c61-40fe-9db9-62683be47dca",
+            "_uid": "3a1e2b56-7ff4-446f-8a6c-9f926cc507e1",
             "text": "Our team thrives in a collaborative environment, fostering creativity and innovation.",
             "type": "tile",
             "headline": "Collaborative Environment",
             "component": "tile",
-            "image_src": "//a.storyblok.com/f/310410/996x998/db49ed9408/mosaic-1.png",
+            "image_src": "//a.storyblok.com/f/310500/996x998/f045c32607/mosaic-1.png",
             "button_label": "Book a meeting",
             "button_toggle": true,
             "backgroundColor": "#81005a"
           },
           {
-            "_uid": "33c07202-454a-4124-a760-c6a1795757e6",
+            "_uid": "4a16a7cd-8c7c-4aec-8259-f3c1c541958b",
             "text": "Our state-of-the-art office facilities inspire productivity and efficiency.",
             "type": "tile",
             "headline": "Modern Infrastructure",
             "component": "tile",
-            "image_src": "//a.storyblok.com/f/310410/996x998/e589677599/mosaic-2.png",
+            "image_src": "//a.storyblok.com/f/310500/996x998/f1bc512078/mosaic-2.png",
             "button_label": "Book a meeting",
             "button_toggle": true,
             "backgroundColor": "#003380"
           },
           {
-            "_uid": "053a3957-ab59-4ed3-ad3b-b20c57de18af",
+            "_uid": "b1e22808-5399-4371-ab69-2d8f72967329",
             "text": "We believe in the power of teamwork. Together, we can achieve great things.",
             "type": "tile",
             "headline": "Teamwork",
             "component": "tile",
-            "image_src": "//a.storyblok.com/f/310410/996x998/dcb92c0951/mosaic-3.png",
+            "image_src": "//a.storyblok.com/f/310500/996x998/ee291b2266/mosaic-3.png",
             "button_label": "Book a meeting",
             "button_toggle": true,
             "backgroundColor": "#004241"
@@ -670,26 +670,26 @@
         "component": "mosaic",
         "largeHeadlines": false
       },
-      "component_id": 6464139,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:22.988Z",
-      "updated_at": "2024-10-23T16:50:22.988Z",
-      "image": "//a.storyblok.com/f/310410/1010x1520/ff385cf8cd/components-mosaic-colorful-tiles.png",
+      "component_id": 6467129,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:39.412Z",
+      "updated_at": "2024-10-24T08:59:39.412Z",
+      "image": "//a.storyblok.com/f/310500/1010x1520/5c762e4535/components-mosaic-colorful-tiles.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329132,
+      "id": 2329945,
       "name": "ColorNeutralText",
       "preset": {
         "sub": "Where Every Idea Matters",
-        "_uid": "74017d3b-9e03-444c-a38e-b20f4aeeb093",
+        "_uid": "dbbd0336-6e27-4e5e-be98-94a9db47d097",
         "text": "Be part of a creative journey where every idea is valued and innovation is celebrated.",
         "type": "video-curtain",
         "buttons": [
           {
-            "_uid": "d299e785-d1af-4c25-95db-953d4ea86993",
+            "_uid": "08a652f5-df5a-4728-8155-4306d64a39f7",
             "type": "buttons",
             "label": "Join Us",
             "component": "buttons"
@@ -701,30 +701,30 @@
         "colorNeutral": true,
         "textPosition": "left",
         "highlightText": true,
-        "video_srcMobile": "//a.storyblok.com/f/310410/1920x1080/69d39e4a29/video-agency.mp4",
-        "video_srcTablet": "//a.storyblok.com/f/310410/1920x1080/69d39e4a29/video-agency.mp4",
-        "video_srcDesktop": "//a.storyblok.com/f/310410/1920x1080/69d39e4a29/video-agency.mp4"
+        "video_srcMobile": "//a.storyblok.com/f/310500/1920x1080/910c880fa2/video-agency.mp4",
+        "video_srcTablet": "//a.storyblok.com/f/310500/1920x1080/910c880fa2/video-agency.mp4",
+        "video_srcDesktop": "//a.storyblok.com/f/310500/1920x1080/910c880fa2/video-agency.mp4"
       },
-      "component_id": 6464141,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:25.983Z",
-      "updated_at": "2024-10-23T16:50:25.983Z",
-      "image": "//a.storyblok.com/f/310410/1559x720/f040c3bc43/components-video-curtain-color-neutral-text.png",
+      "component_id": 6467131,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:42.413Z",
+      "updated_at": "2024-10-24T08:59:42.413Z",
+      "image": "//a.storyblok.com/f/310500/1559x720/ea2164fa45/components-video-curtain-color-neutral-text.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329133,
+      "id": 2329946,
       "name": "ColorNeutralVideo",
       "preset": {
         "sub": "Where Ideas Come to Life",
-        "_uid": "1ae88fc5-7afd-4751-bfc9-b12a27108e2c",
+        "_uid": "cf7f1d73-d219-420e-b144-5617e842c5d1",
         "text": "Experience the synergy of creativity and teamwork in our modern office environment.",
         "type": "video-curtain",
         "buttons": [
           {
-            "_uid": "834d5fe0-fdac-4ead-b375-86dac5798a65",
+            "_uid": "c78df601-ecf4-4199-abf6-92b926fe83aa",
             "type": "buttons",
             "label": "Discover More",
             "component": "buttons"
@@ -736,31 +736,31 @@
         "colorNeutral": false,
         "textPosition": "center",
         "highlightText": true,
-        "video_srcMobile": "//a.storyblok.com/f/310410/1920x1080/e6d0ee0400/handshake-bw.mp4",
-        "video_srcTablet": "//a.storyblok.com/f/310410/1920x1080/e6d0ee0400/handshake-bw.mp4",
-        "video_srcDesktop": "//a.storyblok.com/f/310410/1920x1080/e6d0ee0400/handshake-bw.mp4"
+        "video_srcMobile": "//a.storyblok.com/f/310500/1920x1080/1d7cfc6f21/handshake-bw.mp4",
+        "video_srcTablet": "//a.storyblok.com/f/310500/1920x1080/1d7cfc6f21/handshake-bw.mp4",
+        "video_srcDesktop": "//a.storyblok.com/f/310500/1920x1080/1d7cfc6f21/handshake-bw.mp4"
       },
-      "component_id": 6464141,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:26.178Z",
-      "updated_at": "2024-10-23T16:50:26.178Z",
-      "image": "//a.storyblok.com/f/310410/1559x720/33078ae2da/components-video-curtain-color-neutral-video.png",
+      "component_id": 6467131,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:42.624Z",
+      "updated_at": "2024-10-24T08:59:42.624Z",
+      "image": "//a.storyblok.com/f/310500/1559x720/6c01a9ca6f/components-video-curtain-color-neutral-video.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329082,
+      "id": 2329895,
       "name": "ContactBanner",
       "preset": {
         "sub": "Chat with us about getting your product or platform to market faster",
-        "_uid": "e4a8565b-0b4b-47eb-b9b5-715e0ea6f80e",
+        "_uid": "951b68d0-1c31-4f25-9034-b4c56e65879d",
         "text": "Our modular design approach allows for flexibility and scalability in your application's architecture.",
         "type": "cta",
         "width": "wide",
         "buttons": [
           {
-            "_uid": "d8bed1da-9ed3-4573-b6c7-2444ea2af98b",
+            "_uid": "695154ac-5262-4a4e-b1a0-e71d9d0c233c",
             "icon": "person",
             "type": "buttons",
             "label": "Contact us",
@@ -768,7 +768,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "c4a6ba49-0713-44ed-b882-a5e4728a2e0a",
+            "_uid": "769aeba5-952e-46dd-a0df-d88b29cef491",
             "icon": "date",
             "type": "buttons",
             "label": "Book a meeting",
@@ -779,7 +779,7 @@
         "headline": "Get in touch",
         "component": "cta",
         "fullWidth": true,
-        "image_src": "//a.storyblok.com/f/310410/956x637/b2468b26d3/contact-person.png",
+        "image_src": "//a.storyblok.com/f/310500/956x637/f8646fca46/contact-person.png",
         "textAlign": "left",
         "colorNeutral": false,
         "contentAlign": "center",
@@ -788,23 +788,23 @@
         "order_mobileImageLast": false,
         "order_desktopImageLast": false
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:03.800Z",
-      "updated_at": "2024-10-23T16:50:03.800Z",
-      "image": "//a.storyblok.com/f/310410/1600x560/71ff134b56/components-cta-contact-banner.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:20.171Z",
+      "updated_at": "2024-10-24T08:59:20.171Z",
+      "image": "//a.storyblok.com/f/310500/1600x560/2fe9bbe0af/components-cta-contact-banner.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329106,
+      "id": 2329919,
       "name": "CountUpWithDescription",
       "preset": {
-        "_uid": "5946b894-639d-4719-8642-d0874603dc10",
+        "_uid": "02ae69ef-9124-49fd-9f96-41282390450a",
         "stat": [
           {
-            "_uid": "90a90442-c733-4d80-b01f-e720a8603ed7",
+            "_uid": "47384a1a-a2ad-463e-9769-8e40e3a11b7c",
             "type": "stat",
             "title": "Users",
             "number": 1500,
@@ -812,7 +812,7 @@
             "description": "Experience the power of our platform, embraced by a vast community of users. Our user base is diverse and dynamic, including both active and inactive members. Join us and become part of this ever-growing community."
           },
           {
-            "_uid": "67b0d211-0333-42d7-ae4d-e96bf320df4c",
+            "_uid": "56bda8a8-78fe-4cf6-9e84-52dd15c9fcfa",
             "type": "stat",
             "title": "Subscribers",
             "number": 350,
@@ -823,23 +823,23 @@
         "type": "stats",
         "component": "stats"
       },
-      "component_id": 6464131,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:13.985Z",
-      "updated_at": "2024-10-23T16:50:13.985Z",
-      "image": "//a.storyblok.com/f/310410/700x480/e086c6b272/components-stats-count-up-with-description.png",
+      "component_id": 6467121,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:30.350Z",
+      "updated_at": "2024-10-24T08:59:30.350Z",
+      "image": "//a.storyblok.com/f/310500/700x480/4fa1e20d99/components-stats-count-up-with-description.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329105,
+      "id": 2329918,
       "name": "CountUpWithIcons",
       "preset": {
-        "_uid": "b8a7079e-60cf-41d0-b077-4ffbcd456c22",
+        "_uid": "7d7eb24e-668a-4272-8c5a-61640cb88ea6",
         "stat": [
           {
-            "_uid": "b15354a1-4a05-468c-a0c2-dcaeb3a8878d",
+            "_uid": "9747b06f-992b-469e-a3f9-29e31cec5734",
             "icon": "person",
             "type": "stat",
             "title": "Users",
@@ -847,7 +847,7 @@
             "component": "stat"
           },
           {
-            "_uid": "94826db4-75ab-4817-bbfc-da27a20cbdb7",
+            "_uid": "91ba782f-fd19-4af4-bf96-f6b11c07fa49",
             "icon": "star",
             "type": "stat",
             "title": "Subscribers",
@@ -855,7 +855,7 @@
             "component": "stat"
           },
           {
-            "_uid": "d5fb9e84-a089-45cc-9e98-d8666cc7695c",
+            "_uid": "92067be3-fc38-4b10-b5ae-9c791e98de63",
             "icon": "map",
             "type": "stat",
             "title": "Locations",
@@ -866,25 +866,25 @@
         "type": "stats",
         "component": "stats"
       },
-      "component_id": 6464131,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:13.694Z",
-      "updated_at": "2024-10-23T16:50:13.694Z",
-      "image": "//a.storyblok.com/f/310410/790x480/d5b93a0125/components-stats-count-up-with-icons.png",
+      "component_id": 6467121,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:30.021Z",
+      "updated_at": "2024-10-24T08:59:30.021Z",
+      "image": "//a.storyblok.com/f/310500/790x480/74a6849532/components-stats-count-up-with-icons.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329148,
+      "id": 2329961,
       "name": "Default",
       "preset": {
-        "_uid": "bd0e8397-c509-4f9d-b664-89d743aedbdf",
+        "_uid": "f5702035-1abc-4908-a4a6-286d25d05476",
         "name": "Jane Smith",
         "type": "blog-author",
         "links": [
           {
-            "_uid": "0e2f59e4-9f78-40bf-8400-bc706020bb59",
+            "_uid": "75856c31-031d-40f6-9b76-e05ae785ddc8",
             "href": "tel:+4922868896620",
             "icon": "twitter",
             "type": "links",
@@ -893,7 +893,7 @@
             "component": "links"
           },
           {
-            "_uid": "f52768f0-b0dc-43e6-a1fe-fe503ea211f7",
+            "_uid": "e9bb3407-1356-4caf-b51f-3f3e091bbb9d",
             "href": "mailto:mail@example.com",
             "icon": "email",
             "type": "links",
@@ -905,93 +905,93 @@
         "byline": "CEO at Company",
         "component": "blog-author",
         "image_alt": "Picture of Jane Smith",
-        "image_src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png",
+        "image_src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png",
         "image_fullWidth": false,
         "image_aspectRatio": "square"
       },
-      "component_id": 6464148,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:33.742Z",
-      "updated_at": "2024-10-23T16:50:33.742Z",
-      "image": "//a.storyblok.com/f/310410/390x646/59083b6782/blog-blog-author-default.png",
+      "component_id": 6467140,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:50.415Z",
+      "updated_at": "2024-10-24T08:59:50.415Z",
+      "image": "//a.storyblok.com/f/310500/390x646/3d3319f86d/blog-blog-author-default.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329146,
+      "id": 2329959,
       "name": "Default",
       "preset": {
-        "_uid": "387773b5-c871-408d-97e4-d4bfaae365d9",
+        "_uid": "d95dda56-2158-41ff-beac-3b1ffc2acef0",
         "date": "12/30/2022",
         "tags": [
           {
-            "_uid": "2f9388bc-962b-4c4b-8320-d243102bdfc7",
+            "_uid": "b618292a-66e4-4807-9670-a0d95671fcfa",
             "type": "tags",
             "entry": "Technology",
             "component": "tags"
           },
           {
-            "_uid": "33fac6ce-ed7e-4689-95d9-354a196e2e9f",
+            "_uid": "5725f75b-2088-4435-9809-72ab203f3118",
             "type": "tags",
             "entry": "AI",
             "component": "tags"
           }
         ],
         "type": "blog-teaser",
-        "image": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
+        "image": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
         "headline": "The Future of AI",
         "link_url": "https://example.com",
         "component": "blog-teaser",
         "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
         "author_name": "Jane Smith",
         "readingTime": "5 min read",
-        "author_image": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png",
+        "author_image": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png",
         "author_title": "Senior AI Researcher"
       },
-      "component_id": 6464144,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:31.744Z",
-      "updated_at": "2024-10-23T16:50:31.744Z",
-      "image": "//a.storyblok.com/f/310410/1000x504/34b2b3daf2/blog-blog-teaser-default.png",
+      "component_id": 6467136,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:48.413Z",
+      "updated_at": "2024-10-24T08:59:48.413Z",
+      "image": "//a.storyblok.com/f/310500/1000x504/75a155fd13/blog-blog-teaser-default.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329121,
+      "id": 2329934,
       "name": "Default",
       "preset": {
-        "_uid": "237e78d3-1d26-41ee-a004-79069ccc91b2",
+        "_uid": "7ead1fdd-2bee-4006-93f7-f9f8a65c444a",
         "type": "divider",
         "variant": "default",
         "component": "divider"
       },
-      "component_id": 6464135,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:20.178Z",
-      "updated_at": "2024-10-23T16:50:20.178Z",
-      "image": "//a.storyblok.com/f/310410/770x100/8f8e4f01de/layout-divider-default.png",
+      "component_id": 6467125,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:36.617Z",
+      "updated_at": "2024-10-24T08:59:36.617Z",
+      "image": "//a.storyblok.com/f/310500/770x100/bf1fe6e9e5/layout-divider-default.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329149,
+      "id": 2329962,
       "name": "Default",
       "preset": {
-        "_uid": "64762a6d-5380-4e39-a3c6-3fea73442956",
+        "_uid": "9a75d2d6-4b87-4146-9c79-e02676b0dad7",
         "date": "12/30/2022",
         "type": "blog-aside",
         "title": "Blog Post",
         "component": "blog-aside",
-        "author__uid": "b3a036d1-4373-4941-a22a-272064ca302a",
+        "author__uid": "8ac400af-1392-4be3-9cad-85e506437f9b",
         "author_name": "Jane Smith",
         "author_type": "blog-author",
         "readingTime": "5 min read",
         "author_image": {
           "alt": "Picture of Jane Smith",
-          "src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png",
+          "src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png",
           "fullWidth": false,
           "aspectRatio": "square"
         },
@@ -1012,7 +1012,7 @@
         "author_byline": "CEO at Company",
         "socialSharing": [
           {
-            "_uid": "dbd51f85-53bf-41a1-84a5-3097bff7f277",
+            "_uid": "b57594e9-6e2d-428e-8f24-9b48365ae07b",
             "href": "https://twitter.com/share?text=The%20Future%20of%20AI&url=https://example.com/blog/the-future-of-ai",
             "icon": "twitter",
             "type": "socialSharing",
@@ -1020,7 +1020,7 @@
             "component": "socialSharing"
           },
           {
-            "_uid": "cec8c1f4-bbdb-46f5-af7d-3bcd1684e8c7",
+            "_uid": "db423bd3-62d6-4bdc-8afc-ca57efad6c02",
             "href": "https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/blog/the-future-of-ai&title=The%20Future%20of%20AI&summary=The%20Future%20of%20AI&source=LinkedIn",
             "icon": "linkedin",
             "type": "socialSharing",
@@ -1030,73 +1030,73 @@
         ],
         "author_component": "blog-author"
       },
-      "component_id": 6464150,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:34.745Z",
-      "updated_at": "2024-10-23T16:50:34.745Z",
-      "image": "//a.storyblok.com/f/310410/390x646/005b28342a/blog-blog-aside-default.png",
+      "component_id": 6467142,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:51.409Z",
+      "updated_at": "2024-10-24T08:59:51.409Z",
+      "image": "//a.storyblok.com/f/310500/390x646/3e765d8485/blog-blog-aside-default.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329147,
+      "id": 2329960,
       "name": "Default",
       "preset": {
-        "_uid": "3c20e2b3-db46-4b13-a291-6e3b3a2e6936",
+        "_uid": "eaec2e9b-8bb0-4486-b79e-0014be5e7ecd",
         "date": "12/30/2022",
         "tags": [
           {
-            "_uid": "2094433e-7ef5-4fc8-9d93-18f05b86e624",
+            "_uid": "9e8d3235-4428-4577-858a-cd7ed33f05ce",
             "type": "tags",
             "entry": "Technology",
             "component": "tags"
           },
           {
-            "_uid": "77f4d183-e46a-4f86-8a21-57b1c2d3bbc9",
+            "_uid": "44bfae0f-72a7-4f11-8463-6a21321c8f89",
             "type": "tags",
             "entry": "AI",
             "component": "tags"
           }
         ],
         "type": "blog-head",
-        "image": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
+        "image": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
         "headline": "The Future of AI",
         "component": "blog-head"
       },
-      "component_id": 6464146,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:32.742Z",
-      "updated_at": "2024-10-23T16:50:32.742Z",
-      "image": "//a.storyblok.com/f/310410/1000x863/c21d638021/blog-blog-head-default.png",
+      "component_id": 6467138,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:49.410Z",
+      "updated_at": "2024-10-24T08:59:49.410Z",
+      "image": "//a.storyblok.com/f/310500/1000x863/0fba0499a9/blog-blog-head-default.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329122,
+      "id": 2329935,
       "name": "DropdownList",
       "preset": {
-        "_uid": "ac67708a-2503-4c53-9bd6-ba8c7dd47b38",
+        "_uid": "0c7dd516-bd92-420f-96d6-30d44b6fba33",
         "type": "faq",
         "component": "faq",
         "questions": [
           {
-            "_uid": "9b935c72-cab3-40ff-a74f-02ed5057d103",
+            "_uid": "8e36e22c-4d84-4a6d-9618-4a80567d7bc3",
             "type": "questions",
             "answer": "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
             "question": "What are the benefits of investing in a Design System?",
             "component": "questions"
           },
           {
-            "_uid": "d6f23f27-a47f-4974-abe8-95d4d24f57a0",
+            "_uid": "24a80464-56b1-4030-bade-1961797e789e",
             "type": "questions",
             "answer": "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
             "question": "What is a Design System?",
             "component": "questions"
           },
           {
-            "_uid": "e69d6e6c-33d2-47e5-9228-371f4fd8f043",
+            "_uid": "2e3af90f-c8cc-4a37-9f8e-2f5179c9fea4",
             "type": "questions",
             "answer": "A Headless CMS plays a crucial role in a Design System by providing a content-first approach. It separates the back-end content from the front-end presentation layer, allowing for seamless integration with any design system. This results in a flexible, scalable, and platform-agnostic system that ensures content consistency across all platforms and devices.",
             "question": "What is the role of a Headless CMS in a Design System?",
@@ -1104,20 +1104,20 @@
           }
         ]
       },
-      "component_id": 6464136,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:20.989Z",
-      "updated_at": "2024-10-23T16:50:20.989Z",
-      "image": "//a.storyblok.com/f/310410/820x455/5e03afd761/components-faq-dropdown-list.png",
+      "component_id": 6467126,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:37.410Z",
+      "updated_at": "2024-10-24T08:59:37.410Z",
+      "image": "//a.storyblok.com/f/310500/820x455/e314f96524/components-faq-dropdown-list.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329144,
+      "id": 2329957,
       "name": "FlexLayout",
       "preset": {
-        "_uid": "95ef32f6-0a85-48b5-8fa6-137499e533dc",
+        "_uid": "e907779c-3f7a-4b95-8ead-b67217827104",
         "type": "section",
         "style": "default",
         "width": "max",
@@ -1140,28 +1140,28 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:30.179Z",
-      "updated_at": "2024-10-23T16:50:30.179Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/2772696a98/layout-section-flex-layout.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:47.066Z",
+      "updated_at": "2024-10-24T08:59:47.066Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/0b6ff513bb/layout-section-flex-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329151,
+      "id": 2329964,
       "name": "Footer",
       "preset": {
-        "_uid": "83d99a72-11ba-44e0-ad01-92e6e406e7e0",
+        "_uid": "8201ae6e-bf30-422a-9a82-bfe63736c0e0",
         "type": "footer",
         "byline": "© 2024 systemics Inc. All rights reserved.",
         "inverted": false,
         "logo_alt": "Systemics Logo",
-        "logo_src": "//a.storyblok.com/f/310410/176x40/82935687f7/logo.svg",
+        "logo_src": "//a.storyblok.com/f/310500/176x40/5c39556d29/logo.svg",
         "navItems": [
           {
-            "_uid": "5165acbf-084d-4a17-a7a1-c12a5071a61b",
+            "_uid": "3f20494d-c424-4f61-96ac-5c44efbcbbb7",
             "href": "#",
             "type": "navItems",
             "label": "Active Item",
@@ -1169,14 +1169,14 @@
             "component": "navItems"
           },
           {
-            "_uid": "b817bb7f-a516-402c-864f-3237f518f097",
+            "_uid": "17f52137-72e6-426a-aa2d-11021372d001",
             "href": "#",
             "type": "navItems",
             "label": "Navigation Item",
             "component": "navItems"
           },
           {
-            "_uid": "babf0ea9-12e9-4a30-b016-80f0d157027d",
+            "_uid": "4639ff9e-7bbd-4ced-ace5-37a5d7c6724a",
             "href": "#",
             "type": "navItems",
             "items": [
@@ -1202,14 +1202,14 @@
             "component": "navItems"
           },
           {
-            "_uid": "31f6aefa-ace8-4e57-af11-ba6b80739e34",
+            "_uid": "f974b06f-1356-42e8-839d-58156a8482fd",
             "href": "#",
             "type": "navItems",
             "label": "One more Item",
             "component": "navItems"
           },
           {
-            "_uid": "1bfd2bdc-0e6b-4ded-b482-a4ffdb1d2a7f",
+            "_uid": "a5babfd4-8cc6-4789-83d8-94923886c225",
             "href": "#",
             "type": "navItems",
             "label": "Last Item",
@@ -1223,74 +1223,74 @@
         "logo_srcInverted": "/logo-inverted.svg",
         "logo_homepageHref": "#"
       },
-      "component_id": 6464155,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:36.744Z",
-      "updated_at": "2024-10-23T16:50:36.744Z",
-      "image": "//a.storyblok.com/f/310410/1280x371/866092ab47/layout-footer-footer.png",
+      "component_id": 6467146,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:53.420Z",
+      "updated_at": "2024-10-24T08:59:53.420Z",
+      "image": "//a.storyblok.com/f/310500/1280x371/57a3c61e39/layout-footer-footer.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329094,
+      "id": 2329907,
       "name": "FreeAspectRatio",
       "preset": {
-        "_uid": "8474e7fe-c45c-41e2-8fdd-63a2f4184f11",
+        "_uid": "587f2b7f-fd5c-45e5-b6d4-cd7e401c2b64",
         "type": "gallery",
         "images": [
           {
             "alt": "Alt text Image 1",
-            "src": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
-            "_uid": "cf0951b1-b5e5-41b0-bd0a-03061dd1aeff",
+            "src": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
+            "_uid": "04e23686-b33f-46c0-a031-42c011a2f587",
             "type": "images",
             "caption": "Caption Image 1",
             "component": "images"
           },
           {
             "alt": "Alt text Image 2",
-            "src": "//a.storyblok.com/f/310410/996x998/a9b4d0ddb1/low-angle-tall-building-with-many-windows_23-2148230392.png",
-            "_uid": "279821f5-78bf-49b8-ba90-eec997407d65",
+            "src": "//a.storyblok.com/f/310500/996x998/b27b9fcda9/low-angle-tall-building-with-many-windows_23-2148230392.png",
+            "_uid": "a5eb4aa2-02f7-4645-8b91-d9b9bab23e36",
             "type": "images",
             "caption": "Caption Image 2",
             "component": "images"
           },
           {
             "alt": "Alt text Image 3",
-            "src": "//a.storyblok.com/f/310410/833x833/7ffb29b674/full-shot-different-people-working-together.png",
-            "_uid": "dc875bd3-47ef-4f63-b2d8-59be5c350e65",
+            "src": "//a.storyblok.com/f/310500/833x833/87959509bd/full-shot-different-people-working-together.png",
+            "_uid": "5f3deb42-5131-4718-9cbc-75f3466c54d8",
             "type": "images",
             "caption": "Caption Image 3",
             "component": "images"
           },
           {
             "alt": "Alt text Image 4",
-            "src": "//a.storyblok.com/f/310410/1440x960/b03de23d4b/top-view-desk-with-keyboard-drawing-pad.png",
-            "_uid": "22ebb352-ed58-4626-b885-e443b7e62499",
+            "src": "//a.storyblok.com/f/310500/1440x960/056703d663/top-view-desk-with-keyboard-drawing-pad.png",
+            "_uid": "9d8a8428-0647-464f-8608-37704cb5a08b",
             "type": "images",
             "caption": "Caption Image 4",
             "component": "images"
           },
           {
             "alt": "Alt text Image 5",
-            "src": "//a.storyblok.com/f/310410/1440x960/6f2b8889e1/people-brainstorming-work-meeting.png",
-            "_uid": "47c0e569-87da-4320-be48-1574075c170b",
+            "src": "//a.storyblok.com/f/310500/1440x960/81ef18b4c2/people-brainstorming-work-meeting.png",
+            "_uid": "a2ee8f99-5cd3-4ec5-b5ad-31573f05a6c7",
             "type": "images",
             "caption": "Caption Image 5",
             "component": "images"
           },
           {
             "alt": "Alt text Image 6",
-            "src": "//a.storyblok.com/f/310410/1000x1500/7b245e885a/view-modern-office.jpg",
-            "_uid": "e391984b-48b8-4dd3-9051-feb3c31f2a80",
+            "src": "//a.storyblok.com/f/310500/1000x1500/7bbbebfdf1/view-modern-office.jpg",
+            "_uid": "a2b4ed6a-25c8-45bf-97dc-0d8a05071665",
             "type": "images",
             "caption": "Caption Image 6",
             "component": "images"
           },
           {
             "alt": "Alt text Image 7",
-            "src": "//a.storyblok.com/f/310410/1920x800/61dab404b7/colleagues-work-office-using-computers-looking-aside.png",
-            "_uid": "26c7b17c-eb97-4100-8603-417db3774df3",
+            "src": "//a.storyblok.com/f/310500/1920x800/ff9ecae741/colleagues-work-office-using-computers-looking-aside.png",
+            "_uid": "abd905b5-8967-44a0-813b-5d8655b4ba8f",
             "type": "images",
             "caption": "Caption Image 7",
             "component": "images"
@@ -1301,28 +1301,28 @@
         "component": "gallery",
         "aspectRatio": "unset"
       },
-      "component_id": 6464127,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:08.691Z",
-      "updated_at": "2024-10-23T16:50:08.691Z",
-      "image": "//a.storyblok.com/f/310410/1040x779/9b2a9c322b/components-gallery-free-aspect-ratio.png",
+      "component_id": 6467117,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:25.018Z",
+      "updated_at": "2024-10-24T08:59:25.018Z",
+      "image": "//a.storyblok.com/f/310500/1040x779/f9ca0ee51a/components-gallery-free-aspect-ratio.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329150,
+      "id": 2329963,
       "name": "Header",
       "preset": {
-        "_uid": "efe723a6-a420-4ce7-b2e6-a443c579c9ed",
+        "_uid": "84fbb56e-1f28-4cc1-9ca9-b27d3b9866c2",
         "type": "header",
         "floating": false,
         "inverted": false,
         "logo_alt": "Systemics Logo",
-        "logo_src": "//a.storyblok.com/f/310410/176x40/82935687f7/logo.svg",
+        "logo_src": "//a.storyblok.com/f/310500/176x40/5c39556d29/logo.svg",
         "navItems": [
           {
-            "_uid": "d81e94c3-ef40-4b11-87b5-3a38f9024562",
+            "_uid": "36a9989f-b233-4874-905a-e3804de6b0f7",
             "href": "#",
             "type": "navItems",
             "label": "Active Item",
@@ -1330,14 +1330,14 @@
             "component": "navItems"
           },
           {
-            "_uid": "b60d1ff8-dcc1-4273-a161-0eb33b71394c",
+            "_uid": "2a1c8e10-51ea-4444-be10-46ca58eef7c0",
             "href": "#",
             "type": "navItems",
             "label": "Navigation Item",
             "component": "navItems"
           },
           {
-            "_uid": "db9b355a-89a0-492e-8d03-8a378dddd3e2",
+            "_uid": "f2d9dea9-83be-4b78-aa98-a76d112cc270",
             "href": "#",
             "type": "navItems",
             "items": [
@@ -1363,14 +1363,14 @@
             "component": "navItems"
           },
           {
-            "_uid": "7da9ea49-9e67-4604-954a-78fd99577646",
+            "_uid": "9546b0bf-7658-4f21-9860-9653e3a0df22",
             "href": "#",
             "type": "navItems",
             "label": "One more Item",
             "component": "navItems"
           },
           {
-            "_uid": "103c39e3-45cb-4030-aa81-df7a4ebb81b8",
+            "_uid": "f46b9852-284f-42cf-b6e6-395ab82c1f7f",
             "href": "#",
             "type": "navItems",
             "label": "Last Item",
@@ -1385,20 +1385,20 @@
         "logo_srcInverted": "/logo-inverted.svg",
         "logo_homepageHref": "#"
       },
-      "component_id": 6464153,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:35.986Z",
-      "updated_at": "2024-10-23T16:50:35.986Z",
-      "image": "//a.storyblok.com/f/310410/1280x255/31099b5dd1/layout-header-header.png",
+      "component_id": 6467145,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:52.668Z",
+      "updated_at": "2024-10-24T08:59:52.668Z",
+      "image": "//a.storyblok.com/f/310500/1280x255/e67f24b3ec/layout-header-header.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329119,
+      "id": 2329932,
       "name": "Highlight",
       "preset": {
-        "_uid": "a1605c65-8893-4b38-8918-9f6047646554",
+        "_uid": "b9a2c7c2-8a8e-44d4-afb2-d087d543f017",
         "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
         "type": "text",
         "align": "left",
@@ -1406,26 +1406,26 @@
         "component": "text",
         "highlightText": true
       },
-      "component_id": 6464134,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:19.163Z",
-      "updated_at": "2024-10-23T16:50:19.163Z",
-      "image": "//a.storyblok.com/f/310410/1000x482/31c30f0da3/components-text-highlight.png",
+      "component_id": 6467124,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:35.620Z",
+      "updated_at": "2024-10-24T08:59:35.620Z",
+      "image": "//a.storyblok.com/f/310500/1000x482/71f28f9a61/components-text-highlight.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329079,
+      "id": 2329892,
       "name": "Highlighted",
       "preset": {
         "sub": "Built for consistency and speed.",
-        "_uid": "7fdc6dc4-e494-4201-aef2-2f00fdb2af42",
+        "_uid": "a94a85da-cb84-4a58-a7fb-ddbeff653576",
         "text": "Our design system is built with scalability and efficiency in mind. It allows for consistent UI across different platforms, making your development process smoother and faster.",
         "type": "cta",
         "buttons": [
           {
-            "_uid": "57be6798-663d-46a2-99b8-0fe6971e899b",
+            "_uid": "7442d904-1181-41b9-8741-a4458fb542dc",
             "icon": "person",
             "type": "buttons",
             "label": "Get Started",
@@ -1444,26 +1444,26 @@
         "order_mobileImageLast": false,
         "order_desktopImageLast": true
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:02.814Z",
-      "updated_at": "2024-10-23T16:50:02.814Z",
-      "image": "//a.storyblok.com/f/310410/1000x551/9bfd0b1456/components-cta-highlighted.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:19.180Z",
+      "updated_at": "2024-10-24T08:59:19.180Z",
+      "image": "//a.storyblok.com/f/310500/1000x551/41ded24657/components-cta-highlighted.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329090,
+      "id": 2329903,
       "name": "IconBesideWithLinkInText",
       "preset": {
-        "_uid": "477614d7-7d41-487e-947e-ef869339eaad",
+        "_uid": "b82b3717-cf2c-416c-b85c-af73dda37672",
         "type": "features",
         "style": "intext",
         "layout": "smallTiles",
         "feature": [
           {
-            "_uid": "7c0a110b-f171-4602-96a9-6bf7aef1d2ef",
+            "_uid": "8a9c020f-da01-4295-8670-0fdf372b6e6b",
             "icon": "home",
             "text": "Our design system allows for a scalable architecture, enabling you to build applications that can grow with your needs.",
             "type": "feature",
@@ -1476,7 +1476,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "4836059b-275e-4254-a0cc-a5303b4ed815",
+            "_uid": "c8644456-12b4-4d09-a879-360fd6e5dd97",
             "icon": "map",
             "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
             "type": "feature",
@@ -1489,7 +1489,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "269f85ef-3880-45fe-80fa-f7f0dbb4e6d5",
+            "_uid": "531565f3-c740-488f-bbb9-817d9fbdc40f",
             "icon": "person",
             "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
             "type": "feature",
@@ -1502,7 +1502,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "61785cf8-7e4f-4eea-bff9-53e97632e3a3",
+            "_uid": "60ddf6a8-78f2-4f68-9b4d-6fc4d51cc01a",
             "icon": "star",
             "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
             "type": "feature",
@@ -1515,7 +1515,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "eacb50e5-39e5-4a97-b022-60b4555403fd",
+            "_uid": "43cbf531-6c67-4fd7-8ae2-9d54fa560f84",
             "icon": "upload",
             "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
             "type": "feature",
@@ -1528,7 +1528,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "c1321440-2444-474d-95a1-d2da9fe6b708",
+            "_uid": "4fa121f2-2314-42d2-a078-4d42151a2f41",
             "icon": "login",
             "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
             "type": "feature",
@@ -1545,26 +1545,26 @@
         "ctas_style": "intext",
         "ctas_toggle": true
       },
-      "component_id": 6464126,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:06.803Z",
-      "updated_at": "2024-10-23T16:50:06.803Z",
-      "image": "//a.storyblok.com/f/310410/1000x506/3126887c94/components-features-icon-beside-with-link-in-text.png",
+      "component_id": 6467116,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:23.170Z",
+      "updated_at": "2024-10-24T08:59:23.170Z",
+      "image": "//a.storyblok.com/f/310500/1000x506/a8e0bc88d1/components-features-icon-beside-with-link-in-text.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329087,
+      "id": 2329900,
       "name": "IconCentered",
       "preset": {
-        "_uid": "5b1f9440-dab8-437f-841b-130c2546db91",
+        "_uid": "8e74096d-5861-4e5e-a693-687abeb24e64",
         "type": "features",
         "style": "centered",
         "layout": "largeTiles",
         "feature": [
           {
-            "_uid": "839a2137-ef3d-472f-bec9-c2135da3af4a",
+            "_uid": "585dcd76-7677-495c-8a55-48f1af9f5be9",
             "icon": "home",
             "text": "Our design system allows for a scalable architecture, enabling you to build applications that can grow with your needs.",
             "type": "feature",
@@ -1577,7 +1577,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "07bbb2f5-c957-4357-a850-f95b4c6c8b4b",
+            "_uid": "02fb7b4d-4210-47f6-892f-cc4b42897cf4",
             "icon": "map",
             "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
             "type": "feature",
@@ -1590,7 +1590,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "1c704a48-8fb4-428c-87c9-657d82440b25",
+            "_uid": "72db36ec-b431-4da0-91f2-4174e42db0de",
             "icon": "person",
             "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
             "type": "feature",
@@ -1603,7 +1603,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "3c57281f-5ed5-4289-b6ec-d74363723065",
+            "_uid": "b917596e-f5c1-47cf-812f-4d5dab89e973",
             "icon": "star",
             "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
             "type": "feature",
@@ -1616,7 +1616,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "42313e94-5762-4c63-ac8d-2ff5045f0f94",
+            "_uid": "4fa048d1-32b6-4998-8663-b0153d54017d",
             "icon": "upload",
             "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
             "type": "feature",
@@ -1629,7 +1629,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "07efaab4-2a8c-4854-af2a-720d9cb424d1",
+            "_uid": "c0d5c870-b63b-494c-9863-995ec7f61368",
             "icon": "login",
             "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
             "type": "feature",
@@ -1646,26 +1646,26 @@
         "ctas_style": "link",
         "ctas_toggle": true
       },
-      "component_id": 6464126,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:05.809Z",
-      "updated_at": "2024-10-23T16:50:05.809Z",
-      "image": "//a.storyblok.com/f/310410/1440x666/5372a18ee7/components-features-icon-centered.png",
+      "component_id": 6467116,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:22.165Z",
+      "updated_at": "2024-10-24T08:59:22.165Z",
+      "image": "//a.storyblok.com/f/310500/1440x666/5c4a6345a2/components-features-icon-centered.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329091,
+      "id": 2329904,
       "name": "IconIntextWithLink",
       "preset": {
-        "_uid": "53c46b4d-1305-46b4-9a6c-77912c27b090",
+        "_uid": "35448df8-436f-4b72-8a77-1c19df0b165a",
         "type": "features",
         "style": "intext",
         "layout": "largeTiles",
         "feature": [
           {
-            "_uid": "05269c81-03c6-46fe-9bdc-dedad2089284",
+            "_uid": "011fd174-b5d6-4fe8-837a-d23d5405a75b",
             "icon": "star",
             "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
             "type": "feature",
@@ -1678,7 +1678,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "ebc1695b-f3ec-415b-b321-f1b930381d8d",
+            "_uid": "cb322f5b-bd6e-4738-986a-d2c838505f4a",
             "icon": "map",
             "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
             "type": "feature",
@@ -1691,7 +1691,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "cbe9fe07-7ed6-4914-96ad-13ade58f739c",
+            "_uid": "bc069e82-170a-43ce-af28-72db11ef84fc",
             "icon": "person",
             "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
             "type": "feature",
@@ -1704,7 +1704,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "bad70b93-931a-4e6e-88ca-de8a350d80ee",
+            "_uid": "49992e2e-f5c4-4a77-990f-0360944ba22b",
             "icon": "upload",
             "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
             "type": "feature",
@@ -1717,7 +1717,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "d9a8da84-be3b-4b86-b504-b9736387ad5b",
+            "_uid": "5049bb22-0ed1-4c01-a628-93bca1de1452",
             "icon": "login",
             "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
             "type": "feature",
@@ -1734,20 +1734,20 @@
         "ctas_style": "link",
         "ctas_toggle": true
       },
-      "component_id": 6464126,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:06.905Z",
-      "updated_at": "2024-10-23T16:50:06.905Z",
-      "image": "//a.storyblok.com/f/310410/1232x524/2a715e4c77/components-features-icon-intext-with-link.png",
+      "component_id": 6467116,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:23.376Z",
+      "updated_at": "2024-10-24T08:59:23.376Z",
+      "image": "//a.storyblok.com/f/310500/1232x524/64390ac8a7/components-features-icon-intext-with-link.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329136,
+      "id": 2329949,
       "name": "Inverted",
       "preset": {
-        "_uid": "3c9e48fa-c3ed-446a-a5b9-1f5a909f0a7d",
+        "_uid": "b7cdb5f1-5906-417c-ac61-d6de6207d10a",
         "type": "section",
         "style": "default",
         "width": "default",
@@ -1769,66 +1769,66 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:27.742Z",
-      "updated_at": "2024-10-23T16:50:27.742Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/1f6705707f/layout-section-inverted.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:44.418Z",
+      "updated_at": "2024-10-24T08:59:44.418Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/37a3fef493/layout-section-inverted.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329093,
+      "id": 2329906,
       "name": "LargeLandscapeTiles",
       "preset": {
-        "_uid": "d693b6cd-3031-4e85-84f0-1e9d398b76d8",
+        "_uid": "61274a63-d321-45b0-9910-3003e9c41f53",
         "type": "gallery",
         "images": [
           {
             "alt": "Alt text Image 1",
-            "src": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
-            "_uid": "2af3139f-2e67-4678-aa20-bf7642670223",
+            "src": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
+            "_uid": "bef0b3ad-62fc-4c9c-97a3-8b25d80dfb1b",
             "type": "images",
             "caption": "Caption Image 1",
             "component": "images"
           },
           {
             "alt": "Alt text Image 2",
-            "src": "//a.storyblok.com/f/310410/996x998/a9b4d0ddb1/low-angle-tall-building-with-many-windows_23-2148230392.png",
-            "_uid": "d4e1a007-28e5-4c81-abd7-ee7dc456273c",
+            "src": "//a.storyblok.com/f/310500/996x998/b27b9fcda9/low-angle-tall-building-with-many-windows_23-2148230392.png",
+            "_uid": "3ff10f9f-5a10-4d98-806c-52a8b06b90ed",
             "type": "images",
             "caption": "Caption Image 2",
             "component": "images"
           },
           {
             "alt": "Alt text Image 3",
-            "src": "//a.storyblok.com/f/310410/833x833/7ffb29b674/full-shot-different-people-working-together.png",
-            "_uid": "dfa2a357-66cc-432d-b389-c12a81e4f30f",
+            "src": "//a.storyblok.com/f/310500/833x833/87959509bd/full-shot-different-people-working-together.png",
+            "_uid": "a0717701-f8c5-4c09-8fc0-cec05e9a5c15",
             "type": "images",
             "caption": "Caption Image 3",
             "component": "images"
           },
           {
             "alt": "Alt text Image 4",
-            "src": "//a.storyblok.com/f/310410/1440x960/b03de23d4b/top-view-desk-with-keyboard-drawing-pad.png",
-            "_uid": "02acee46-7923-4780-9fc9-513753f42592",
+            "src": "//a.storyblok.com/f/310500/1440x960/056703d663/top-view-desk-with-keyboard-drawing-pad.png",
+            "_uid": "383d62e8-2419-4adf-b34e-8a92de8ce7cd",
             "type": "images",
             "caption": "Caption Image 4",
             "component": "images"
           },
           {
             "alt": "Alt text Image 5",
-            "src": "//a.storyblok.com/f/310410/1440x960/6f2b8889e1/people-brainstorming-work-meeting.png",
-            "_uid": "c9307a8a-d7a4-43a4-909c-b6991472b1a3",
+            "src": "//a.storyblok.com/f/310500/1440x960/81ef18b4c2/people-brainstorming-work-meeting.png",
+            "_uid": "a55d9c21-2d70-43e9-b7ce-c82f96b1d684",
             "type": "images",
             "caption": "Caption Image 5",
             "component": "images"
           },
           {
             "alt": "Alt text Image 6",
-            "src": "//a.storyblok.com/f/310410/1000x1500/7b245e885a/view-modern-office.jpg",
-            "_uid": "3ca0530e-8d2b-4c09-9376-4ea8b9ef1b38",
+            "src": "//a.storyblok.com/f/310500/1000x1500/7bbbebfdf1/view-modern-office.jpg",
+            "_uid": "d718d67a-5ca3-4b5b-b094-3d40b0b2210a",
             "type": "images",
             "caption": "Caption Image 6",
             "component": "images"
@@ -1839,26 +1839,26 @@
         "component": "gallery",
         "aspectRatio": "landscape"
       },
-      "component_id": 6464127,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:07.902Z",
-      "updated_at": "2024-10-23T16:50:07.902Z",
-      "image": "//a.storyblok.com/f/310410/1440x735/09ca67de1a/components-gallery-large-landscape-tiles.png",
+      "component_id": 6467117,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:24.377Z",
+      "updated_at": "2024-10-24T08:59:24.377Z",
+      "image": "//a.storyblok.com/f/310500/1440x735/b1341e9813/components-gallery-large-landscape-tiles.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329080,
+      "id": 2329893,
       "name": "LeftAligned",
       "preset": {
         "sub": "Efficient, scalable, seamless.",
-        "_uid": "e699b17a-c82c-4198-a539-3e2360a0138e",
+        "_uid": "455dd0f3-9a8d-4cc9-af05-97f080a0ecfb",
         "text": "Our design system offers a seamless and efficient way to build scalable applications. Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
         "type": "cta",
         "buttons": [
           {
-            "_uid": "66edaa5d-be10-4789-b560-9576bba5199a",
+            "_uid": "454516e4-ba97-4034-b5a1-53b27409fc34",
             "icon": "person",
             "type": "buttons",
             "label": "Learn More",
@@ -1877,60 +1877,60 @@
         "order_mobileImageLast": false,
         "order_desktopImageLast": true
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:02.906Z",
-      "updated_at": "2024-10-23T16:50:02.906Z",
-      "image": "//a.storyblok.com/f/310410/1000x443/19453bcf9f/components-cta-left-aligned.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:19.284Z",
+      "updated_at": "2024-10-24T08:59:19.284Z",
+      "image": "//a.storyblok.com/f/310500/1000x443/5115172118/components-cta-left-aligned.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329102,
+      "id": 2329915,
       "name": "LeftAlignedWithTextLink",
       "preset": {
-        "_uid": "0b720d44-d810-4fe4-9091-fdb6822e0f39",
+        "_uid": "8825f281-8f4a-4e67-a6bb-5a0f056a6fa6",
         "logo": [
           {
             "alt": "Logo 1",
-            "src": "//a.storyblok.com/f/310410/132x35/b32d01f563/logoipsum-212.svg",
-            "_uid": "3ac4a700-620b-44ec-a931-57c84e80d6b7",
+            "src": "//a.storyblok.com/f/310500/132x35/e96934ce34/logoipsum-212.svg",
+            "_uid": "8a32a1c2-a56f-4d15-914e-c27cfe9eaba9",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 2",
-            "src": "//a.storyblok.com/f/310410/124x32/272f064d9d/logoipsum-217.svg",
-            "_uid": "8357aa2b-17db-42fc-b15c-4f1368bb9037",
+            "src": "//a.storyblok.com/f/310500/124x32/62bf5e4d74/logoipsum-217.svg",
+            "_uid": "730329f5-1780-4155-9a0a-b0fd3b44e6fa",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 3",
-            "src": "//a.storyblok.com/f/310410/154x44/2eb45e0f24/logoipsum-239.svg",
-            "_uid": "fe166977-5194-4c6e-b339-cfc313596ee0",
+            "src": "//a.storyblok.com/f/310500/154x44/93a7674e70/logoipsum-239.svg",
+            "_uid": "4cf2ce62-c689-434a-b6fe-79d4e3bc3edc",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 4",
-            "src": "//a.storyblok.com/f/310410/155x40/b52c58a4a9/logoipsum-244.svg",
-            "_uid": "6ecb9a6d-0935-44d7-b0cd-0c1cb5dc5047",
+            "src": "//a.storyblok.com/f/310500/155x40/75540ddce8/logoipsum-244.svg",
+            "_uid": "4d529119-fd0a-49a5-9a39-1265033142a5",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 5",
-            "src": "//a.storyblok.com/f/310410/171x32/852b0f134d/logoipsum-250.svg",
-            "_uid": "c76911ec-21a3-41f7-8bdd-4caacd107cca",
+            "src": "//a.storyblok.com/f/310500/171x32/0f8efa1801/logoipsum-250.svg",
+            "_uid": "db3e8e34-e186-4d4a-986a-2f63d5b3fce6",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 6",
-            "src": "//a.storyblok.com/f/310410/218x40/2946cdc9ba/logoipsum-286.svg",
-            "_uid": "5acbb2c9-181f-40b2-bd5e-74b90680c4cf",
+            "src": "//a.storyblok.com/f/310500/218x40/ec9451dde4/logoipsum-286.svg",
+            "_uid": "3156018b-82d2-4780-9623-346ab4d647d6",
             "type": "logo",
             "component": "logo"
           }
@@ -1946,26 +1946,26 @@
         "cta_toggle": true,
         "logosPerRow": 5
       },
-      "component_id": 6464130,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:11.902Z",
-      "updated_at": "2024-10-23T16:50:11.902Z",
-      "image": "//a.storyblok.com/f/310410/1000x517/b0df6be6e3/components-logos-left-aligned-with-text-link.png",
+      "component_id": 6467120,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:28.375Z",
+      "updated_at": "2024-10-24T08:59:28.375Z",
+      "image": "//a.storyblok.com/f/310500/1000x517/e562b1133f/components-logos-left-aligned-with-text-link.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329112,
+      "id": 2329925,
       "name": "ListLayout",
       "preset": {
-        "_uid": "e830ccc6-e283-46f3-91c6-cc6ffa755ee7",
+        "_uid": "cc282afd-18b9-4650-8c39-fb873577b475",
         "type": "testimonials",
         "layout": "list",
         "component": "testimonials",
         "testimonial": [
           {
-            "_uid": "8a86fb39-b9cd-4e34-a702-e04f928dc7f3",
+            "_uid": "8a4a40c5-3f99-4242-bbe3-252c7df53808",
             "name": "Emily Johnson",
             "type": "testimonial",
             "quote": "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
@@ -1973,10 +1973,10 @@
             "rating": 5,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 1",
-            "image_src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png"
           },
           {
-            "_uid": "f76edca3-4fbc-4635-bd34-b9dd350b4f27",
+            "_uid": "72d3f50b-ed19-4d39-b81d-7e3d70e28400",
             "name": "John Smith",
             "type": "testimonial",
             "quote": "Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.",
@@ -1984,10 +1984,10 @@
             "rating": 4,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 2",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e047d36650/author-john.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/ff706a47fe/author-john.png"
           },
           {
-            "_uid": "03952cdd-787f-4c81-8097-344b24313759",
+            "_uid": "28982273-ea62-414c-893d-5a01cd13a3bf",
             "name": "Alex Chen",
             "type": "testimonial",
             "quote": "As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.",
@@ -1995,24 +1995,24 @@
             "rating": 5,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 3",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e70992669a/author-alex.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/016a4fc416/author-alex.png"
           }
         ]
       },
-      "component_id": 6464133,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:16.730Z",
-      "updated_at": "2024-10-23T16:50:16.730Z",
-      "image": "//a.storyblok.com/f/310410/1000x1080/f94b33d801/components-testimonials-list-layout.png",
+      "component_id": 6467123,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:33.019Z",
+      "updated_at": "2024-10-24T08:59:33.019Z",
+      "image": "//a.storyblok.com/f/310500/1000x1080/b472085d81/components-testimonials-list-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329145,
+      "id": 2329958,
       "name": "ListLayout",
       "preset": {
-        "_uid": "997584bc-1cbe-4754-9e1f-a35ca582e913",
+        "_uid": "8eebfc0a-213a-43c2-a328-6a24366aa811",
         "type": "section",
         "style": "default",
         "width": "default",
@@ -2035,26 +2035,26 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:30.745Z",
-      "updated_at": "2024-10-23T16:50:30.745Z",
-      "image": "//a.storyblok.com/f/310410/1440x1658/3fd245abdc/layout-section-list-layout.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:47.407Z",
+      "updated_at": "2024-10-24T08:59:47.407Z",
+      "image": "//a.storyblok.com/f/310500/1440x1658/d3430eea4f/layout-section-list-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329089,
+      "id": 2329902,
       "name": "ListView",
       "preset": {
-        "_uid": "0145dde6-8fb7-4441-83d7-68c8fc9d44ca",
+        "_uid": "e5bd386b-71f6-4ba9-8c1f-357d496bcdf4",
         "type": "features",
         "style": "besideLarge",
         "layout": "list",
         "feature": [
           {
-            "_uid": "2a845de8-8981-48fb-9e7d-cf43a9deb2d2",
+            "_uid": "2674b2c1-b9c6-4ad5-aba8-dba601a08a39",
             "icon": "star",
             "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
             "type": "feature",
@@ -2067,7 +2067,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "93bb8a8d-a4a6-4e10-b1cd-9c027b17b8e2",
+            "_uid": "a868f134-c1e6-4661-8ad5-485b60609daf",
             "icon": "map",
             "text": "Experience efficient development like never before. Our design system streamlines the development process, saving you time and resources.",
             "type": "feature",
@@ -2080,7 +2080,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "f02613c7-3dd2-4e4f-ac03-b7647885c236",
+            "_uid": "3c2a74a1-c3a7-4480-b3fa-15985d64faf2",
             "icon": "person",
             "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
             "type": "feature",
@@ -2093,7 +2093,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "4215fd65-29f4-4234-9f04-d451e876d74c",
+            "_uid": "650c1e60-e010-49ce-a715-7589f31aed77",
             "icon": "home",
             "text": "Our design system allows for a scalable architecture, enabling you to build applications that can grow with your needs.",
             "type": "feature",
@@ -2106,7 +2106,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "e45888b7-c038-4845-a83c-40c35d824b19",
+            "_uid": "4088b5fe-46c5-411c-bf8c-7dedf59f20e0",
             "icon": "upload",
             "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
             "type": "feature",
@@ -2119,7 +2119,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "84a61bca-5cb1-4093-a081-ddfb30f79dc3",
+            "_uid": "fe71df4b-5a5b-4590-8160-aef4666672c8",
             "icon": "login",
             "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
             "type": "feature",
@@ -2136,60 +2136,60 @@
         "ctas_style": "intext",
         "ctas_toggle": false
       },
-      "component_id": 6464126,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:06.694Z",
-      "updated_at": "2024-10-23T16:50:06.694Z",
-      "image": "//a.storyblok.com/f/310410/768x755/36f1a351aa/components-features-list-view.png",
+      "component_id": 6467116,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:23.021Z",
+      "updated_at": "2024-10-24T08:59:23.021Z",
+      "image": "//a.storyblok.com/f/310500/768x755/48652f36d6/components-features-list-view.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329104,
+      "id": 2329917,
       "name": "LogoRow",
       "preset": {
-        "_uid": "edfc863d-c480-419c-b2ff-ad1125194b5b",
+        "_uid": "942a8864-0301-4411-9098-6f14829d0408",
         "logo": [
           {
             "alt": "Logo 1",
-            "src": "//a.storyblok.com/f/310410/132x35/b32d01f563/logoipsum-212.svg",
-            "_uid": "00bf848b-ea76-4ec1-abe8-908252a23ee6",
+            "src": "//a.storyblok.com/f/310500/132x35/e96934ce34/logoipsum-212.svg",
+            "_uid": "4f0cdb1a-97dd-4542-8db8-c470be41ce93",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 2",
-            "src": "//a.storyblok.com/f/310410/124x32/272f064d9d/logoipsum-217.svg",
-            "_uid": "631055ba-9ce4-455a-bd53-8ce6651f46b7",
+            "src": "//a.storyblok.com/f/310500/124x32/62bf5e4d74/logoipsum-217.svg",
+            "_uid": "71680b0f-c741-48fe-9d1b-f41cf4101a02",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 3",
-            "src": "//a.storyblok.com/f/310410/154x44/2eb45e0f24/logoipsum-239.svg",
-            "_uid": "416ca53d-14bf-4d5b-be81-0c4841bc9dd8",
+            "src": "//a.storyblok.com/f/310500/154x44/93a7674e70/logoipsum-239.svg",
+            "_uid": "970b16d1-7df0-457d-aba3-fc9eb060c27b",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 4",
-            "src": "//a.storyblok.com/f/310410/155x40/b52c58a4a9/logoipsum-244.svg",
-            "_uid": "6dc17577-e080-4e88-bc43-30329ab38b66",
+            "src": "//a.storyblok.com/f/310500/155x40/75540ddce8/logoipsum-244.svg",
+            "_uid": "5493c2aa-bc38-4d24-aca1-c8ef6539660a",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 5",
-            "src": "//a.storyblok.com/f/310410/171x32/852b0f134d/logoipsum-250.svg",
-            "_uid": "c5682de9-d29a-4ef7-b1b6-2bd6a075fedc",
+            "src": "//a.storyblok.com/f/310500/171x32/0f8efa1801/logoipsum-250.svg",
+            "_uid": "45de6eb0-ab48-4d39-8f4a-db29bca77e81",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 6",
-            "src": "//a.storyblok.com/f/310410/218x40/2946cdc9ba/logoipsum-286.svg",
-            "_uid": "e171ddd5-7ece-4002-aec4-5763a15177b4",
+            "src": "//a.storyblok.com/f/310500/218x40/ec9451dde4/logoipsum-286.svg",
+            "_uid": "f8269a51-a89f-4f66-8b37-857cfe41a5b2",
             "type": "logo",
             "component": "logo"
           }
@@ -2205,102 +2205,102 @@
         "cta_toggle": false,
         "logosPerRow": 6
       },
-      "component_id": 6464130,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:13.026Z",
-      "updated_at": "2024-10-23T16:50:13.026Z",
-      "image": "//a.storyblok.com/f/310410/1000x450/763298c003/components-logos-logo-row.png",
+      "component_id": 6467120,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:29.233Z",
+      "updated_at": "2024-10-24T08:59:29.233Z",
+      "image": "//a.storyblok.com/f/310500/1000x450/cc72a6cc4a/components-logos-logo-row.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329103,
+      "id": 2329916,
       "name": "LogoWall",
       "preset": {
-        "_uid": "0b205cf8-0f84-438e-8bde-5d8d4f3786f1",
+        "_uid": "20db134a-3251-4798-b8cd-888650daa054",
         "logo": [
           {
             "alt": "Logo 1",
-            "src": "//a.storyblok.com/f/310410/132x35/b32d01f563/logoipsum-212.svg",
-            "_uid": "0f8d62f6-dedc-453e-be48-cc71bf1b6941",
+            "src": "//a.storyblok.com/f/310500/132x35/e96934ce34/logoipsum-212.svg",
+            "_uid": "5a1ca24b-f082-447b-b35c-ec9f2ff6badf",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 2",
-            "src": "//a.storyblok.com/f/310410/124x32/272f064d9d/logoipsum-217.svg",
-            "_uid": "bd61c95e-9630-41c6-b58b-abfd8e14a9a7",
+            "src": "//a.storyblok.com/f/310500/124x32/62bf5e4d74/logoipsum-217.svg",
+            "_uid": "81d29c13-77e9-4c9d-ac21-4b7832afde9b",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 3",
-            "src": "//a.storyblok.com/f/310410/154x44/2eb45e0f24/logoipsum-239.svg",
-            "_uid": "577466de-8e00-496c-9a7f-39dd448970c3",
+            "src": "//a.storyblok.com/f/310500/154x44/93a7674e70/logoipsum-239.svg",
+            "_uid": "67bc3252-93c6-4c5e-b0af-b5125d9da7bb",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 4",
-            "src": "//a.storyblok.com/f/310410/155x40/b52c58a4a9/logoipsum-244.svg",
-            "_uid": "92121a78-7e14-4d86-8495-2e4acdd93497",
+            "src": "//a.storyblok.com/f/310500/155x40/75540ddce8/logoipsum-244.svg",
+            "_uid": "ee81ecbb-91d1-42fe-ab5b-8d08ad66fdb6",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 5",
-            "src": "//a.storyblok.com/f/310410/171x32/852b0f134d/logoipsum-250.svg",
-            "_uid": "92baaa93-3656-4cdc-8ec1-434ee61b7269",
+            "src": "//a.storyblok.com/f/310500/171x32/0f8efa1801/logoipsum-250.svg",
+            "_uid": "8e163d45-1072-44c1-ae19-c5d61e3ce3d5",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 6",
-            "src": "//a.storyblok.com/f/310410/218x40/2946cdc9ba/logoipsum-286.svg",
-            "_uid": "ccf282f4-e69e-4304-a225-8e6f4472b711",
+            "src": "//a.storyblok.com/f/310500/218x40/ec9451dde4/logoipsum-286.svg",
+            "_uid": "2788945f-84d8-432a-83c7-655a5e854762",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 4",
-            "src": "//a.storyblok.com/f/310410/155x40/b52c58a4a9/logoipsum-244.svg",
-            "_uid": "e69ed9e1-96f4-44c5-81b6-c8cd4a5f873a",
+            "src": "//a.storyblok.com/f/310500/155x40/75540ddce8/logoipsum-244.svg",
+            "_uid": "c72b3e50-2f80-4df4-a7a4-953768264d95",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 5",
-            "src": "//a.storyblok.com/f/310410/171x32/852b0f134d/logoipsum-250.svg",
-            "_uid": "3c7ae246-cbd4-4ea4-90fe-a3ebcb339c8f",
+            "src": "//a.storyblok.com/f/310500/171x32/0f8efa1801/logoipsum-250.svg",
+            "_uid": "acbdf04e-9238-4575-9f8f-621449623904",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 6",
-            "src": "//a.storyblok.com/f/310410/218x40/2946cdc9ba/logoipsum-286.svg",
-            "_uid": "71c9fdc0-b168-4248-8059-2ddcf4b07a50",
+            "src": "//a.storyblok.com/f/310500/218x40/ec9451dde4/logoipsum-286.svg",
+            "_uid": "050340ee-8abe-4af1-828c-595ba40f8e90",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 4",
-            "src": "//a.storyblok.com/f/310410/155x40/b52c58a4a9/logoipsum-244.svg",
-            "_uid": "02959eb6-38b0-4b2d-9c3b-241bd344f3e6",
+            "src": "//a.storyblok.com/f/310500/155x40/75540ddce8/logoipsum-244.svg",
+            "_uid": "c3d0daef-12a8-4eb8-bc73-bb8defa2aca5",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 5",
-            "src": "//a.storyblok.com/f/310410/171x32/852b0f134d/logoipsum-250.svg",
-            "_uid": "55352c86-3549-4d09-933d-9233861d6fba",
+            "src": "//a.storyblok.com/f/310500/171x32/0f8efa1801/logoipsum-250.svg",
+            "_uid": "158b8bff-7b76-4895-a574-b4fefb545b23",
             "type": "logo",
             "component": "logo"
           },
           {
             "alt": "Logo 6",
-            "src": "//a.storyblok.com/f/310410/218x40/2946cdc9ba/logoipsum-286.svg",
-            "_uid": "a2f1d9d8-3f09-4036-856b-5f47726ef887",
+            "src": "//a.storyblok.com/f/310500/218x40/ec9451dde4/logoipsum-286.svg",
+            "_uid": "bb1b7ad9-3085-4e5e-9225-5e01e6031cca",
             "type": "logo",
             "component": "logo"
           }
@@ -2316,20 +2316,20 @@
         "cta_toggle": false,
         "logosPerRow": 4
       },
-      "component_id": 6464130,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:12.699Z",
-      "updated_at": "2024-10-23T16:50:12.699Z",
-      "image": "//a.storyblok.com/f/310410/1080x860/e0856cfb6d/components-logos-logo-wall.png",
+      "component_id": 6467120,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:29.027Z",
+      "updated_at": "2024-10-24T08:59:29.027Z",
+      "image": "//a.storyblok.com/f/310500/1080x860/b99f7b2c64/components-logos-logo-wall.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329118,
+      "id": 2329931,
       "name": "MultiColumn",
       "preset": {
-        "_uid": "b6d4ac02-e6eb-4cd3-ac99-b5f270a5b9ea",
+        "_uid": "fea725c9-98b8-43d2-bac1-281bb896337e",
         "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n_Experience the power of streamlined development and see the difference it can make in your projects._",
         "type": "text",
         "align": "left",
@@ -2337,23 +2337,23 @@
         "component": "text",
         "highlightText": false
       },
-      "component_id": 6464134,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:18.986Z",
-      "updated_at": "2024-10-23T16:50:18.986Z",
-      "image": "//a.storyblok.com/f/310410/1000x330/0fd6204fc6/components-text-multi-column.png",
+      "component_id": 6467124,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:35.408Z",
+      "updated_at": "2024-10-24T08:59:35.408Z",
+      "image": "//a.storyblok.com/f/310500/1000x330/b32b653b78/components-text-multi-column.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329108,
+      "id": 2329921,
       "name": "PageNavigation",
       "preset": {
-        "_uid": "07c31887-65bb-4102-8ada-4b90627bf8e2",
+        "_uid": "166da1fd-035d-4922-810a-52b97fd78eb6",
         "text": "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
         "type": "teaser-card",
-        "image": "//a.storyblok.com/f/310410/1024x1024/d5b3b814db/02.jpg",
+        "image": "//a.storyblok.com/f/310500/1024x1024/64066ec007/02.jpg",
         "layout": "stack",
         "target": "#",
         "headline": "Design System Services",
@@ -2363,27 +2363,27 @@
         "button_hidden": false,
         "button_chevron": false
       },
-      "component_id": 6464132,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:14.994Z",
-      "updated_at": "2024-10-23T16:50:14.994Z",
-      "image": "//a.storyblok.com/f/310410/650x678/ce382fdd47/components-teaser-card-page-navigation.png",
+      "component_id": 6467122,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:31.235Z",
+      "updated_at": "2024-10-24T08:59:31.235Z",
+      "image": "//a.storyblok.com/f/310500/650x678/b24b64d996/components-teaser-card-page-navigation.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329081,
+      "id": 2329894,
       "name": "ProductAdvertisement",
       "preset": {
         "sub": "With Our Premium Over-Ear Headphones",
-        "_uid": "46e3eac4-5fa9-4486-8d71-1ce4596be3b6",
+        "_uid": "fc9141e3-5866-4e4b-b45b-193348416b7c",
         "text": "Our over-ear headphones provide an immersive audio experience. With noise-cancellation technology and high-quality sound.",
         "type": "cta",
         "width": "wide",
         "buttons": [
           {
-            "_uid": "39232652-b8d3-409a-b6ea-49bca301e587",
+            "_uid": "ff1e3220-0703-435a-8edc-bf26d1b38b29",
             "icon": "chevron-right",
             "type": "buttons",
             "label": "Shop Now",
@@ -2392,7 +2392,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "1134eca5-87ec-46bf-9552-9ffd44b29e05",
+            "_uid": "e5dfd227-fa37-452c-bb68-ef939f624ce5",
             "type": "buttons",
             "label": "Learn More",
             "target": "/product-info",
@@ -2404,33 +2404,33 @@
         "component": "cta",
         "fullWidth": false,
         "image_alt": "Over-Ear Headphones",
-        "image_src": "//a.storyblok.com/f/310410/1040x1040/67c9506b29/comp_audio04.png",
+        "image_src": "//a.storyblok.com/f/310500/1040x1040/85286d2faa/comp_audio04.png",
         "textAlign": "left",
         "colorNeutral": false,
         "contentAlign": "center",
         "highlightText": true,
         "image_padding": false,
-        "backgroundImage": "//a.storyblok.com/f/310410/6457x2400/dbc144a912/bg_dot-carpet-blue.svg",
+        "backgroundImage": "//a.storyblok.com/f/310500/6457x2400/7476456e8e/bg_dot-carpet-blue.svg",
         "order_mobileImageLast": false,
         "order_desktopImageLast": false
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:03.698Z",
-      "updated_at": "2024-10-23T16:50:03.698Z",
-      "image": "//a.storyblok.com/f/310410/1400x660/e1f899463a/components-cta-product-advertisement.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:20.009Z",
+      "updated_at": "2024-10-24T08:59:20.009Z",
+      "image": "//a.storyblok.com/f/310500/1400x660/38322700bd/components-cta-product-advertisement.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329107,
+      "id": 2329920,
       "name": "ProductTiles",
       "preset": {
-        "_uid": "21919c3b-ea34-4494-b2f3-3ba94bbfeae3",
+        "_uid": "e2f3ac9b-059e-4b48-9872-bbeeaacbfe52",
         "text": "Transforming Ideas into Code",
         "type": "teaser-card",
-        "image": "//a.storyblok.com/f/310410/500x500/c3896cb812/castaway.svg",
+        "image": "//a.storyblok.com/f/310500/500x500/d7d34a7b7a/castaway.svg",
         "layout": "stack",
         "target": "#",
         "headline": "Castaway",
@@ -2440,23 +2440,23 @@
         "button_hidden": true,
         "button_chevron": false
       },
-      "component_id": 6464132,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:14.726Z",
-      "updated_at": "2024-10-23T16:50:14.726Z",
-      "image": "//a.storyblok.com/f/310410/650x653/f841cf411a/components-teaser-card-product-tiles.png",
+      "component_id": 6467122,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:31.017Z",
+      "updated_at": "2024-10-24T08:59:31.017Z",
+      "image": "//a.storyblok.com/f/310500/650x653/a0e0eadd4d/components-teaser-card-product-tiles.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329109,
+      "id": 2329922,
       "name": "ShowcasePreview",
       "preset": {
-        "_uid": "e88ddd0f-1429-463e-b68a-e8fcb7922a72",
+        "_uid": "089d7036-7428-4101-8475-83946df6e3ab",
         "text": "See how we saved TechFusions a year's worth of development time",
         "type": "teaser-card",
-        "image": "//a.storyblok.com/f/310410/4170x2000/775e6316ec/comp_tfe01.jpg",
+        "image": "//a.storyblok.com/f/310500/4170x2000/ee0502e780/comp_tfe01.jpg",
         "label": "Tech",
         "layout": "row",
         "target": "#",
@@ -2467,49 +2467,49 @@
         "button_hidden": false,
         "button_chevron": false
       },
-      "component_id": 6464132,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:15.169Z",
-      "updated_at": "2024-10-23T16:50:15.169Z",
-      "image": "//a.storyblok.com/f/310410/650x750/0de94f85c5/components-teaser-card-showcase-preview.png",
+      "component_id": 6467122,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:31.614Z",
+      "updated_at": "2024-10-24T08:59:31.614Z",
+      "image": "//a.storyblok.com/f/310500/650x750/1b6551afec/components-teaser-card-showcase-preview.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329110,
+      "id": 2329923,
       "name": "Simple",
       "preset": {
-        "_uid": "270e9a5b-4f96-497e-8e97-c8ac193a1a80",
+        "_uid": "17b6ee11-0897-4ba9-b871-399e5aa06995",
         "type": "testimonials",
         "layout": "slider",
         "component": "testimonials",
         "testimonial": [
           {
-            "_uid": "8a0307ef-75ca-4437-af29-cae9d700adfe",
+            "_uid": "7cbd25e5-fc81-4a44-9ebe-d613d888d4a0",
             "name": "Emily Johnson",
             "type": "testimonial",
             "quote": "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
             "component": "testimonial",
             "image_alt": "Alt Text Customer 1",
-            "image_src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png"
           }
         ]
       },
-      "component_id": 6464133,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:15.979Z",
-      "updated_at": "2024-10-23T16:50:15.979Z",
-      "image": "//a.storyblok.com/f/310410/1000x409/e8b33bde18/components-testimonials-simple.png",
+      "component_id": 6467123,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:32.237Z",
+      "updated_at": "2024-10-24T08:59:32.237Z",
+      "image": "//a.storyblok.com/f/310500/1000x409/3a12a4adad/components-testimonials-simple.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329116,
+      "id": 2329929,
       "name": "SingleColumn",
       "preset": {
-        "_uid": "d31e2773-6ffd-49ec-9170-fbd27a47640d",
+        "_uid": "f1da20dc-4f39-4a2d-8f4a-222efd71ca99",
         "text": "We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).\n\nThis tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.\n\n_Experience the power of streamlined development and see the difference it can make in your projects._",
         "type": "text",
         "align": "left",
@@ -2517,25 +2517,25 @@
         "component": "text",
         "highlightText": false
       },
-      "component_id": 6464134,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:18.176Z",
-      "updated_at": "2024-10-23T16:50:18.176Z",
-      "image": "//a.storyblok.com/f/310410/1000x407/f67196d94b/components-text-single-column.png",
+      "component_id": 6467124,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:34.624Z",
+      "updated_at": "2024-10-24T08:59:34.624Z",
+      "image": "//a.storyblok.com/f/310500/1000x407/b858468658/components-text-single-column.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329123,
+      "id": 2329936,
       "name": "SingleDropdown",
       "preset": {
-        "_uid": "6b47bf3c-2e9c-41ce-8d7a-342065af9f3c",
+        "_uid": "72256dcd-f890-4958-8812-0de0db6264f7",
         "type": "faq",
         "component": "faq",
         "questions": [
           {
-            "_uid": "43eae44c-249b-4c82-a11c-e2231d12fd1b",
+            "_uid": "e1c7215c-13cb-4c84-8007-c25c3101654d",
             "type": "questions",
             "answer": "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
             "question": "What is a Design System?",
@@ -2543,20 +2543,20 @@
           }
         ]
       },
-      "component_id": 6464136,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:21.168Z",
-      "updated_at": "2024-10-23T16:50:21.168Z",
-      "image": "//a.storyblok.com/f/310410/820x228/c8edeef333/components-faq-single-dropdown.png",
+      "component_id": 6467126,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:37.616Z",
+      "updated_at": "2024-10-24T08:59:37.616Z",
+      "image": "//a.storyblok.com/f/310500/820x228/3388576764/components-faq-single-dropdown.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329135,
+      "id": 2329948,
       "name": "Slider",
       "preset": {
-        "_uid": "5809e274-4261-488e-b2b2-2200de122bf3",
+        "_uid": "cf934ab1-0772-4026-a0cc-0a425ad334ca",
         "type": "section",
         "style": "default",
         "width": "default",
@@ -2577,124 +2577,124 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:27.172Z",
-      "updated_at": "2024-10-23T16:50:27.172Z",
-      "image": "//a.storyblok.com/f/310410/1440x938/3ed3b5c16b/layout-section-slider.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:44.019Z",
+      "updated_at": "2024-10-24T08:59:44.019Z",
+      "image": "//a.storyblok.com/f/310500/1440x938/3a3dcbb33c/layout-section-slider.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329113,
+      "id": 2329926,
       "name": "SliderLayout",
       "preset": {
-        "_uid": "882211d2-ec36-4c28-b561-26ef66fd3f46",
+        "_uid": "55d8982b-baed-401a-8cf7-b4ad56d6f6de",
         "type": "testimonials",
         "layout": "slider",
         "component": "testimonials",
         "testimonial": [
           {
-            "_uid": "1a009eba-4148-4dd4-9e18-4574fa231980",
+            "_uid": "256b124f-c2e9-42d3-96af-288d93c1dec0",
             "name": "Emily Johnson",
             "type": "testimonial",
             "quote": "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
             "title": "Chief Marketing Officer at TechFusion Enterprises",
             "component": "testimonial",
             "image_alt": "Alt Text Customer 1",
-            "image_src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png"
           },
           {
-            "_uid": "e0f4e2ef-ea82-4ca8-9153-8a44b3a5bea7",
+            "_uid": "5f972354-323e-4dbf-b6d0-fc6468e765c3",
             "name": "John Smith",
             "type": "testimonial",
             "quote": "Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.",
             "title": "Director of Digital Strategy at EcoTech Solutions",
             "component": "testimonial",
             "image_alt": "Alt Text Customer 2",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e047d36650/author-john.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/ff706a47fe/author-john.png"
           },
           {
-            "_uid": "dae96338-5ba0-4115-8647-0c4d25aff599",
+            "_uid": "8621e8e3-40c8-40a8-86fc-6628b015f4f6",
             "name": "Alex Chen",
             "type": "testimonial",
             "quote": "As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.",
             "title": "CEO of LaunchPad Innovations",
             "component": "testimonial",
             "image_alt": "Alt Text Customer 3",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e70992669a/author-alex.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/016a4fc416/author-alex.png"
           }
         ]
       },
-      "component_id": 6464133,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:16.979Z",
-      "updated_at": "2024-10-23T16:50:16.979Z",
-      "image": "//a.storyblok.com/f/310410/1000x1080/0d030f702a/components-testimonials-slider-layout.png",
+      "component_id": 6467123,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:33.246Z",
+      "updated_at": "2024-10-24T08:59:33.246Z",
+      "image": "//a.storyblok.com/f/310500/1000x1080/9c7b32c251/components-testimonials-slider-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329092,
+      "id": 2329905,
       "name": "SmallSquaresWithLightbox",
       "preset": {
-        "_uid": "b37164da-f551-4163-a31a-d13bfb63ec76",
+        "_uid": "82904c11-cc11-4e40-a396-59efa316e507",
         "type": "gallery",
         "images": [
           {
             "alt": "Alt text Image 1",
-            "src": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
-            "_uid": "5e205e79-befa-4464-ad2a-06292852639c",
+            "src": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
+            "_uid": "2418ff79-702f-4191-9183-e3d3790c22a2",
             "type": "images",
             "caption": "Caption Image 1",
             "component": "images"
           },
           {
             "alt": "Alt text Image 2",
-            "src": "//a.storyblok.com/f/310410/996x998/a9b4d0ddb1/low-angle-tall-building-with-many-windows_23-2148230392.png",
-            "_uid": "35721854-3817-4729-8eb1-e0066f96d582",
+            "src": "//a.storyblok.com/f/310500/996x998/b27b9fcda9/low-angle-tall-building-with-many-windows_23-2148230392.png",
+            "_uid": "4701106c-fc86-48c6-8a17-b7f29fa7bbc6",
             "type": "images",
             "caption": "Caption Image 2",
             "component": "images"
           },
           {
             "alt": "Alt text Image 3",
-            "src": "//a.storyblok.com/f/310410/833x833/7ffb29b674/full-shot-different-people-working-together.png",
-            "_uid": "188fd003-43ea-45ef-81be-0d62f40a9d13",
+            "src": "//a.storyblok.com/f/310500/833x833/87959509bd/full-shot-different-people-working-together.png",
+            "_uid": "82b925fb-0cdf-47b5-a9c5-2a97432c8c6d",
             "type": "images",
             "caption": "Caption Image 3",
             "component": "images"
           },
           {
             "alt": "Alt text Image 4",
-            "src": "//a.storyblok.com/f/310410/1440x960/b03de23d4b/top-view-desk-with-keyboard-drawing-pad.png",
-            "_uid": "3cf9e709-dbdf-41cb-85ae-38e4f3bf7dd2",
+            "src": "//a.storyblok.com/f/310500/1440x960/056703d663/top-view-desk-with-keyboard-drawing-pad.png",
+            "_uid": "60656dc8-cd9b-41a8-ad99-93d39888d483",
             "type": "images",
             "caption": "Caption Image 4",
             "component": "images"
           },
           {
             "alt": "Alt text Image 5",
-            "src": "//a.storyblok.com/f/310410/1440x960/6f2b8889e1/people-brainstorming-work-meeting.png",
-            "_uid": "12ed3fab-526e-429e-9c55-04a9e59213eb",
+            "src": "//a.storyblok.com/f/310500/1440x960/81ef18b4c2/people-brainstorming-work-meeting.png",
+            "_uid": "15ebe434-7f38-43fe-88af-dfc2a6917dd7",
             "type": "images",
             "caption": "Caption Image 5",
             "component": "images"
           },
           {
             "alt": "Alt text Image 6",
-            "src": "//a.storyblok.com/f/310410/1000x1500/7b245e885a/view-modern-office.jpg",
-            "_uid": "8aa6d721-8104-4c44-9a47-9d6546a8d09b",
+            "src": "//a.storyblok.com/f/310500/1000x1500/7bbbebfdf1/view-modern-office.jpg",
+            "_uid": "d28a1c92-0d57-41fc-abe0-421553a2bcd1",
             "type": "images",
             "caption": "Caption Image 6",
             "component": "images"
           },
           {
             "alt": "Alt text Image 7",
-            "src": "//a.storyblok.com/f/310410/1920x800/61dab404b7/colleagues-work-office-using-computers-looking-aside.png",
-            "_uid": "8729dd80-d0e1-425d-a51b-ad1a91aff6fd",
+            "src": "//a.storyblok.com/f/310500/1920x800/ff9ecae741/colleagues-work-office-using-computers-looking-aside.png",
+            "_uid": "2aed696c-aee1-4281-be87-fbc894435a5f",
             "type": "images",
             "caption": "Caption Image 7",
             "component": "images"
@@ -2705,27 +2705,27 @@
         "component": "gallery",
         "aspectRatio": "square"
       },
-      "component_id": 6464127,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:07.808Z",
-      "updated_at": "2024-10-23T16:50:07.808Z",
-      "image": "//a.storyblok.com/f/310410/1100x702/3d729c5d5b/components-gallery-small-squares-with-lightbox.png",
+      "component_id": 6467117,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:24.171Z",
+      "updated_at": "2024-10-24T08:59:24.171Z",
+      "image": "//a.storyblok.com/f/310500/1100x702/b0f803f2ab/components-gallery-small-squares-with-lightbox.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329083,
+      "id": 2329896,
       "name": "SplitBanner",
       "preset": {
         "sub": "Subheadline",
-        "_uid": "4ea93644-b72c-4553-8766-bf1c911215a2",
+        "_uid": "04c0f472-ab92-4194-989d-e0a98bd0b1ff",
         "text": "Here at Systemics, we bring a range of design system services that can make a difference.",
         "type": "cta",
         "width": "wide",
         "buttons": [
           {
-            "_uid": "6a6bf053-51d0-44b9-990a-fe602e82c08e",
+            "_uid": "6cb170f9-7056-463a-bf82-678459deaa04",
             "icon": "person",
             "type": "buttons",
             "label": "What can we do for you?",
@@ -2736,7 +2736,7 @@
         "headline": "Design System Services",
         "component": "cta",
         "fullWidth": true,
-        "image_src": "//a.storyblok.com/f/310410/833x833/613f7b9b70/colored-square.png",
+        "image_src": "//a.storyblok.com/f/310500/833x833/8984d6e547/colored-square.png",
         "textAlign": "left",
         "colorNeutral": true,
         "contentAlign": "center",
@@ -2746,20 +2746,20 @@
         "order_mobileImageLast": false,
         "order_desktopImageLast": false
       },
-      "component_id": 6464125,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:03.897Z",
-      "updated_at": "2024-10-23T16:50:03.897Z",
-      "image": "//a.storyblok.com/f/310410/1680x850/33d9741612/components-cta-split-banner.png",
+      "component_id": 6467115,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:20.372Z",
+      "updated_at": "2024-10-24T08:59:20.372Z",
+      "image": "//a.storyblok.com/f/310500/1680x850/9fc0ffe2b2/components-cta-split-banner.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329137,
+      "id": 2329950,
       "name": "Spotlight",
       "preset": {
-        "_uid": "41ef9883-6a5f-49fc-bb8a-03df67f57ae8",
+        "_uid": "ec0a43ca-53b2-4627-a9b8-4bdaaf0d17e0",
         "type": "section",
         "style": "default",
         "width": "default",
@@ -2781,42 +2781,42 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:27.995Z",
-      "updated_at": "2024-10-23T16:50:27.995Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/1696917187/layout-section-spotlight.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:44.691Z",
+      "updated_at": "2024-10-24T08:59:44.691Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/9f7e3285fa/layout-section-spotlight.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329095,
+      "id": 2329908,
       "name": "StackLandscape",
       "preset": {
-        "_uid": "83e35f31-dd0c-4eff-9a77-4083bcf0a971",
+        "_uid": "9e0c5e48-a990-49b9-8469-47bd01a172e5",
         "type": "gallery",
         "images": [
           {
             "alt": "Alt text Image 1",
-            "src": "//a.storyblok.com/f/310410/1260x840/1664efae86/close-up-young-business-team-working.png",
-            "_uid": "68191b9d-c286-48bc-8887-fd8ab4917681",
+            "src": "//a.storyblok.com/f/310500/1260x840/707875d093/close-up-young-business-team-working.png",
+            "_uid": "e1007e32-5374-46c5-8e07-0de03e72ee91",
             "type": "images",
             "caption": "Caption Image 1",
             "component": "images"
           },
           {
             "alt": "Alt text Image 2",
-            "src": "//a.storyblok.com/f/310410/1440x960/b03de23d4b/top-view-desk-with-keyboard-drawing-pad.png",
-            "_uid": "a6453965-10c2-43aa-aecf-afe218c54aca",
+            "src": "//a.storyblok.com/f/310500/1440x960/056703d663/top-view-desk-with-keyboard-drawing-pad.png",
+            "_uid": "641780f8-66cc-404a-bcf3-1fc5c5d2b489",
             "type": "images",
             "caption": "Caption Image 2",
             "component": "images"
           },
           {
             "alt": "Alt text Image 3",
-            "src": "//a.storyblok.com/f/310410/1440x960/6f2b8889e1/people-brainstorming-work-meeting.png",
-            "_uid": "5cad2b68-034c-4932-b176-858f5a0c2b22",
+            "src": "//a.storyblok.com/f/310500/1440x960/81ef18b4c2/people-brainstorming-work-meeting.png",
+            "_uid": "14e9df00-c38b-4421-a354-2ac3aceeef30",
             "type": "images",
             "caption": "Caption Image 3",
             "component": "images"
@@ -2827,26 +2827,26 @@
         "component": "gallery",
         "aspectRatio": "landscape"
       },
-      "component_id": 6464127,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:08.804Z",
-      "updated_at": "2024-10-23T16:50:08.804Z",
-      "image": "//a.storyblok.com/f/310410/846x1512/6894a047ae/components-gallery-stack-landscape.png",
+      "component_id": 6467117,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:25.158Z",
+      "updated_at": "2024-10-24T08:59:25.158Z",
+      "image": "//a.storyblok.com/f/310500/846x1512/3d7dfc784e/components-gallery-stack-landscape.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329088,
+      "id": 2329901,
       "name": "StackWithButton",
       "preset": {
-        "_uid": "fe577338-5254-4522-9ee5-c6d898bba6ef",
+        "_uid": "0742660a-d049-4f46-a42b-35fcc952e9d9",
         "type": "features",
         "style": "stack",
         "layout": "smallTiles",
         "feature": [
           {
-            "_uid": "c2e8c3d3-0d72-4e23-85fb-5598ec730e46",
+            "_uid": "1116333a-cb88-412a-bf11-ca06d4788721",
             "icon": "person",
             "text": "Achieve a consistent UI across different platforms. Our design system ensures your applications maintain a uniform look and feel.",
             "type": "feature",
@@ -2859,7 +2859,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "066819a2-307e-427d-bc33-4b49ce3bbf0f",
+            "_uid": "4a86ee5a-5e38-422b-b014-aad2a4474e30",
             "icon": "star",
             "text": "Our design system is fully customizable, allowing you to tailor the look and feel of your application to match your brand identity.",
             "type": "feature",
@@ -2872,7 +2872,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "270d0d90-a470-4400-aa21-d0ced6c7d08a",
+            "_uid": "51981108-ba7e-494d-b506-87ceff5cc791",
             "icon": "upload",
             "text": "Built with modern cloud architectures in mind, our design system is ready to be deployed on any cloud platform.",
             "type": "feature",
@@ -2885,7 +2885,7 @@
             "cta_toggle": true
           },
           {
-            "_uid": "040a8506-be29-436b-a371-0941a0027524",
+            "_uid": "62c2faf8-a1f3-43e2-831c-3838f78012ab",
             "icon": "login",
             "text": "Security is our priority. Our design system is built with best security practices to keep your application safe.",
             "type": "feature",
@@ -2902,20 +2902,20 @@
         "ctas_style": "button",
         "ctas_toggle": true
       },
-      "component_id": 6464126,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:05.898Z",
-      "updated_at": "2024-10-23T16:50:05.898Z",
-      "image": "//a.storyblok.com/f/310410/1230x463/eacdb28d7a/components-features-stack-with-button.png",
+      "component_id": 6467116,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:22.372Z",
+      "updated_at": "2024-10-24T08:59:22.372Z",
+      "image": "//a.storyblok.com/f/310500/1230x463/1607188cac/components-features-stack-with-button.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329138,
+      "id": 2329951,
       "name": "Stagelights",
       "preset": {
-        "_uid": "6d9409b1-085e-4923-a7f0-b221cbf4a40b",
+        "_uid": "dfe7a41b-9b62-49a4-8b23-e5c867cd84d1",
         "type": "section",
         "style": "stagelights",
         "width": "default",
@@ -2938,27 +2938,27 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:28.177Z",
-      "updated_at": "2024-10-23T16:50:28.177Z",
-      "image": "//a.storyblok.com/f/310410/1440x928/b1190aee24/layout-section-stagelights.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:45.057Z",
+      "updated_at": "2024-10-24T08:59:45.057Z",
+      "image": "//a.storyblok.com/f/310500/1440x928/6de8817fef/layout-section-stagelights.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329124,
+      "id": 2329937,
       "name": "StickyImageNextToScrollingText",
       "preset": {
         "sub": "Subheadline",
-        "_uid": "e39cc9ea-3590-400a-bfe3-9daeb7311abf",
+        "_uid": "094d3ef9-69b7-42ba-84a8-d0535e17c11b",
         "text": "\nHere at Systemics, we bring a range of design system services that can make a difference:\n\n### 1. Design System Consulting\nLet's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.\n\n### 2. Design System Creation & Development\nWe'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.\n\n### 3. Headless CMS & Websites\nWe leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.\n\n### 4. Design System Training\nWe empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.\n\nReady to make your digital journey exceptional?\n    ",
         "type": "image-story",
         "layout": "imageLeft",
         "buttons": [
           {
-            "_uid": "c49af479-de13-4ff9-9ba1-65183e4ba413",
+            "_uid": "df3795e2-1d40-4d34-a55c-de378c3d9c3d",
             "size": "medium",
             "type": "buttons",
             "label": "Learn More",
@@ -2968,7 +2968,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "d226ad9a-69d8-4640-8863-0bb9c30c5b9b",
+            "_uid": "947f9634-f61c-4057-aad7-3a60ade751d1",
             "size": "medium",
             "type": "buttons",
             "label": "Contact Us",
@@ -2981,33 +2981,33 @@
         "padding": false,
         "headline": "The Sanity & Next.js Experts",
         "component": "image-story",
-        "image_src": "//a.storyblok.com/f/310410/833x833/7ffb29b674/full-shot-different-people-working-together.png",
+        "image_src": "//a.storyblok.com/f/310500/833x833/87959509bd/full-shot-different-people-working-together.png",
         "textAlign": "left",
         "image_vAlign": "top",
         "largeHeadline": true,
         "image_aspectRatio": "unset"
       },
-      "component_id": 6464138,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:22.171Z",
-      "updated_at": "2024-10-23T16:50:22.171Z",
-      "image": "//a.storyblok.com/f/310410/1160x960/d1a1c32fc2/components-image-story-sticky-image-next-to-scrolling-text.png",
+      "component_id": 6467128,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:38.618Z",
+      "updated_at": "2024-10-24T08:59:38.618Z",
+      "image": "//a.storyblok.com/f/310500/1160x960/2b1466f36c/components-image-story-sticky-image-next-to-scrolling-text.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329096,
+      "id": 2329909,
       "name": "TextBelowImage",
       "preset": {
         "sub": "Where Creativity Meets Innovation",
-        "_uid": "4dbaf8c4-6491-4808-a039-d4203c87ee03",
+        "_uid": "58bf1c7b-aa20-417d-9b5f-134de5ea9ca9",
         "text": "Experience the perfect blend of creativity, innovation, and productivity in our modern office environment.",
         "type": "hero",
         "height": "default",
         "buttons": [
           {
-            "_uid": "82aecce9-f9b6-4349-af82-b833ae3ae4e9",
+            "_uid": "d916951d-b818-4278-b05f-ce8ebf4acee1",
             "icon": "arrow-down",
             "type": "buttons",
             "label": "Explore further",
@@ -3024,31 +3024,31 @@
         "image_indent": "none",
         "textPosition": "below",
         "highlightText": true,
-        "image_srcMobile": "//a.storyblok.com/f/310410/1920x800/61dab404b7/colleagues-work-office-using-computers-looking-aside.png",
-        "image_srcTablet": "//a.storyblok.com/f/310410/1920x800/61dab404b7/colleagues-work-office-using-computers-looking-aside.png",
-        "image_srcDesktop": "//a.storyblok.com/f/310410/1920x800/61dab404b7/colleagues-work-office-using-computers-looking-aside.png"
+        "image_srcMobile": "//a.storyblok.com/f/310500/1920x800/ff9ecae741/colleagues-work-office-using-computers-looking-aside.png",
+        "image_srcTablet": "//a.storyblok.com/f/310500/1920x800/ff9ecae741/colleagues-work-office-using-computers-looking-aside.png",
+        "image_srcDesktop": "//a.storyblok.com/f/310500/1920x800/ff9ecae741/colleagues-work-office-using-computers-looking-aside.png"
       },
-      "component_id": 6464128,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:09.697Z",
-      "updated_at": "2024-10-23T16:50:09.697Z",
-      "image": "//a.storyblok.com/f/310410/1165x780/7bb847171d/components-hero-text-below-image.png",
+      "component_id": 6467118,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:26.007Z",
+      "updated_at": "2024-10-24T08:59:26.007Z",
+      "image": "//a.storyblok.com/f/310500/1165x780/af32bf02e8/components-hero-text-below-image.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329098,
+      "id": 2329911,
       "name": "TextBoxOnFullScreen",
       "preset": {
         "sub": "Scalable. Efficient. Seamless.",
-        "_uid": "865dd73f-a9f1-4ea3-841b-8670a753761c",
+        "_uid": "b78e8192-1779-42ba-8eea-fefcd2948158",
         "text": "Our design system provides a seamless and efficient framework for building scalable applications. Experience unprecedented speed and scalability with our Headless CMS powered websites, web apps & composable architecture.",
         "type": "hero",
         "height": "fullScreen",
         "buttons": [
           {
-            "_uid": "ca7d0050-0391-4997-9bc3-072d9c07173e",
+            "_uid": "373299b8-74cf-4852-9644-b343b513e833",
             "icon": "arrow-right",
             "type": "buttons",
             "label": "Discover More",
@@ -3056,7 +3056,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "9315a4be-cdac-47b7-ae59-2ce0a6fa923d",
+            "_uid": "ec3bfaf0-4b4e-4440-820f-6cbecf4f1522",
             "icon": "phone",
             "type": "buttons",
             "label": "Reach Out",
@@ -3073,30 +3073,30 @@
         "image_indent": "none",
         "textPosition": "left",
         "highlightText": false,
-        "image_srcMobile": "//a.storyblok.com/f/310410/1440x960/6f2b8889e1/people-brainstorming-work-meeting.png",
-        "image_srcTablet": "//a.storyblok.com/f/310410/1440x960/6f2b8889e1/people-brainstorming-work-meeting.png",
-        "image_srcDesktop": "//a.storyblok.com/f/310410/1440x960/6f2b8889e1/people-brainstorming-work-meeting.png"
+        "image_srcMobile": "//a.storyblok.com/f/310500/1440x960/81ef18b4c2/people-brainstorming-work-meeting.png",
+        "image_srcTablet": "//a.storyblok.com/f/310500/1440x960/81ef18b4c2/people-brainstorming-work-meeting.png",
+        "image_srcDesktop": "//a.storyblok.com/f/310500/1440x960/81ef18b4c2/people-brainstorming-work-meeting.png"
       },
-      "component_id": 6464128,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:09.909Z",
-      "updated_at": "2024-10-23T16:50:09.909Z",
-      "image": "//a.storyblok.com/f/310410/1160x1080/d6a11dbdf2/components-hero-text-box-on-full-screen.png",
+      "component_id": 6467118,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:26.378Z",
+      "updated_at": "2024-10-24T08:59:26.378Z",
+      "image": "//a.storyblok.com/f/310500/1160x1080/3558e81451/components-hero-text-box-on-full-screen.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329097,
+      "id": 2329910,
       "name": "TextOnImageWithOverlay",
       "preset": {
-        "_uid": "a9773b82-fe6e-4bf3-8bfb-5165b328b995",
+        "_uid": "d3546f02-d0c0-4acc-9822-685e1f526201",
         "text": "Harness our expertise in crafting scalable and robust applications using cutting-edge technologies.",
         "type": "hero",
         "height": "fullImage",
         "buttons": [
           {
-            "_uid": "7fbc7b4a-c6bd-42c9-8dbe-f3680baa2d5b",
+            "_uid": "0814e790-5322-415d-9812-368f20986ada",
             "icon": "person",
             "type": "buttons",
             "label": "Meet Us",
@@ -3104,7 +3104,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "547e8fae-a5af-48ff-aed1-287e1619e92b",
+            "_uid": "cf1f1f6f-75ed-42a1-b0cf-cdccd6d26ab1",
             "icon": "date",
             "type": "buttons",
             "label": "Schedule a Meeting",
@@ -3121,24 +3121,24 @@
         "image_indent": "none",
         "textPosition": "center",
         "highlightText": false,
-        "image_srcMobile": "//a.storyblok.com/f/310410/1440x960/b03de23d4b/top-view-desk-with-keyboard-drawing-pad.png",
-        "image_srcTablet": "//a.storyblok.com/f/310410/1440x960/b03de23d4b/top-view-desk-with-keyboard-drawing-pad.png",
-        "image_srcDesktop": "//a.storyblok.com/f/310410/1440x960/b03de23d4b/top-view-desk-with-keyboard-drawing-pad.png"
+        "image_srcMobile": "//a.storyblok.com/f/310500/1440x960/056703d663/top-view-desk-with-keyboard-drawing-pad.png",
+        "image_srcTablet": "//a.storyblok.com/f/310500/1440x960/056703d663/top-view-desk-with-keyboard-drawing-pad.png",
+        "image_srcDesktop": "//a.storyblok.com/f/310500/1440x960/056703d663/top-view-desk-with-keyboard-drawing-pad.png"
       },
-      "component_id": 6464128,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:09.803Z",
-      "updated_at": "2024-10-23T16:50:09.803Z",
-      "image": "//a.storyblok.com/f/310410/1165x780/53df79a690/components-hero-text-on-image-with-overlay.png",
+      "component_id": 6467118,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:26.157Z",
+      "updated_at": "2024-10-24T08:59:26.157Z",
+      "image": "//a.storyblok.com/f/310500/1165x780/f6495ba4d3/components-hero-text-on-image-with-overlay.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329143,
+      "id": 2329956,
       "name": "TileLayout",
       "preset": {
-        "_uid": "8d804ad7-1454-4e33-ac7d-9fecc005c592",
+        "_uid": "83d994d5-915e-4fdb-a39a-a25165495422",
         "type": "section",
         "style": "default",
         "width": "max",
@@ -3161,22 +3161,22 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:29.986Z",
-      "updated_at": "2024-10-23T16:50:29.986Z",
-      "image": "//a.storyblok.com/f/310410/1440x445/4d27f4c8cf/layout-section-tile-layout.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:46.668Z",
+      "updated_at": "2024-10-24T08:59:46.668Z",
+      "image": "//a.storyblok.com/f/310500/1440x445/52647799fc/layout-section-tile-layout.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329127,
+      "id": 2329940,
       "name": "WithArrows",
       "preset": {
         "gap": 15,
         "nav": true,
-        "_uid": "def3d905-0ec9-463f-9573-e0791edc4264",
+        "_uid": "56c2332b-e5bb-44c5-9b53-a2bae6bfb8a1",
         "type": "slider",
         "arrows": true,
         "autoplay": false,
@@ -3185,22 +3185,22 @@
         "equalHeight": true,
         "teaseNeighbours": false
       },
-      "component_id": 6464140,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:23.995Z",
-      "updated_at": "2024-10-23T16:50:23.995Z",
-      "image": "//a.storyblok.com/f/310410/1110x400/3b6cf71086/layout-slider-with-arrows.png",
+      "component_id": 6467130,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:40.412Z",
+      "updated_at": "2024-10-24T08:59:40.412Z",
+      "image": "//a.storyblok.com/f/310500/1110x400/de7a9d0024/layout-slider-with-arrows.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329130,
+      "id": 2329943,
       "name": "WithAutoplay",
       "preset": {
         "gap": 15,
         "nav": true,
-        "_uid": "65d82dc7-db2a-4419-86b8-cccc2cb1e40b",
+        "_uid": "67c6843a-b0d7-4895-a4e3-c0f3cd549d46",
         "type": "slider",
         "arrows": true,
         "autoplay": true,
@@ -3209,26 +3209,26 @@
         "equalHeight": true,
         "teaseNeighbours": false
       },
-      "component_id": 6464140,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:24.983Z",
-      "updated_at": "2024-10-23T16:50:24.983Z",
-      "image": "//a.storyblok.com/f/310410/1110x400/4fe30bf41d/layout-slider-with-autoplay.png",
+      "component_id": 6467130,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:41.408Z",
+      "updated_at": "2024-10-24T08:59:41.408Z",
+      "image": "//a.storyblok.com/f/310500/1110x400/5b1dc22ef6/layout-slider-with-autoplay.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329142,
+      "id": 2329955,
       "name": "WithButtons",
       "preset": {
-        "_uid": "6551d1cf-442d-4891-9e0a-941746b04014",
+        "_uid": "7668ab3d-e4aa-424b-9198-8b953d1510c4",
         "type": "section",
         "style": "default",
         "width": "default",
         "buttons": [
           {
-            "_uid": "4e594dd0-4a32-42c8-8a25-809b2adba5a1",
+            "_uid": "27ac6688-a416-4345-9383-fb8e0d776181",
             "icon": "arrow-right",
             "size": "medium",
             "type": "buttons",
@@ -3238,7 +3238,7 @@
             "component": "buttons"
           },
           {
-            "_uid": "ad8d873f-3cae-4624-b55e-c8aa3849a744",
+            "_uid": "7e3a9d5d-0b41-4497-b696-e24bb5d21350",
             "icon": "date",
             "size": "medium",
             "type": "buttons",
@@ -3266,22 +3266,22 @@
         "backgroundColor": "default",
         "content_tileWidth": "default"
       },
-      "component_id": 6464142,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:29.740Z",
-      "updated_at": "2024-10-23T16:50:29.740Z",
-      "image": "//a.storyblok.com/f/310410/1440x1016/e466e3ad29/layout-section-with-buttons.png",
+      "component_id": 6467133,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:46.411Z",
+      "updated_at": "2024-10-24T08:59:46.411Z",
+      "image": "//a.storyblok.com/f/310500/1440x1016/b8fb92b345/layout-section-with-buttons.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329129,
+      "id": 2329942,
       "name": "WithNav",
       "preset": {
         "gap": 15,
         "nav": true,
-        "_uid": "328c0742-ff54-4f64-ac42-c0b4a6e2250c",
+        "_uid": "34f0f686-5da4-4abe-baf7-bd5a65a80a00",
         "type": "slider",
         "arrows": true,
         "autoplay": false,
@@ -3290,26 +3290,26 @@
         "equalHeight": true,
         "teaseNeighbours": false
       },
-      "component_id": 6464140,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:24.742Z",
-      "updated_at": "2024-10-23T16:50:24.742Z",
-      "image": "//a.storyblok.com/f/310410/1110x400/cb84aba795/layout-slider-with-nav.png",
+      "component_id": 6467130,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:41.028Z",
+      "updated_at": "2024-10-24T08:59:41.028Z",
+      "image": "//a.storyblok.com/f/310500/1110x400/7c88abe0a3/layout-slider-with-nav.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329114,
+      "id": 2329927,
       "name": "WithRating",
       "preset": {
-        "_uid": "0767c4af-219b-456d-a42f-58b7f6e5f653",
+        "_uid": "3c6f32aa-501d-4cc9-96a9-15313b0876b8",
         "type": "testimonials",
         "layout": "slider",
         "component": "testimonials",
         "testimonial": [
           {
-            "_uid": "2066692b-1761-4e9f-9cda-f937730933e6",
+            "_uid": "efcbd399-a605-48a1-8efb-4c1081cf2de0",
             "name": "Emily Johnson",
             "type": "testimonial",
             "quote": "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
@@ -3317,10 +3317,10 @@
             "rating": 5,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 1",
-            "image_src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png"
           },
           {
-            "_uid": "a99f0a76-3d66-4dd5-b179-e69c7241a5ee",
+            "_uid": "4e846e02-df95-4922-9f75-6d798c4474ed",
             "name": "John Smith",
             "type": "testimonial",
             "quote": "Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.",
@@ -3328,10 +3328,10 @@
             "rating": 4,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 2",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e047d36650/author-john.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/ff706a47fe/author-john.png"
           },
           {
-            "_uid": "c1ec301c-ad3d-4f6f-b003-d8cb97bff25d",
+            "_uid": "4f23bb50-81f6-4b2f-baa6-08af766342a9",
             "name": "Alex Chen",
             "type": "testimonial",
             "quote": "As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.",
@@ -3339,26 +3339,26 @@
             "rating": 5,
             "component": "testimonial",
             "image_alt": "Alt Text Customer 3",
-            "image_src": "//a.storyblok.com/f/310410/250x250/e70992669a/author-alex.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/016a4fc416/author-alex.png"
           }
         ]
       },
-      "component_id": 6464133,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:17.177Z",
-      "updated_at": "2024-10-23T16:50:17.177Z",
-      "image": "//a.storyblok.com/f/310410/1000x1080/19b42a82c8/components-testimonials-with-rating.png",
+      "component_id": 6467123,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:33.621Z",
+      "updated_at": "2024-10-24T08:59:33.621Z",
+      "image": "//a.storyblok.com/f/310500/1000x1080/2a7f9b1d75/components-testimonials-with-rating.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329128,
+      "id": 2329941,
       "name": "WithTeasedNeighbours",
       "preset": {
         "gap": 15,
         "nav": true,
-        "_uid": "88f5335d-383b-401a-806c-23db5eef5903",
+        "_uid": "0fd451ff-0632-4e82-a056-f0473517885a",
         "type": "slider",
         "arrows": true,
         "autoplay": false,
@@ -3367,41 +3367,41 @@
         "equalHeight": true,
         "teaseNeighbours": true
       },
-      "component_id": 6464140,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:24.165Z",
-      "updated_at": "2024-10-23T16:50:24.165Z",
-      "image": "//a.storyblok.com/f/310410/1110x400/6c9843fa01/layout-slider-with-teased-neighbours.png",
+      "component_id": 6467130,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:40.628Z",
+      "updated_at": "2024-10-24T08:59:40.628Z",
+      "image": "//a.storyblok.com/f/310500/1110x400/df121919b5/layout-slider-with-teased-neighbours.png",
       "color": null,
       "icon": null,
       "description": null
     },
     {
-      "id": 2329111,
+      "id": 2329924,
       "name": "WithTitle",
       "preset": {
-        "_uid": "c16045e1-48d0-42fb-b9be-b36b0739504f",
+        "_uid": "4bea3115-3fbc-4b20-9df3-f1adfa4fa961",
         "type": "testimonials",
         "layout": "slider",
         "component": "testimonials",
         "testimonial": [
           {
-            "_uid": "57d0b9ff-c150-4e78-ab8b-50ac783893f9",
+            "_uid": "84b5f1dd-3d06-4485-9b18-37db9f5a6c1f",
             "name": "Emily Johnson",
             "type": "testimonial",
             "quote": "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
             "title": "Chief Marketing Officer at TechFusion Enterprises",
             "component": "testimonial",
             "image_alt": "Alt Text Customer 1",
-            "image_src": "//a.storyblok.com/f/310410/250x250/d360bba942/author-emily.png"
+            "image_src": "//a.storyblok.com/f/310500/250x250/d320d3688a/author-emily.png"
           }
         ]
       },
-      "component_id": 6464133,
-      "space_id": 310410,
-      "created_at": "2024-10-23T16:50:16.169Z",
-      "updated_at": "2024-10-23T16:50:16.169Z",
-      "image": "//a.storyblok.com/f/310410/1000x409/cc25ba0fb0/components-testimonials-with-title.png",
+      "component_id": 6467123,
+      "space_id": 310500,
+      "created_at": "2024-10-24T08:59:32.629Z",
+      "updated_at": "2024-10-24T08:59:32.629Z",
+      "image": "//a.storyblok.com/f/310500/1000x409/c3b74d2605/components-testimonials-with-title.png",
       "color": null,
       "icon": null,
       "description": null
