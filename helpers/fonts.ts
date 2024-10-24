@@ -3,52 +3,52 @@ import localFont from "next/font/local";
 const displayFont = localFont({
   src: [
     {
-      path: "../token/fonts/Fredoka-Regular.woff2",
+      path: "../token/fonts/Lexend-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Regular.woff",
+      path: "../token/fonts/Lexend-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-SemiBold.woff2",
+      path: "../token/fonts/Lexend-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-SemiBold.woff",
+      path: "../token/fonts/Lexend-SemiBold.woff",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Medium.woff2",
+      path: "../token/fonts/Lexend-Medium.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Medium.woff",
+      path: "../token/fonts/Lexend-Medium.woff",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Light.woff2",
+      path: "../token/fonts/Lexend-Light.woff2",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Light.woff",
+      path: "../token/fonts/Lexend-Light.woff",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Bold.woff2",
+      path: "../token/fonts/Lexend-Bold.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Bold.woff",
+      path: "../token/fonts/Lexend-Bold.woff",
       weight: "700",
       style: "normal",
     },
@@ -69,33 +69,55 @@ const displayFont = localFont({
 const copyFont = localFont({
   src: [
     {
-      path: "../token/fonts/Mulish-Regular.woff2",
+      path: "../token/fonts/Lexend-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-Regular.woff",
+      path: "../token/fonts/Lexend-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-600.woff2",
+      path: "../token/fonts/Lexend-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-600.woff", weight: "600", style: "normal" },
     {
-      path: "../token/fonts/Mulish-800.woff2",
-      weight: "800",
+      path: "../token/fonts/Lexend-SemiBold.woff",
+      weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-800.woff", weight: "800", style: "normal" },
     {
-      path: "../token/fonts/Mulish-300.woff2",
+      path: "../token/fonts/Lexend-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Light.woff2",
       weight: "300",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-300.woff", weight: "300", style: "normal" },
+    {
+      path: "../token/fonts/Lexend-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
   ],
   preload: true,
   display: "swap",
@@ -107,33 +129,55 @@ const copyFont = localFont({
 const interfaceFont = localFont({
   src: [
     {
-      path: "../token/fonts/Mulish-Regular.woff2",
+      path: "../token/fonts/Lexend-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-Regular.woff",
+      path: "../token/fonts/Lexend-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-600.woff2",
+      path: "../token/fonts/Lexend-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-600.woff", weight: "600", style: "normal" },
     {
-      path: "../token/fonts/Mulish-800.woff2",
-      weight: "800",
+      path: "../token/fonts/Lexend-SemiBold.woff",
+      weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-800.woff", weight: "800", style: "normal" },
     {
-      path: "../token/fonts/Mulish-300.woff2",
+      path: "../token/fonts/Lexend-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Light.woff2",
       weight: "300",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-300.woff", weight: "300", style: "normal" },
+    {
+      path: "../token/fonts/Lexend-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
   ],
   preload: true,
   display: "optional",
@@ -166,52 +210,52 @@ const interfaceFont = localFont({
 const displayFontPreview = localFont({
   src: [
     {
-      path: "../token/fonts/Fredoka-Regular.woff2",
+      path: "../token/fonts/Lexend-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Regular.woff",
+      path: "../token/fonts/Lexend-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-SemiBold.woff2",
+      path: "../token/fonts/Lexend-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-SemiBold.woff",
+      path: "../token/fonts/Lexend-SemiBold.woff",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Medium.woff2",
+      path: "../token/fonts/Lexend-Medium.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Medium.woff",
+      path: "../token/fonts/Lexend-Medium.woff",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Light.woff2",
+      path: "../token/fonts/Lexend-Light.woff2",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Light.woff",
+      path: "../token/fonts/Lexend-Light.woff",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Bold.woff2",
+      path: "../token/fonts/Lexend-Bold.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../token/fonts/Fredoka-Bold.woff",
+      path: "../token/fonts/Lexend-Bold.woff",
       weight: "700",
       style: "normal",
     },
@@ -232,33 +276,55 @@ const displayFontPreview = localFont({
 const copyFontPreview = localFont({
   src: [
     {
-      path: "../token/fonts/Mulish-Regular.woff2",
+      path: "../token/fonts/Lexend-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-Regular.woff",
+      path: "../token/fonts/Lexend-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-600.woff2",
+      path: "../token/fonts/Lexend-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-600.woff", weight: "600", style: "normal" },
     {
-      path: "../token/fonts/Mulish-800.woff2",
-      weight: "800",
+      path: "../token/fonts/Lexend-SemiBold.woff",
+      weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-800.woff", weight: "800", style: "normal" },
     {
-      path: "../token/fonts/Mulish-300.woff2",
+      path: "../token/fonts/Lexend-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Light.woff2",
       weight: "300",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-300.woff", weight: "300", style: "normal" },
+    {
+      path: "../token/fonts/Lexend-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
   ],
   preload: false,
   display: "auto",
@@ -270,33 +336,55 @@ const copyFontPreview = localFont({
 const interfaceFontPreview = localFont({
   src: [
     {
-      path: "../token/fonts/Mulish-Regular.woff2",
+      path: "../token/fonts/Lexend-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-Regular.woff",
+      path: "../token/fonts/Lexend-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Mulish-600.woff2",
+      path: "../token/fonts/Lexend-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-600.woff", weight: "600", style: "normal" },
     {
-      path: "../token/fonts/Mulish-800.woff2",
-      weight: "800",
+      path: "../token/fonts/Lexend-SemiBold.woff",
+      weight: "600",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-800.woff", weight: "800", style: "normal" },
     {
-      path: "../token/fonts/Mulish-300.woff2",
+      path: "../token/fonts/Lexend-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Light.woff2",
       weight: "300",
       style: "normal",
     },
-    { path: "../token/fonts/Mulish-300.woff", weight: "300", style: "normal" },
+    {
+      path: "../token/fonts/Lexend-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../token/fonts/Lexend-Bold.woff",
+      weight: "700",
+      style: "normal",
+    },
   ],
   preload: false,
   display: "auto",
