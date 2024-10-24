@@ -63,7 +63,7 @@
     "@csstools/css-parser-algorithms": "^2.7.1",
     "@csstools/css-tokenizer": "^2.4.1",
     "@kickstartds/jsonschema-utils": "^3.4.2",
-    "@kickstartds/jsonschema2storyblok": "^1.5.39",
+    "@kickstartds/jsonschema2storyblok": "^1.5.40",
     "@kickstartds/jsonschema2types": "^1.1.51",
     "@kickstartds/style-dictionary": "^4.0.2",
     "@netlify/plugin-nextjs": "^5.5.1",
