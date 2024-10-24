@@ -1,5 +1,4 @@
 import {
-  Children,
   ComponentProps,
   FC,
   forwardRef,
@@ -7,12 +6,6 @@ import {
   PropsWithChildren,
 } from "react";
 import { ImageSizeProvider, useImageSize } from "./ImageSizeContext";
-import {
-  getPxSize,
-  getPropertyValue,
-  getSectionWidth,
-  baseFontSizePx,
-} from "@/helpers/token";
 import {
   SectionContext,
   SectionContextDefault,
@@ -25,6 +18,7 @@ import {
   ImageStoryContext,
   ImageStoryContextDefault,
 } from "@kickstartds/ds-agency-premium/components/image-story/index.js";
+import calculated from "@/token/calculated";
 
 const Section = forwardRef<
   HTMLDivElement,
@@ -34,11 +28,12 @@ const Section = forwardRef<
   const sectionWidthName =
     props.content?.width === "unset"
       ? props.width || "default"
-      : getSectionWidth(props.content?.width || "default") >
-        getSectionWidth(props.width || "default")
+      : calculated.sectionWidths[props.content?.width || "default"] >
+        calculated.sectionWidths[props.width || "default"]
       ? props.width || "default"
       : props.content?.width || "default";
-  const sectionWidth = getSectionWidth(sectionWidthName) * baseFontSizePx;
+  const sectionWidth =
+    calculated.sectionWidths[sectionWidthName] * calculated.baseFontSizePx;
 
   const componentWidth =
     props.content?.mode === "list"
@@ -64,9 +59,7 @@ const Logos = forwardRef<
   ComponentProps<typeof LogosContextDefault> & HTMLAttributes<HTMLDivElement>
 >((props, ref) => {
   const size = useImageSize();
-  const gapSize = getPxSize(
-    getPropertyValue("--dsa-logos__grid--gap-horizontal", "desktop")
-  );
+  const gapSize = calculated.desktop["--dsa-logos__grid--gap-horizontal"];
   const logoSize = Math.ceil(
     (size - gapSize * (props.logosPerRow || 3)) / (props.logosPerRow || 3)
   );
@@ -89,9 +82,7 @@ const ImageStory = forwardRef<
     HTMLAttributes<HTMLDivElement>
 >((props, ref) => {
   const size = useImageSize();
-  const gapSize = getPxSize(
-    getPropertyValue("--dsa-image-story--horizontal-padding", "phone")
-  );
+  const gapSize = calculated.phone["--dsa-image-story--horizontal-padding"];
   const imageSize = Math.ceil(size / 2 - gapSize);
 
   return (

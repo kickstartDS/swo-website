@@ -1,4 +1,4 @@
-import {StoryblokStory} from 'storyblok-generate-ts'
+import { StoryblokStory } from "storyblok-generate-ts";
 
 export interface BlogAsideStoryblok {
   author?: BlogAuthorStoryblok[];
@@ -104,7 +104,6 @@ export interface BlogTeaserStoryblok {
   teaserText?: string;
   image?: AssetStoryblok;
   link_url?: MultilinkStoryblok;
-  link_label?: string;
   readingTime?: string;
   author_name?: string;
   author_title?: string;
@@ -144,6 +143,14 @@ export interface CtaStoryblok {
   component: "cta";
 }
 
+export interface DividerStoryblok {
+  variant?: "" | "default" | "accent";
+  className?: string;
+  component: "divider";
+  type?: string;
+  _uid: string;
+}
+
 export interface FaqStoryblok {
   questions?: QuestionsStoryblok[];
   type?: string;
@@ -152,7 +159,6 @@ export interface FaqStoryblok {
 }
 
 export interface FeatureStoryblok {
-  icon?: string;
   title?: string;
   text?: string;
   style?: "" | "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
@@ -271,6 +277,14 @@ export interface HeroStoryblok {
   component: "hero";
 }
 
+export interface HtmlStoryblok {
+  html?: string;
+  className?: string;
+  component: "html";
+  type?: string;
+  _uid: string;
+}
+
 export interface ImagesStoryblok {
   src?: AssetStoryblok;
   alt?: string;
@@ -341,7 +355,6 @@ export interface ItemsStoryblok {
 }
 
 export interface LinksStoryblok {
-  icon?: string;
   label?: string;
   href?: MultilinkStoryblok;
   newTab?: boolean;
@@ -409,6 +422,7 @@ export interface QuestionsStoryblok {
 }
 
 export interface SectionStoryblok {
+  type?: string;
   width?: "" | "full" | "max" | "wide" | "default" | "narrow";
   style?:
     | ""
@@ -436,14 +450,22 @@ export interface SectionStoryblok {
   content_align?: "" | "left" | "center" | "right";
   content_gutter?: "" | "large" | "default" | "small" | "none";
   content_mode?: "" | "default" | "tile" | "list" | "slider";
-  content_tileWidth?: "" | "smallest" | "default" | "medium" | "large" | "largest";
+  content_tileWidth?:
+    | ""
+    | "smallest"
+    | "default"
+    | "medium"
+    | "large"
+    | "largest";
   components?: (
     | BlogTeaserStoryblok
     | CtaStoryblok
+    | DividerStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
     | GalleryStoryblok
     | HeroStoryblok
+    | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
     | InfoTableStoryblok
@@ -455,9 +477,9 @@ export interface SectionStoryblok {
     | TestimonialsStoryblok
     | TextStoryblok
     | VideoCurtainStoryblok
+    | GlobalReferenceStoryblok
   )[];
   buttons?: ButtonsStoryblok[];
-  type?: string;
   _uid: string;
   component: "section";
 }
@@ -495,10 +517,12 @@ export interface SliderStoryblok {
   components?: (
     | BlogTeaserStoryblok
     | CtaStoryblok
+    | DividerStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
     | GalleryStoryblok
     | HeroStoryblok
+    | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
     | InfoTableStoryblok
@@ -517,7 +541,6 @@ export interface SliderStoryblok {
 }
 
 export interface SocialSharingStoryblok {
-  icon?: string;
   href?: MultilinkStoryblok;
   title?: string;
   _uid: string;
@@ -528,7 +551,6 @@ export interface StatStoryblok {
   number?: string;
   description?: string;
   title?: string;
-  icon?: string;
   type?: string;
   _uid: string;
   component: "stat";
@@ -603,7 +625,6 @@ export interface TileStoryblok {
   button_toggle?: boolean;
   button_label?: string;
   button_target?: MultilinkStoryblok;
-  button_icon?: string;
   backgroundColor?: string;
   backgroundImage?: AssetStoryblok;
   textColor?: string;
