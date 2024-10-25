@@ -59,18 +59,28 @@ export const getStaticProps = (async ({ params, previewData }) => {
   );
   const previewStoryblokApi = new StoryblokClient({ accessToken: previewData });
   const slug = params?.slug?.join("/");
+
   try {
     const { pageData, settingsData } = await fetchPageProps(
       slug,
       previewStoryblokApi
     );
 
+    const settingsIndex =
+      slug?.startsWith("en/") || slug === "en"
+        ? settingsData.stories.findIndex((story) =>
+            story.full_slug.startsWith("en/")
+          )
+        : settingsData.stories.findIndex(
+            (story) => !story.full_slug.startsWith("en/")
+          );
+
     return {
       props: {
         ...pageData,
         blurHashes: {},
         fontClassNames: fontClassNamesPreview,
-        settings: settingsData.stories[0]?.content || null,
+        settings: settingsData.stories[settingsIndex]?.content || null,
         key: pageData.story.id,
       },
     };

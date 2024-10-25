@@ -39,6 +39,7 @@ export const getStaticPaths = (async () => {
 
 export const getStaticProps = (async ({ params }) => {
   const slug = params?.slug?.join("/");
+
   try {
     const { pageData, settingsData } = await fetchPageProps(slug);
 
@@ -58,12 +59,21 @@ export const getStaticProps = (async ({ params }) => {
       blurHashes[imageUrl] ||= cache.getSync(imageUrl) || null;
     }
 
+    const settingsIndex =
+      slug?.startsWith("en/") || slug === "en"
+        ? settingsData.stories.findIndex((story) =>
+            story.full_slug.startsWith("en/")
+          )
+        : settingsData.stories.findIndex(
+            (story) => !story.full_slug.startsWith("en/")
+          );
+
     return {
       props: {
         ...pageData,
         blurHashes,
         fontClassNames,
-        settings: settingsData.stories[0]?.content || null,
+        settings: settingsData.stories[settingsIndex]?.content || null,
         key: pageData.story.id,
       },
     };
