@@ -4,7 +4,7 @@
       "name": "blog-aside",
       "display_name": "Blog Aside",
       "created_at": "2024-10-24T11:46:27.393Z",
-      "updated_at": "2024-10-24T11:46:27.393Z",
+      "updated_at": "2024-10-24T14:37:19.998Z",
       "id": 6468739,
       "schema": {
         "author": {
@@ -18,7 +18,9 @@
           "component_whitelist": [
             "blog-author"
           ],
-          "description": "The author of the blog post"
+          "description": "The author of the blog post",
+          "minimum": 1,
+          "maximum": 1
         },
         "socialSharing": {
           "id": 0,
@@ -327,7 +329,7 @@
       "name": "blog-overview",
       "display_name": "Blog Overview",
       "created_at": "2024-10-24T11:46:30.283Z",
-      "updated_at": "2024-10-24T11:46:30.283Z",
+      "updated_at": "2024-10-24T14:38:04.883Z",
       "id": 6468744,
       "schema": {
         "section": {
@@ -364,7 +366,9 @@
           "component_whitelist": [
             "blog-teaser"
           ],
-          "description": "Display a blog teaser with date, tags, headline, teaser text and author"
+          "description": "Display a blog teaser with date, tags, headline, teaser text and author",
+          "minimum": 1,
+          "maximum": 1
         },
         "listTitle": {
           "id": 0,
@@ -423,7 +427,9 @@
           "component_whitelist": [
             "cta"
           ],
-          "description": "Cta"
+          "description": "Cta",
+          "minimum": 1,
+          "maximum": 1
         },
         "seo": {
           "id": 0,
@@ -436,7 +442,9 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "minimum": 1,
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -467,7 +475,7 @@
       "name": "blog-post",
       "display_name": "Blog Post",
       "created_at": "2024-10-24T11:46:30.395Z",
-      "updated_at": "2024-10-24T11:46:30.395Z",
+      "updated_at": "2024-10-24T14:38:53.564Z",
       "id": 6468745,
       "schema": {
         "head": {
@@ -481,7 +489,9 @@
           "component_whitelist": [
             "blog-head"
           ],
-          "description": "Intro portion of a singular blog entry"
+          "description": "Intro portion of a singular blog entry",
+          "minimum": 1,
+          "maximum": 1
         },
         "aside": {
           "id": 0,
@@ -494,7 +504,9 @@
           "component_whitelist": [
             "blog-aside"
           ],
-          "description": "Meta info for a singular blog entry"
+          "description": "Meta info for a singular blog entry",
+          "minimum": 1,
+          "maximum": 1
         },
         "content": {
           "id": 0,
@@ -529,7 +541,9 @@
           "component_whitelist": [
             "cta"
           ],
-          "description": "Cta"
+          "description": "Cta",
+          "minimum": 1,
+          "maximum": 1
         },
         "seo": {
           "id": 0,
@@ -542,7 +556,9 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "minimum": 1,
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -3566,7 +3582,7 @@
       "name": "page",
       "display_name": "Page",
       "created_at": "2024-10-24T11:38:39.137Z",
-      "updated_at": "2024-10-24T11:43:59.705Z",
+      "updated_at": "2024-10-24T14:39:18.148Z",
       "id": 6468647,
       "schema": {
         "section": {
@@ -3645,7 +3661,9 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "minimum": 1,
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -4474,7 +4492,7 @@
       "name": "settings",
       "display_name": "Settings",
       "created_at": "2024-10-24T11:46:31.400Z",
-      "updated_at": "2024-10-24T11:46:31.400Z",
+      "updated_at": "2024-10-24T14:39:45.274Z",
       "id": 6468746,
       "schema": {
         "header": {
@@ -4488,11 +4506,13 @@
           "component_whitelist": [
             "header"
           ],
-          "description": "Header layered on top by the CMS"
+          "description": "Header layered on top by the CMS",
+          "minimum": 1,
+          "maximum": 1
         },
         "footer": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "Footer",
           "key": "footer",
           "type": "bloks",
@@ -4501,11 +4521,13 @@
           "component_whitelist": [
             "footer"
           ],
-          "description": "Footer"
+          "description": "Footer",
+          "minimum": 1,
+          "maximum": 1
         },
         "seo": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "Seo",
           "key": "seo",
           "type": "bloks",
@@ -4514,11 +4536,17 @@
           "component_whitelist": [
             "seo"
           ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "minimum": 1,
+          "maximum": 1
+        },
+        "iconSprite": {
+          "type": "textarea",
+          "pos": 3
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Type",
           "key": "type",
           "type": "text",
