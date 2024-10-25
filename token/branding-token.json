@@ -2,10 +2,10 @@
   "color": {
     "primary": "#2D4D42",
     "primary-inverted": "#F5EAC5",
-    "secondary": "#F7F2DE",
+    "secondary": "#F5EAC5",
     "secondary-inverted": "#F5EAC5",
     "background": "#FBFAF7",
-    "background-inverted": "#0C320C",
+    "background-inverted": "#2D4D42",
     "foreground": "#272323",
     "foreground-inverted": "#fff",
     "link": "#2D4D42",
