@@ -3,7 +3,7 @@
     "background-color": {
       "accent": {
         "base": {
-          "value": "{ks.color.secondary.to-bg.4.base}",
+          "value": "{ks.color.secondary.to-bg.5.base}",
           "attributes": {
             "category": "color"
           },

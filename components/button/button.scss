@@ -1,9 +1,7 @@
 .dsa-button {
-  --dsa-button--border-radius: var(--ks-border-radius-control);
-  --dsa-button_primary--color: var(--ks-text-color-default-inverted);
-  --dsa-button_primary--color_hover: var(--ks-text-color-default-inverted);
-  --dsa-button_primary--color_active: var(--ks-text-color-default-inverted);
-
+  [ks-inverted="true"] & {
+    --dsa-button_primary--background-color: var(--ks-color-secondary-inverted);
+  }
   display: inline-block;
 
   span {
