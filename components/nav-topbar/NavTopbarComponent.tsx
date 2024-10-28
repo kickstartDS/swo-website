@@ -15,12 +15,15 @@ import {
 import { Icon } from "@kickstartds/base/lib/icon";
 import { NavDropdown } from "@kickstartds/ds-agency-premium/components/nav-dropdown/index.js";
 import { Link } from "@kickstartds/base/lib/link";
+import { useLanguage } from "../LanguageContext";
 
 export const NavTopbarContextDefault = forwardRef<
   HTMLElement,
   ComponentProps<typeof DsaNavTopbar> & HTMLAttributes<HTMLElement>
->(({ items, inverted }, ref) =>
-  items && items.length > 0 ? (
+>(({ items, inverted }, ref) => {
+  const language = useLanguage();
+  console.log("language", language);
+  return items && items.length > 0 ? (
     <nav
       className="dsa-nav-topbar"
       id="dsa-nav-main"
@@ -69,22 +72,35 @@ export const NavTopbarContextDefault = forwardRef<
         <ul className="dsa-nav-topbar__lang">
           <li className="dsa-nav-topbar__lang__item">
             <Link
-              href="#"
-              className="dsa-nav-topbar__lang__link dsa-nav-topbar__lang__link--active"
+              href="/"
+              className={classnames(
+                "dsa-nav-topbar__lang__link",
+                language &&
+                  language === "de" &&
+                  "dsa-nav-topbar__lang__link--active"
+              )}
             >
               DE
             </Link>
           </li>
           <li className="dsa-nav-topbar__lang__item">
-            <Link href="#" className="dsa-nav-topbar__lang__link">
+            <Link
+              href="/en"
+              className={classnames(
+                "dsa-nav-topbar__lang__link",
+                language &&
+                  language === "en" &&
+                  "dsa-nav-topbar__lang__link--active"
+              )}
+            >
               EN
             </Link>
           </li>
         </ul>
       </ul>
     </nav>
-  ) : null
-);
+  ) : null;
+});
 
 export const NavTopbarProvider: FC<PropsWithChildren> = (props) => (
   <NavTopbarContext.Provider {...props} value={NavTopbarContextDefault} />

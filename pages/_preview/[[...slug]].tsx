@@ -15,6 +15,7 @@ import { fontClassNamesPreview } from "@/helpers/fonts";
 
 type PageProps = ISbStory["data"] & {
   settings?: ISbStoryData["content"];
+  language: "de" | "en";
 };
 
 const Page: NextPage<PageProps> = ({ story: initialStory }) => {
@@ -82,6 +83,7 @@ export const getStaticProps = (async ({ params, previewData }) => {
         fontClassNames: fontClassNamesPreview,
         settings: settingsData.stories[settingsIndex]?.content || null,
         key: pageData.story.id,
+        language: slug?.startsWith("en/") || slug === "en" ? "en" : "de",
       },
     };
   } catch (e) {

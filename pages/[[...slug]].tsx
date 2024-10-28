@@ -9,6 +9,7 @@ import { HeadlineLevelProvider } from "@/components/headline/HeadlineLevelContex
 
 type PageProps = ISbStory["data"] & {
   settings?: ISbStoryData["content"];
+  language: "de" | "en";
 };
 
 const Page: NextPage<PageProps> = ({ story }) => {
@@ -75,6 +76,7 @@ export const getStaticProps = (async ({ params }) => {
         fontClassNames,
         settings: settingsData.stories[settingsIndex]?.content || null,
         key: pageData.story.id,
+        language: slug?.startsWith("en/") || slug === "en" ? "en" : "de",
       },
     };
   } catch (e) {
