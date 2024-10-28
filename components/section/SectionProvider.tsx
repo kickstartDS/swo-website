@@ -5,7 +5,7 @@ import { HeadlineLevelProvider } from "../headline/HeadlineLevelContext";
 export const SectionProvider: FC<PropsWithChildren> = (props) => {
   const PrevSection = useContext(SectionContext);
   // eslint-disable-next-line react/display-name
-  const Section = forwardRef<HTMLDivElement, any>((props, ref) => (
+  const Section = forwardRef<HTMLElement, any>((props, ref) => (
     <HeadlineLevelProvider>
       <PrevSection {...props} ref={ref} />
     </HeadlineLevelProvider>
