@@ -22,7 +22,6 @@ export const NavTopbarContextDefault = forwardRef<
   ComponentProps<typeof DsaNavTopbar> & HTMLAttributes<HTMLElement>
 >(({ items, inverted }, ref) => {
   const language = useLanguage();
-  console.log("language", language);
   return items && items.length > 0 ? (
     <nav
       className="dsa-nav-topbar"
@@ -31,7 +30,7 @@ export const NavTopbarContextDefault = forwardRef<
       ref={ref}
     >
       <ul className="dsa-nav-topbar__list">
-        {items.map(({ label, href, active, items: subItems }) => {
+        {items.map(({ label, href, active, items: subItems }, index) => {
           return (
             <li
               className={classnames(
@@ -39,19 +38,15 @@ export const NavTopbarContextDefault = forwardRef<
                 active && "dsa-nav-topbar__item--active",
                 subItems?.length && "dsa-nav-topbar__item--dropdown"
               )}
-              key={href}
+              key={href + index}
             >
               {subItems?.length ? (
                 <span tabIndex={0} className="dsa-nav-topbar__label">
                   {label}
-                  {subItems?.length ? (
-                    <Icon
-                      className="dsa-nav-topbar__label__icon"
-                      icon="chevron-down"
-                    />
-                  ) : (
-                    ""
-                  )}
+                  <Icon
+                    className="dsa-nav-topbar__label__icon"
+                    icon="chevron-down"
+                  />
                 </span>
               ) : (
                 <Link
