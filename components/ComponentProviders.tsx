@@ -108,7 +108,7 @@ const Picture = forwardRef<
       width={maxWidth}
       height={maxHeight}
       alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
-      lazy={lazy}
+      lazy={priority ? false : lazy}
       fetchPriority="high"
       loading={priority ? "eager" : "lazy"}
     />

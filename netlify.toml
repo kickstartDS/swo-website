@@ -89,3 +89,9 @@
   to="/glossar/atomic-design"
   status = 301
   force = false
+
+[[redirects]]
+  from="/ueber-uns"
+  to="/ueber-uns/design-system-agentur-beratung"
+  status = 301
+  force = false
