@@ -115,7 +115,7 @@ const interfaceFont = localFont({
     },
   ],
   preload: true,
-  display: "optional",
+  display: "swap",
   variable: "--ks-font-family-interface",
   fallback: [
     "system-ui",
