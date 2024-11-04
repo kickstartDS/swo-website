@@ -36,6 +36,7 @@ const handleRouteChange = (url: string) => {
 };
 
 const setActiveNavItem = (navItems: any[] = [], currentRoute: string) => {
+  console.log("setActiveNavItem", navItems, currentRoute);
   for (const navItem of navItems) {
     navItem.active =
       "/" + navItem.href === currentRoute || navItem.href === currentRoute;
