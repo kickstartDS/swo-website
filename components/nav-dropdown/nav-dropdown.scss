@@ -1,6 +1,8 @@
 :root {
   .dsa-nav-dropdown {
     --dsa-nav-dropdown--border-radius: var(--ks-border-radius-card);
+    --dsa-nav-dropdown__label--font: var(--ks-font-display-xxs);
+    --dsa-nav-dropdown__label--font-weight: var(--ks-font-weight-regular);
 
     --dsa-nav-dropdown__label--color: var(--ks-text-color-primary);
     --dsa-nav-dropdown__label--color_hover: var(--ks-text-color-primary);

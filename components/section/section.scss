@@ -1,22 +1,14 @@
 .l-section.dsa-section {
   --dsa-section_horizontal-gradient--background-image: linear-gradient(
-    82deg,
-    var(--ks-color-secondary-alpha-3) 7.5%,
-    var(--ks-color-secondary) 45%,
-    var(--ks-color-secondary-alpha-5) 85%,
-    var(--ks-color-secondary) 100%
+    81.65deg,
+    #e3dec2 7.45%,
+    #96b196 46.35%,
+    #d6daa8 81.21%,
+    #c2cfb6 98.99%
   );
 
   &[ks-inverted="true"] {
     --dsa-section_horizontal-gradient--background-image: linear-gradient(
-      81.65deg,
-      #577057 7.45%,
-      #7da07c 46.35%,
-      #cfc798 86.64%,
-      #c2cfb6 98.99%
-    );
-
-    --dsa-section_symmetric-glow--background-image: linear-gradient(
       81.65deg,
       #2d4d42 7.45%,
       #0c320c 46.35%,
@@ -24,4 +16,11 @@
       #2d4d42 98.99%
     );
   }
+
+  --dsa-section_symmetric-glow--background-image: radial-gradient(
+      20% 50% at 100% 50%,
+      var(--ks-color-primary-alpha-5) 0%,
+      transparent 100%
+    ),
+    radial-gradient(20% 50% at 0% 50%, var(--ks-color-primary-alpha-5) 0%, transparent 100%);
 }

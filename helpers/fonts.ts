@@ -3,12 +3,12 @@ import localFont from "next/font/local";
 const displayFont = localFont({
   src: [
     {
-      path: "../token/fonts/Vollkorn-SemiBold.woff2",
+      path: "../token/fonts/Vollkorn-Medium.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/Vollkorn-SemiBold.woff",
+      path: "../token/fonts/Vollkorn-Medium.woff",
       weight: "600",
       style: "normal",
     },

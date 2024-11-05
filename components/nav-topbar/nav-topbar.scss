@@ -1,15 +1,10 @@
 .dsa-nav-topbar {
+  --dsa-nav-topbar--background: 0.75;
+
+  --dsa-nav-topbar__label_dimmed--opacity: 0.75;
   --dsa-nav-topbar__label--font: var(--ks-font-display-xxs);
 
   --dsa-nav-topbar__label--color: var(--ks-text-color-primary);
   --dsa-nav-topbar__label--color_hover: var(--ks-text-color-primary);
   --dsa-nav-topbar__label--color_active: var(--ks-text-color-primary);
 }
-
-// .dsa-header[ks-inverted="true"] {
-//   .dsa-nav-topbar {
-//     --dsa-nav-topbar__label--color: var(--ks-text-color-default);
-//     --dsa-nav-topbar__label--color_hover: var(--ks-text-color-default);
-//     --dsa-nav-topbar__label--color_active: var(--ks-text-color-default);
-//   }
-// }
