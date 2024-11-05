@@ -3,12 +3,14 @@
 .zammad-form {
   label {
     font: var(--ks-font-interface-s);
+    color: var(--ks-text-color-interface);
   }
   input,
   textarea {
     border: var(--ks-border-width-default) solid var(--ks-border-color-interface-interactive);
     padding: var(--ks-spacing-inset-xs);
     border-radius: var(--ks-border-radius-control);
+    background-color: var(--ks-background-color-default);
 
     &:active,
     &:focus {
