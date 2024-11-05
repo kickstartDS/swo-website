@@ -1,0 +1,26 @@
+.dsa-nav-flyout {
+  --dsa-nav-flyout__label_dimmed--opacity: 0.75;
+  --dsa-nav-flyout__label--font: var(--ks-font-display-m);
+
+  --dsa-nav-flyout__label--color: var(--ks-text-color-primary);
+  --dsa-nav-flyout__label--color_hover: var(--ks-text-color-primary);
+  --dsa-nav-flyout__label--color_active: var(--ks-text-color-primary);
+
+  --dsa-nav-flyout__sublist__label--color: var(--ks-text-color-primary);
+  --dsa-nav-flyout__sublist__label--color_hover: var(--ks-text-color-primary);
+  --dsa-nav-flyout__sublist__label--color_active: var(--ks-text-color-primary);
+
+  --dsa-nav-flyout__sublist__label--font: var(--ks-font-display-s);
+
+  :has(.dsa-nav-flyout__item--active) {
+    .dsa-nav-flyout__item:not(:hover, .dsa-nav-flyout__item--active) {
+      .dsa-nav-flyout__label {
+        opacity: var(--dsa-nav-flyout__label_dimmed--opacity);
+      }
+
+      .dsa-header--floating & {
+        opacity: var(--dsa-nav-flyout_floating__label_dimmed--opacity);
+      }
+    }
+  }
+}
