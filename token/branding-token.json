@@ -21,7 +21,7 @@
   },
   "font": {
     "display": {
-      "family": "'Vollkorn SC', Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "family": "'Vollkorn', Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
       "font-size": 20,
       "line-height": 1.15,
       "scale-ratio": 1.225,

@@ -2,7 +2,7 @@
   "ks": {
     "font-family": {
       "display": {
-        "value": "'Vollkorn SC', Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+        "value": "'Vollkorn', Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"

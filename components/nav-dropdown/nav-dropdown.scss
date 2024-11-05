@@ -1,0 +1,17 @@
+:root {
+  .dsa-nav-dropdown {
+    --dsa-nav-dropdown--border-radius: var(--ks-border-radius-card);
+
+    --dsa-nav-dropdown__label--color: var(--ks-text-color-primary);
+    --dsa-nav-dropdown__label--color_hover: var(--ks-text-color-primary);
+    --dsa-nav-dropdown__label--color_active: var(--ks-text-color-primary);
+
+    &[ks-inverted="true"] {
+      --dsa-nav-dropdown__label--color: var(--ks-text-color-default);
+      --dsa-nav-dropdown__label--color_hover: var(--ks-text-color-default);
+      --dsa-nav-dropdown__label--color_active: var(--ks-text-color-default);
+    }
+
+    --dsa-nav-dropdown__label_dimmed--opacity: 0.75;
+  }
+}

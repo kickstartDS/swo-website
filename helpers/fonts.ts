@@ -3,12 +3,12 @@ import localFont from "next/font/local";
 const displayFont = localFont({
   src: [
     {
-      path: "../token/fonts/VollkornSC-SemiBold.woff2",
+      path: "../token/fonts/Vollkorn-SemiBold.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/VollkornSC-SemiBold.woff",
+      path: "../token/fonts/Vollkorn-SemiBold.woff",
       weight: "600",
       style: "normal",
     },
@@ -150,12 +150,12 @@ const interfaceFont = localFont({
 const displayFontPreview = localFont({
   src: [
     {
-      path: "../token/fonts/VollkornSC-SemiBold.woff2",
+      path: "../token/fonts/Vollkorn-SemiBold.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../token/fonts/VollkornSC-SemiBold.woff",
+      path: "../token/fonts/Vollkorn-SemiBold.woff",
       weight: "600",
       style: "normal",
     },

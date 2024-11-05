@@ -17,7 +17,7 @@
         }
       },
       "card": {
-        "value": "0px",
+        "value": "4px",
         "token": {
           "category": "Border Radius",
           "presenter": "BorderRadius"
