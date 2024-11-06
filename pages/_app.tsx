@@ -35,14 +35,15 @@ const handleRouteChange = (url: string) => {
 };
 
 const setActiveNavItem = (navItems: any[] = [], currentRoute: string) => {
+  const route = currentRoute.replace(/^\/|\/$/g, "");
   for (const navItem of navItems) {
-    navItem.active =
-      "/" + navItem.href === currentRoute || navItem.href === currentRoute;
+    const href = navItem.href.replace(/^\/|\/$/g, "");
+    navItem.active = href === route;
 
     if (navItem.items && Array.isArray(navItem.items)) {
       for (const item of navItem.items) {
-        item.active =
-          "/" + item.href === currentRoute || item.href === currentRoute;
+        const itemHref = item.href.replace(/^\/|\/$/g, "");
+        item.active = itemHref === route;
         navItem.active ||= item.active;
       }
     }
