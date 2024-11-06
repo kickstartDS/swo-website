@@ -156,35 +156,28 @@ const Hero = forwardRef<
 
   const src =
     (image &&
-      ((image.src &&
-        isStoryblokAsset(image.src) &&
-        `${image.src.filename}/m/600x0`) ||
-        image.src)) ||
+      (image.src && !image.src.endsWith("/m/600x0")
+        ? `${image.src}/m/600x0`
+        : image.src)) ||
     undefined;
   const srcMobile =
     (image &&
-      ((image.srcMobile &&
-        isStoryblokAsset(image.srcMobile) &&
-        image.srcMobile.filename &&
-        `${image.srcMobile.filename}/m/600x0`) ||
-        image.srcMobile)) ||
+      (image.srcMobile && !image.srcMobile.endsWith("/m/600x0")
+        ? `${image.srcMobile}/m/600x0`
+        : image.srcMobile)) ||
     src ||
     "";
   const srcTablet =
     (image &&
-      ((image.srcTablet &&
-        isStoryblokAsset(image.srcTablet) &&
-        image.srcTablet.filename &&
-        `${image.srcTablet.filename}/m/950x0`) ||
-        image.srcTablet)) ||
+      (image.srcTablet && !image.srcTablet.endsWith("/m/950x0")
+        ? `${image.srcTablet}/m/950x0`
+        : image.srcTablet)) ||
     undefined;
   const srcDesktop =
     (image &&
-      ((image.srcDesktop &&
-        isStoryblokAsset(image.srcDesktop) &&
-        image.srcDesktop.filename &&
-        `${image.srcDesktop.filename}/m/1600x0`) ||
-        image.srcDesktop)) ||
+      (image.srcDesktop && !image.srcDesktop.endsWith("/m/1600x0")
+        ? `${image.srcDesktop}/m/1600x0`
+        : image.srcDesktop)) ||
     undefined;
 
   return (
