@@ -104,7 +104,6 @@ export interface BlogTeaserStoryblok {
   teaserText?: string;
   image?: AssetStoryblok;
   link_url?: MultilinkStoryblok;
-  link_label?: string;
   readingTime?: string;
   author_name?: string;
   author_title?: string;
@@ -117,7 +116,6 @@ export interface BlogTeaserStoryblok {
 
 export interface ButtonsStoryblok {
   label?: string;
-  icon?: string;
   target?: MultilinkStoryblok;
   _uid: string;
   component: "buttons";
@@ -145,6 +143,14 @@ export interface CtaStoryblok {
   component: "cta";
 }
 
+export interface DividerStoryblok {
+  variant?: "" | "default" | "accent";
+  className?: string;
+  component: "divider";
+  type?: string;
+  _uid: string;
+}
+
 export interface FaqStoryblok {
   questions?: QuestionsStoryblok[];
   type?: string;
@@ -153,7 +159,6 @@ export interface FaqStoryblok {
 }
 
 export interface FeatureStoryblok {
-  icon?: string;
   title?: string;
   text?: string;
   style?: "" | "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
@@ -202,6 +207,39 @@ export interface GalleryStoryblok {
   component: "gallery";
 }
 
+export interface GlobalStoryblok {
+  global?: (
+    | BlogTeaserStoryblok
+    | CtaStoryblok
+    | DividerStoryblok
+    | FaqStoryblok
+    | FeaturesStoryblok
+    | GalleryStoryblok
+    | HeroStoryblok
+    | HtmlStoryblok
+    | ImageStoryStoryblok
+    | ImageTextStoryblok
+    | InfoTableStoryblok
+    | LogosStoryblok
+    | MosaicStoryblok
+    | SliderStoryblok
+    | StatsStoryblok
+    | TeaserCardStoryblok
+    | TestimonialsStoryblok
+    | TextStoryblok
+    | VideoCurtainStoryblok
+  )[];
+  _uid: string;
+  component: "global";
+  uuid?: string;
+}
+
+export interface GlobalReferenceStoryblok {
+  reference?: unknown[];
+  _uid: string;
+  component: "global_reference";
+}
+
 export interface HeaderStoryblok {
   logo_src?: AssetStoryblok;
   logo_srcInverted?: AssetStoryblok;
@@ -241,6 +279,14 @@ export interface HeroStoryblok {
   component: "hero";
 }
 
+export interface HtmlStoryblok {
+  html?: string;
+  className?: string;
+  component: "html";
+  type?: string;
+  _uid: string;
+}
+
 export interface ImagesStoryblok {
   src?: AssetStoryblok;
   alt?: string;
@@ -278,6 +324,30 @@ export interface ImageTextStoryblok {
   component: "image-text";
 }
 
+export interface TableStoryblok {
+  thead: {
+    _uid: string;
+    value?: string;
+    component: number;
+  }[];
+  tbody: {
+    _uid: string;
+    body: {
+      _uid?: string;
+      value?: string;
+      component?: number;
+    }[];
+    component: number;
+  }[];
+}
+
+export interface InfoTableStoryblok {
+  data?: TableStoryblok;
+  type?: string;
+  _uid: string;
+  component: "info-table";
+}
+
 export interface ItemsStoryblok {
   href?: MultilinkStoryblok;
   label?: string;
@@ -287,7 +357,6 @@ export interface ItemsStoryblok {
 }
 
 export interface LinksStoryblok {
-  icon?: string;
   label?: string;
   href?: MultilinkStoryblok;
   newTab?: boolean;
@@ -355,6 +424,7 @@ export interface QuestionsStoryblok {
 }
 
 export interface SectionStoryblok {
+  type?: string;
   width?: "" | "full" | "max" | "wide" | "default" | "narrow";
   style?:
     | ""
@@ -386,12 +456,15 @@ export interface SectionStoryblok {
   components?: (
     | BlogTeaserStoryblok
     | CtaStoryblok
+    | DividerStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
     | GalleryStoryblok
     | HeroStoryblok
+    | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
+    | InfoTableStoryblok
     | LogosStoryblok
     | MosaicStoryblok
     | SliderStoryblok
@@ -400,9 +473,9 @@ export interface SectionStoryblok {
     | TestimonialsStoryblok
     | TextStoryblok
     | VideoCurtainStoryblok
+    | GlobalReferenceStoryblok
   )[];
   buttons?: ButtonsStoryblok[];
-  type?: string;
   _uid: string;
   component: "section";
 }
@@ -439,12 +512,15 @@ export interface SliderStoryblok {
   components?: (
     | BlogTeaserStoryblok
     | CtaStoryblok
+    | DividerStoryblok
     | FaqStoryblok
     | FeaturesStoryblok
     | GalleryStoryblok
     | HeroStoryblok
+    | HtmlStoryblok
     | ImageStoryStoryblok
     | ImageTextStoryblok
+    | InfoTableStoryblok
     | LogosStoryblok
     | MosaicStoryblok
     | SliderStoryblok
@@ -460,7 +536,6 @@ export interface SliderStoryblok {
 }
 
 export interface SocialSharingStoryblok {
-  icon?: string;
   href?: MultilinkStoryblok;
   title?: string;
   _uid: string;
@@ -471,7 +546,6 @@ export interface StatStoryblok {
   number?: string;
   description?: string;
   title?: string;
-  icon?: string;
   type?: string;
   _uid: string;
   component: "stat";
@@ -546,7 +620,6 @@ export interface TileStoryblok {
   button_toggle?: boolean;
   button_label?: string;
   button_target?: MultilinkStoryblok;
-  button_icon?: string;
   backgroundColor?: string;
   backgroundImage?: AssetStoryblok;
   textColor?: string;

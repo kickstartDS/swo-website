@@ -139,6 +139,13 @@ export const components = {
       )
     )
   ),
+  divider: editable(
+    dynamic(() =>
+      import("@kickstartds/ds-agency-premium/divider").then(
+        (mod) => mod.DividerContextDefault
+      )
+    )
+  ),
   faq: editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/faq").then(
@@ -174,6 +181,13 @@ export const components = {
       )
     )
   ),
+  html: editable(
+    dynamic(() =>
+      import("@kickstartds/ds-agency-premium/html").then(
+        (mod) => mod.HtmlContextDefault
+      )
+    )
+  ),
   split: editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/split").then((mod) => mod.Split)
@@ -190,6 +204,13 @@ export const components = {
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/stat").then(
         (mod) => mod.StatContextDefault
+      )
+    )
+  ),
+  "info-table": editable(
+    dynamic(() =>
+      import("./info-table/InfoTableComponent").then(
+        (mod) => mod.InfoTableContextDefault
       )
     )
   ),

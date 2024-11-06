@@ -29,17 +29,22 @@ if (typeof window !== "undefined") {
 const handleRouteChange = (url: string) => {
   // close mobile nav
   window._ks.radio.emit("location.change", url);
+  // https://github.com/vercel/next.js/issues/33060
+  document.activeElement instanceof HTMLElement &&
+    document.activeElement.blur();
 };
 
 const setActiveNavItem = (navItems: any[] = [], currentRoute: string) => {
+  const route = currentRoute.replace(/^\/|\/$/g, "");
   for (const navItem of navItems) {
-    navItem.active =
-      "/" + navItem.href === currentRoute || navItem.href === currentRoute;
+    const href = navItem.href.replace(/^\/|\/$/g, "");
+    navItem.active = href === route;
 
     if (navItem.items && Array.isArray(navItem.items)) {
       for (const item of navItem.items) {
-        item.active =
-          "/" + item.href === currentRoute || item.href === currentRoute;
+        const itemHref = item.href.replace(/^\/|\/$/g, "");
+        item.active = itemHref === route;
+        navItem.active ||= item.active;
       }
     }
   }

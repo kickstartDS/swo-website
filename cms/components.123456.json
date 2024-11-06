@@ -3,8 +3,8 @@
     {
       "name": "buttons",
       "display_name": "Buttons",
-      "created_at": "2024-09-05T10:51:57.948Z",
-      "updated_at": "2024-09-05T10:51:57.948Z",
+      "created_at": "2024-10-24T08:52:16.868Z",
+      "updated_at": "2024-10-24T08:52:16.868Z",
       "id": 0,
       "schema": {
         "label": {
@@ -21,7 +21,9 @@
           "pos": 0,
           "display_name": "Icon",
           "key": "icon",
-          "type": "text",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
           "description": "Choose an icon",
           "required": false
         },
@@ -47,8 +49,8 @@
     {
       "name": "questions",
       "display_name": "Questions",
-      "created_at": "2024-09-05T10:51:57.950Z",
-      "updated_at": "2024-09-05T10:51:57.950Z",
+      "created_at": "2024-10-24T08:52:16.871Z",
+      "updated_at": "2024-10-24T08:52:16.871Z",
       "id": 1,
       "schema": {
         "question": {
@@ -78,8 +80,8 @@
     {
       "name": "feature",
       "display_name": "Feature",
-      "created_at": "2024-09-05T10:51:57.952Z",
-      "updated_at": "2024-09-05T10:51:57.952Z",
+      "created_at": "2024-10-24T08:52:16.873Z",
+      "updated_at": "2024-10-24T08:52:16.873Z",
       "id": 2,
       "schema": {
         "icon": {
@@ -87,7 +89,9 @@
           "pos": 0,
           "display_name": "Icon",
           "key": "icon",
-          "type": "text",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
           "description": "The icon for the feature",
           "required": false
         },
@@ -120,36 +124,36 @@
             {
               "name": "intext",
               "value": "intext",
-              "_uid": "fe3d9042-34d6-45b9-8557-f1096f9ff011"
+              "_uid": "a7a0cb17-2008-4fff-ae49-e285ea852cad"
             },
             {
               "name": "stack",
               "value": "stack",
-              "_uid": "a13ee1e3-29cc-47b8-b4ef-acc1e2fee513"
+              "_uid": "4694c355-1d0b-461e-b6c3-a6c690b5cfdf"
             },
             {
               "name": "centered",
               "value": "centered",
-              "_uid": "0b93d140-8c76-46ba-a5d8-7c4118829293"
+              "_uid": "de76c338-1d87-48b5-9418-5fdb45ddd5ed"
             },
             {
               "name": "besideLarge",
               "value": "besideLarge",
-              "_uid": "b81c7ad6-005f-464b-b372-331f82cb4db8"
+              "_uid": "d1d729d2-7fcf-4dbc-80c0-7caa09b04a03"
             },
             {
               "name": "besideSmall",
               "value": "besideSmall",
-              "_uid": "b0ff2aa4-8e20-4ffe-87e5-4a2db377c72b"
+              "_uid": "e87d582b-0bb9-4a1b-86a5-0e94647f3649"
             }
           ],
           "required": false
         },
-        "tab-12e7739e-7a90-4db7-946d-55ba6df50f43": {
+        "tab-e7931c28-1f33-4d73-98ae-0dba0a6f4ea4": {
           "id": 0,
           "pos": 0,
           "display_name": "Cta",
-          "key": "tab-12e7739e-7a90-4db7-946d-55ba6df50f43",
+          "key": "tab-e7931c28-1f33-4d73-98ae-0dba0a6f4ea4",
           "keys": [
             "cta_target",
             "cta_label",
@@ -206,17 +210,17 @@
             {
               "name": "button",
               "value": "button",
-              "_uid": "22b03fae-5a38-48f4-b065-ef77dbf31a0b"
+              "_uid": "eff3faa3-b4e6-42db-afd5-122f338e8d60"
             },
             {
               "name": "link",
               "value": "link",
-              "_uid": "95e1b2c8-7757-43c1-86e1-0da91c20c771"
+              "_uid": "0bc9f7c2-5b73-459f-bee3-11ef52effd62"
             },
             {
               "name": "intext",
               "value": "intext",
-              "_uid": "2e9d079e-7666-4095-8146-46b34fcb5c7b"
+              "_uid": "fdef7a7f-093f-4f34-8a2f-dd79d4829ce3"
             }
           ],
           "required": false
@@ -239,8 +243,8 @@
     {
       "name": "images",
       "display_name": "Images",
-      "created_at": "2024-09-05T10:51:57.953Z",
-      "updated_at": "2024-09-05T10:51:57.953Z",
+      "created_at": "2024-10-24T08:52:16.876Z",
+      "updated_at": "2024-10-24T08:52:16.876Z",
       "id": 3,
       "schema": {
         "src": {
@@ -282,8 +286,8 @@
     {
       "name": "logo",
       "display_name": "Logo",
-      "created_at": "2024-09-05T10:51:57.962Z",
-      "updated_at": "2024-09-05T10:51:57.962Z",
+      "created_at": "2024-10-24T08:52:16.890Z",
+      "updated_at": "2024-10-24T08:52:16.890Z",
       "id": 6,
       "schema": {
         "src": {
@@ -316,8 +320,8 @@
     {
       "name": "tile",
       "display_name": "Tile",
-      "created_at": "2024-09-05T10:51:57.965Z",
-      "updated_at": "2024-09-05T10:51:57.965Z",
+      "created_at": "2024-10-24T08:52:16.893Z",
+      "updated_at": "2024-10-24T08:52:16.893Z",
       "id": 7,
       "schema": {
         "headline": {
@@ -347,11 +351,11 @@
           "description": "Text for tile",
           "required": false
         },
-        "tab-ba1bc552-2d04-4141-acae-042be9976bc4": {
+        "tab-d56a7bd6-c657-446a-b977-ca8d8be6659b": {
           "id": 0,
           "pos": 0,
           "display_name": "Image",
-          "key": "tab-ba1bc552-2d04-4141-acae-042be9976bc4",
+          "key": "tab-d56a7bd6-c657-446a-b977-ca8d8be6659b",
           "keys": [
             "image_src",
             "image_alt"
@@ -380,11 +384,11 @@
           "description": "Alt text to display for picture",
           "required": false
         },
-        "tab-cbf9a923-1cd8-4ff5-9d5e-cfb478f90d02": {
+        "tab-18e8613d-81f2-4579-be91-f4d9f6caf4d2": {
           "id": 0,
           "pos": 0,
           "display_name": "Button",
-          "key": "tab-cbf9a923-1cd8-4ff5-9d5e-cfb478f90d02",
+          "key": "tab-18e8613d-81f2-4579-be91-f4d9f6caf4d2",
           "keys": [
             "button_toggle",
             "button_label",
@@ -431,7 +435,9 @@
           "pos": 0,
           "display_name": "Icon",
           "key": "button_icon",
-          "type": "text",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
           "description": "Choose an icon",
           "required": false
         },
@@ -483,8 +489,8 @@
     {
       "name": "stat",
       "display_name": "Stat",
-      "created_at": "2024-09-05T10:51:57.968Z",
-      "updated_at": "2024-09-05T10:51:57.968Z",
+      "created_at": "2024-10-24T08:52:16.896Z",
+      "updated_at": "2024-10-24T08:52:16.896Z",
       "id": 13,
       "schema": {
         "number": {
@@ -519,7 +525,9 @@
           "pos": 0,
           "display_name": "Icon",
           "key": "icon",
-          "type": "text",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
           "description": "Optional icon of the stat",
           "required": false
         },
@@ -541,8 +549,8 @@
     {
       "name": "testimonial",
       "display_name": "Testimonial",
-      "created_at": "2024-09-05T10:51:57.972Z",
-      "updated_at": "2024-09-05T10:51:57.972Z",
+      "created_at": "2024-10-24T08:52:16.900Z",
+      "updated_at": "2024-10-24T08:52:16.900Z",
       "id": 14,
       "schema": {
         "quote": {
@@ -572,11 +580,11 @@
           "description": "The title of the quote author",
           "required": false
         },
-        "tab-52d1f659-405d-48fd-91b3-8911ac23e2c1": {
+        "tab-42891451-6ee2-4fd8-bb7e-160f083d8d19": {
           "id": 0,
           "pos": 0,
           "display_name": "Image",
-          "key": "tab-52d1f659-405d-48fd-91b3-8911ac23e2c1",
+          "key": "tab-42891451-6ee2-4fd8-bb7e-160f083d8d19",
           "keys": [
             "image_src",
             "image_alt"
@@ -632,8 +640,8 @@
     {
       "name": "cta",
       "display_name": "Cta",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 15,
       "schema": {
         "headline": {
@@ -724,11 +732,11 @@
           "description": "Background image for the whole element",
           "required": false
         },
-        "tab-d246f41b-c4e5-4588-8056-c5423912a665": {
+        "tab-2cb9998d-3e25-44bc-8d91-256353c7a6b4": {
           "id": 0,
           "pos": 0,
           "display_name": "Image",
-          "key": "tab-d246f41b-c4e5-4588-8056-c5423912a665",
+          "key": "tab-2cb9998d-3e25-44bc-8d91-256353c7a6b4",
           "keys": [
             "image_src",
             "image_padding",
@@ -769,11 +777,11 @@
           "description": "Image description",
           "required": false
         },
-        "tab-ce177256-6aaf-419b-b1cd-871266b08280": {
+        "tab-0efff12b-eec7-4cc4-8dc3-f5367cdf96b7": {
           "id": 0,
           "pos": 0,
           "display_name": "Order",
-          "key": "tab-ce177256-6aaf-419b-b1cd-871266b08280",
+          "key": "tab-0efff12b-eec7-4cc4-8dc3-f5367cdf96b7",
           "keys": [
             "order_mobileImageLast",
             "order_desktopImageLast"
@@ -813,12 +821,12 @@
             {
               "name": "left",
               "value": "left",
-              "_uid": "a4b17041-c9f7-4c02-a469-578e471e116a"
+              "_uid": "c283964f-9b90-4111-9430-c2baa55cb2c7"
             },
             {
               "name": "center",
               "value": "center",
-              "_uid": "95abd283-d1ad-4789-ac8c-d2299ff84849"
+              "_uid": "5114cb09-b474-403b-a235-76b3584140f0"
             }
           ],
           "required": false
@@ -835,17 +843,17 @@
             {
               "name": "center",
               "value": "center",
-              "_uid": "9237bcfc-523c-450a-900e-512c4e5b20a6"
+              "_uid": "aa0045fa-4858-4821-b62d-ae11943fb4ef"
             },
             {
               "name": "top",
               "value": "top",
-              "_uid": "034b7aa4-4dfe-40cc-82db-84f5faaae33c"
+              "_uid": "3a9f138b-ce8c-47e2-b16b-b2688e102ab9"
             },
             {
               "name": "bottom",
               "value": "bottom",
-              "_uid": "f4f6a6f5-5721-40c0-8709-132be8470f07"
+              "_uid": "f113e870-c4cf-46f8-a1bb-4f0ce22508d3"
             }
           ],
           "required": false
@@ -864,15 +872,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1000x472/f1941a7bd7/components-cta-banner.png"
+      "image": "//a.storyblok.com/f/310529/1000x472/51f0056cf4/components-cta-banner.png"
     },
     {
       "name": "features",
       "display_name": "Features",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 16,
       "schema": {
         "layout": {
@@ -887,17 +895,17 @@
             {
               "name": "largeTiles",
               "value": "largeTiles",
-              "_uid": "403e7b91-1a10-4638-8b49-a21234b2a078"
+              "_uid": "43971abb-dd4d-4872-a812-8529251d0eea"
             },
             {
               "name": "smallTiles",
               "value": "smallTiles",
-              "_uid": "0d6dbb31-01cb-4b8b-aad9-b22c9ccad325"
+              "_uid": "12673382-77b0-4a9a-90f4-7c04e5e11d6c"
             },
             {
               "name": "list",
               "value": "list",
-              "_uid": "744a1295-1f35-4529-ad22-9a414861c07d"
+              "_uid": "8840f30c-559c-4de2-aa17-c11032a5121a"
             }
           ],
           "required": false
@@ -913,36 +921,36 @@
             {
               "name": "intext",
               "value": "intext",
-              "_uid": "4f0609f3-8ecd-4fce-9683-8e9d8ba2fa6a"
+              "_uid": "236a6dc6-0243-4f53-8033-4d692156ab93"
             },
             {
               "name": "stack",
               "value": "stack",
-              "_uid": "d11c68fd-79fb-48e7-8d93-073654be6e99"
+              "_uid": "d8e252eb-acc3-4276-b937-4e91337af5c9"
             },
             {
               "name": "centered",
               "value": "centered",
-              "_uid": "8afddeb3-6b87-44b7-a378-73980c8419e6"
+              "_uid": "325a2044-e2a4-4f96-913c-f16efad82741"
             },
             {
               "name": "besideLarge",
               "value": "besideLarge",
-              "_uid": "54a26bef-aaa5-4d10-b4f8-63b505686bd8"
+              "_uid": "36c6f17a-5130-4b9e-9642-ff6a2f037823"
             },
             {
               "name": "besideSmall",
               "value": "besideSmall",
-              "_uid": "90eaaebb-5494-4a5f-8fd7-69b29bb682bf"
+              "_uid": "5c9edb0e-bb15-435a-bae0-eecc6633a656"
             }
           ],
           "required": false
         },
-        "tab-0f4ada49-e8c7-43f4-ab20-df34fedfdcb6": {
+        "tab-c408b8fb-eb5a-4da0-b781-ea4ee24a52ea": {
           "id": 0,
           "pos": 0,
           "display_name": "Ctas",
-          "key": "tab-0f4ada49-e8c7-43f4-ab20-df34fedfdcb6",
+          "key": "tab-c408b8fb-eb5a-4da0-b781-ea4ee24a52ea",
           "keys": [
             "ctas_toggle",
             "ctas_style"
@@ -971,17 +979,17 @@
             {
               "name": "button",
               "value": "button",
-              "_uid": "57e13b44-a3d9-4f27-a583-931adfecec6d"
+              "_uid": "c2715f75-d1d1-4149-8d9a-ba32adb63c89"
             },
             {
               "name": "link",
               "value": "link",
-              "_uid": "2508931f-4dff-4f79-9dbf-6618ee4c0161"
+              "_uid": "0bd5bae8-52d7-4ad5-a568-a2b97ac0fb39"
             },
             {
               "name": "intext",
               "value": "intext",
-              "_uid": "78a9ef0d-3552-4c7f-8e63-c1a9522044ef"
+              "_uid": "913b8dab-73d3-4bd4-a00d-5b97ba41b99a"
             }
           ],
           "required": false
@@ -1013,15 +1021,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1440x666/88ba598e61/components-features-icon-centered.png"
+      "image": "//a.storyblok.com/f/310529/1440x666/239c17bb56/components-features-icon-centered.png"
     },
     {
       "name": "gallery",
       "display_name": "Gallery",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 17,
       "schema": {
         "images": {
@@ -1047,17 +1055,17 @@
             {
               "name": "stack",
               "value": "stack",
-              "_uid": "00f10eec-e994-4c21-aa7d-8f45f166760d"
+              "_uid": "50b6f7de-3473-4b7f-bd25-405101de0a3f"
             },
             {
               "name": "smallTiles",
               "value": "smallTiles",
-              "_uid": "5f035799-088f-4e3f-8daa-da6d3fe446fb"
+              "_uid": "d1f64c35-aecc-4b05-80ef-78fcb9f4df8f"
             },
             {
               "name": "largeTiles",
               "value": "largeTiles",
-              "_uid": "d92bb341-f396-4789-86c9-485c9ad793e1"
+              "_uid": "a5cdb35b-76e7-48ee-b000-4d0d31004d09"
             }
           ],
           "required": false
@@ -1074,22 +1082,22 @@
             {
               "name": "unset",
               "value": "unset",
-              "_uid": "b42c7a29-522f-4e02-9611-a1dc5c75e03a"
+              "_uid": "9433e07d-afc3-4ce3-a023-59c0bbfb7003"
             },
             {
               "name": "square",
               "value": "square",
-              "_uid": "1a00f3a3-138b-481a-b0f2-47886adf6bee"
+              "_uid": "57e087d9-b51e-4240-9396-4fad114f80f8"
             },
             {
               "name": "wide",
               "value": "wide",
-              "_uid": "e5553534-2d1e-49ad-9694-d351dda1a0b6"
+              "_uid": "da4e9eae-6b4a-4e8b-ba24-a82c890c0438"
             },
             {
               "name": "landscape",
               "value": "landscape",
-              "_uid": "2507e79c-5298-4682-b841-028852326d2f"
+              "_uid": "a89e4f04-62ce-4f01-b532-1a91b2dd67e6"
             }
           ],
           "required": false
@@ -1117,15 +1125,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1100x702/622b6ffed6/components-gallery-small-squares-with-lightbox.png"
+      "image": "//a.storyblok.com/f/310529/1100x702/6ff220e2d9/components-gallery-small-squares-with-lightbox.png"
     },
     {
       "name": "hero",
       "display_name": "Hero",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 18,
       "schema": {
         "headline": {
@@ -1185,22 +1193,22 @@
             {
               "name": "small",
               "value": "small",
-              "_uid": "17ca66a3-54a2-46f4-a1a1-c75e2cd121a3"
+              "_uid": "79237f56-3f52-42d5-8af3-2cb5217e3c3c"
             },
             {
               "name": "default",
               "value": "default",
-              "_uid": "fd9f68fe-e403-4295-bf52-9bdecaae49c3"
+              "_uid": "76230af3-04af-4734-8058-b629e1348234"
             },
             {
               "name": "fullImage",
               "value": "fullImage",
-              "_uid": "8f9b8d78-2d9e-4b07-a6da-61f848c18601"
+              "_uid": "5e549b29-bf55-4098-8557-0b52b15ad39c"
             },
             {
               "name": "fullScreen",
               "value": "fullScreen",
-              "_uid": "02df2649-9625-42d2-8c7b-a7afabaa7ab5"
+              "_uid": "a9acd841-ff7f-4b8d-8cb0-51cbe6f1b8ec"
             }
           ],
           "required": false
@@ -1237,11 +1245,11 @@
           "description": "Enable grid layer",
           "required": false
         },
-        "tab-5da43e11-b2a3-49e7-83a2-a5a43699432e": {
+        "tab-c9fe84c7-366c-4fba-b71f-c3de5de8d78a": {
           "id": 0,
           "pos": 0,
           "display_name": "Image",
-          "key": "tab-5da43e11-b2a3-49e7-83a2-a5a43699432e",
+          "key": "tab-c9fe84c7-366c-4fba-b71f-c3de5de8d78a",
           "keys": [
             "image_srcMobile",
             "image_srcTablet",
@@ -1314,17 +1322,17 @@
             {
               "name": "none",
               "value": "none",
-              "_uid": "ddf1afc1-3b7b-487d-98a6-79695274c13d"
+              "_uid": "f38198b2-3f23-412a-9eae-b2c57aa7869e"
             },
             {
               "name": "left",
               "value": "left",
-              "_uid": "8859fc2d-97af-40ce-84e5-fd39a1fb6d74"
+              "_uid": "d9156f6b-9802-4b72-94c8-f69d9503e3ca"
             },
             {
               "name": "right",
               "value": "right",
-              "_uid": "437b8317-3e93-4e54-9754-be5ea66994ce"
+              "_uid": "1e2898bd-f193-46ea-8a81-2b1808022f9b"
             }
           ],
           "required": false
@@ -1350,22 +1358,22 @@
             {
               "name": "center",
               "value": "center",
-              "_uid": "0d0ddb82-3871-4267-b961-1a0c7dc5c852"
+              "_uid": "f2f75bbf-03a4-48cd-aea2-e23852f31f0f"
             },
             {
               "name": "below",
               "value": "below",
-              "_uid": "5e3ee604-a350-4cd2-b2df-8997745db713"
+              "_uid": "cfc4cd54-a260-4061-8624-a2a680b1ac7d"
             },
             {
               "name": "left",
               "value": "left",
-              "_uid": "3aac650e-b807-4372-94e7-5bbfd6e9da9a"
+              "_uid": "45ff9f98-f19a-4d58-ace8-f5c9a4316309"
             },
             {
               "name": "right",
               "value": "right",
-              "_uid": "924c3150-e6ed-4278-a4a9-a33f172c6799"
+              "_uid": "fd762f9c-4d84-43da-9fc8-e3bd97663b3a"
             }
           ],
           "required": false
@@ -1384,15 +1392,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1165x780/df0d8d9712/components-hero-text-below-image.png"
+      "image": "//a.storyblok.com/f/310529/1165x780/919aa1c023/components-hero-text-below-image.png"
     },
     {
       "name": "image-text",
       "display_name": "Image Text",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 19,
       "schema": {
         "text": {
@@ -1413,11 +1421,11 @@
           "description": "Visually highlight the text",
           "required": false
         },
-        "tab-c1e15cff-143f-4999-801c-6b6af4b9e681": {
+        "tab-d76d7cd6-f9fc-4795-917d-66a4c9291c31": {
           "id": 0,
           "pos": 0,
           "display_name": "Image",
-          "key": "tab-c1e15cff-143f-4999-801c-6b6af4b9e681",
+          "key": "tab-d76d7cd6-f9fc-4795-917d-66a4c9291c31",
           "keys": [
             "image_src",
             "image_alt"
@@ -1457,22 +1465,22 @@
             {
               "name": "above",
               "value": "above",
-              "_uid": "7f4e4771-2c24-4d4a-922f-274e731d4140"
+              "_uid": "865442fd-1757-4061-871c-796c5f5c44d3"
             },
             {
               "name": "below",
               "value": "below",
-              "_uid": "1df48d68-3005-4c3b-bf1a-9aa6683f29ac"
+              "_uid": "2700bf56-cdb0-460f-8f68-bde237107907"
             },
             {
               "name": "beside-right",
               "value": "beside_right",
-              "_uid": "08817619-141e-452d-befb-247021be2f9a"
+              "_uid": "0e047cfd-94ec-46df-a222-8698f743f103"
             },
             {
               "name": "beside-left",
               "value": "beside_left",
-              "_uid": "f06adc9a-29f3-454e-bcfc-59934bcde394"
+              "_uid": "c56777c7-7a71-4124-b1c3-dec45c806e3a"
             }
           ],
           "required": false
@@ -1491,15 +1499,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1240x515/378da43f36/components-image-text-beside-right-layout.png"
+      "image": "//a.storyblok.com/f/310529/1240x515/292f0b735b/components-image-text-beside-right-layout.png"
     },
     {
       "name": "logos",
       "display_name": "Logos",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 20,
       "schema": {
         "tagline": {
@@ -1536,12 +1544,12 @@
             {
               "name": "left",
               "value": "left",
-              "_uid": "a9063e54-f984-48be-bcec-80ac88eb5f04"
+              "_uid": "7439f3b3-8b95-4c4c-b5a0-cc4a1048a5ab"
             },
             {
               "name": "center",
               "value": "center",
-              "_uid": "1e5f301e-295c-49c6-a46b-4ef8e65cfea7"
+              "_uid": "d778c031-7aa3-4d1a-8cf2-972075b6e357"
             }
           ],
           "required": false
@@ -1555,11 +1563,11 @@
           "description": "The amount of logos to display per row",
           "required": false
         },
-        "tab-136c6267-1351-4a9e-8ec4-c1c224bbcc9e": {
+        "tab-7df25651-73c8-4c5f-9011-5fe266695ea9": {
           "id": 0,
           "pos": 0,
           "display_name": "Cta",
-          "key": "tab-136c6267-1351-4a9e-8ec4-c1c224bbcc9e",
+          "key": "tab-7df25651-73c8-4c5f-9011-5fe266695ea9",
           "keys": [
             "cta_toggle",
             "cta_text",
@@ -1623,12 +1631,12 @@
             {
               "name": "button",
               "value": "button",
-              "_uid": "3bb1d4bc-8074-4234-9ba1-f8bb1f6853f0"
+              "_uid": "b69dfe2d-738d-499b-94b8-596994af6239"
             },
             {
               "name": "text",
               "value": "text",
-              "_uid": "eb1dc43f-dfd3-4ee8-b438-ffa555d449ab"
+              "_uid": "9088748b-e168-4a41-892e-05acc8eab9c8"
             }
           ],
           "required": false
@@ -1647,15 +1655,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1000x598/2d967b66e6/components-logos-centered-with-button.png"
+      "image": "//a.storyblok.com/f/310529/1000x598/912bb07b5e/components-logos-centered-with-button.png"
     },
     {
       "name": "stats",
       "display_name": "Stats",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 21,
       "schema": {
         "stat": {
@@ -1685,15 +1693,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/790x480/093157157d/components-stats-count-up-with-icons.png"
+      "image": "//a.storyblok.com/f/310529/790x480/f84cb00bab/components-stats-count-up-with-icons.png"
     },
     {
       "name": "teaser-card",
       "display_name": "Teaser Card",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 22,
       "schema": {
         "headline": {
@@ -1735,12 +1743,12 @@
             {
               "name": "stack",
               "value": "stack",
-              "_uid": "3efbbbdc-37c3-42e9-8c1e-ece7cbc575a2"
+              "_uid": "42886eb2-eda0-4162-afa3-0870115abe89"
             },
             {
               "name": "row",
               "value": "row",
-              "_uid": "336ab3ce-b5fe-44fd-9ae1-0e5217f126e3"
+              "_uid": "b5bcf5ad-2040-403d-9b1d-b7b3fcf75e85"
             }
           ],
           "required": false
@@ -1758,11 +1766,11 @@
           "description": "Target that should be linked",
           "required": false
         },
-        "tab-a6806588-09ba-4c08-b7ce-5195f89eb12d": {
+        "tab-a88b38e1-1651-4c7c-bbb7-8f5b6e90db7b": {
           "id": 0,
           "pos": 0,
           "display_name": "Button",
-          "key": "tab-a6806588-09ba-4c08-b7ce-5195f89eb12d",
+          "key": "tab-a88b38e1-1651-4c7c-bbb7-8f5b6e90db7b",
           "keys": [
             "button_label",
             "button_chevron",
@@ -1822,22 +1830,22 @@
             {
               "name": "wide",
               "value": "wide",
-              "_uid": "ce437b27-6c67-431f-8a21-ae86b19e8540"
+              "_uid": "a8ad9823-6225-41d4-84d5-8d827a82c5f0"
             },
             {
               "name": "landscape",
               "value": "landscape",
-              "_uid": "12712f3a-eb7e-4f00-b47b-208f6491be3e"
+              "_uid": "461bd80a-a48e-4f40-89b8-6ecd1d50490e"
             },
             {
               "name": "square",
               "value": "square",
-              "_uid": "71288d8d-dc45-437e-8100-f16e85f26bf6"
+              "_uid": "78a39e6f-037c-49b7-8fa4-a7b9e0489846"
             },
             {
               "name": "unset",
               "value": "unset",
-              "_uid": "c1967827-7d9f-4693-9b32-b87d9465c747"
+              "_uid": "782d7386-1f5c-4013-bd64-ebc604612cd2"
             }
           ],
           "required": false
@@ -1856,15 +1864,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/650x653/bd51864d6d/components-teaser-card-product-tiles.png"
+      "image": "//a.storyblok.com/f/310529/650x653/5aa2ad9b65/components-teaser-card-product-tiles.png"
     },
     {
       "name": "testimonials",
       "display_name": "Testimonials",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 23,
       "schema": {
         "layout": {
@@ -1879,17 +1887,17 @@
             {
               "name": "slider",
               "value": "slider",
-              "_uid": "fc8c7a18-c6de-4082-993e-de70ac4ed0a6"
+              "_uid": "9087f2f5-3efc-4cbd-8cae-214dd91ae2f8"
             },
             {
               "name": "list",
               "value": "list",
-              "_uid": "de709224-9964-47b0-8f7e-9c419c2efcef"
+              "_uid": "d38e552a-408b-4610-9eaf-26f0c832694d"
             },
             {
               "name": "alternating",
               "value": "alternating",
-              "_uid": "3b4a957b-ff69-40a1-ab25-b338563fb4eb"
+              "_uid": "665cb8d1-3676-428a-8e33-b8de0085840c"
             }
           ],
           "required": false
@@ -1921,15 +1929,15 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1000x409/9e3083f521/components-testimonials-simple.png"
+      "image": "//a.storyblok.com/f/310529/1000x409/4f978e4cba/components-testimonials-simple.png"
     },
     {
       "name": "text",
       "display_name": "Text",
-      "created_at": "2024-09-05T10:51:57.973Z",
-      "updated_at": "2024-09-05T10:51:57.973Z",
+      "created_at": "2024-10-24T08:52:16.901Z",
+      "updated_at": "2024-10-24T08:52:16.901Z",
       "id": 24,
       "schema": {
         "text": {
@@ -1953,12 +1961,12 @@
             {
               "name": "singleColumn",
               "value": "singleColumn",
-              "_uid": "3d52efa9-51ca-455b-9b64-83e7af64b588"
+              "_uid": "369cdce9-ed32-4a10-9258-4103f35047b1"
             },
             {
               "name": "multiColumn",
               "value": "multiColumn",
-              "_uid": "e655bb1f-7142-4c41-9b50-f4123eae6a3f"
+              "_uid": "2124b27b-c595-40aa-a40d-689dc73fe4eb"
             }
           ],
           "required": false
@@ -1975,12 +1983,12 @@
             {
               "name": "left",
               "value": "left",
-              "_uid": "68a4b4b4-6d3d-4f37-b218-75f3b83ee0ad"
+              "_uid": "e6b38053-45eb-461a-8b29-e5600ec03bc2"
             },
             {
               "name": "center",
               "value": "center",
-              "_uid": "359e877b-6a68-40ea-be5b-f119584c2603"
+              "_uid": "ff66259f-690f-4e2c-90fc-14c5fa0a3c1e"
             }
           ],
           "required": false
@@ -2008,16 +2016,81 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1000x407/15f7209661/components-text-single-column.png"
+      "image": "//a.storyblok.com/f/310529/1000x407/709fb8fd8a/components-text-single-column.png"
+    },
+    {
+      "name": "divider",
+      "display_name": "Divider",
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 29,
+      "schema": {
+        "variant": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Variant",
+          "key": "variant",
+          "type": "option",
+          "default_value": "default",
+          "description": "Choose a variant for the divider",
+          "options": [
+            {
+              "name": "default",
+              "value": "default",
+              "_uid": "3da577af-dc1f-4bbe-8762-85ba9d53c488"
+            },
+            {
+              "name": "accent",
+              "value": "accent",
+              "_uid": "e3355735-bccb-430a-aa4f-99deb976f7af"
+            }
+          ],
+          "required": false
+        },
+        "className": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "ClassName",
+          "key": "className",
+          "type": "text",
+          "description": "Add additional css classes that should be applied to the divider",
+          "required": false
+        },
+        "component": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Component",
+          "key": "component",
+          "type": "text",
+          "description": "Optional custom component identifier",
+          "required": false
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "divider"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Components",
+      "color": "#05566a",
+      "icon": "block-wallet",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
+      "component_group_name": "Components",
+      "image": "//a.storyblok.com/f/310529/770x100/c365cd261f/layout-divider-accent.png"
     },
     {
       "name": "faq",
       "display_name": "Faq",
-      "created_at": "2024-09-05T10:51:57.976Z",
-      "updated_at": "2024-09-05T10:51:57.976Z",
-      "id": 29,
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 30,
       "schema": {
         "questions": {
           "id": 0,
@@ -2045,16 +2118,67 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/820x455/1c0c30985e/components-faq-dropdown-list.png"
+      "image": "//a.storyblok.com/f/310529/820x455/9c4a9e0f3f/components-faq-dropdown-list.png"
+    },
+    {
+      "name": "html",
+      "display_name": "Html",
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 34,
+      "schema": {
+        "html": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Html",
+          "key": "html",
+          "type": "text",
+          "description": "HTML string",
+          "required": false
+        },
+        "className": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "ClassName",
+          "key": "className",
+          "type": "text",
+          "description": "Add additional css classes that should be applied to the element",
+          "required": false
+        },
+        "component": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Component",
+          "key": "component",
+          "type": "text",
+          "description": "Optional custom component identifier",
+          "required": false
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "html"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Components",
+      "color": "#05566a",
+      "icon": "block-wallet",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
+      "component_group_name": "Components"
     },
     {
       "name": "image-story",
       "display_name": "Image Story",
-      "created_at": "2024-09-05T10:51:57.976Z",
-      "updated_at": "2024-09-05T10:51:57.976Z",
-      "id": 33,
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 35,
       "schema": {
         "headline": {
           "id": 0,
@@ -2104,12 +2228,12 @@
             {
               "name": "textLeft",
               "value": "textLeft",
-              "_uid": "f3ddd9a5-cc20-4905-b590-139bfb115aac"
+              "_uid": "ecb1ee64-465c-48b1-a4b8-871955305fda"
             },
             {
               "name": "imageLeft",
               "value": "imageLeft",
-              "_uid": "0bc071f6-2fd4-49f4-9c8a-c19e6ab8d02a"
+              "_uid": "846cfaaf-efa3-459b-9a1b-058ab6d65136"
             }
           ],
           "required": false
@@ -2136,11 +2260,11 @@
           ],
           "description": "Component used for user interaction"
         },
-        "tab-12935758-cf66-4c13-be3d-142e0a809085": {
+        "tab-9930fa39-7b23-430a-81ad-5b9dcd1e763e": {
           "id": 0,
           "pos": 0,
           "display_name": "Image",
-          "key": "tab-12935758-cf66-4c13-be3d-142e0a809085",
+          "key": "tab-9930fa39-7b23-430a-81ad-5b9dcd1e763e",
           "keys": [
             "image_src",
             "image_aspectRatio",
@@ -2175,22 +2299,22 @@
             {
               "name": "unset",
               "value": "unset",
-              "_uid": "2c4901ff-5d37-4624-abb0-a3a0c1667292"
+              "_uid": "f02b56c2-de78-4daa-b044-b5309c59c7fb"
             },
             {
               "name": "square",
               "value": "square",
-              "_uid": "7d41ab4c-7ed5-4407-bbf0-67c81979eb9c"
+              "_uid": "e2843b0b-7d04-423e-8878-357ced766f1d"
             },
             {
               "name": "wide",
               "value": "wide",
-              "_uid": "f2c4927a-a4e6-4e72-b886-873afef0f2d0"
+              "_uid": "bde03a3d-a253-4c9e-a88a-878b8c3415dd"
             },
             {
               "name": "landscape",
               "value": "landscape",
-              "_uid": "3c944a88-e9e1-4513-9765-594784715e71"
+              "_uid": "053a9b17-7e5d-4d61-bc46-fa71576c4802"
             }
           ],
           "required": false
@@ -2216,17 +2340,17 @@
             {
               "name": "center",
               "value": "center",
-              "_uid": "f04bdd05-c871-4fb3-95d9-0a414e982f72"
+              "_uid": "6b561997-f2d6-45c1-acba-cf690f1fbd2a"
             },
             {
               "name": "top",
               "value": "top",
-              "_uid": "81b2da49-b960-49d9-afbf-496c90949608"
+              "_uid": "cd662d41-04d7-4f6e-bdc6-f86937b580b1"
             },
             {
               "name": "bottom",
               "value": "bottom",
-              "_uid": "1eae0735-4319-4688-859d-64a2fcd48716"
+              "_uid": "e60b134a-29dc-4b52-8fff-0975ba1f557a"
             }
           ],
           "required": false
@@ -2243,12 +2367,12 @@
             {
               "name": "left",
               "value": "left",
-              "_uid": "03da1534-e4cd-414d-83f3-07f6e9f6e02a"
+              "_uid": "a4bde419-738c-4109-b710-162c20f4e9b7"
             },
             {
               "name": "center",
               "value": "center",
-              "_uid": "5bdc30f7-239f-4625-97c1-1f354f140ef1"
+              "_uid": "0ca930eb-863c-4920-8a09-647fde0bae49"
             }
           ],
           "required": false
@@ -2267,16 +2391,16 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1160x960/e4282bb0e6/components-image-story-sticky-image-next-to-scrolling-text.png"
+      "image": "//a.storyblok.com/f/310529/1160x960/2b003309ec/components-image-story-sticky-image-next-to-scrolling-text.png"
     },
     {
       "name": "mosaic",
       "display_name": "Mosaic",
-      "created_at": "2024-09-05T10:51:57.976Z",
-      "updated_at": "2024-09-05T10:51:57.976Z",
-      "id": 36,
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 38,
       "schema": {
         "layout": {
           "id": 0,
@@ -2290,17 +2414,17 @@
             {
               "name": "alternate",
               "value": "alternate",
-              "_uid": "c8aaa038-780a-4c46-b2fe-8d1b6638b32e"
+              "_uid": "e084d1ed-e9e6-42e9-b7b4-cf63dd2a78f6"
             },
             {
               "name": "textLeft",
               "value": "textLeft",
-              "_uid": "cb5fab7d-badd-44ab-be67-202b4f14cbfb"
+              "_uid": "b0e6262d-6cac-4dcf-80f1-ba0e8976177a"
             },
             {
               "name": "textRight",
               "value": "textRight",
-              "_uid": "ea76d4f6-9944-47a8-baf9-2b6c0fb210f4"
+              "_uid": "05badacb-5dfb-4f22-a8ea-cbc9ef2c46c8"
             }
           ],
           "required": false
@@ -2341,16 +2465,16 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1010x1520/92bfb7116d/components-mosaic-colorful-tiles.png"
+      "image": "//a.storyblok.com/f/310529/1010x1520/383de5cd1e/components-mosaic-colorful-tiles.png"
     },
     {
       "name": "slider",
       "display_name": "Slider",
-      "created_at": "2024-09-05T10:51:57.976Z",
-      "updated_at": "2024-09-05T10:51:57.976Z",
-      "id": 37,
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 39,
       "schema": {
         "autoplay": {
           "id": 0,
@@ -2434,7 +2558,7 @@
           "restrict_type": "groups",
           "restrict_components": true,
           "component_group_whitelist": [
-            "71943f02-38c1-49b9-9b5e-f4c5b84a96ef"
+            "156a9798-9a83-439b-a86f-7287640dd5e2"
           ],
           "description": "Abstracts a blog overview concept into JSON schema",
           "required": false
@@ -2451,12 +2575,12 @@
             {
               "name": "slider",
               "value": "slider",
-              "_uid": "632f635a-2c73-4678-9b13-9d9d09911c4e"
+              "_uid": "4e44fc95-7e4c-4008-8cc8-a04fd8ee065e"
             },
             {
               "name": "carousel",
               "value": "carousel",
-              "_uid": "b7b5d81b-afc3-4635-9081-b3efa99ae93c"
+              "_uid": "488027bd-bf84-4553-9b1f-f81cb8266a9e"
             }
           ],
           "required": false
@@ -2466,16 +2590,16 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1110x400/8aa668f893/layout-slider-with-arrows.png"
+      "image": "//a.storyblok.com/f/310529/1110x400/78964f7f29/layout-slider-with-arrows.png"
     },
     {
       "name": "video-curtain",
       "display_name": "Video Curtain",
-      "created_at": "2024-09-05T10:51:57.977Z",
-      "updated_at": "2024-09-05T10:51:57.977Z",
-      "id": 42,
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 44,
       "schema": {
         "headline": {
           "id": 0,
@@ -2544,11 +2668,11 @@
           "description": "Enable grid layer",
           "required": false
         },
-        "tab-c602b06b-d94b-485f-9c08-e6a86577cc4f": {
+        "tab-6b59028e-f839-4097-9b7a-88469b0bf5a0": {
           "id": 0,
           "pos": 0,
           "display_name": "Video",
-          "key": "tab-c602b06b-d94b-485f-9c08-e6a86577cc4f",
+          "key": "tab-6b59028e-f839-4097-9b7a-88469b0bf5a0",
           "keys": [
             "video_srcMobile",
             "video_srcTablet",
@@ -2606,17 +2730,17 @@
             {
               "name": "center",
               "value": "center",
-              "_uid": "f86274b2-3d76-4e3e-b23d-099604442cb6"
+              "_uid": "8294a391-ce9a-4d9f-8dfc-8f9ce7cfd3b9"
             },
             {
               "name": "left",
               "value": "left",
-              "_uid": "6763cece-ae3d-432a-8007-06229e9f1499"
+              "_uid": "c9ed1505-8056-4c6d-8e1a-c0763ee76a0e"
             },
             {
               "name": "right",
               "value": "right",
-              "_uid": "f29d54f0-05c2-4ffd-8592-f26f68aab13b"
+              "_uid": "f4749cd0-1a5c-4476-9c63-7917141f510d"
             }
           ],
           "required": false
@@ -2635,17 +2759,59 @@
       "real_name": "Components",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1559x720/6c966bf236/components-video-curtain-atmospheric-video-with-overlay.png"
+      "image": "//a.storyblok.com/f/310529/1559x720/6dde830854/components-video-curtain-atmospheric-video-with-overlay.png"
+    },
+    {
+      "name": "info-table",
+      "display_name": "Info Table",
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 45,
+      "schema": {
+        "data": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Data",
+          "key": "data",
+          "type": "table",
+          "description": "Data to display inside table",
+          "required": false
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "info-table"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Components",
+      "color": "#05566a",
+      "icon": "block-wallet",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
+      "component_group_name": "Components"
     },
     {
       "name": "section",
       "display_name": "Section",
-      "created_at": "2024-09-05T10:51:57.977Z",
-      "updated_at": "2024-09-05T10:51:57.977Z",
-      "id": 44,
+      "created_at": "2024-10-24T08:52:16.906Z",
+      "updated_at": "2024-10-24T08:52:16.906Z",
+      "id": 47,
       "schema": {
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "section"
+        },
         "width": {
           "id": 0,
           "pos": 0,
@@ -2658,27 +2824,27 @@
             {
               "name": "full",
               "value": "full",
-              "_uid": "71d9dfdb-db9c-4165-b3c8-8ed915f6fc6a"
+              "_uid": "18ed99c5-f413-4201-bca0-1b2f8aa7ff86"
             },
             {
               "name": "max",
               "value": "max",
-              "_uid": "67b7fa61-6def-45eb-bcf5-4dcdc84f06bb"
+              "_uid": "94dc27a4-e788-4b67-912b-476cf274406e"
             },
             {
               "name": "wide",
               "value": "wide",
-              "_uid": "5587e840-adb7-4cc1-afea-693f4057a174"
+              "_uid": "d6e7d9b9-24eb-4f2e-a129-5390ffaa6463"
             },
             {
               "name": "default",
               "value": "default",
-              "_uid": "54f6b72e-ba0a-49c4-9548-bc9f440bf967"
+              "_uid": "c1c5eb5e-9771-46b6-a2ee-99c57e9fdcbe"
             },
             {
               "name": "narrow",
               "value": "narrow",
-              "_uid": "29ed1c6d-6ae9-4a15-bbd2-625adf75e0f4"
+              "_uid": "86aaa5ba-756f-4401-a98b-cb908d93b351"
             }
           ],
           "required": false
@@ -2695,37 +2861,37 @@
             {
               "name": "stagelights",
               "value": "stagelights",
-              "_uid": "6d6085ae-f039-49ab-8841-345b816fa141"
+              "_uid": "a4ad5099-4df4-4bec-80e4-7904571f16a1"
             },
             {
               "name": "horizontalGradient",
               "value": "horizontalGradient",
-              "_uid": "67f7b0c2-4eda-48b2-bbbb-0989195236c6"
+              "_uid": "2200d2f2-ee93-4898-9174-6540655f5eb6"
             },
             {
               "name": "verticalGradient",
               "value": "verticalGradient",
-              "_uid": "87b76484-4e6f-44b5-b90a-13d8a50a75e6"
+              "_uid": "bf9eb1fd-08ad-4d2c-92f8-ce5849403e32"
             },
             {
               "name": "accentTransition",
               "value": "accentTransition",
-              "_uid": "50a7b401-e0bb-4b5c-a71d-90c5eb1b94d4"
+              "_uid": "ee359e42-d2d1-45e1-a8d5-022190d49f18"
             },
             {
               "name": "boldTransition",
               "value": "boldTransition",
-              "_uid": "129cce97-00d2-4b1c-b898-6d9c31c3ef10"
+              "_uid": "8b42dfa2-4b38-48a5-adb1-dedef3fe0745"
             },
             {
               "name": "symmetricGlow",
               "value": "symmetricGlow",
-              "_uid": "8e2bb2a6-6f83-41ba-b247-4956b6135c64"
+              "_uid": "78d0cdfb-3c43-45c2-9afb-6ac77f703707"
             },
             {
               "name": "anchorGlow",
               "value": "anchorGlow",
-              "_uid": "1d9787be-1dd0-4e6e-a789-ce0ef5668048"
+              "_uid": "7fd515be-0b34-447e-989b-cd8e4a48f4c7"
             }
           ],
           "required": false
@@ -2742,17 +2908,17 @@
             {
               "name": "default",
               "value": "default",
-              "_uid": "a45efa7b-1480-4fb6-9ca7-f3e184244455"
+              "_uid": "5b477005-ffad-468f-a30c-3c80a5dd8ef6"
             },
             {
               "name": "accent",
               "value": "accent",
-              "_uid": "90e294c0-c904-4fb9-8d1a-5c5ef38ebb68"
+              "_uid": "f1b9361e-7672-45ae-864a-26b77baf4e5f"
             },
             {
               "name": "bold",
               "value": "bold",
-              "_uid": "b7a9d203-44fb-446b-bb41-414868ab152d"
+              "_uid": "996ccf94-b9a9-4701-9920-337f5e69627e"
             }
           ],
           "required": false
@@ -2778,17 +2944,17 @@
             {
               "name": "default",
               "value": "default",
-              "_uid": "05541a50-da73-4d9c-968b-232bd1b699a9"
+              "_uid": "a4f11d48-d4c4-4310-87e8-434e742baaad"
             },
             {
               "name": "small",
               "value": "small",
-              "_uid": "d45e7b53-aef5-41a3-ad5a-8f3eb61924c6"
+              "_uid": "87463e35-3afd-49af-bf3f-208fb42c0be6"
             },
             {
               "name": "none",
               "value": "none",
-              "_uid": "50f815b4-d007-4026-935d-3744c7a7a6a2"
+              "_uid": "d30af972-e64a-4dc8-ba25-6b47a0b30606"
             }
           ],
           "required": false
@@ -2805,17 +2971,17 @@
             {
               "name": "default",
               "value": "default",
-              "_uid": "dc0f3118-d9ca-485b-a385-adc2afc19e24"
+              "_uid": "70cd2bf9-458e-42cc-aa62-3a33666d6faf"
             },
             {
               "name": "small",
               "value": "small",
-              "_uid": "860c1266-548c-492a-9f88-00c22fff23b3"
+              "_uid": "6c4fb304-5c99-4b39-a882-ac0c2fcdb49f"
             },
             {
               "name": "none",
               "value": "none",
-              "_uid": "d55f1df6-8973-4176-afd3-280e7cd5b803"
+              "_uid": "64058c2d-1c01-4049-a6eb-15a52b259bd0"
             }
           ],
           "required": false
@@ -2838,11 +3004,11 @@
           "description": "Reserve additional spacing for a floating header",
           "required": false
         },
-        "tab-54ce6624-446b-4495-9665-0b269dac2e7b": {
+        "tab-1fcb465e-b64b-4a8f-a1ce-c9c926bf30b6": {
           "id": 0,
           "pos": 0,
           "display_name": "Headline",
-          "key": "tab-54ce6624-446b-4495-9665-0b269dac2e7b",
+          "key": "tab-1fcb465e-b64b-4a8f-a1ce-c9c926bf30b6",
           "keys": [
             "headline_text",
             "headline_large",
@@ -2885,22 +3051,22 @@
             {
               "name": "unset",
               "value": "unset",
-              "_uid": "e30dff34-a5d2-4981-b062-6bbd86461733"
+              "_uid": "e152d78a-d33d-4a24-a221-3e963debc65b"
             },
             {
               "name": "narrow",
               "value": "narrow",
-              "_uid": "d7d6996d-4e05-41b7-bb8c-415c13113c44"
+              "_uid": "1a044c51-a601-4b90-a4d2-719e5fa736a9"
             },
             {
               "name": "default",
               "value": "default",
-              "_uid": "21cd2736-f038-4128-8231-5a8b2a5842c3"
+              "_uid": "eaad0a0e-98a4-47e2-9b7b-86a7b1fa6641"
             },
             {
               "name": "wide",
               "value": "wide",
-              "_uid": "c89ba3b7-1e27-461d-9716-e60ee8b0f623"
+              "_uid": "16376f24-07d9-4764-8199-507c61995e28"
             }
           ],
           "required": false
@@ -2916,17 +3082,17 @@
             {
               "name": "left",
               "value": "left",
-              "_uid": "3697f11c-f0df-4cec-889a-e30df230cbb8"
+              "_uid": "5f3a66e6-cb34-4a26-b402-ce99c22f4754"
             },
             {
               "name": "center",
               "value": "center",
-              "_uid": "9a0a3efe-9c23-4639-82a9-0fcf1c4601f9"
+              "_uid": "527d52ae-b75c-4a28-817c-0b94f1b8ae77"
             },
             {
               "name": "right",
               "value": "right",
-              "_uid": "79b3c0e0-7b32-4a3c-9432-0b699ca15b44"
+              "_uid": "3ba398af-f988-441e-9619-54366ed9919f"
             }
           ],
           "required": false
@@ -2942,17 +3108,17 @@
             {
               "name": "left",
               "value": "left",
-              "_uid": "cd2b045e-0941-44c3-a041-35d5c60a52f4"
+              "_uid": "5306f599-68b8-4295-a894-62489507da52"
             },
             {
               "name": "center",
               "value": "center",
-              "_uid": "7c44bf25-b859-4942-9564-92319d4482e7"
+              "_uid": "698932d2-d22a-406a-9f9d-69278f845a84"
             },
             {
               "name": "right",
               "value": "right",
-              "_uid": "b1bdc82a-bfbd-4413-916a-49c214e963c2"
+              "_uid": "67f27317-f6bf-4f26-8b0a-e67dc258f60a"
             }
           ],
           "required": false
@@ -2975,11 +3141,11 @@
           "description": "Switch the order of headline and subheadline",
           "required": false
         },
-        "tab-03838523-89a4-4463-b257-f283dd7ac65c": {
+        "tab-5b6cacf3-bafb-47ad-8165-056d6539b81b": {
           "id": 0,
           "pos": 0,
           "display_name": "Content",
-          "key": "tab-03838523-89a4-4463-b257-f283dd7ac65c",
+          "key": "tab-5b6cacf3-bafb-47ad-8165-056d6539b81b",
           "keys": [
             "content_width",
             "content_align",
@@ -3002,22 +3168,22 @@
             {
               "name": "unset",
               "value": "unset",
-              "_uid": "5a575aee-a6d1-4b9a-b4d7-6386f5ae3c77"
+              "_uid": "98afd558-c2ad-4b96-bb06-168b0517f3c0"
             },
             {
               "name": "narrow",
               "value": "narrow",
-              "_uid": "0d006265-090e-432a-adf2-dc4a39e957f5"
+              "_uid": "17c6f617-ee9c-40e4-9d6a-290d6faefc21"
             },
             {
               "name": "default",
               "value": "default",
-              "_uid": "c93fa384-a14c-48d0-a400-1fb87b2d835c"
+              "_uid": "701dd509-3c64-4fae-9fbf-eb0a375036f5"
             },
             {
               "name": "wide",
               "value": "wide",
-              "_uid": "8638c120-8d2f-4536-b44a-665c9743df2b"
+              "_uid": "dba32ce0-6cc2-4cbb-8bd0-c44ad047dca3"
             }
           ],
           "required": false
@@ -3034,17 +3200,17 @@
             {
               "name": "left",
               "value": "left",
-              "_uid": "34161893-41fb-4289-92b9-2686c87f1cf4"
+              "_uid": "209315cb-6ecc-4f08-9d48-cef7ee0a0cce"
             },
             {
               "name": "center",
               "value": "center",
-              "_uid": "22984837-aa1b-4e57-9922-a9a0b037bfa3"
+              "_uid": "6c623704-d97b-459f-a16b-69f688e5b60b"
             },
             {
               "name": "right",
               "value": "right",
-              "_uid": "908284d2-1cfc-4f2e-9666-00465a6b50b9"
+              "_uid": "b4f8ff5a-7fbf-4b21-86b7-30e337a198cb"
             }
           ],
           "required": false
@@ -3061,22 +3227,22 @@
             {
               "name": "large",
               "value": "large",
-              "_uid": "9e9ebf6e-8edf-4895-8374-c0e52c8aa7de"
+              "_uid": "f383a7b8-e497-4c47-a662-67c283359f7a"
             },
             {
               "name": "default",
               "value": "default",
-              "_uid": "4aa22145-d973-4a86-b416-5c458cb5c154"
+              "_uid": "45ef268d-95e8-4c82-a625-723f2880ee80"
             },
             {
               "name": "small",
               "value": "small",
-              "_uid": "7e9e38dd-9c1f-4540-8422-9454e5947079"
+              "_uid": "e00e70bb-19aa-4d97-9400-5f3167f65094"
             },
             {
               "name": "none",
               "value": "none",
-              "_uid": "dfa0337c-7014-4992-ba2e-158bc89251ce"
+              "_uid": "15cf9869-1f4b-4d82-b2a7-ce13b576b09a"
             }
           ],
           "required": false
@@ -3093,22 +3259,22 @@
             {
               "name": "default",
               "value": "default",
-              "_uid": "2cde62b8-0bc9-4e26-bf58-fc9dff0037a9"
+              "_uid": "7dd384d5-98b0-43b4-860e-78782e4a0f98"
             },
             {
               "name": "tile",
               "value": "tile",
-              "_uid": "a5d02f75-8713-4f0b-bca7-81a5ef0af790"
+              "_uid": "8f25eaeb-f0a8-4f89-8c61-2a503833063b"
             },
             {
               "name": "list",
               "value": "list",
-              "_uid": "5ff7a8eb-31b4-466a-ab86-44b248d4d8c6"
+              "_uid": "7b9e4c4a-51cc-4ffc-9e1b-45bd61e48f4e"
             },
             {
               "name": "slider",
               "value": "slider",
-              "_uid": "0839b5db-f55b-4491-acbb-ed499ac6978c"
+              "_uid": "12eeea24-42fa-4da7-8f82-3eede67f4f4e"
             }
           ],
           "required": false
@@ -3125,27 +3291,27 @@
             {
               "name": "smallest",
               "value": "smallest",
-              "_uid": "c7b039b1-9d7b-405c-af60-1a50af65a98a"
+              "_uid": "d72b71e0-a3b9-4968-98a1-11bedc0ee1d5"
             },
             {
               "name": "default",
               "value": "default",
-              "_uid": "a50d772d-549c-4807-b366-55e5c159e7e1"
+              "_uid": "cc458de1-1b9e-4dd2-a3aa-2f31c77ed8a5"
             },
             {
               "name": "medium",
               "value": "medium",
-              "_uid": "8a9a99ec-5421-402e-9dd2-b92ddc86842f"
+              "_uid": "3a7fad4b-2980-41da-8061-d1d746bb6332"
             },
             {
               "name": "large",
               "value": "large",
-              "_uid": "9c04ea2e-69f8-413a-ad71-8b55e973be76"
+              "_uid": "6218593d-d6af-446f-9813-67442bd6a474"
             },
             {
               "name": "largest",
               "value": "largest",
-              "_uid": "d99e2200-4753-495e-b9e5-a91a65229c3c"
+              "_uid": "3f223f69-0134-4410-ad80-49d04baccce7"
             }
           ],
           "required": false
@@ -3159,7 +3325,8 @@
           "restrict_type": "groups",
           "restrict_components": true,
           "component_group_whitelist": [
-            "71943f02-38c1-49b9-9b5e-f4c5b84a96ef"
+            "156a9798-9a83-439b-a86f-7287640dd5e2",
+            "fe97c091-0b68-4253-b33b-fac3df167e8f"
           ],
           "description": "Abstracts a blog overview concept into JSON schema",
           "required": false
@@ -3176,29 +3343,20 @@
             "buttons"
           ],
           "description": "Component used for user interaction"
-        },
-        "type": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Type",
-          "key": "type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default_value": "section"
         }
       },
       "is_nestable": true,
       "real_name": "Section",
       "color": "#05566a",
       "icon": "gallery-vertical",
-      "image": "//a.storyblok.com/f/303819/1440x928/41f21c45ec/layout-section-cards.png"
+      "image": "//a.storyblok.com/f/310529/1440x928/57f53d4077/layout-section-cards.png"
     },
     {
       "name": "tags",
       "display_name": "Tags",
-      "created_at": "2024-09-05T10:51:57.977Z",
-      "updated_at": "2024-09-05T10:51:57.977Z",
-      "id": 45,
+      "created_at": "2024-10-24T08:52:16.907Z",
+      "updated_at": "2024-10-24T08:52:16.907Z",
+      "id": 48,
       "schema": {
         "entry": {
           "id": 0,
@@ -3227,9 +3385,9 @@
     {
       "name": "blog-teaser",
       "display_name": "Blog Teaser",
-      "created_at": "2024-09-05T10:51:57.978Z",
-      "updated_at": "2024-09-05T10:51:57.978Z",
-      "id": 46,
+      "created_at": "2024-10-24T08:52:16.907Z",
+      "updated_at": "2024-10-24T08:52:16.907Z",
+      "id": 49,
       "schema": {
         "date": {
           "id": 0,
@@ -3284,14 +3442,13 @@
           "description": "The preview image for the blog post",
           "required": false
         },
-        "tab-a31ed5ed-e71d-4940-b311-639beebe466c": {
+        "tab-421e7404-97d2-4fc3-99d1-ae711fb3d802": {
           "id": 0,
           "pos": 0,
           "display_name": "Link",
-          "key": "tab-a31ed5ed-e71d-4940-b311-639beebe466c",
+          "key": "tab-421e7404-97d2-4fc3-99d1-ae711fb3d802",
           "keys": [
-            "link_url",
-            "link_label"
+            "link_url"
           ],
           "type": "tab",
           "description": "URL and label for the blog post linked",
@@ -3310,16 +3467,6 @@
           "description": "The blog entry URL to link",
           "required": false
         },
-        "link_label": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Label",
-          "key": "link_label",
-          "type": "text",
-          "default_value": "Read more",
-          "description": "The label to use for the link",
-          "required": false
-        },
         "readingTime": {
           "id": 0,
           "pos": 0,
@@ -3329,11 +3476,11 @@
           "description": "Time to read for the blog post",
           "required": false
         },
-        "tab-00369f46-1fae-46a2-b11d-7d172cd36a84": {
+        "tab-1d9ecc4e-2419-4659-b4f9-071355333aef": {
           "id": 0,
           "pos": 0,
           "display_name": "Author",
-          "key": "tab-00369f46-1fae-46a2-b11d-7d172cd36a84",
+          "key": "tab-1d9ecc4e-2419-4659-b4f9-071355333aef",
           "keys": [
             "author_name",
             "author_title",
@@ -3395,16 +3542,16 @@
       "real_name": "Blog Teaser",
       "color": "#05566a",
       "icon": "block-wallet",
-      "component_group_uuid": "71943f02-38c1-49b9-9b5e-f4c5b84a96ef",
+      "component_group_uuid": "156a9798-9a83-439b-a86f-7287640dd5e2",
       "component_group_name": "Components",
-      "image": "//a.storyblok.com/f/303819/1000x504/9e533dfe80/blog-blog-teaser-default.png"
+      "image": "//a.storyblok.com/f/310529/1000x504/3772a9e405/blog-blog-teaser-default.png"
     },
     {
       "name": "seo",
       "display_name": "Seo",
-      "created_at": "2024-09-05T10:51:57.980Z",
-      "updated_at": "2024-09-05T10:51:57.980Z",
-      "id": 53,
+      "created_at": "2024-10-24T08:52:16.909Z",
+      "updated_at": "2024-10-24T08:52:16.909Z",
+      "id": 56,
       "schema": {
         "title": {
           "id": 0,
@@ -3475,9 +3622,9 @@
     {
       "name": "blog-head",
       "display_name": "Blog Head",
-      "created_at": "2024-09-05T10:51:57.980Z",
-      "updated_at": "2024-09-05T10:51:57.980Z",
-      "id": 56,
+      "created_at": "2024-10-24T08:52:16.910Z",
+      "updated_at": "2024-10-24T08:52:16.910Z",
+      "id": 59,
       "schema": {
         "date": {
           "id": 0,
@@ -3537,21 +3684,23 @@
       "real_name": "Blog Head",
       "color": "#05566a",
       "icon": "block-wallet",
-      "image": "//a.storyblok.com/f/303819/1000x863/d0abca10ad/blog-blog-head-default.png"
+      "image": "//a.storyblok.com/f/310529/1000x863/8229d313d2/blog-blog-head-default.png"
     },
     {
       "name": "links",
       "display_name": "Links",
-      "created_at": "2024-09-05T10:51:57.982Z",
-      "updated_at": "2024-09-05T10:51:57.982Z",
-      "id": 57,
+      "created_at": "2024-10-24T08:52:16.912Z",
+      "updated_at": "2024-10-24T08:52:16.912Z",
+      "id": 60,
       "schema": {
         "icon": {
           "id": 0,
           "pos": 0,
           "display_name": "Icon",
           "key": "icon",
-          "type": "text",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
           "required": false
         },
         "label": {
@@ -3592,9 +3741,9 @@
     {
       "name": "blog-author",
       "display_name": "Blog Author",
-      "created_at": "2024-09-05T10:51:57.982Z",
-      "updated_at": "2024-09-05T10:51:57.982Z",
-      "id": 58,
+      "created_at": "2024-10-24T08:52:16.912Z",
+      "updated_at": "2024-10-24T08:52:16.912Z",
+      "id": 61,
       "schema": {
         "name": {
           "id": 0,
@@ -3614,11 +3763,11 @@
           "description": "The byline of the author",
           "required": false
         },
-        "tab-f18a8daf-85fc-4cc0-99c5-98562d820a9d": {
+        "tab-9fe18b49-932d-4db1-9301-16ce2a9c3880": {
           "id": 0,
           "pos": 0,
           "display_name": "Image",
-          "key": "tab-f18a8daf-85fc-4cc0-99c5-98562d820a9d",
+          "key": "tab-9fe18b49-932d-4db1-9301-16ce2a9c3880",
           "keys": [
             "image_src",
             "image_alt",
@@ -3670,17 +3819,17 @@
             {
               "name": "wide",
               "value": "wide",
-              "_uid": "dd29f8db-56ee-4ab3-a846-f55502719e5a"
+              "_uid": "83f77280-ea7c-45c5-93a0-545203363d4b"
             },
             {
               "name": "square",
               "value": "square",
-              "_uid": "17cc9de4-1aef-44ba-8af9-2e4d8773b58f"
+              "_uid": "3f13f85d-9c3f-4527-a513-2cd614465bf7"
             },
             {
               "name": "vertical",
               "value": "vertical",
-              "_uid": "b24f56d6-0b6e-4528-8662-9477691139fe"
+              "_uid": "b2c27478-080a-41da-b712-f932bea3d9f5"
             }
           ],
           "required": false
@@ -3711,21 +3860,23 @@
       "real_name": "Blog Author",
       "color": "#05566a",
       "icon": "block-wallet",
-      "image": "//a.storyblok.com/f/303819/390x646/3ad4c977cf/blog-blog-author-default.png"
+      "image": "//a.storyblok.com/f/310529/390x646/b4036343b0/blog-blog-author-default.png"
     },
     {
       "name": "socialSharing",
       "display_name": "SocialSharing",
-      "created_at": "2024-09-05T10:51:57.982Z",
-      "updated_at": "2024-09-05T10:51:57.982Z",
-      "id": 59,
+      "created_at": "2024-10-24T08:52:16.912Z",
+      "updated_at": "2024-10-24T08:52:16.912Z",
+      "id": 62,
       "schema": {
         "icon": {
           "id": 0,
           "pos": 0,
           "display_name": "Icon",
           "key": "icon",
-          "type": "text",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
           "description": "The icon name for the social link",
           "required": false
         },
@@ -3760,9 +3911,9 @@
     {
       "name": "blog-aside",
       "display_name": "Blog Aside",
-      "created_at": "2024-09-05T10:51:57.982Z",
-      "updated_at": "2024-09-05T10:51:57.982Z",
-      "id": 60,
+      "created_at": "2024-10-24T08:52:16.913Z",
+      "updated_at": "2024-10-24T08:52:16.913Z",
+      "id": 63,
       "schema": {
         "author": {
           "id": 0,
@@ -3830,14 +3981,14 @@
       "real_name": "Blog Aside",
       "color": "#05566a",
       "icon": "block-wallet",
-      "image": "//a.storyblok.com/f/303819/390x646/89a7c36bfb/blog-blog-aside-default.png"
+      "image": "//a.storyblok.com/f/310529/390x646/fe399123d1/blog-blog-aside-default.png"
     },
     {
       "name": "items",
       "display_name": "Items",
-      "created_at": "2024-09-05T10:51:57.995Z",
-      "updated_at": "2024-09-05T10:51:57.995Z",
-      "id": 157,
+      "created_at": "2024-10-24T08:52:16.928Z",
+      "updated_at": "2024-10-24T08:52:16.928Z",
+      "id": 166,
       "schema": {
         "href": {
           "id": 0,
@@ -3876,9 +4027,9 @@
     {
       "name": "navItems",
       "display_name": "NavItems",
-      "created_at": "2024-09-05T10:51:57.995Z",
-      "updated_at": "2024-09-05T10:51:57.995Z",
-      "id": 158,
+      "created_at": "2024-10-24T08:52:16.928Z",
+      "updated_at": "2024-10-24T08:52:16.928Z",
+      "id": 167,
       "schema": {
         "href": {
           "id": 0,
@@ -3929,15 +4080,15 @@
     {
       "name": "header",
       "display_name": "Header",
-      "created_at": "2024-09-05T10:51:57.995Z",
-      "updated_at": "2024-09-05T10:51:57.995Z",
-      "id": 159,
+      "created_at": "2024-10-24T08:52:16.928Z",
+      "updated_at": "2024-10-24T08:52:16.928Z",
+      "id": 168,
       "schema": {
-        "tab-a87576f8-2003-4499-82bc-0d5170dc564a": {
+        "tab-8c0cb472-8b26-4364-8604-d177ac17b533": {
           "id": 0,
           "pos": 0,
           "display_name": "Logo",
-          "key": "tab-a87576f8-2003-4499-82bc-0d5170dc564a",
+          "key": "tab-8c0cb472-8b26-4364-8604-d177ac17b533",
           "keys": [
             "logo_src",
             "logo_srcInverted",
@@ -4076,20 +4227,20 @@
       "real_name": "Header",
       "color": "#05566a",
       "icon": "block-wallet",
-      "image": "//a.storyblok.com/f/303819/1280x255/2934acfd18/layout-header-header.png"
+      "image": "//a.storyblok.com/f/310529/1280x255/c4e3941b67/layout-header-header.png"
     },
     {
       "name": "footer",
       "display_name": "Footer",
-      "created_at": "2024-09-05T10:51:57.998Z",
-      "updated_at": "2024-09-05T10:51:57.998Z",
-      "id": 162,
+      "created_at": "2024-10-24T08:52:16.932Z",
+      "updated_at": "2024-10-24T08:52:16.932Z",
+      "id": 171,
       "schema": {
-        "tab-a3e4fb51-bed2-4bdd-9f94-1adee3745371": {
+        "tab-006d0771-17d8-4b48-91ea-4c0f14dec32d": {
           "id": 0,
           "pos": 0,
           "display_name": "Logo",
-          "key": "tab-a3e4fb51-bed2-4bdd-9f94-1adee3745371",
+          "key": "tab-006d0771-17d8-4b48-91ea-4c0f14dec32d",
           "keys": [
             "logo_src",
             "logo_srcInverted",
@@ -4211,15 +4362,15 @@
       "real_name": "Footer",
       "color": "#05566a",
       "icon": "block-wallet",
-      "image": "//a.storyblok.com/f/303819/1280x371/ebabf2db14/layout-footer-footer.png"
+      "image": "//a.storyblok.com/f/310529/1280x371/73bd610e88/layout-footer-footer.png"
     },
     {
       "name": "blog-overview",
       "display_name": "Blog Overview",
-      "created_at": "2024-09-05T10:51:57.980Z",
-      "updated_at": "2024-09-05T10:51:57.980Z",
+      "created_at": "2024-10-24T08:52:16.909Z",
+      "updated_at": "2024-10-24T08:52:16.909Z",
       "is_root": true,
-      "id": 54,
+      "id": 57,
       "schema": {
         "section": {
           "id": 0,
@@ -4345,10 +4496,10 @@
     {
       "name": "blog-post",
       "display_name": "Blog Post",
-      "created_at": "2024-09-05T10:51:57.987Z",
-      "updated_at": "2024-09-05T10:51:57.987Z",
+      "created_at": "2024-10-24T08:52:16.918Z",
+      "updated_at": "2024-10-24T08:52:16.918Z",
       "is_root": true,
-      "id": 109,
+      "id": 115,
       "schema": {
         "head": {
           "id": 0,
@@ -4440,10 +4591,10 @@
     {
       "name": "page",
       "display_name": "Page",
-      "created_at": "2024-09-05T10:51:57.992Z",
-      "updated_at": "2024-09-05T10:51:57.992Z",
+      "created_at": "2024-10-24T08:52:16.924Z",
+      "updated_at": "2024-10-24T08:52:16.924Z",
       "is_root": true,
-      "id": 156,
+      "id": 165,
       "schema": {
         "section": {
           "id": 0,
@@ -4458,11 +4609,11 @@
           ],
           "description": "Component used to layout components into pages"
         },
-        "tab-7edb3efb-794b-42a6-bd18-f0f2deafe394": {
+        "tab-845f1873-b9b1-4042-a2a3-a2b2fee96841": {
           "id": 0,
           "pos": 0,
           "display_name": "Header",
-          "key": "tab-7edb3efb-794b-42a6-bd18-f0f2deafe394",
+          "key": "tab-845f1873-b9b1-4042-a2a3-a2b2fee96841",
           "keys": [
             "header_floating",
             "header_inverted"
@@ -4489,11 +4640,11 @@
           "description": "Toggle default inverted header behaviour set in global settings",
           "required": false
         },
-        "tab-359793c4-1666-40ee-a6a8-c2534ff9f076": {
+        "tab-023723ed-a4a2-4212-ba84-3f8ef0ee794d": {
           "id": 0,
           "pos": 0,
           "display_name": "Footer",
-          "key": "tab-359793c4-1666-40ee-a6a8-c2534ff9f076",
+          "key": "tab-023723ed-a4a2-4212-ba84-3f8ef0ee794d",
           "keys": [
             "footer_inverted"
           ],
@@ -4539,10 +4690,10 @@
     {
       "name": "settings",
       "display_name": "Settings",
-      "created_at": "2024-09-05T10:51:57.998Z",
-      "updated_at": "2024-09-05T10:51:57.998Z",
+      "created_at": "2024-10-24T08:52:16.932Z",
+      "updated_at": "2024-10-24T08:52:16.932Z",
       "is_root": true,
-      "id": 164,
+      "id": 173,
       "schema": {
         "header": {
           "id": 0,
@@ -4595,6 +4746,50 @@
       },
       "is_nestable": false,
       "real_name": "Settings"
+    },
+    {
+      "name": "global",
+      "display_name": "Global",
+      "created_at": "2024-10-24T11:28:08.830Z",
+      "updated_at": "2024-10-24T11:28:08.830Z",
+      "id": 0,
+      "schema": {
+        "global": {
+          "id": 0,
+          "pos": 0,
+          "type": "bloks",
+          "restrict_type": "groups",
+          "restrict_components": true,
+          "component_group_whitelist": [
+            "156a9798-9a83-439b-a86f-7287640dd5e2"
+          ]
+        }
+      },
+      "is_root": true,
+      "is_nestable": false,
+      "real_name": "Global"
+    },
+    {
+      "name": "global_reference",
+      "display_name": "Global Reference",
+      "created_at": "2024-10-24T11:28:08.830Z",
+      "updated_at": "2024-10-24T11:28:08.830Z",
+      "id": 0,
+      "schema": {
+        "reference": {
+          "type": "options",
+          "pos": 0,
+          "is_reference_type": true,
+          "source": "internal_stories",
+          "entry_appearance": "card",
+          "allow_advanced_search": true,
+          "folder_slug": "global/"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Global Rereference",
+      "component_group_uuid": "fe97c091-0b68-4253-b33b-fac3df167e8f",
+      "component_group_name": "Global"
     }
   ]
 }

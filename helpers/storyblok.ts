@@ -105,6 +105,8 @@ export function storyProcessing(blok: Record<string, any>) {
           parent[key] = `mailto:${value.email}`;
         } else if (value.linktype === "url") {
           parent[key] = `${value.url}${value.anchor ? `#${value.anchor}` : ""}`;
+        } else if (value.linktype === "asset") {
+          parent[key] = value.url;
         } else {
           parent[key] = "#";
         }
@@ -125,6 +127,8 @@ export function storyProcessing(blok: Record<string, any>) {
       value.filename &&
       value.fieldtype === "asset"
     ) {
+      if (parent.component === "seo") return;
+
       parent[key] = !value.filename.startsWith("http")
         ? `https:${value.filename}`
         : value.filename;

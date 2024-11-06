@@ -88,7 +88,7 @@ const Picture = forwardRef<
   const source = isStoryblokAsset(src) ? src.filename : src;
   const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
   const [width, height] = fileUrl.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
-  const maxWidth = parseInt(width) > size ? size : parseInt(width);
+  const maxWidth = parseInt(width) > size ? Math.floor(size) : parseInt(width);
   const maxHeight =
     parseInt(width) > size
       ? Math.floor((parseInt(height) * size) / parseInt(width))
@@ -103,8 +103,9 @@ const Picture = forwardRef<
       width={maxWidth}
       height={maxHeight}
       alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
-      lazy={lazy}
+      lazy={priority ? false : lazy}
       fetchPriority="high"
+      loading={priority ? "eager" : "lazy"}
     />
   ) : (
     <Image
@@ -118,8 +119,9 @@ const Picture = forwardRef<
             }filters:quality(50)`
           : fileUrl
       }
-      width={autoSize ? undefined : maxWidth}
-      height={autoSize ? undefined : maxHeight}
+      layout={autoSize ? "fullWidth" : "constrained"}
+      width={maxWidth}
+      height={maxHeight}
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
@@ -236,8 +238,10 @@ const ComponentProviders = (props: PropsWithChildren) => (
                     // @ts-expect-error
                     value={StoryblokSubComponent}
                   >
-                    {/* @ts-expect-error */}
-                    <BlogHeadContext.Provider value={StoryblokSubComponent}>
+                    <BlogHeadContext.Provider
+                      /* @ts-expect-error */
+                      value={StoryblokSubComponent}
+                    >
                       <BlogAsideContext.Provider
                         // @ts-expect-error
                         value={StoryblokSubComponent}
