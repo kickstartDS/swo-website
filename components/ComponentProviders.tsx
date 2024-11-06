@@ -119,8 +119,9 @@ const Picture = forwardRef<
             }filters:quality(50)`
           : fileUrl
       }
-      width={autoSize ? undefined : maxWidth}
-      height={autoSize ? undefined : maxHeight}
+      layout={autoSize ? "fullWidth" : "constrained"}
+      width={maxWidth}
+      height={maxHeight}
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
