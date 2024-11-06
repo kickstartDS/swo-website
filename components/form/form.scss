@@ -11,6 +11,8 @@
     padding: var(--ks-spacing-inset-xs);
     border-radius: var(--ks-border-radius-control);
     background-color: var(--ks-background-color-default);
+    font: var(--ks-font-interface-s);
+    color: var(--ks-text-color-interface);
 
     &:active,
     &:focus {
