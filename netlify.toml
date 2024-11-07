@@ -104,7 +104,7 @@
 
 [[redirects]]
   from="/design-system-services/mehrwerte-von-kickstartds"
-  to="/design-system-starterkit-kickstartds"
+  to="/design-system-services/design-system-starterkit-kickstartds"
   status = 301
   force = false
 
