@@ -34,7 +34,7 @@
     },
     "copy": {
       "family": "Vollkorn, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
-      "font-size": 16,
+      "font-size": 18,
       "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
@@ -43,7 +43,7 @@
     },
     "interface": {
       "family": "Vollkorn, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
-      "font-size": 16,
+      "font-size": 18,
       "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
@@ -61,8 +61,8 @@
     }
   },
   "font-weight": {
-    "light": 300,
     "regular": 400,
+    "medium": 500,
     "semi-bold": 600,
     "bold": 700
   },
