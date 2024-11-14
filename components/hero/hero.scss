@@ -1,6 +1,9 @@
 :root {
   .dsa-hero {
     --dsa-hero__textbox--border-radius: var(--ks-border-radius-card);
-    --dsa-hero__textbox--background-color: var(--ks-background-color-default);
+
+    .c-visual__content--bottom {
+      --dsa-hero__textbox--background-color: var(--ks-background-color-default);
+    }
   }
 }
