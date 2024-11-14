@@ -34,21 +34,6 @@ const handleRouteChange = (url: string) => {
     document.activeElement.blur();
 };
 
-const setActiveNavItem = (navItems: any[] = [], currentRoute: string) => {
-  for (const navItem of navItems) {
-    navItem.active =
-      "/" + navItem.href === currentRoute || navItem.href === currentRoute;
-
-    if (navItem.items && Array.isArray(navItem.items)) {
-      for (const item of navItem.items) {
-        item.active =
-          "/" + item.href === currentRoute || item.href === currentRoute;
-        navItem.active ||= item.active;
-      }
-    }
-  }
-};
-
 export default function App({
   Component,
   pageProps,
@@ -70,9 +55,6 @@ export default function App({
   const invertFooter = storyProps?.footer?.inverted
     ? !footerProps?.inverted
     : footerProps?.inverted;
-
-  setActiveNavItem(headerProps?.navItems, router.asPath);
-  setActiveNavItem(footerProps?.navItems, router.asPath);
 
   useEffect(() => {
     router.events.on("routeChangeStart", handleRouteChange);
