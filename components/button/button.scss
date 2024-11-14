@@ -1,5 +1,7 @@
-.dsa-button {
-  [ks-inverted="true"] & {
-    --dsa-button_primary--background-color: var(--ks-color-secondary-inverted);
+:root {
+  [ks-inverted="true"] {
+    .dsa-button {
+      --dsa-button_primary--background-color: var(--ks-color-secondary-inverted);
+    }
   }
 }
