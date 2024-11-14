@@ -1,19 +1,21 @@
-.dsa-nav-topbar {
-  --dsa-nav-topbar__label_dimmed--opacity: 0.75;
-  --dsa-nav-topbar__label--font: var(--ks-font-display-xxs);
+:root {
+  .dsa-nav-topbar {
+    --dsa-nav-topbar__label_dimmed--opacity: 0.75;
+    --dsa-nav-topbar__label--font: var(--ks-font-display-xxs);
 
-  --dsa-nav-topbar__label--color: var(--ks-text-color-primary);
-  --dsa-nav-topbar__label--color_hover: var(--ks-text-color-primary);
-  --dsa-nav-topbar__label--color_active: var(--ks-text-color-primary);
+    --dsa-nav-topbar__label--color: var(--ks-text-color-primary);
+    --dsa-nav-topbar__label--color_hover: var(--ks-text-color-primary);
+    --dsa-nav-topbar__label--color_active: var(--ks-text-color-primary);
 
-  :has(.dsa-nav-topbar__item--active) {
-    .dsa-nav-topbar__item:not(:hover, .dsa-nav-topbar__item--active) {
-      .dsa-nav-topbar__label {
-        opacity: var(--dsa-nav-topbar__label_dimmed--opacity);
-      }
+    :has(.dsa-nav-topbar__item--active) {
+      .dsa-nav-topbar__item:not(:hover, .dsa-nav-topbar__item--active) {
+        .dsa-nav-topbar__label {
+          opacity: var(--dsa-nav-topbar__label_dimmed--opacity);
+        }
 
-      .dsa-header--floating & {
-        opacity: var(--dsa-nav-topbar_floating__label_dimmed--opacity);
+        .dsa-header--floating & {
+          opacity: var(--dsa-nav-topbar_floating__label_dimmed--opacity);
+        }
       }
     }
   }

@@ -1,7 +1,9 @@
-.dsa-button {
-  --dsa-button--padding: 0.5em 1.75em;
-  --dsa-button--border-radius: var(--ks-border-radius-control);
-  --dsa-button_primary--color: var(--ks-text-color-default-inverted);
-  --dsa-button_primary--color_hover: var(--ks-text-color-default-inverted);
-  --dsa-button_primary--color_active: var(--ks-text-color-default-inverted);
+:root {
+  .dsa-button {
+    --dsa-button--padding: 0.5em 1.75em;
+    --dsa-button--border-radius: var(--ks-border-radius-control);
+    --dsa-button_primary--color: var(--ks-text-color-default-inverted);
+    --dsa-button_primary--color_hover: var(--ks-text-color-default-inverted);
+    --dsa-button_primary--color_active: var(--ks-text-color-default-inverted);
+  }
 }
