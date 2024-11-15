@@ -1,0 +1,291 @@
+diff --git a/components/ComponentProviders.tsx b/components/ComponentProviders.tsx
+index 9e4e9cd..828b3c6 100644
+--- a/components/ComponentProviders.tsx
++++ b/components/ComponentProviders.tsx
+@@ -47,6 +47,7 @@ import { TeaserProvider } from "./TeaserProvider";
+ import { useBlurHashes } from "./BlurHashContext";
+ import { useImagePriority } from "./ImagePriorityContext";
+ import { useImageSize } from "./ImageSizeContext";
++import { useImageRatio } from "./ImageRatioContext";
+
+ const Link = forwardRef<
+   HTMLAnchorElement,
+@@ -74,6 +75,7 @@ const Picture = forwardRef<
+   const blurHashes = useBlurHashes();
+   const priority = useImagePriority();
+   const size = useImageSize();
++  const ratio = useImageRatio();
+
+   useImperativeHandle<HTMLImageElement | null, HTMLImageElement | null>(
+     ref,
+@@ -119,8 +121,10 @@ const Picture = forwardRef<
+             }filters:quality(50)`
+           : fileUrl
+       }
+-      width={autoSize ? undefined : maxWidth}
+-      height={autoSize ? undefined : maxHeight}
++      layout={autoSize ? "fullWidth" : "constrained"}
++      aspectRatio={ratio > 0 ? ratio : undefined}
++      width={maxWidth}
++      height={ratio < 0 ? maxHeight : undefined}
+       priority={lazy === false || priority}
+       onLoad={(event) => {
+         if (event.target instanceof HTMLImageElement) {
+diff --git a/components/ImageRatioContext.tsx b/components/ImageRatioContext.tsx
+new file mode 100644
+index 0000000..5b6ee47
+--- /dev/null
++++ b/components/ImageRatioContext.tsx
+@@ -0,0 +1,14 @@
++import { FC, PropsWithChildren, createContext, useContext } from "react";
++
++const ImageRatioContext = createContext<number>(-1);
++export const ImageRatioProvider: FC<PropsWithChildren<{ ratio: number }>> = (
++  props
++) => (
++  <ImageRatioContext.Provider value={props.ratio}>
++    {props.children}
++  </ImageRatioContext.Provider>
++);
++
++export const useImageRatio = () => {
++  return useContext(ImageRatioContext);
++};
+diff --git a/components/ImageRatioProviders.tsx b/components/ImageRatioProviders.tsx
+new file mode 100644
+index 0000000..23bcf0f
+--- /dev/null
++++ b/components/ImageRatioProviders.tsx
+@@ -0,0 +1,146 @@
++import {
++  GalleryContext,
++  GalleryContextDefault,
++} from "@kickstartds/ds-agency-premium/components/gallery/index.js";
++import {
++  ComponentProps,
++  FC,
++  forwardRef,
++  HTMLAttributes,
++  PropsWithChildren,
++} from "react";
++import { ImageRatioProvider } from "./ImageRatioContext";
++import {
++  ImageStoryContext,
++  ImageStoryContextDefault,
++} from "@kickstartds/ds-agency-premium/components/image-story/index.js";
++import {
++  ContactContext,
++  ContactContextDefault,
++} from "@kickstartds/ds-agency-premium/components/contact/index.js";
++import {
++  TeaserCardContext,
++  TeaserCardContextDefault,
++} from "@kickstartds/ds-agency-premium/components/teaser-card/index.js";
++import { Teaser } from "@kickstartds/base/lib/teaser";
++
++const Gallery = forwardRef<
++  HTMLDivElement,
++  ComponentProps<typeof GalleryContextDefault> & HTMLAttributes<HTMLDivElement>
++>((props, ref) => {
++  // TODO read definition from tokens:
++  /**
++  --dsa-gallery--image-ratio-square: 1/1;
++  --dsa-gallery--image-ratio-wide: 4/3;
++  --dsa-gallery--image-ratio-landscape: 16/9;
++ */
++  const aspectRatios = {
++    unset: -1,
++    square: 1 / 1,
++    wide: 4 / 3,
++    landscape: 16 / 9,
++  };
++
++  return (
++    <ImageRatioProvider ratio={aspectRatios[props.aspectRatio || "unset"]}>
++      <GalleryContextDefault {...props} ref={ref} />
++    </ImageRatioProvider>
++  );
++});
++Gallery.displayName = "Gallery";
++
++const GalleryProvider: FC<PropsWithChildren> = (props) => (
++  <GalleryContext.Provider {...props} value={Gallery} />
++);
++
++const ImageStory = forwardRef<
++  HTMLDivElement,
++  ComponentProps<typeof ImageStoryContextDefault> &
++    HTMLAttributes<HTMLDivElement>
++>((props, ref) => {
++  // TODO read definition from tokens, need to extract them first though. Currently defined in code here:
++  // https://github.com/kickstartDS/ds-agency-premium/blob/main/src/components/image-story/image-story.scss#L14-L35
++  const aspectRatios = {
++    unset: -1,
++    square: 1 / 1,
++    wide: 4 / 3,
++    landscape: 16 / 9,
++  };
++
++  return (
++    <ImageRatioProvider
++      ratio={aspectRatios[props.image?.aspectRatio || "unset"]}
++    >
++      <ImageStoryContextDefault {...props} ref={ref} />
++    </ImageRatioProvider>
++  );
++});
++ImageStory.displayName = "ImageStory";
++
++const ImageStoryProvider: FC<PropsWithChildren> = (props) => (
++  <ImageStoryContext.Provider {...props} value={ImageStory} />
++);
++
++const Contact = forwardRef<
++  HTMLElement,
++  ComponentProps<typeof ContactContextDefault> & HTMLAttributes<HTMLElement>
++>((props, ref) => {
++  // TODO read definition from tokens, need to extract them first though. Currently defined in code here:
++  // https://github.com/kickstartDS/ds-agency-premium/blob/main/src/components/contact/contact.scss#L39-L49
++  const aspectRatios = {
++    unset: -1,
++    wide: 4 / 3,
++    square: 1 / 1,
++    vertical: 3 / 4,
++  };
++  return (
++    <ImageRatioProvider
++      ratio={aspectRatios[props.image?.aspectRatio || "unset"]}
++    >
++      <ContactContextDefault {...props} ref={ref} />
++    </ImageRatioProvider>
++  );
++});
++Contact.displayName = "Contact";
++
++const ContactProvider: FC<PropsWithChildren> = (props) => (
++  <ContactContext.Provider {...props} value={Contact} />
++);
++
++const TeaserCard = forwardRef<
++  HTMLDivElement,
++  ComponentProps<typeof TeaserCardContextDefault> &
++    HTMLAttributes<HTMLDivElement>
++>((props, ref) => {
++  // TODO read definition from tokens, need to extract them first though. Currently defined in code here:
++  // https://github.com/kickstartDS/ds-agency-premium/blob/main/src/components/teaser-card/teaser-card.scss#L39-L55
++  const aspectRatios = {
++    unset: -1,
++    square: 1 / 1,
++    wide: 4 / 3,
++    landscape: 16 / 9,
++  };
++  console.log("TeaserCard", aspectRatios[props.imageRatio || "unset"]);
++  return (
++    <ImageRatioProvider ratio={aspectRatios[props.imageRatio || "unset"]}>
++      <TeaserCardContextDefault {...props} ref={ref} />
++    </ImageRatioProvider>
++  );
++});
++TeaserCard.displayName = "TeaserCard";
++
++const TeaserCardProvider: FC<PropsWithChildren> = (props) => (
++  <TeaserCardContext.Provider {...props} value={TeaserCard} />
++);
++
++const ImageRatioProviders = (props: PropsWithChildren) => (
++  <TeaserCardProvider>
++    <ContactProvider>
++      <ImageStoryProvider>
++        <GalleryProvider>{props.children}</GalleryProvider>
++      </ImageStoryProvider>
++    </ContactProvider>
++  </TeaserCardProvider>
++);
++
++export default ImageRatioProviders;
+diff --git a/components/index.tsx b/components/index.tsx
+index 85c2b7b..bc1bddd 100644
+--- a/components/index.tsx
++++ b/components/index.tsx
+@@ -170,7 +170,7 @@ export const components = {
+   gallery: editable(
+     dynamic(() =>
+       import("@kickstartds/ds-agency-premium/gallery").then(
+-        (mod) => mod.GalleryContextDefault
++        (mod) => mod.Gallery
+       )
+     )
+   ),
+@@ -217,7 +217,7 @@ export const components = {
+   "teaser-card": editable(
+     dynamic(() =>
+       import("@kickstartds/ds-agency-premium/teaser-card").then(
+-        (mod) => mod.TeaserCardContextDefault
++        (mod) => mod.TeaserCard
+       )
+     )
+   ),
+diff --git a/pages/_app.tsx b/pages/_app.tsx
+index 9640959..ae6a956 100644
+--- a/pages/_app.tsx
++++ b/pages/_app.tsx
+@@ -13,6 +13,7 @@ import "lazysizes/plugins/attrchange/ls.attrchange";
+
+ import ComponentProviders from "@/components/ComponentProviders";
+ import ImageSizeProviders from "@/components/ImageSizeProviders";
++import ImageRatioProviders from "@/components/ImageRatioProviders";
+
+ import palette from "@kickstartds/ds-agency-premium/global.client.js";
+ import "@kickstartds/ds-agency-premium/global.css";
+@@ -66,24 +67,26 @@ export default function App({
+       <DsaProviders>
+         <ComponentProviders>
+           <ImageSizeProviders>
+-            <Meta
+-              globalSeo={settings?.seo}
+-              pageSeo={story?.content.seo}
+-              fallbackName={story?.name}
+-            />
+-            <IconSprite />
+-            {headerProps && (
+-              <Header
+-                logo={{}}
+-                {...headerProps}
+-                inverted={invertHeader}
+-                floating={floatHeader}
++            <ImageRatioProviders>
++              <Meta
++                globalSeo={settings?.seo}
++                pageSeo={story?.content.seo}
++                fallbackName={story?.name}
+               />
+-            )}
+-            <Component {...pageProps} />
+-            {footerProps && (
+-              <Footer logo={{}} {...footerProps} inverted={invertFooter} />
+-            )}
++              <IconSprite />
++              {headerProps && (
++                <Header
++                  logo={{}}
++                  {...headerProps}
++                  inverted={invertHeader}
++                  floating={floatHeader}
++                />
++              )}
++              <Component {...pageProps} />
++              {footerProps && (
++                <Footer logo={{}} {...footerProps} inverted={invertFooter} />
++              )}
++            </ImageRatioProviders>
+           </ImageSizeProviders>
+         </ComponentProviders>
+       </DsaProviders>
+diff --git a/public/blurhashes/dc876de41f33c6651932fa8744073e81c0ca2c4c b/public/blurhashes/dc876de41f33c6651932fa8744073e81c0ca2c4c
+new file mode 100644
+index 0000000..5fac46e
+--- /dev/null
++++ b/public/blurhashes/dc876de41f33c6651932fa8744073e81c0ca2c4c
+@@ -0,0 +1 @@
++{"value":"UrM~dks.s.WV}=ayj@az9vWVWVoL=_j[azoL","type":"String","created":"2024-11-14T07:51:47.008Z","ttl":0}
+\ No newline at end of file
