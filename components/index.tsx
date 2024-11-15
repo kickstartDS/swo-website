@@ -170,7 +170,7 @@ export const components = {
   gallery: editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/gallery").then(
-        (mod) => mod.GalleryContextDefault
+        (mod) => mod.Gallery
       )
     )
   ),
@@ -217,7 +217,7 @@ export const components = {
   "teaser-card": editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/teaser-card").then(
-        (mod) => mod.TeaserCardContextDefault
+        (mod) => mod.TeaserCard
       )
     )
   ),

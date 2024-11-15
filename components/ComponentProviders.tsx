@@ -47,6 +47,7 @@ import { TeaserProvider } from "./TeaserProvider";
 import { useBlurHashes } from "./BlurHashContext";
 import { useImagePriority } from "./ImagePriorityContext";
 import { useImageSize } from "./ImageSizeContext";
+import { useImageRatio } from "./ImageRatioContext";
 
 const Link = forwardRef<
   HTMLAnchorElement,
@@ -74,6 +75,7 @@ const Picture = forwardRef<
   const blurHashes = useBlurHashes();
   const priority = useImagePriority();
   const size = useImageSize();
+  const ratio = useImageRatio();
 
   useImperativeHandle<HTMLImageElement | null, HTMLImageElement | null>(
     ref,
@@ -119,8 +121,10 @@ const Picture = forwardRef<
             }filters:quality(50)`
           : fileUrl
       }
-      width={autoSize ? undefined : maxWidth}
-      height={autoSize ? undefined : maxHeight}
+      layout={autoSize ? "fullWidth" : "constrained"}
+      aspectRatio={ratio > 0 ? ratio : undefined}
+      width={maxWidth}
+      height={ratio < 0 ? maxHeight : undefined}
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
