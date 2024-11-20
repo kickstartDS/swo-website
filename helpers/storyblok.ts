@@ -129,7 +129,8 @@ export function storyProcessing(blok: Record<string, any>) {
       if (key.includes("_")) {
         const [groupName] = key.split("_");
         if (parent.hasOwnProperty(`${groupName}_alt`)) {
-          parent[`${groupName}_alt`] ||= value.alt;
+          if (!parent[`${groupName}_alt`] || parent[`${groupName}_alt`] === "")
+            parent[`${groupName}_alt`] = value.alt;
         }
       }
     }
