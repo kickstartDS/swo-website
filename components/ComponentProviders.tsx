@@ -45,8 +45,6 @@ import {
   HeroContext,
 } from "@kickstartds/ds-agency-premium/hero";
 
-import { isStoryblokAsset } from "@/helpers/storyblok";
-
 import { StoryblokSubComponent } from "./StoryblokSubComponent";
 import { TeaserProvider } from "./TeaserProvider";
 import { useBlurHashes } from "./BlurHashContext";
@@ -89,9 +87,8 @@ const Picture = forwardRef<
     if (internalRef.current) resetBackgroundBlurHash(internalRef.current);
   }, []);
 
-  if (!src || (isStoryblokAsset(src) && !src.filename)) return;
-  const source = isStoryblokAsset(src) ? src.filename : src;
-  const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
+  if (!src) return;
+  const fileUrl = !src.startsWith("http") ? `https:${src}` : src;
   const [width, height] = fileUrl.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
   const maxWidth = parseInt(width) > size ? size : parseInt(width);
   const maxHeight =
@@ -107,7 +104,7 @@ const Picture = forwardRef<
       src={fileUrl}
       width={maxWidth}
       height={maxHeight}
-      alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
+      alt={props.alt || ""}
       lazy={priority ? false : lazy}
       fetchPriority="high"
       loading={priority ? "eager" : "lazy"}
@@ -116,7 +113,7 @@ const Picture = forwardRef<
     <Image
       ref={internalRef}
       {...props}
-      alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
+      alt={props.alt || ""}
       src={
         priority
           ? `${fileUrl}/${
@@ -126,7 +123,7 @@ const Picture = forwardRef<
       }
       layout={autoSize ? "fullWidth" : "constrained"}
       width={maxWidth}
-      height={maxHeight}
+      height={autoSize ? undefined : maxHeight}
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
@@ -206,11 +203,7 @@ const Storytelling = forwardRef<
   return (
     <StorytellingContextDefault
       {...props}
-      backgroundImage={
-        isStoryblokAsset(backgroundImage)
-          ? backgroundImage.filename
-          : backgroundImage
-      }
+      backgroundImage={backgroundImage}
       ref={ref}
     />
   );

@@ -14,7 +14,6 @@ import { components } from "@/components";
 import { TraversalCallbackContext, traverse } from "object-traversal";
 import { IStoryblokBlock } from "@kickstartds/jsonschema2storyblok";
 import {
-  AssetStoryblok,
   GlobalReferenceStoryblok,
   GlobalStoryblok,
   MultilinkStoryblok,
@@ -51,10 +50,6 @@ export function isGlobal(blok: any): blok is GlobalStoryblok {
 
 export function isStoryblokLink(object: any): object is MultilinkStoryblok {
   return object && object?.linktype !== undefined;
-}
-
-export function isStoryblokAsset(object: any): object is AssetStoryblok {
-  return object && object.filename !== undefined;
 }
 
 export function isStoryblokStoryLinkObject(
