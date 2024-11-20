@@ -20,6 +20,7 @@ import { Cta } from "@kickstartds/ds-agency-premium/components/cta/index.js";
 import { BlogPost } from "@kickstartds/ds-agency-premium/components/blog-post/index.js";
 import { BlogOverview as DsaBlogOverview } from "@kickstartds/ds-agency-premium/components/blog-overview/index.js";
 import { Divider } from "@kickstartds/ds-agency-premium/components/divider/index.js";
+import { unflatten } from "@/helpers/unflatten";
 
 type PageProps = {
   blok: Omit<ComponentProps<typeof DsaBlogOverview>, "section"> &
@@ -35,7 +36,9 @@ const BlogTeaserPost = forwardRef<
   | (ComponentProps<typeof BlogTeaser> & HTMLAttributes<HTMLDivElement>)
   | (ComponentProps<typeof BlogPost> & HTMLAttributes<HTMLDivElement>)
 >((props, ref) => {
-  function isBlogPost(object: any): object is ComponentProps<typeof BlogPost> {
+  function isBlogPost(
+    object: any
+  ): object is ComponentProps<typeof BlogPost> & { slug: string } {
     return object.type === "blog-post";
   }
 
@@ -53,10 +56,15 @@ const BlogTeaserPost = forwardRef<
       image: props.head.image || "",
       tags: props.head.tags || [],
       readingTime: props.aside.readingTime,
+      link: {
+        url: props.slug,
+      },
     };
+
     return <BlogTeaserContextDefault {...teaserProps} ref={ref} />;
   } else if (isBlogTeaser(props)) {
-    return <BlogTeaserContextDefault {...props} ref={ref} />;
+    // @ts-expect-error
+    return <BlogTeaserContextDefault {...unflatten(props)} ref={ref} />;
   }
 });
 BlogTeaserPost.displayName = "BlogTeaserPost";

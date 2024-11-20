@@ -147,6 +147,9 @@ export function storyProcessing(blok: Record<string, any>) {
   }: TraversalCallbackContext) {
     if (parent && key && value && value.content && value.uuid) {
       parent[key] = value.content;
+      if (value.full_slug) {
+        parent[key]["slug"] = value.full_slug;
+      }
     }
   }
 
