@@ -20,6 +20,9 @@ import {
   GlobalStoryblok,
 } from "@/types/components-schema";
 
+// TODO change locale to 'en' in starter, think about overall local handling
+export const locale = "de";
+
 export const Global: FC<GlobalStoryblok & SbBlokData> = (props) =>
   isGlobal(props.blok) &&
   props.blok.global &&
@@ -99,7 +102,7 @@ export const components = {
   "blog-teaser": editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/blog-teaser").then(
-        (mod) => mod.BlogTeaser
+        (mod) => mod.BlogTeaserContextDefault
       )
     )
   ),

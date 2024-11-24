@@ -4,6 +4,8 @@ import {
   forwardRef,
   HTMLAttributes,
   PropsWithChildren,
+  useContext,
+  useMemo,
 } from "react";
 import {
   SbBlokData,
@@ -21,6 +23,7 @@ import { BlogPost } from "@kickstartds/ds-agency-premium/components/blog-post/in
 import { BlogOverview as DsaBlogOverview } from "@kickstartds/ds-agency-premium/components/blog-overview/index.js";
 import { Divider } from "@kickstartds/ds-agency-premium/components/divider/index.js";
 import { unflatten } from "@/helpers/unflatten";
+import { locale } from ".";
 
 type PageProps = {
   blok: Omit<ComponentProps<typeof DsaBlogOverview>, "section"> &
@@ -31,47 +34,69 @@ type PageProps = {
     };
 };
 
-const BlogTeaserPost = forwardRef<
-  HTMLDivElement,
-  | (ComponentProps<typeof BlogTeaser> & HTMLAttributes<HTMLDivElement>)
-  | (ComponentProps<typeof BlogPost> & HTMLAttributes<HTMLDivElement>)
->((props, ref) => {
-  function isBlogPost(
-    object: any
-  ): object is ComponentProps<typeof BlogPost> & { slug: string } {
-    return object.type === "blog-post";
-  }
+const BlogTeaserPostProvider: FC<PropsWithChildren> = (props) => {
+  const UpstreamBlogTeaser = useContext(BlogTeaserContext);
 
-  function isBlogTeaser(
-    object: any
-  ): object is ComponentProps<typeof BlogTeaser> {
-    return object.type === "blog-teaser";
-  }
+  const BlogTeaserPost = useMemo(
+    () =>
+      forwardRef<
+        HTMLDivElement,
+        | (ComponentProps<typeof BlogTeaser> & HTMLAttributes<HTMLDivElement>)
+        | (ComponentProps<typeof BlogPost> & HTMLAttributes<HTMLDivElement>)
+      >(function BlogTeaserPostMapper(props, ref) {
+        function isBlogPost(
+          object: any
+        ): object is ComponentProps<typeof BlogPost> & { slug: string } {
+          return object.type === "blog-post";
+        }
 
-  if (isBlogPost(props) && props.head && props.aside) {
-    const teaserProps: ComponentProps<typeof BlogTeaser> = {
-      date: props.head.date,
-      headline: props.head.headline || "",
-      teaserText: props.seo.description || "",
-      image: props.head.image || "",
-      tags: props.head.tags || [],
-      readingTime: props.aside.readingTime,
-      link: {
-        url: props.slug,
-      },
-    };
+        function isBlogTeaser(
+          object: any
+        ): object is ComponentProps<typeof BlogTeaser> {
+          return object.type === "blog-teaser";
+        }
 
-    return <BlogTeaserContextDefault {...teaserProps} ref={ref} />;
-  } else if (isBlogTeaser(props)) {
-    // @ts-expect-error
-    return <BlogTeaserContextDefault {...unflatten(props)} ref={ref} />;
-  }
-});
-BlogTeaserPost.displayName = "BlogTeaserPost";
+        if (isBlogPost(props) && props.head && props.aside) {
+          const date =
+            props.head.date &&
+            new Date(Date.parse(props.head.date)).toLocaleDateString([locale]);
 
-const BlogTeaserPostProvider: FC<PropsWithChildren> = (props) => (
-  <BlogTeaserContext.Provider {...props} value={BlogTeaserPost} />
-);
+          const teaserProps: ComponentProps<typeof BlogTeaser> & {
+            component: string;
+          } = {
+            date,
+            headline: props.head.headline || "",
+            teaserText: props.seo.description || "",
+            image: props.head.image || "",
+            tags: props.head.tags || [],
+            readingTime: props.aside.readingTime,
+            link: {
+              url: props.slug,
+            },
+            component: "blog-teaser",
+          };
+
+          return <UpstreamBlogTeaser {...teaserProps} ref={ref} />;
+        } else if (isBlogTeaser(props)) {
+          const date =
+            props.date &&
+            new Date(Date.parse(props.date)).toLocaleDateString([locale]);
+
+          return (
+            // @ts-expect-error
+            <UpstreamBlogTeaser
+              {...unflatten(props)}
+              date={props.date ? date : undefined}
+              ref={ref}
+            />
+          );
+        }
+      }),
+    [UpstreamBlogTeaser]
+  );
+
+  return <BlogTeaserContext.Provider {...props} value={BlogTeaserPost} />;
+};
 
 const BlogOverview: React.FC<PageProps> = ({ blok }) => {
   if (blok) {
