@@ -34,10 +34,10 @@ class KsDocument extends Document<any> {
         <body>
           <Main />
           <NextScript />
-          <Script
+          /*<Script
             strategy="beforeInteractive"
             src="https://cdn.debugbear.com/U3aC0VFDm3bP.js"
-          />
+          />*/
         </body>
       </Html>
     );
