@@ -43,6 +43,7 @@ export default function Meta({
       <meta name="twitter:description" content={description} />
       {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
       <style>{`body { display: block !important }`}</style>
+      <script defer src="/client.js"></script>
     </Head>
   );
 }

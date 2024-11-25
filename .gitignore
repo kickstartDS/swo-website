@@ -59,3 +59,4 @@ token/calculated.js
 public/sitemap*
 public/robots.txt
 public/img/screenshots
+public/client.js

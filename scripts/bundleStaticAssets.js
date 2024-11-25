@@ -20,7 +20,7 @@ const build = async () => {
     format: "esm",
     bundle: true,
     // minify: true,
-    outfile: "out/client.js",
+    outfile: "public/client.js",
     logLevel: "info",
     plugins: [],
     loader: {
