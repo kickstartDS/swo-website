@@ -110,7 +110,11 @@ const BlogOverview: React.FC<PageProps> = ({ blok }) => {
             <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
           ))}
           {latest && (
-            <Section width="wide" headline={{ text: latestTitle }}>
+            <Section
+              width="wide"
+              headline={{ text: latestTitle }}
+              backgroundColor="accent"
+            >
               <BlogTeaser {...latest} />
             </Section>
           )}
