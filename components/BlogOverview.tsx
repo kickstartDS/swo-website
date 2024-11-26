@@ -16,7 +16,6 @@ import { Section } from "@kickstartds/ds-agency-premium/components/section/index
 import {
   BlogTeaser,
   BlogTeaserContext,
-  BlogTeaserContextDefault,
 } from "@kickstartds/ds-agency-premium/components/blog-teaser/index.js";
 import { Cta } from "@kickstartds/ds-agency-premium/components/cta/index.js";
 import { BlogPost } from "@kickstartds/ds-agency-premium/components/blog-post/index.js";

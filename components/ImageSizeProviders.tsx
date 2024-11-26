@@ -46,12 +46,13 @@ const SectionProvider: FC<PropsWithChildren> = (props) => {
         const childCount = Children.count(props.children) || 1;
 
         const sectionWidthName =
-          props.content?.width === "unset"
+          props.content?.width === "unset" || !props.content?.width
             ? props.width || "default"
             : calculated.sectionWidths[props.content?.width || "default"] >
               calculated.sectionWidths[props.width || "default"]
             ? props.width || "default"
             : props.content?.width || "default";
+
         const sectionWidth =
           calculated.sectionWidths[sectionWidthName] *
           calculated.baseFontSizePx;
