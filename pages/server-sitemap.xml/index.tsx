@@ -12,7 +12,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       .filter(
         (path) =>
           !exclude.includes(path.params.slug.join("/")) &&
-          path.params.slug[0] === "global"
+          path.params.slug[0] !== "global"
       )
       .map((path) => {
         return {
