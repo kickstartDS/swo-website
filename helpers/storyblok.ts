@@ -133,6 +133,10 @@ export function storyProcessing(blok: Record<string, any>) {
             parent[`${groupName}_alt`] = value.alt;
         }
       }
+
+      if (parent.hasOwnProperty("alt")) {
+        if (!parent["alt"] || parent["alt"] === "") parent["alt"] = value.alt;
+      }
     }
   }
 

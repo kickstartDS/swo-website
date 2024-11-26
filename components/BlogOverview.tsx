@@ -68,6 +68,7 @@ const BlogTeaserPostProvider: FC<PropsWithChildren> = (props) => {
             headline: props.head.headline || "",
             teaserText: props.seo.description || "",
             image: props.head.image || "",
+            alt: props.head.alt || "",
             tags: props.head.tags || [],
             readingTime: props.aside.readingTime,
             link: {
