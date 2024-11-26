@@ -5,6 +5,7 @@ const cspHeader = `
     style-src 'self' 'unsafe-inline';
     frame-src 'self' https://youtube.com https://www.youtube.com https://player.vimeo.com *.google.com;
     img-src 'self' blob: data: https://a.storyblok.com;
+    media-src 'self' blob: data: https://a.storyblok.com;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
