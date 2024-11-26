@@ -1,4 +1,4 @@
-import {StoryblokStory} from 'storyblok-generate-ts'
+import { StoryblokStory } from "storyblok-generate-ts";
 
 export interface BlogAsideStoryblok {
   author?: BlogAuthorStoryblok[];
@@ -42,7 +42,7 @@ export interface BlogAuthorStoryblok {
 export interface BlogHeadStoryblok {
   date?: string;
   tags?: TagsStoryblok[];
-  headline?: string;
+  headline: string;
   image?: AssetStoryblok;
   type?: string;
   _uid: string;
@@ -52,7 +52,7 @@ export interface BlogHeadStoryblok {
 export interface BlogOverviewStoryblok {
   section?: SectionStoryblok[];
   latestTitle?: string;
-  latest?: BlogTeaserStoryblok[];
+  latest?: (StoryblokStory<BlogPostStoryblok> | string)[];
   listTitle?: string;
   list?: BlogTeaserStoryblok[];
   moreTitle?: string;
@@ -65,11 +65,11 @@ export interface BlogOverviewStoryblok {
 }
 
 export interface BlogPostStoryblok {
-  head?: BlogHeadStoryblok[];
+  head: BlogHeadStoryblok[];
   aside?: BlogAsideStoryblok[];
   content?: string;
   section?: SectionStoryblok[];
-  cta?: CtaStoryblok[];
+  cta?: GlobalReferenceStoryblok[];
   seo?: SeoStoryblok[];
   type?: string;
   _uid: string;
@@ -100,8 +100,8 @@ export type MultilinkStoryblok =
 export interface BlogTeaserStoryblok {
   date?: string;
   tags?: TagsStoryblok[];
-  headline?: string;
-  teaserText?: string;
+  headline: string;
+  teaserText: string;
   image?: AssetStoryblok;
   link_url?: MultilinkStoryblok;
   readingTime?: string;
@@ -119,6 +119,21 @@ export interface ButtonsStoryblok {
   target?: MultilinkStoryblok;
   _uid: string;
   component: "buttons";
+}
+
+export interface ContactStoryblok {
+  title?: string;
+  subtitle?: string;
+  links?: LinksStoryblok[];
+  copy?: string;
+  className?: string;
+  type?: string;
+  image_src?: AssetStoryblok;
+  image_alt?: string;
+  image_fullWidth?: boolean;
+  image_aspectRatio?: "" | "wide" | "square" | "vertical";
+  _uid: string;
+  component: "contact";
 }
 
 export interface CtaStoryblok {
@@ -183,10 +198,13 @@ export interface FeaturesStoryblok {
 }
 
 export interface FooterStoryblok {
+  logo_homepageHref?: Exclude<
+    MultilinkStoryblok,
+    { linktype?: "email" } | { linktype?: "asset" }
+  >;
   logo_src?: AssetStoryblok;
   logo_srcInverted?: AssetStoryblok;
   logo_alt?: string;
-  logo_homepageHref?: MultilinkStoryblok;
   logo_width?: string;
   logo_height?: string;
   byline?: string;
@@ -241,18 +259,21 @@ export interface GlobalReferenceStoryblok {
 }
 
 export interface HeaderStoryblok {
+  floating?: boolean;
+  inverted?: boolean;
+  flyoutInverted?: boolean;
+  dropdownInverted?: boolean;
+  navItems?: NavItemsStoryblok[];
+  type?: string;
+  logo_homepageHref?: Exclude<
+    MultilinkStoryblok,
+    { linktype?: "email" } | { linktype?: "asset" }
+  >;
   logo_src?: AssetStoryblok;
   logo_srcInverted?: AssetStoryblok;
   logo_alt?: string;
-  logo_homepageHref?: MultilinkStoryblok;
   logo_width?: string;
   logo_height?: string;
-  flyoutInverted?: boolean;
-  dropdownInverted?: boolean;
-  floating?: boolean;
-  inverted?: boolean;
-  navItems?: NavItemsStoryblok[];
-  type?: string;
   _uid: string;
   component: "header";
 }
@@ -297,18 +318,18 @@ export interface ImagesStoryblok {
 
 export interface ImageStoryStoryblok {
   headline?: string;
+  image_aspectRatio?: "" | "wide" | "square" | "landscape" | "unset";
   largeHeadline?: boolean;
   sub?: string;
   text?: string;
   layout?: "" | "textLeft" | "imageLeft";
   padding?: boolean;
   buttons?: ButtonsStoryblok[];
-  image_src?: AssetStoryblok;
-  image_aspectRatio?: "" | "unset" | "square" | "wide" | "landscape";
-  image_alt?: string;
-  image_vAlign?: "" | "center" | "top" | "bottom";
   textAlign?: "" | "left" | "center";
   type?: string;
+  image_src?: AssetStoryblok;
+  image_alt?: string;
+  image_vAlign?: "" | "top" | "center" | "bottom";
   _uid: string;
   component: "image-story";
 }
@@ -360,6 +381,7 @@ export interface LinksStoryblok {
   label?: string;
   href?: MultilinkStoryblok;
   newTab?: boolean;
+  type?: string;
   _uid: string;
   component: "links";
 }
@@ -367,6 +389,7 @@ export interface LinksStoryblok {
 export interface LogoStoryblok {
   src?: AssetStoryblok;
   alt?: string;
+  type?: string;
   _uid: string;
   component: "logo";
 }
@@ -389,7 +412,7 @@ export interface LogosStoryblok {
 export interface MosaicStoryblok {
   layout?: "" | "alternate" | "textLeft" | "textRight";
   largeHeadlines?: boolean;
-  tile?: TileStoryblok[];
+  tiles?: TilesStoryblok[];
   type?: string;
   _uid: string;
   component: "mosaic";
@@ -399,18 +422,28 @@ export interface NavItemsStoryblok {
   href?: MultilinkStoryblok;
   label?: string;
   active?: boolean;
-  items?: ItemsStoryblok[];
+  items?: NavSubItemsStoryblok[];
   _uid: string;
   component: "navItems";
 }
 
+export interface NavSubItemsStoryblok {
+  href?: Exclude<
+    MultilinkStoryblok,
+    { linktype?: "email" } | { linktype?: "asset" }
+  >;
+  label?: string;
+  _uid: string;
+  component: "navSubItems";
+}
+
 export interface PageStoryblok {
   section?: SectionStoryblok[];
+  seo?: SeoStoryblok[];
+  type?: string;
   header_floating?: boolean;
   header_inverted?: boolean;
   footer_inverted?: boolean;
-  seo?: SeoStoryblok[];
-  type?: string;
   _uid: string;
   component: "page";
   uuid?: string;
@@ -452,9 +485,16 @@ export interface SectionStoryblok {
   content_align?: "" | "left" | "center" | "right";
   content_gutter?: "" | "large" | "default" | "small" | "none";
   content_mode?: "" | "default" | "tile" | "list" | "slider";
-  content_tileWidth?: "" | "smallest" | "default" | "medium" | "large" | "largest";
+  content_tileWidth?:
+    | ""
+    | "smallest"
+    | "default"
+    | "medium"
+    | "large"
+    | "largest";
   components?: (
     | BlogTeaserStoryblok
+    | ContactStoryblok
     | CtaStoryblok
     | DividerStoryblok
     | FaqStoryblok
@@ -485,7 +525,7 @@ export interface SeoStoryblok {
   description?: string;
   keywords?: string;
   image?: AssetStoryblok;
-  cardImage?: AssetStoryblok;
+  cardImage?: string;
   type?: string;
   _uid: string;
   component: "seo";
@@ -559,8 +599,7 @@ export interface StatsStoryblok {
 }
 
 export interface TagsStoryblok {
-  entry?: string;
-  type?: string;
+  entry: string;
   _uid: string;
   component: "tags";
 }
@@ -611,7 +650,7 @@ export interface TextStoryblok {
   component: "text";
 }
 
-export interface TileStoryblok {
+export interface TilesStoryblok {
   headline?: string;
   sub?: string;
   text?: string;
@@ -623,9 +662,8 @@ export interface TileStoryblok {
   backgroundColor?: string;
   backgroundImage?: AssetStoryblok;
   textColor?: string;
-  type?: string;
   _uid: string;
-  component: "tile";
+  component: "tiles";
 }
 
 export interface VideoCurtainStoryblok {

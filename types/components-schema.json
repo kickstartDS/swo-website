@@ -8,33 +8,27 @@
       "id": 6468560,
       "schema": {
         "author": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Author",
-          "key": "author",
           "type": "bloks",
+          "pos": 0,
+          "maximum": 1,
+          "minimum": 1,
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "blog-author"
-          ],
-          "description": "The author of the blog post"
+          "component_whitelist": ["blog-author"]
         },
         "socialSharing": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "SocialSharing",
           "key": "socialSharing",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "socialSharing"
-          ]
+          "component_whitelist": ["socialSharing"]
         },
         "readingTime": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "ReadingTime",
           "key": "readingTime",
           "type": "text",
@@ -43,7 +37,7 @@
         },
         "date": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "Date",
           "key": "date",
           "type": "datetime",
@@ -53,7 +47,7 @@
         },
         "className": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "ClassName",
           "key": "className",
           "type": "text",
@@ -61,7 +55,7 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -102,22 +96,9 @@
       "id": 6468558,
       "schema": {
         "name": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Name",
-          "key": "name",
           "type": "text",
-          "description": "The name of the author",
-          "required": false
-        },
-        "byline": {
-          "id": 0,
           "pos": 0,
-          "display_name": "Byline",
-          "key": "byline",
-          "type": "text",
-          "description": "The byline of the author",
-          "required": false
+          "display_name": "Name"
         },
         "tab-9fe18b49-932d-4db1-9301-16ce2a9c3880": {
           "id": 0,
@@ -130,85 +111,65 @@
             "image_fullWidth",
             "image_aspectRatio"
           ],
-          "type": "tab",
-          "required": false
+          "pos": 0,
+          "type": "tab"
+        },
+        "byline": {
+          "type": "text",
+          "pos": 1,
+          "display_name": "Byline"
         },
         "image_src": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Src",
-          "key": "image_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
-          "description": "URL of the image to display",
-          "required": false
+          "pos": 3,
+          "display_name": "Src",
+          "filetypes": ["images"]
         },
         "image_alt": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Alt",
-          "key": "image_alt",
           "type": "text",
-          "description": "Alt text of the image",
-          "required": false
+          "pos": 4,
+          "display_name": "Alt"
         },
         "image_fullWidth": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "FullWidth",
-          "key": "image_fullWidth",
           "type": "boolean",
-          "description": "Image uses all the horizontal space vailable",
-          "required": false
+          "pos": 5,
+          "display_name": "Full Width"
         },
         "image_aspectRatio": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "AspectRatio",
-          "key": "image_aspectRatio",
           "type": "option",
-          "default_value": "square",
-          "description": "Aspect Ratio of the Images",
+          "pos": 6,
+          "use_uuid": true,
+          "display_name": "Aspect Ratio",
           "options": [
             {
+              "_uid": "dbbc7788-9721-4cf6-921b-e462a19147ad",
               "name": "wide",
               "value": "wide",
               "_uid": "83f77280-ea7c-45c5-93a0-545203363d4b"
             },
             {
-              "name": "square",
+              "_uid": "2dced25a-2ee3-40af-9cd2-886d01315ceb",
               "value": "square",
               "_uid": "3f13f85d-9c3f-4527-a513-2cd614465bf7"
             },
             {
-              "name": "vertical",
+              "_uid": "bcbc8423-0ba0-4140-9c67-1d53e1ff11c2",
               "value": "vertical",
               "_uid": "b2c27478-080a-41da-b712-f932bea3d9f5"
             }
           ],
-          "required": false
+          "default_value": "square"
         },
         "links": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Links",
-          "key": "links",
           "type": "bloks",
+          "pos": 7,
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "links"
-          ]
+          "component_whitelist": ["links"]
         },
         "type": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Type",
-          "key": "type",
           "type": "text",
-          "description": "Internal type for interface resolution",
+          "pos": 8,
           "default_value": "blog-author"
         }
       },
@@ -229,10 +190,10 @@
         }
       ],
       "preset_id": null,
-      "real_name": "Blog Author",
+      "real_name": "blog-author",
       "component_group_uuid": null,
-      "color": "#05566a",
-      "icon": "block-wallet",
+      "color": null,
+      "icon": null,
       "internal_tags_list": [],
       "internal_tag_ids": [],
       "content_type_asset_preview": null
@@ -262,9 +223,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "tags"
-          ],
+          "component_whitelist": ["tags"],
           "description": "Tag given to a blog post"
         },
         "headline": {
@@ -274,7 +233,7 @@
           "key": "headline",
           "type": "markdown",
           "description": "The headline of the blog post",
-          "required": false
+          "required": true
         },
         "image": {
           "id": 0,
@@ -282,9 +241,7 @@
           "display_name": "Image",
           "key": "image",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "The source of the cover image for the blog post",
           "required": false
         },
@@ -331,40 +288,38 @@
       "id": 6468566,
       "schema": {
         "section": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Section",
-          "key": "section",
           "type": "bloks",
+          "pos": 0,
+          "display_name": "Intro",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "section"
-          ],
-          "description": "Component used to layout components into pages"
+          "component_whitelist": ["section"]
         },
         "latestTitle": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "LatestTitle",
-          "key": "latestTitle",
           "type": "text",
-          "default_value": "Latest Post",
-          "description": "Title for the latest post section",
-          "required": false
+          "pos": 1
         },
         "latest": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "Latest",
           "key": "latest",
-          "type": "bloks",
+          "type": "options",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "blog-teaser"
-          ],
-          "description": "Display a blog teaser with date, tags, headline, teaser text and author"
+          "component_whitelist": ["blog-teaser"],
+          "description": "Display a blog teaser with date, tags, headline, teaser text and author",
+          "filter_content_type": ["blog-post"],
+          "is_reference_type": true,
+          "source": "internal_stories",
+          "entry_appearance": "card",
+          "allow_advanced_search": true,
+          "min_options": "",
+          "max_options": "1"
+        },
+        "listTitle": {
+          "type": "text",
+          "pos": 3
         },
         "listTitle": {
           "id": 0,
@@ -378,16 +333,21 @@
         },
         "list": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "List",
           "key": "list",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "blog-teaser"
-          ],
-          "description": "Display a blog teaser with date, tags, headline, teaser text and author"
+          "component_whitelist": ["blog-teaser"],
+          "description": "Display a blog teaser with date, tags, headline, teaser text and author",
+          "filter_content_type": ["blog-post"],
+          "min_options": "",
+          "max_options": "5"
+        },
+        "moreTitle": {
+          "type": "text",
+          "pos": 5
         },
         "moreTitle": {
           "id": 0,
@@ -401,46 +361,42 @@
         },
         "more": {
           "id": 0,
-          "pos": 0,
+          "pos": 6,
           "display_name": "More",
           "key": "more",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "blog-teaser"
-          ],
+          "component_whitelist": ["blog-teaser"],
           "description": "Display a blog teaser with date, tags, headline, teaser text and author"
         },
         "cta": {
           "id": 0,
-          "pos": 0,
+          "pos": 7,
           "display_name": "Cta",
           "key": "cta",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "cta"
-          ],
-          "description": "Cta"
+          "component_whitelist": ["cta"],
+          "description": "Cta",
+          "maximum": 1
         },
         "seo": {
           "id": 0,
-          "pos": 0,
+          "pos": 8,
           "display_name": "Seo",
           "key": "seo",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "seo"
-          ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "component_whitelist": ["seo"],
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "maximum": 1
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 9,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -478,75 +434,74 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "blog-head"
-          ],
-          "description": "Intro portion of a singular blog entry"
+          "component_whitelist": ["blog-head"],
+          "description": "Intro portion of a singular blog entry",
+          "required": true,
+          "minimum": 1,
+          "maximum": 1
         },
         "aside": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "Aside",
           "key": "aside",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "blog-aside"
-          ],
-          "description": "Meta info for a singular blog entry"
+          "component_whitelist": ["blog-aside"],
+          "description": "Meta info for a singular blog entry",
+          "maximum": 1,
+          "required": false
         },
         "content": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "Content",
           "key": "content",
           "type": "markdown",
-          "description": "Body text for the blog post, overwrites sections if present",
+          "description": "Body text for the blog post",
           "required": false
         },
         "section": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Section",
-          "key": "section",
           "type": "bloks",
+          "pos": 3,
+          "display_name": "Section",
+          "description": "Component used to layout components into blog posts",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "section"
-          ],
-          "description": "Component used to layout components into pages"
+          "component_whitelist": ["section"]
         },
         "cta": {
           "id": 0,
-          "pos": 0,
-          "display_name": "Cta",
+          "pos": 4,
+          "display_name": "Contact",
           "key": "cta",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "cta"
-          ],
-          "description": "Cta"
+          "component_whitelist": ["global_reference"],
+          "description": "Contact",
+          "folder_slug": "global/",
+          "filter_content_type": [],
+          "min_options": "",
+          "max_options": "",
+          "maximum": 1
         },
         "seo": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Seo",
           "key": "seo",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "seo"
-          ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "component_whitelist": ["seo"],
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "maximum": 1
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 6,
           "display_name": "Type",
           "key": "type",
           "type": "text",
@@ -594,9 +549,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "tags"
-          ],
+          "component_whitelist": ["tags"],
           "description": "Tag given to a blog post"
         },
         "headline": {
@@ -606,7 +559,7 @@
           "key": "headline",
           "type": "markdown",
           "description": "The headline of the blog post",
-          "required": false
+          "required": true
         },
         "teaserText": {
           "id": 0,
@@ -615,7 +568,7 @@
           "key": "teaserText",
           "type": "markdown",
           "description": "The teaser text of the blog post",
-          "required": false
+          "required": true
         },
         "image": {
           "id": 0,
@@ -623,9 +576,7 @@
           "display_name": "Image",
           "key": "image",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "The preview image for the blog post",
           "required": false
         },
@@ -634,9 +585,7 @@
           "pos": 0,
           "display_name": "Link",
           "key": "tab-421e7404-97d2-4fc3-99d1-ae711fb3d802",
-          "keys": [
-            "link_url"
-          ],
+          "keys": ["link_url"],
           "type": "tab",
           "description": "URL and label for the blog post linked",
           "required": false
@@ -668,11 +617,7 @@
           "pos": 0,
           "display_name": "Author",
           "key": "tab-1d9ecc4e-2419-4659-b4f9-071355333aef",
-          "keys": [
-            "author_name",
-            "author_title",
-            "author_image"
-          ],
+          "keys": ["author_name", "author_title", "author_image"],
           "type": "tab",
           "description": "The author of the blog post",
           "required": false
@@ -701,9 +646,7 @@
           "display_name": "Image",
           "key": "author_image",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "The image URL of the author",
           "required": false
         },
@@ -776,7 +719,8 @@
           "field_type": "storyblok-icon-sprite-picker-field-plugin",
           "options": [],
           "description": "Choose an icon",
-          "required": false
+          "required": false,
+          "default_value": ""
         },
         "target": {
           "id": 0,
@@ -808,6 +752,105 @@
       "content_type_asset_preview": null
     },
     {
+      "name": "contact",
+      "display_name": null,
+      "created_at": "2024-09-04T07:24:44.325Z",
+      "updated_at": "2024-09-04T08:25:45.369Z",
+      "id": 6249490,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
+        "tab-97f5b820-9efd-4b7d-ba83-4d44882daac4": {
+          "display_name": "Image",
+          "keys": [
+            "image_src",
+            "image_alt",
+            "image_fullWidth",
+            "image_aspectRatio"
+          ],
+          "pos": 0,
+          "type": "tab"
+        },
+        "subtitle": {
+          "type": "text",
+          "pos": 1
+        },
+        "links": {
+          "type": "bloks",
+          "pos": 2,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": ["links"]
+        },
+        "copy": {
+          "type": "text",
+          "pos": 3
+        },
+        "className": {
+          "type": "text",
+          "pos": 4
+        },
+        "type": {
+          "type": "text",
+          "pos": 5,
+          "default_value": "contact"
+        },
+        "image_src": {
+          "type": "asset",
+          "pos": 7,
+          "filetypes": ["images"]
+        },
+        "image_alt": {
+          "type": "text",
+          "pos": 8
+        },
+        "image_fullWidth": {
+          "type": "boolean",
+          "pos": 9
+        },
+        "image_aspectRatio": {
+          "type": "option",
+          "pos": 10,
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "ac16c67c-5264-4f58-a1af-e90c24fa52de",
+              "name": "wide",
+              "value": "wide"
+            },
+            {
+              "_uid": "7d9f0c3e-df8a-4d6b-a05c-9a9086a735bb",
+              "value": "square",
+              "name": "square"
+            },
+            {
+              "_uid": "4dc139ee-85ed-4a25-a71b-5081d612f80e",
+              "value": "vertical",
+              "name": "vertical"
+            }
+          ],
+          "default_value": "square"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "contact",
+      "component_group_uuid": "a3c44207-2b1a-4ed4-9113-6fdfb114ca95",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "Components"
+    },
+    {
       "name": "cta",
       "display_name": "Cta",
       "created_at": "2024-10-24T11:28:14.399Z",
@@ -819,7 +862,7 @@
           "pos": 0,
           "display_name": "Headline",
           "key": "headline",
-          "type": "markdown",
+          "type": "text",
           "description": "Headline for the Component element",
           "required": false
         },
@@ -828,7 +871,7 @@
           "pos": 0,
           "display_name": "Sub",
           "key": "sub",
-          "type": "markdown",
+          "type": "text",
           "description": "Subheadline below the component headline",
           "required": false
         },
@@ -837,7 +880,7 @@
           "pos": 0,
           "display_name": "Text",
           "key": "text",
-          "type": "markdown",
+          "type": "textarea",
           "description": "Info text for the component element",
           "required": false
         },
@@ -876,9 +919,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "buttons"
-          ],
+          "component_whitelist": ["buttons"],
           "description": "Button"
         },
         "backgroundColor": {
@@ -896,9 +937,7 @@
           "display_name": "BackgroundImage",
           "key": "backgroundImage",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Background image for the whole element",
           "required": false
         },
@@ -907,11 +946,7 @@
           "pos": 0,
           "display_name": "Image",
           "key": "tab-2cb9998d-3e25-44bc-8d91-256353c7a6b4",
-          "keys": [
-            "image_src",
-            "image_padding",
-            "image_alt"
-          ],
+          "keys": ["image_src", "image_padding", "image_alt"],
           "type": "tab",
           "description": "Image displayed alongside the text content",
           "required": false
@@ -922,9 +957,7 @@
           "display_name": "Src",
           "key": "image_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Image source to use",
           "required": false
         },
@@ -952,10 +985,7 @@
           "pos": 0,
           "display_name": "Order",
           "key": "tab-0efff12b-eec7-4cc4-8dc3-f5367cdf96b7",
-          "keys": [
-            "order_mobileImageLast",
-            "order_desktopImageLast"
-          ],
+          "keys": ["order_mobileImageLast", "order_desktopImageLast"],
           "type": "tab",
           "description": "Choose what comes first on mobile and desktop: image or text",
           "required": false
@@ -1243,9 +1273,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "questions"
-          ]
+          "component_whitelist": ["questions"]
         },
         "type": {
           "id": 0,
@@ -1324,7 +1352,7 @@
           "pos": 0,
           "display_name": "Text",
           "key": "text",
-          "type": "markdown",
+          "type": "text",
           "description": "The description of the feature",
           "required": false
         },
@@ -1369,12 +1397,7 @@
           "pos": 0,
           "display_name": "Cta",
           "key": "tab-e7931c28-1f33-4d73-98ae-0dba0a6f4ea4",
-          "keys": [
-            "cta_target",
-            "cta_label",
-            "cta_toggle",
-            "cta_style"
-          ],
+          "keys": ["cta_target", "cta_label", "cta_toggle", "cta_style"],
           "type": "tab",
           "description": "The call to action",
           "required": false
@@ -1540,10 +1563,7 @@
           "pos": 0,
           "display_name": "Ctas",
           "key": "tab-c408b8fb-eb5a-4da0-b781-ea4ee24a52ea",
-          "keys": [
-            "ctas_toggle",
-            "ctas_style"
-          ],
+          "keys": ["ctas_toggle", "ctas_style"],
           "type": "tab",
           "required": false
         },
@@ -1591,9 +1611,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "feature"
-          ],
+          "component_whitelist": ["feature"],
           "description": "Partial Component used to display a feature"
         },
         "type": {
@@ -1694,53 +1712,31 @@
         },
         "logo_src": {
           "id": 0,
-          "pos": 0,
+          "pos": 1,
           "display_name": "Src",
           "key": "logo_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Picture source",
           "required": false
         },
         "logo_srcInverted": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "SrcInverted",
-          "key": "logo_srcInverted",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
-          "description": "Picture source",
-          "required": false
+          "pos": 2,
+          "filetypes": ["images"]
         },
         "logo_alt": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "Alt",
           "key": "logo_alt",
           "type": "text",
           "description": "Alt text to display for picture",
           "required": false
         },
-        "logo_homepageHref": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "HomepageHref",
-          "key": "logo_homepageHref",
-          "type": "multilink",
-          "allow_target_blank": true,
-          "email_link_type": true,
-          "asset_link_type": true,
-          "show_anchor": true,
-          "default_value": "/",
-          "required": false
-        },
         "logo_width": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Width",
           "key": "logo_width",
           "type": "number",
@@ -1749,7 +1745,7 @@
         },
         "logo_height": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Height",
           "key": "logo_height",
           "type": "number",
@@ -1757,44 +1753,54 @@
           "required": false
         },
         "byline": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Byline",
-          "key": "byline",
           "type": "text",
-          "default_value": "© 2024 systemics Inc. All rights reserved.",
+          "pos": 6,
+          "display_name": "Byline",
           "description": "Small line of text displayed below the logo",
-          "required": false
+          "default_value": "© 2024 systemics Inc. All rights reserved."
         },
         "inverted": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Inverted",
-          "key": "inverted",
           "type": "boolean",
+          "pos": 7,
+          "display_name": "Inverted",
           "description": "Invert the color scheme of the footer",
-          "required": false
+          "default_value": true
         },
         "navItems": {
           "id": 0,
-          "pos": 0,
+          "pos": 8,
           "display_name": "NavItems",
           "key": "navItems",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "navItems"
-          ]
+          "component_whitelist": ["navItems"]
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 9,
           "display_name": "Type",
           "key": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "footer"
+        },
+        "tab-7d6038ed-80ed-4d94-9327-8a46fcff8501": {
+          "id": 0,
+          "pos": 10,
+          "display_name": "Logo",
+          "key": "tab-7d6038ed-80ed-4d94-9327-8a46fcff8501",
+          "keys": [
+            "logo_src",
+            "logo_alt",
+            "logo_width",
+            "logo_height",
+            "logo_homepageHref",
+            "logo_srcInverted"
+          ],
+          "type": "tab",
+          "description": "Logo",
+          "required": false
         }
       },
       "image": "//a.storyblok.com/f/310529/1280x371/73bd610e88/layout-footer-footer.png",
@@ -1837,9 +1843,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "images"
-          ]
+          "component_whitelist": ["images"]
         },
         "layout": {
           "id": 0,
@@ -1984,9 +1988,7 @@
           "type": "bloks",
           "restrict_type": "groups",
           "restrict_components": true,
-          "component_group_whitelist": [
-            "27c76ecb-31b2-4e41-a6fa-a9a03cb07a07"
-          ]
+          "component_group_whitelist": ["27c76ecb-31b2-4e41-a6fa-a9a03cb07a07"]
         }
       },
       "image": null,
@@ -2067,9 +2069,7 @@
           "display_name": "Src",
           "key": "logo_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Picture source",
           "required": false
         },
@@ -2079,9 +2079,7 @@
           "display_name": "SrcInverted",
           "key": "logo_srcInverted",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Picture source",
           "required": false
         },
@@ -2153,34 +2151,102 @@
           "required": false
         },
         "inverted": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Inverted",
-          "key": "inverted",
           "type": "boolean",
-          "description": "Invert the color scheme of the header",
-          "required": false
+          "pos": 1,
+          "display_name": "Inverted",
+          "description": "Invert the color scheme of the header"
+        },
+        "flyoutInverted": {
+          "type": "boolean",
+          "pos": 2,
+          "default_value": true
+        },
+        "dropdownInverted": {
+          "type": "boolean",
+          "pos": 3
         },
         "navItems": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "NavItems",
           "key": "navItems",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "navItems"
-          ]
+          "component_whitelist": ["navItems"]
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Type",
           "key": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "header"
+        },
+        "logo_homepageHref": {
+          "type": "multilink",
+          "pos": 6
+        },
+        "logo_src": {
+          "id": 0,
+          "pos": 7,
+          "display_name": "Src",
+          "key": "logo_src",
+          "type": "asset",
+          "filetypes": ["images"],
+          "description": "Picture source",
+          "required": false
+        },
+        "logo_srcInverted": {
+          "type": "asset",
+          "pos": 8,
+          "display_name": "Src Inverted",
+          "filetypes": ["images"]
+        },
+        "logo_alt": {
+          "id": 0,
+          "pos": 9,
+          "display_name": "Alt",
+          "key": "logo_alt",
+          "type": "text",
+          "description": "Alt text to display for picture",
+          "required": false
+        },
+        "logo_width": {
+          "id": 0,
+          "pos": 10,
+          "display_name": "Width",
+          "key": "logo_width",
+          "type": "number",
+          "description": "Width of the picture",
+          "required": false
+        },
+        "logo_height": {
+          "id": 0,
+          "pos": 11,
+          "display_name": "Height",
+          "key": "logo_height",
+          "type": "number",
+          "description": "Height of the picture",
+          "required": false
+        },
+        "tab-098a906f-ccdc-40d1-a141-62105d0cb73e": {
+          "id": 0,
+          "pos": 12,
+          "display_name": "Logo",
+          "key": "tab-098a906f-ccdc-40d1-a141-62105d0cb73e",
+          "keys": [
+            "logo_src",
+            "logo_alt",
+            "logo_width",
+            "logo_height",
+            "logo_srcInverted",
+            "logo_homepageHref"
+          ],
+          "type": "tab",
+          "description": "Logo",
+          "required": false
         }
       },
       "image": "//a.storyblok.com/f/310529/1280x255/c4e3941b67/layout-header-header.png",
@@ -2220,7 +2286,7 @@
           "pos": 0,
           "display_name": "Headline",
           "key": "headline",
-          "type": "markdown",
+          "type": "text",
           "description": "Headline for the visual",
           "required": false
         },
@@ -2229,7 +2295,7 @@
           "pos": 0,
           "display_name": "Sub",
           "key": "sub",
-          "type": "markdown",
+          "type": "text",
           "description": "Subheadline below the module headline",
           "required": false
         },
@@ -2238,7 +2304,7 @@
           "pos": 0,
           "display_name": "Text",
           "key": "text",
-          "type": "markdown",
+          "type": "text",
           "description": "Info text for the module element",
           "required": false
         },
@@ -2310,9 +2376,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "buttons"
-          ],
+          "component_whitelist": ["buttons"],
           "description": "Button"
         },
         "overlay": {
@@ -2347,9 +2411,7 @@
           "display_name": "SrcMobile",
           "key": "image_srcMobile",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Background image source for small screens",
           "required": false
         },
@@ -2359,9 +2421,7 @@
           "display_name": "SrcTablet",
           "key": "image_srcTablet",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Background image source for medium screens",
           "required": false
         },
@@ -2371,9 +2431,7 @@
           "display_name": "SrcDesktop",
           "key": "image_srcDesktop",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Background image source for large screens",
           "required": false
         },
@@ -2383,9 +2441,7 @@
           "display_name": "Src",
           "key": "image_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Override for img tag of picture element, if needed",
           "required": false
         },
@@ -2584,9 +2640,7 @@
           "display_name": "Src",
           "key": "src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "The source of the image",
           "required": false
         },
@@ -2640,9 +2694,41 @@
           "description": "Headline for the module element",
           "required": false
         },
+        "image_aspectRatio": {
+          "id": 0,
+          "pos": 1,
+          "display_name": "Image Aspect Ratio",
+          "key": "image_ratio",
+          "type": "option",
+          "default_value": "unset",
+          "description": "Select an aspect ratio to use for cropping and displaying the image",
+          "options": [
+            {
+              "name": "wide",
+              "value": "wide",
+              "_uid": "a48b2abf-c4bd-4c26-bc71-40f4d5b8a79e"
+            },
+            {
+              "name": "square",
+              "value": "square",
+              "_uid": "37816c3d-a919-417e-b30a-f6413d464d85"
+            },
+            {
+              "name": "landscape",
+              "value": "landscape",
+              "_uid": "519ee2ab-efbe-451a-9b1f-ddf5f98d7d6a"
+            },
+            {
+              "name": "unset",
+              "value": "unset",
+              "_uid": "1677bf2a-37a9-4a09-84f5-be13f88f3952"
+            }
+          ],
+          "required": false
+        },
         "largeHeadline": {
           "id": 0,
-          "pos": 0,
+          "pos": 2,
           "display_name": "LargeHeadline",
           "key": "largeHeadline",
           "type": "boolean",
@@ -2651,7 +2737,7 @@
         },
         "sub": {
           "id": 0,
-          "pos": 0,
+          "pos": 3,
           "display_name": "Sub",
           "key": "sub",
           "type": "markdown",
@@ -2660,7 +2746,7 @@
         },
         "text": {
           "id": 0,
-          "pos": 0,
+          "pos": 4,
           "display_name": "Text",
           "key": "text",
           "type": "markdown",
@@ -2669,7 +2755,7 @@
         },
         "layout": {
           "id": 0,
-          "pos": 0,
+          "pos": 5,
           "display_name": "Layout",
           "key": "layout",
           "type": "option",
@@ -2691,7 +2777,7 @@
         },
         "padding": {
           "id": 0,
-          "pos": 0,
+          "pos": 6,
           "display_name": "Padding",
           "key": "padding",
           "type": "boolean",
@@ -2700,15 +2786,13 @@
         },
         "buttons": {
           "id": 0,
-          "pos": 0,
+          "pos": 7,
           "display_name": "Buttons",
           "key": "buttons",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "buttons"
-          ],
+          "component_whitelist": ["buttons"],
           "description": "Component used for user interaction"
         },
         "tab-9930fa39-7b23-430a-81ad-5b9dcd1e763e": {
@@ -2732,9 +2816,7 @@
           "display_name": "Src",
           "key": "image_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Image source to use",
           "required": false
         },
@@ -2808,7 +2890,7 @@
         },
         "textAlign": {
           "id": 0,
-          "pos": 0,
+          "pos": 8,
           "display_name": "TextAlign",
           "key": "textAlign",
           "type": "option",
@@ -2830,12 +2912,70 @@
         },
         "type": {
           "id": 0,
-          "pos": 0,
+          "pos": 9,
           "display_name": "Type",
           "key": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "image-story"
+        },
+        "tab-0464fea0-678a-4e66-8b49-940ac5e27f76": {
+          "id": 0,
+          "pos": 10,
+          "display_name": "Image",
+          "key": "tab-0464fea0-678a-4e66-8b49-940ac5e27f76",
+          "keys": [
+            "image_src",
+            "image_ratio",
+            "image_alt",
+            "image_aspectRatio",
+            "image_vAlign"
+          ],
+          "type": "tab",
+          "description": "Image displayed alongside the text content",
+          "required": false
+        },
+        "image_src": {
+          "id": 0,
+          "pos": 11,
+          "display_name": "Src",
+          "key": "image_src",
+          "type": "asset",
+          "filetypes": ["images"],
+          "description": "Image source to use",
+          "required": false
+        },
+        "image_alt": {
+          "id": 0,
+          "pos": 12,
+          "display_name": "Alt",
+          "key": "image_alt",
+          "type": "text",
+          "description": "Image description",
+          "required": false
+        },
+        "image_vAlign": {
+          "type": "option",
+          "pos": 13,
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "6844b23b-59f5-49e4-8003-f0e1be568b2b",
+              "name": "top",
+              "value": "top"
+            },
+            {
+              "_uid": "34e9daaa-1a9b-4d8a-be97-d718a73ff346",
+              "value": "center",
+              "name": "center"
+            },
+            {
+              "_uid": "1307d4d9-dc90-4da9-a815-b8a8368038d9",
+              "value": "bottom",
+              "name": "bottom"
+            }
+          ],
+          "display_name": "Vertical Align"
         }
       },
       "image": "//a.storyblok.com/f/310529/1160x960/2b003309ec/components-image-story-sticky-image-next-to-scrolling-text.png",
@@ -2894,10 +3034,7 @@
           "pos": 0,
           "display_name": "Image",
           "key": "tab-d76d7cd6-f9fc-4795-917d-66a4c9291c31",
-          "keys": [
-            "image_src",
-            "image_alt"
-          ],
+          "keys": ["image_src", "image_alt"],
           "type": "tab",
           "required": false
         },
@@ -2907,9 +3044,7 @@
           "display_name": "Src",
           "key": "image_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "URL of the image to display",
           "required": false
         },
@@ -3109,33 +3244,26 @@
           "required": false
         },
         "label": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Label",
-          "key": "label",
           "type": "text",
-          "required": false
+          "pos": 1
         },
         "href": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Href",
-          "key": "href",
           "type": "multilink",
+          "pos": 2,
           "allow_target_blank": true,
           "email_link_type": true,
           "asset_link_type": true,
           "show_anchor": true,
-          "required": false
+          "allow_custom_attributes": true
         },
         "newTab": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "NewTab",
-          "key": "newTab",
           "type": "boolean",
-          "description": "Open link in new Tab",
-          "required": false
+          "pos": 3
+        },
+        "type": {
+          "type": "text",
+          "pos": 4,
+          "default_value": "links"
         }
       },
       "image": null,
@@ -3145,10 +3273,10 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "Links",
+      "real_name": "links",
       "component_group_uuid": null,
-      "color": "#05566a",
-      "icon": "block-wallet",
+      "color": null,
+      "icon": null,
       "internal_tags_list": [],
       "internal_tag_ids": [],
       "content_type_asset_preview": null
@@ -3166,9 +3294,7 @@
           "display_name": "Src",
           "key": "src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "The URL of the logo image",
           "required": false
         },
@@ -3180,6 +3306,15 @@
           "type": "text",
           "description": "The alt text of the logo",
           "required": false
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "logo"
         }
       },
       "image": null,
@@ -3221,9 +3356,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "logo"
-          ],
+          "component_whitelist": ["logo"],
           "description": "Logo entry for Logos component"
         },
         "align": {
@@ -3441,18 +3574,15 @@
           "description": "Make the headlines larger",
           "required": false
         },
-        "tile": {
+        "tiles": {
           "id": 0,
           "pos": 0,
-          "display_name": "Tile",
-          "key": "tile",
+          "display_name": "Tiles",
+          "key": "tiles",
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "tile"
-          ],
-          "description": "Tile"
+          "component_whitelist": ["tiles"]
         },
         "type": {
           "id": 0,
@@ -3535,16 +3665,11 @@
           "required": false
         },
         "items": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Items",
-          "key": "items",
           "type": "bloks",
+          "pos": 3,
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "items"
-          ]
+          "component_whitelist": ["navSubItems"]
         }
       },
       "image": null,
@@ -3558,6 +3683,37 @@
       "component_group_uuid": null,
       "color": "#05566a",
       "icon": "block-wallet",
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "navSubItems",
+      "display_name": null,
+      "created_at": "2024-08-22T14:55:55.868Z",
+      "updated_at": "2024-08-22T14:56:31.744Z",
+      "id": 6199070,
+      "schema": {
+        "href": {
+          "type": "multilink",
+          "pos": 0
+        },
+        "label": {
+          "type": "text",
+          "pos": 1
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "navSubItems",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
       "internal_tags_list": [],
       "internal_tag_ids": [],
       "content_type_asset_preview": null
@@ -3577,9 +3733,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "section"
-          ],
+          "component_whitelist": ["section"],
           "description": "Component used to layout components into pages"
         },
         "tab-845f1873-b9b1-4042-a2a3-a2b2fee96841": {
@@ -3587,10 +3741,7 @@
           "pos": 0,
           "display_name": "Header",
           "key": "tab-845f1873-b9b1-4042-a2a3-a2b2fee96841",
-          "keys": [
-            "header_floating",
-            "header_inverted"
-          ],
+          "keys": ["header_floating", "header_inverted"],
           "type": "tab",
           "description": "Header settings for the page",
           "required": false
@@ -3618,9 +3769,7 @@
           "pos": 0,
           "display_name": "Footer",
           "key": "tab-023723ed-a4a2-4212-ba84-3f8ef0ee794d",
-          "keys": [
-            "footer_inverted"
-          ],
+          "keys": ["footer_inverted"],
           "type": "tab",
           "description": "Footer settings for the page",
           "required": false
@@ -3642,10 +3791,9 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "seo"
-          ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "component_whitelist": ["seo"],
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -3655,6 +3803,36 @@
           "type": "text",
           "description": "Internal type for interface resolution",
           "default_value": "page"
+        },
+        "tab-82f93228-8136-4267-8695-5e86766a3c07": {
+          "display_name": "Header",
+          "keys": ["header_floating", "header_inverted"],
+          "pos": 0,
+          "type": "tab"
+        },
+        "tab-e970a16b-8f6a-444c-b3ac-c7be4598ee13": {
+          "display_name": "Footer",
+          "keys": ["footer_inverted"],
+          "pos": 0,
+          "type": "tab"
+        },
+        "header_floating": {
+          "type": "boolean",
+          "pos": 5,
+          "display_name": "Floating",
+          "description": "Whether the header should float on scroll"
+        },
+        "header_inverted": {
+          "type": "boolean",
+          "pos": 6,
+          "display_name": "Inverted",
+          "description": "Whether the header should have an inverted color scheme"
+        },
+        "footer_inverted": {
+          "type": "boolean",
+          "pos": 7,
+          "display_name": "Inverted",
+          "description": "Whether the footer should have an inverted color scheme"
         }
       },
       "image": null,
@@ -4170,7 +4348,7 @@
           "display_name": "Mode",
           "key": "content_mode",
           "type": "option",
-          "default_value": "list",
+          "default_value": "default",
           "description": "Layout mode used for section contents",
           "options": [
             {
@@ -4245,7 +4423,7 @@
             "27c76ecb-31b2-4e41-a6fa-a9a03cb07a07",
             "c6903157-66f0-462a-a31c-044834dd072d"
           ],
-          "description": "Abstracts a blog overview concept into JSON schema",
+          "description": "Abstracts a page concept into JSON schema",
           "required": false
         },
         "buttons": {
@@ -4256,9 +4434,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "buttons"
-          ],
+          "component_whitelist": ["buttons"],
           "description": "Component used for user interaction"
         }
       },
@@ -4426,9 +4602,7 @@
           "display_name": "Image",
           "key": "image",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Preview image used for the page",
           "required": false
         },
@@ -4437,10 +4611,7 @@
           "pos": 0,
           "display_name": "CardImage",
           "key": "cardImage",
-          "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "type": "text",
           "description": "Card preview image (larger, e.g. Twitter) used for the page",
           "required": false
         },
@@ -4484,10 +4655,10 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "header"
-          ],
-          "description": "Header layered on top by the CMS"
+          "component_whitelist": ["header"],
+          "description": "Header",
+          "minimum": 1,
+          "maximum": 1
         },
         "footer": {
           "id": 0,
@@ -4497,10 +4668,10 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "footer"
-          ],
-          "description": "Footer"
+          "component_whitelist": ["footer"],
+          "description": "Footer",
+          "minimum": 1,
+          "maximum": 1
         },
         "seo": {
           "id": 0,
@@ -4510,10 +4681,10 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "seo"
-          ],
-          "description": "Abstracts SEO settings for a website into JSON schema"
+          "component_whitelist": ["seo"],
+          "description": "Abstracts SEO settings for a website into JSON schema",
+          "minimum": 1,
+          "maximum": 1
         },
         "type": {
           "id": 0,
@@ -4628,9 +4799,7 @@
           "type": "bloks",
           "restrict_type": "groups",
           "restrict_components": true,
-          "component_group_whitelist": [
-            "27c76ecb-31b2-4e41-a6fa-a9a03cb07a07"
-          ],
+          "component_group_whitelist": ["27c76ecb-31b2-4e41-a6fa-a9a03cb07a07"],
           "description": "Abstracts a blog overview concept into JSON schema",
           "required": false
         },
@@ -4851,9 +5020,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "stat"
-          ],
+          "component_whitelist": ["stat"],
           "description": "Stat entry of Stats component"
         },
         "type": {
@@ -4914,17 +5081,7 @@
           "display_name": "Entry",
           "key": "entry",
           "type": "text",
-          "description": "Name of the tag entry",
-          "required": false
-        },
-        "type": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Type",
-          "key": "type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default_value": "blog-tag"
+          "required": true
         }
       },
       "image": null,
@@ -5016,11 +5173,7 @@
           "pos": 0,
           "display_name": "Button",
           "key": "tab-a88b38e1-1651-4c7c-bbb7-8f5b6e90db7b",
-          "keys": [
-            "button_label",
-            "button_chevron",
-            "button_hidden"
-          ],
+          "keys": ["button_label", "button_chevron", "button_hidden"],
           "type": "tab",
           "required": false
         },
@@ -5057,9 +5210,7 @@
           "display_name": "Image",
           "key": "image",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Image to display as cover",
           "required": false
         },
@@ -5179,7 +5330,7 @@
           "pos": 0,
           "display_name": "Title",
           "key": "title",
-          "type": "text",
+          "type": "markdown",
           "description": "The title of the quote author",
           "required": false
         },
@@ -5188,10 +5339,7 @@
           "pos": 0,
           "display_name": "Image",
           "key": "tab-42891451-6ee2-4fd8-bb7e-160f083d8d19",
-          "keys": [
-            "image_src",
-            "image_alt"
-          ],
+          "keys": ["image_src", "image_alt"],
           "type": "tab",
           "required": false
         },
@@ -5201,9 +5349,7 @@
           "display_name": "Src",
           "key": "image_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "The image to display with the testimonial",
           "required": false
         },
@@ -5292,9 +5438,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "testimonial"
-          ],
+          "component_whitelist": ["testimonial"],
           "description": "Testimonial entry of Testimonials component"
         },
         "type": {
@@ -5522,7 +5666,7 @@
           "pos": 0,
           "display_name": "Headline",
           "key": "headline",
-          "type": "markdown",
+          "type": "text",
           "description": "Headline for the tile",
           "required": false
         },
@@ -5531,7 +5675,7 @@
           "pos": 0,
           "display_name": "Sub",
           "key": "sub",
-          "type": "markdown",
+          "type": "text",
           "description": "Subheadline below the tile headline",
           "required": false
         },
@@ -5540,7 +5684,7 @@
           "pos": 0,
           "display_name": "Text",
           "key": "text",
-          "type": "markdown",
+          "type": "text",
           "description": "Text for tile",
           "required": false
         },
@@ -5549,10 +5693,7 @@
           "pos": 0,
           "display_name": "Image",
           "key": "tab-d56a7bd6-c657-446a-b977-ca8d8be6659b",
-          "keys": [
-            "image_src",
-            "image_alt"
-          ],
+          "keys": ["image_src", "image_alt"],
           "type": "tab",
           "required": false
         },
@@ -5562,9 +5703,7 @@
           "display_name": "Src",
           "key": "image_src",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Picture source",
           "required": false
         },
@@ -5649,9 +5788,7 @@
           "display_name": "BackgroundImage",
           "key": "backgroundImage",
           "type": "asset",
-          "filetypes": [
-            "images"
-          ],
+          "filetypes": ["images"],
           "description": "Background image for the whole element",
           "required": false
         },
@@ -5663,15 +5800,6 @@
           "type": "text",
           "description": "Overwrite the color to use for the text content",
           "required": false
-        },
-        "type": {
-          "id": 0,
-          "pos": 0,
-          "display_name": "Type",
-          "key": "type",
-          "type": "text",
-          "description": "Internal type for interface resolution",
-          "default_value": "tile"
         }
       },
       "image": null,
@@ -5681,7 +5809,7 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "Tile",
+      "real_name": "Tiles",
       "component_group_uuid": null,
       "color": "#05566a",
       "icon": "block-wallet",
@@ -5701,7 +5829,7 @@
           "pos": 0,
           "display_name": "Headline",
           "key": "headline",
-          "type": "markdown",
+          "type": "text",
           "description": "Headline for the visual",
           "required": false
         },
@@ -5710,7 +5838,7 @@
           "pos": 0,
           "display_name": "Sub",
           "key": "sub",
-          "type": "markdown",
+          "type": "text",
           "description": "Subheadline below the module headline",
           "required": false
         },
@@ -5719,7 +5847,7 @@
           "pos": 0,
           "display_name": "Text",
           "key": "text",
-          "type": "markdown",
+          "type": "text",
           "description": "Info text for the module element",
           "required": false
         },
@@ -5749,9 +5877,7 @@
           "type": "bloks",
           "restrict_type": "",
           "restrict_components": true,
-          "component_whitelist": [
-            "buttons"
-          ],
+          "component_whitelist": ["buttons"],
           "description": "Button"
         },
         "overlay": {
@@ -5768,11 +5894,7 @@
           "pos": 0,
           "display_name": "Video",
           "key": "tab-6b59028e-f839-4097-9b7a-88469b0bf5a0",
-          "keys": [
-            "video_srcMobile",
-            "video_srcTablet",
-            "video_srcDesktop"
-          ],
+          "keys": ["video_srcMobile", "video_srcTablet", "video_srcDesktop"],
           "type": "tab",
           "description": "Sources of background videos for different screen sizes",
           "required": false
@@ -5783,9 +5905,7 @@
           "display_name": "SrcMobile",
           "key": "video_srcMobile",
           "type": "asset",
-          "filetypes": [
-            "videos"
-          ],
+          "filetypes": ["videos"],
           "description": "Background video source for small screens",
           "required": false
         },
@@ -5795,9 +5915,7 @@
           "display_name": "SrcTablet",
           "key": "video_srcTablet",
           "type": "asset",
-          "filetypes": [
-            "videos"
-          ],
+          "filetypes": ["videos"],
           "description": "Background video source for medium screens",
           "required": false
         },
@@ -5807,9 +5925,7 @@
           "display_name": "SrcDesktop",
           "key": "video_srcDesktop",
           "type": "asset",
-          "filetypes": [
-            "videos"
-          ],
+          "filetypes": ["videos"],
           "description": "Background video source for large screens",
           "required": false
         },

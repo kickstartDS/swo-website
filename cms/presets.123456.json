@@ -1159,9 +1159,17 @@
         "_uid": "b2f2c899-a543-429b-b59b-bf94e1cd96c7",
         "type": "footer",
         "component": "footer",
+        "logoHref": "/",
         "byline": "© 2024 systemics Inc. All rights reserved.",
         "inverted": false,
         "navItems": [
+          {
+            "href": "#",
+            "label": "Nav Item",
+            "_uid": "db5c2b7a-25b7-4a7f-974f-3ab304a9edb1",
+            "type": "navItems",
+            "component": "navItems"
+          },
           {
             "href": "#",
             "label": "Active Item",
@@ -1224,7 +1232,8 @@
         "logo_homepageHref": "#",
         "logo_alt": "Systemics Logo",
         "logo_width": 176,
-        "logo_height": 40
+        "logo_height": 40,
+        "logo_lazy": false
       },
       "component_id": 171,
       "space_id": "310529",
@@ -1514,11 +1523,17 @@
         "_uid": "a7cadfef-9d03-4e29-b7ee-f0baf28be101",
         "type": "header",
         "component": "header",
-        "flyoutInverted": false,
-        "dropdownInverted": false,
+        "logoHref": "/",
         "floating": false,
         "inverted": false,
         "navItems": [
+          {
+            "href": "#",
+            "label": "Nav Item",
+            "_uid": "2e48b92c-5b8b-4ba4-8e20-eb49e894db20",
+            "type": "navItems",
+            "component": "navItems"
+          },
           {
             "href": "#",
             "label": "Active Item",
@@ -1580,7 +1595,8 @@
         "logo_homepageHref": "#",
         "logo_alt": "Systemics Logo",
         "logo_width": 176,
-        "logo_height": 40
+        "logo_height": 40,
+        "logo_lazy": false
       },
       "component_id": 168,
       "space_id": "310529",

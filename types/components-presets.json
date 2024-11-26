@@ -634,7 +634,6 @@
           {
             "_uid": "b7523fd9-6a35-4173-93f5-3b461ddd3ef6",
             "text": "Our team thrives in a collaborative environment, fostering creativity and innovation.",
-            "type": "tile",
             "headline": "Collaborative Environment",
             "component": "tile",
             "image_src": "//a.storyblok.com/f/310529/996x998/18ab10a979/mosaic-1.png",
@@ -645,7 +644,6 @@
           {
             "_uid": "00e06dc8-cf94-40fe-b779-29489bc5929b",
             "text": "Our state-of-the-art office facilities inspire productivity and efficiency.",
-            "type": "tile",
             "headline": "Modern Infrastructure",
             "component": "tile",
             "image_src": "//a.storyblok.com/f/310529/996x998/b8e70ecd88/mosaic-2.png",
@@ -656,7 +654,6 @@
           {
             "_uid": "a5a00b8f-ce78-4e38-ba89-0707f9d04b8c",
             "text": "We believe in the power of teamwork. Together, we can achieve great things.",
-            "type": "tile",
             "headline": "Teamwork",
             "component": "tile",
             "image_src": "//a.storyblok.com/f/310529/996x998/e50f36846f/mosaic-3.png",
@@ -1157,6 +1154,7 @@
         "type": "footer",
         "byline": "© 2024 systemics Inc. All rights reserved.",
         "inverted": false,
+        "logoHref": "/",
         "logo_alt": "Systemics Logo",
         "logo_src": "//a.storyblok.com/f/310529/176x40/1548c237cd/logo.svg",
         "navItems": [
@@ -1217,11 +1215,9 @@
           }
         ],
         "component": "footer",
+        "logo_lazy": false,
         "logo_width": 176,
-        "logo_height": 40,
-        "logo_inverted": false,
-        "logo_srcInverted": "/logo-inverted.svg",
-        "logo_homepageHref": "#"
+        "logo_height": 40
       },
       "component_id": 6468565,
       "space_id": 310529,
@@ -1318,6 +1314,7 @@
         "type": "header",
         "floating": false,
         "inverted": false,
+        "logoHref": "/",
         "logo_alt": "Systemics Logo",
         "logo_src": "//a.storyblok.com/f/310529/176x40/1548c237cd/logo.svg",
         "navItems": [
@@ -1378,12 +1375,9 @@
           }
         ],
         "component": "header",
+        "logo_lazy": false,
         "logo_width": 176,
-        "logo_height": 40,
-        "flyoutInverted": false,
-        "dropdownInverted": false,
-        "logo_srcInverted": "/logo-inverted.svg",
-        "logo_homepageHref": "#"
+        "logo_height": 40
       },
       "component_id": 6468563,
       "space_id": 310529,
@@ -2979,13 +2973,13 @@
           }
         ],
         "padding": false,
-        "headline": "The Sanity & Next.js Experts",
+        "headline": "ruhmesmeile hilft bei eurer digitalen Transformation durch Design System Coaching & Training",
         "component": "image-story",
         "image_src": "//a.storyblok.com/f/310529/833x833/888c01747b/full-shot-different-people-working-together.png",
         "textAlign": "left",
-        "image_vAlign": "top",
-        "largeHeadline": true,
-        "image_aspectRatio": "unset"
+        "image_vAlign": "",
+        "largeHeadline": false,
+        "image_aspectRatio": "landscape"
       },
       "component_id": 6468441,
       "space_id": 310529,

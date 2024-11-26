@@ -6,7 +6,7 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
 import { unflatten } from "@/helpers/unflatten";
-import { Section } from "@kickstartds/ds-agency-premium/section";
+import { SectionContextDefault } from "@kickstartds/ds-agency-premium/section";
 import { Slider } from "@kickstartds/ds-agency-premium/slider";
 import editablePage from "./Page";
 import { ImageAutoSizeProvider } from "./ImageAutoSizeProvider";
@@ -19,6 +19,8 @@ import {
   GlobalReferenceStoryblok,
   GlobalStoryblok,
 } from "@/types/components-schema";
+
+export const locale = "en";
 
 export const Global: FC<GlobalStoryblok & SbBlokData> = (props) =>
   isGlobal(props.blok) &&
@@ -99,7 +101,7 @@ export const components = {
   "blog-teaser": editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/blog-teaser").then(
-        (mod) => mod.BlogTeaser
+        (mod) => mod.BlogTeaserContextDefault
       )
     )
   ),
@@ -124,7 +126,7 @@ export const components = {
       )
     )
   ),
-  section: editable(Section, "components"),
+  section: editable(SectionContextDefault, "components"),
   contact: editable(
     dynamic(() =>
       import("@kickstartds/ds-agency-premium/contact").then(

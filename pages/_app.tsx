@@ -20,6 +20,7 @@ import IconSprite from "@/token/IconSprite";
 import "@/token/tokens.css";
 import "@/index.scss";
 import { BlurHashProvider } from "@/components/BlurHashContext";
+import ImageRatioProviders from "@/components/ImageRatioProviders";
 
 initStoryblok(process.env.NEXT_STORYBLOK_API_TOKEN);
 if (typeof window !== "undefined") {
@@ -85,24 +86,26 @@ export default function App({
       <DsaProviders>
         <ComponentProviders>
           <ImageSizeProviders>
-            <Meta
-              globalSeo={settings?.seo}
-              pageSeo={story?.content.seo}
-              fallbackName={story?.name}
-            />
-            <IconSprite />
-            {headerProps && (
-              <Header
-                logo={{}}
-                {...headerProps}
-                inverted={invertHeader}
-                floating={floatHeader}
+            <ImageRatioProviders>
+              <Meta
+                globalSeo={settings?.seo}
+                pageSeo={story?.content.seo}
+                fallbackName={story?.name}
               />
-            )}
-            <Component {...pageProps} />
-            {footerProps && (
-              <Footer logo={{}} {...footerProps} inverted={invertFooter} />
-            )}
+              <IconSprite />
+              {headerProps && (
+                <Header
+                  logo={{}}
+                  {...headerProps}
+                  inverted={invertHeader}
+                  floating={floatHeader}
+                />
+              )}
+              <Component {...pageProps} />
+              {footerProps && (
+                <Footer logo={{}} {...footerProps} inverted={invertFooter} />
+              )}
+            </ImageRatioProviders>
           </ImageSizeProviders>
         </ComponentProviders>
       </DsaProviders>

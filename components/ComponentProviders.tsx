@@ -40,13 +40,12 @@ import {
   HeroContext,
 } from "@kickstartds/ds-agency-premium/hero";
 
-import { isStoryblokAsset } from "@/helpers/storyblok";
-
 import { StoryblokSubComponent } from "./StoryblokSubComponent";
 import { TeaserProvider } from "./TeaserProvider";
 import { useBlurHashes } from "./BlurHashContext";
 import { useImagePriority } from "./ImagePriorityContext";
 import { useImageSize } from "./ImageSizeContext";
+import { useImageRatio } from "./ImageRatioContext";
 
 const Link = forwardRef<
   HTMLAnchorElement,
@@ -74,6 +73,7 @@ const Picture = forwardRef<
   const blurHashes = useBlurHashes();
   const priority = useImagePriority();
   const size = useImageSize();
+  const ratio = useImageRatio();
 
   useImperativeHandle<HTMLImageElement | null, HTMLImageElement | null>(
     ref,
@@ -84,9 +84,8 @@ const Picture = forwardRef<
     if (internalRef.current) resetBackgroundBlurHash(internalRef.current);
   }, []);
 
-  if (!src || (isStoryblokAsset(src) && !src.filename)) return;
-  const source = isStoryblokAsset(src) ? src.filename : src;
-  const fileUrl = !source.startsWith("http") ? `https:${source}` : source;
+  if (!src) return;
+  const fileUrl = !src.startsWith("http") ? `https:${src}` : src;
   const [width, height] = fileUrl.match(/\/(\d+)x(\d+)\//)?.slice(1) || [];
   const maxWidth = parseInt(width) > size ? Math.floor(size) : parseInt(width);
   const maxHeight =
@@ -102,7 +101,7 @@ const Picture = forwardRef<
       src={fileUrl}
       width={maxWidth}
       height={maxHeight}
-      alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
+      alt={props.alt || ""}
       lazy={priority ? false : lazy}
       fetchPriority="high"
       loading={priority ? "eager" : "lazy"}
@@ -111,7 +110,7 @@ const Picture = forwardRef<
     <Image
       ref={internalRef}
       {...props}
-      alt={isStoryblokAsset(src) && src.alt ? src.alt : props.alt || ""}
+      alt={props.alt || ""}
       src={
         priority
           ? `${fileUrl}/${
@@ -120,8 +119,9 @@ const Picture = forwardRef<
           : fileUrl
       }
       layout={autoSize ? "fullWidth" : "constrained"}
+      aspectRatio={ratio > 0 ? ratio : undefined}
       width={maxWidth}
-      height={maxHeight}
+      height={autoSize || ratio > 0 ? undefined : maxHeight}
       priority={lazy === false || priority}
       onLoad={(event) => {
         if (event.target instanceof HTMLImageElement) {
@@ -151,35 +151,28 @@ const Hero = forwardRef<
 
   const src =
     (image &&
-      ((image.src &&
-        isStoryblokAsset(image.src) &&
-        `${image.src.filename}/m/600x0`) ||
-        image.src)) ||
+      (image.src && !image.src.endsWith("/m/600x0")
+        ? `${image.src}/m/600x0`
+        : image.src)) ||
     undefined;
   const srcMobile =
     (image &&
-      ((image.srcMobile &&
-        isStoryblokAsset(image.srcMobile) &&
-        image.srcMobile.filename &&
-        `${image.srcMobile.filename}/m/600x0`) ||
-        image.srcMobile)) ||
+      (image.srcMobile && !image.srcMobile.endsWith("/m/600x0")
+        ? `${image.srcMobile}/m/600x0`
+        : image.srcMobile)) ||
     src ||
     "";
   const srcTablet =
     (image &&
-      ((image.srcTablet &&
-        isStoryblokAsset(image.srcTablet) &&
-        image.srcTablet.filename &&
-        `${image.srcTablet.filename}/m/950x0`) ||
-        image.srcTablet)) ||
+      (image.srcTablet && !image.srcTablet.endsWith("/m/950x0")
+        ? `${image.srcTablet}/m/950x0`
+        : image.srcTablet)) ||
     undefined;
   const srcDesktop =
     (image &&
-      ((image.srcDesktop &&
-        isStoryblokAsset(image.srcDesktop) &&
-        image.srcDesktop.filename &&
-        `${image.srcDesktop.filename}/m/1600x0`) ||
-        image.srcDesktop)) ||
+      (image.srcDesktop && !image.srcDesktop.endsWith("/m/1600x0")
+        ? `${image.srcDesktop}/m/1600x0`
+        : image.srcDesktop)) ||
     undefined;
 
   return (
@@ -208,11 +201,7 @@ const Storytelling = forwardRef<
   return (
     <StorytellingContextDefault
       {...props}
-      backgroundImage={
-        isStoryblokAsset(backgroundImage)
-          ? backgroundImage.filename
-          : backgroundImage
-      }
+      backgroundImage={backgroundImage}
       ref={ref}
     />
   );
@@ -239,7 +228,7 @@ const ComponentProviders = (props: PropsWithChildren) => (
                     value={StoryblokSubComponent}
                   >
                     <BlogHeadContext.Provider
-                      /* @ts-expect-error */
+                      // @ts-expect-error
                       value={StoryblokSubComponent}
                     >
                       <BlogAsideContext.Provider
