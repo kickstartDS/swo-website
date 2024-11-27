@@ -2551,9 +2551,7 @@
         "consentBackgroundImage": {
           "type": "asset",
           "pos": 4,
-          "filetypes": [
-            "images"
-          ]
+          "filetypes": ["images"]
         },
         "consentAspectRatio": {
           "type": "option",
