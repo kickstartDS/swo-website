@@ -1,3 +1,4 @@
+const fs = require("node:fs/promises");
 const esbuild = require("esbuild");
 const fg = require("fast-glob");
 
@@ -11,6 +12,8 @@ ${componentFiles.map(importPath).join("\n")}
 `;
 
 const build = async () => {
+  await fs.rm("public/_", { force: true, recursive: true });
+
   await esbuild.build({
     stdin: {
       contents: entryFile,
@@ -19,8 +22,11 @@ const build = async () => {
     },
     format: "esm",
     bundle: true,
-    // minify: true,
-    outfile: "public/client.js",
+    minify: true,
+    splitting: true,
+    treeShaking: true,
+    outdir: "public/_",
+    entryNames: "[dir]/client",
     logLevel: "info",
     plugins: [],
     loader: {
