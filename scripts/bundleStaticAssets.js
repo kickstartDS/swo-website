@@ -6,6 +6,7 @@ const importPath = (filePath) => `import "./${filePath}";`;
 
 const componentFiles = fg.sync([
   "node_modules/@kickstartds/ds-agency-premium/dist/components/**/*.client.js",
+  "components/**/*.client.js",
 ]);
 const entryFile = `\
 ${componentFiles.map(importPath).join("\n")}
