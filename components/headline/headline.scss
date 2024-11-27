@@ -61,3 +61,12 @@
     }
   }
 }
+
+h1,
+h2,
+h3,
+h4 {
+  a {
+    --g-link--font-weight: var(--ks-font-weight-semi-bold);
+  }
+}
