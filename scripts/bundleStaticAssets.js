@@ -1,16 +1,21 @@
+const fs = require("node:fs/promises");
 const esbuild = require("esbuild");
 const fg = require("fast-glob");
 
 const importPath = (filePath) => `import "./${filePath}";`;
 
 const componentFiles = fg.sync([
+  "node_modules/@kickstartds/ds-agency-premium/dist/global.client.js",
   "node_modules/@kickstartds/ds-agency-premium/dist/components/**/*.client.js",
+  "components/**/*.client.js",
 ]);
 const entryFile = `\
 ${componentFiles.map(importPath).join("\n")}
 `;
 
 const build = async () => {
+  await fs.rm("public/_", { force: true, recursive: true });
+
   await esbuild.build({
     stdin: {
       contents: entryFile,
@@ -19,8 +24,11 @@ const build = async () => {
     },
     format: "esm",
     bundle: true,
-    // minify: true,
-    outfile: "out/client.js",
+    minify: true,
+    splitting: true,
+    treeShaking: true,
+    outdir: "public/_",
+    entryNames: "[dir]/client",
     logLevel: "info",
     plugins: [],
     loader: {
