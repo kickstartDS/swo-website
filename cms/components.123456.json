@@ -1,6 +1,400 @@
 {
   "components": [
     {
+      "name": "tags",
+      "display_name": "Tags",
+      "created_at": "2024-11-06T15:08:25.798Z",
+      "updated_at": "2024-11-06T15:08:25.798Z",
+      "id": 0,
+      "schema": {
+        "entry": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Entry",
+          "key": "entry",
+          "type": "text",
+          "description": "Name of the tag entry",
+          "required": false
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "blog-tag"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Tags",
+      "color": "#05566a",
+      "icon": "block-wallet"
+    },
+    {
+      "name": "blog-head",
+      "display_name": "Blog Head",
+      "created_at": "2024-11-06T15:08:25.799Z",
+      "updated_at": "2024-11-06T15:08:25.799Z",
+      "id": 1,
+      "schema": {
+        "date": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Date",
+          "key": "date",
+          "type": "datetime",
+          "disable_time": true,
+          "description": "The date when the blog post was published",
+          "required": false
+        },
+        "tags": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Tags",
+          "key": "tags",
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "tags"
+          ],
+          "description": "Tag given to a blog post"
+        },
+        "headline": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Headline",
+          "key": "headline",
+          "type": "markdown",
+          "description": "The headline of the blog post",
+          "required": false
+        },
+        "image": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Image",
+          "key": "image",
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "The source of the cover image for the blog post",
+          "required": false
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "blog-head"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Blog Head",
+      "color": "#05566a",
+      "icon": "block-wallet"
+    },
+    {
+      "name": "links",
+      "display_name": "Links",
+      "created_at": "2024-11-06T15:08:25.801Z",
+      "updated_at": "2024-11-06T15:08:25.801Z",
+      "id": 2,
+      "schema": {
+        "icon": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Icon",
+          "key": "icon",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
+          "required": false
+        },
+        "label": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Label",
+          "key": "label",
+          "type": "text",
+          "required": false
+        },
+        "href": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Href",
+          "key": "href",
+          "type": "multilink",
+          "allow_target_blank": true,
+          "email_link_type": true,
+          "asset_link_type": true,
+          "show_anchor": true,
+          "required": false
+        },
+        "newTab": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "NewTab",
+          "key": "newTab",
+          "type": "boolean",
+          "description": "Open link in new Tab",
+          "required": false
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Links",
+      "color": "#05566a",
+      "icon": "block-wallet"
+    },
+    {
+      "name": "blog-author",
+      "display_name": "Blog Author",
+      "created_at": "2024-11-06T15:08:25.801Z",
+      "updated_at": "2024-11-06T15:08:25.801Z",
+      "id": 3,
+      "schema": {
+        "name": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Name",
+          "key": "name",
+          "type": "text",
+          "description": "The name of the author",
+          "required": false
+        },
+        "byline": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Byline",
+          "key": "byline",
+          "type": "text",
+          "description": "The byline of the author",
+          "required": false
+        },
+        "tab-e1bb25d8-5041-4bab-aff6-c8522693377c": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Image",
+          "key": "tab-e1bb25d8-5041-4bab-aff6-c8522693377c",
+          "keys": [
+            "image_src",
+            "image_alt",
+            "image_fullWidth",
+            "image_aspectRatio"
+          ],
+          "type": "tab",
+          "required": false
+        },
+        "image_src": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Src",
+          "key": "image_src",
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "URL of the image to display",
+          "required": false
+        },
+        "image_alt": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Alt",
+          "key": "image_alt",
+          "type": "text",
+          "description": "Alt text of the image",
+          "required": false
+        },
+        "image_fullWidth": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "FullWidth",
+          "key": "image_fullWidth",
+          "type": "boolean",
+          "description": "Image uses all the horizontal space vailable",
+          "required": false
+        },
+        "image_aspectRatio": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "AspectRatio",
+          "key": "image_aspectRatio",
+          "type": "option",
+          "default_value": "square",
+          "description": "Aspect Ratio of the Images",
+          "options": [
+            {
+              "name": "wide",
+              "value": "wide",
+              "_uid": "9a480c69-91cb-4242-9f00-f959782ebe51"
+            },
+            {
+              "name": "square",
+              "value": "square",
+              "_uid": "11f344cc-586c-42a9-8e6e-a280aa72d82f"
+            },
+            {
+              "name": "vertical",
+              "value": "vertical",
+              "_uid": "4e3e8dbb-c565-4f1c-b3c0-65c27bcda21d"
+            }
+          ],
+          "required": false
+        },
+        "links": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Links",
+          "key": "links",
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "links"
+          ]
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "blog-author"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Blog Author",
+      "color": "#05566a",
+      "icon": "block-wallet"
+    },
+    {
+      "name": "socialSharing",
+      "display_name": "SocialSharing",
+      "created_at": "2024-11-06T15:08:25.801Z",
+      "updated_at": "2024-11-06T15:08:25.801Z",
+      "id": 4,
+      "schema": {
+        "icon": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Icon",
+          "key": "icon",
+          "type": "custom",
+          "field_type": "storyblok-icon-sprite-picker-field-plugin",
+          "options": [],
+          "description": "The icon name for the social link",
+          "required": false
+        },
+        "href": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Href",
+          "key": "href",
+          "type": "multilink",
+          "allow_target_blank": true,
+          "email_link_type": true,
+          "asset_link_type": true,
+          "show_anchor": true,
+          "description": "The href for the social link",
+          "required": false
+        },
+        "title": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Title",
+          "key": "title",
+          "type": "text",
+          "description": "The title for the social link",
+          "required": false
+        }
+      },
+      "is_nestable": true,
+      "real_name": "SocialSharing",
+      "color": "#05566a",
+      "icon": "block-wallet"
+    },
+    {
+      "name": "blog-aside",
+      "display_name": "Blog Aside",
+      "created_at": "2024-11-06T15:08:25.801Z",
+      "updated_at": "2024-11-06T15:08:25.801Z",
+      "id": 5,
+      "schema": {
+        "author": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Author",
+          "key": "author",
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "blog-author"
+          ],
+          "maximum": 1,
+          "minimum": 0,
+          "description": "The author of the blog post"
+        },
+        "socialSharing": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "SocialSharing",
+          "key": "socialSharing",
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "socialSharing"
+          ]
+        },
+        "readingTime": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "ReadingTime",
+          "key": "readingTime",
+          "type": "text",
+          "description": "The reading time for the blog post",
+          "required": false
+        },
+        "date": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Date",
+          "key": "date",
+          "type": "datetime",
+          "disable_time": true,
+          "description": "The date when the blog post was published",
+          "required": false
+        },
+        "className": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "ClassName",
+          "key": "className",
+          "type": "text",
+          "required": false
+        },
+        "type": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Type",
+          "key": "type",
+          "type": "text",
+          "description": "Internal type for interface resolution",
+          "default_value": "blog-aside"
+        }
+      },
+      "is_nestable": true,
+      "real_name": "Blog Aside",
+      "color": "#05566a",
+      "icon": "block-wallet"
+    },
+    {
       "name": "buttons",
       "display_name": "Buttons",
       "created_at": "2024-11-26T16:19:45.573Z",
@@ -2548,7 +2942,7 @@
           "component_group_whitelist": [
             "83753729-a687-420a-8d98-23d7cfaf70e3"
           ],
-          "description": "Abstracts a blog overview concept into JSON schema",
+          "description": "Abstracts a blog post concept into JSON schema",
           "required": false
         },
         "typeProp": {
@@ -3313,7 +3707,7 @@
           "component_group_whitelist": [
             "83753729-a687-420a-8d98-23d7cfaf70e3"
           ],
-          "description": "Abstracts a blog overview concept into JSON schema",
+          "description": "Abstracts a blog post concept into JSON schema",
           "required": false
         },
         "buttons": {
@@ -3636,7 +4030,7 @@
           "key": "date",
           "type": "datetime",
           "disable_time": true,
-          "description": "The date when the blog post was published",
+          "description": "The date of the blog post",
           "required": false
         },
         "tags": {
@@ -3661,6 +4055,15 @@
           "description": "The headline of the blog post",
           "required": false
         },
+        "teaserText": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "TeaserText",
+          "key": "teaserText",
+          "type": "markdown",
+          "description": "The teaser text of the blog post",
+          "required": false
+        },
         "image": {
           "id": 0,
           "pos": 0,
@@ -3670,7 +4073,7 @@
           "filetypes": [
             "images"
           ],
-          "description": "The source of the cover image for the blog post",
+          "description": "The preview image for the blog post",
           "required": false
         },
         "alt": {
@@ -3785,15 +4188,13 @@
           "display_name": "Image",
           "key": "tab-e4305082-f86b-4b6f-b88e-2bba95f5007a",
           "keys": [
-            "image_src",
-            "image_alt",
-            "image_fullWidth",
-            "image_aspectRatio"
+            "link_url"
           ],
           "type": "tab",
+          "description": "URL and label for the blog post linked",
           "required": false
         },
-        "image_src": {
+        "link_url": {
           "id": 0,
           "pos": 0,
           "display_name": "Src",
@@ -3910,7 +4311,7 @@
           "email_link_type": true,
           "asset_link_type": true,
           "show_anchor": true,
-          "description": "The href for the social link",
+          "description": "The blog entry URL to link",
           "required": false
         },
         "title": {
@@ -3968,17 +4369,51 @@
           "display_name": "ReadingTime",
           "key": "readingTime",
           "type": "text",
-          "description": "The reading time for the blog post",
+          "description": "Time to read for the blog post",
           "required": false
         },
-        "date": {
+        "tab-bd8bd501-cf33-4942-b04b-26e610c33a3b": {
           "id": 0,
           "pos": 0,
-          "display_name": "Date",
-          "key": "date",
-          "type": "datetime",
-          "disable_time": true,
-          "description": "The date when the blog post was published",
+          "display_name": "Author",
+          "key": "tab-bd8bd501-cf33-4942-b04b-26e610c33a3b",
+          "keys": [
+            "author_name",
+            "author_title",
+            "author_image"
+          ],
+          "type": "tab",
+          "description": "The author of the blog post",
+          "required": false
+        },
+        "author_name": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Name",
+          "key": "author_name",
+          "type": "text",
+          "description": "The name of the author",
+          "required": false
+        },
+        "author_title": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Title",
+          "key": "author_title",
+          "type": "text",
+          "description": "The title of the author",
+          "required": false
+        },
+        "author_image": {
+          "id": 0,
+          "pos": 0,
+          "display_name": "Image",
+          "key": "author_image",
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "description": "The image URL of the author",
           "required": false
         },
         "className": {
@@ -3996,11 +4431,11 @@
           "key": "type",
           "type": "text",
           "description": "Internal type for interface resolution",
-          "default_value": "blog-aside"
+          "default_value": "blog-teaser"
         }
       },
       "is_nestable": true,
-      "real_name": "Blog Aside",
+      "real_name": "Blog Teaser",
       "color": "#05566a",
       "icon": "block-wallet"
     },
@@ -4389,7 +4824,7 @@
       "created_at": "2024-11-26T16:19:45.611Z",
       "updated_at": "2024-11-26T16:19:45.611Z",
       "is_root": true,
-      "id": 57,
+      "id": 115,
       "schema": {
         "section": {
           "id": 0,

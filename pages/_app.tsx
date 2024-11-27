@@ -13,6 +13,7 @@ import "lazysizes/plugins/attrchange/ls.attrchange";
 
 import ComponentProviders from "@/components/ComponentProviders";
 import ImageSizeProviders from "@/components/ImageSizeProviders";
+import ImageRatioProviders from "@/components/ImageRatioProviders";
 
 import palette from "@kickstartds/ds-agency-premium/global.client.js";
 import "@kickstartds/ds-agency-premium/global.css";
@@ -20,7 +21,6 @@ import IconSprite from "@/token/IconSprite";
 import "@/token/tokens.css";
 import "@/index.scss";
 import { BlurHashProvider } from "@/components/BlurHashContext";
-import ImageRatioProviders from "@/components/ImageRatioProviders";
 import { LanguageProvider } from "@/components/LanguageContext";
 
 initStoryblok(process.env.NEXT_STORYBLOK_API_TOKEN);
