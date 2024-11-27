@@ -5,6 +5,7 @@ const fg = require("fast-glob");
 const importPath = (filePath) => `import "./${filePath}";`;
 
 const componentFiles = fg.sync([
+  "node_modules/@kickstartds/ds-agency-premium/dist/global.client.js",
   "node_modules/@kickstartds/ds-agency-premium/dist/components/**/*.client.js",
   "components/**/*.client.js",
 ]);
