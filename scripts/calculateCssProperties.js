@@ -11,7 +11,10 @@ const allToken = require("../token/components.js");
  * Please add all CSS Custom Properties / Design Token you need evaluated here
  */
 const required = {
-  desktop: ["--dsa-logos__grid--gap-horizontal"],
+  desktop: [
+    "--dsa-logos__grid--gap-horizontal",
+    "--dsa-blog-teaser__avatar--size",
+  ],
   phone: ["--dsa-image-story--horizontal-padding"],
   sectionWidths: ["narrow", "default", "wide", "max", "full"],
 };

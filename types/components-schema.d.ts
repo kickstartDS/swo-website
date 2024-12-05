@@ -44,6 +44,7 @@ export interface BlogHeadStoryblok {
   tags?: TagsStoryblok[];
   headline?: string;
   image?: AssetStoryblok;
+  alt?: string;
   type?: string;
   _uid: string;
   component: "blog-head";
@@ -103,7 +104,9 @@ export interface BlogTeaserStoryblok {
   headline?: string;
   teaserText?: string;
   image?: AssetStoryblok;
+  alt?: string;
   link_url?: MultilinkStoryblok;
+  link_text?: string;
   readingTime?: string;
   author_name?: string;
   author_title?: string;
@@ -161,12 +164,8 @@ export interface FaqStoryblok {
 export interface FeatureStoryblok {
   title?: string;
   text?: string;
-  style?: "" | "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
   cta_target?: MultilinkStoryblok;
   cta_label?: string;
-  cta_toggle?: boolean;
-  cta_style?: "" | "button" | "link" | "intext";
-  type?: string;
   _uid: string;
   component: "feature";
 }
@@ -281,6 +280,11 @@ export interface HeroStoryblok {
 
 export interface HtmlStoryblok {
   html?: string;
+  consent?: boolean;
+  consentText?: string;
+  consentButtonLabel?: string;
+  consentBackgroundImage?: AssetStoryblok;
+  consentAspectRatio?: "" | "VALUE_16_9" | "VALUE_16_10" | "VALUE_4_3" | "VALUE_1_1";
   className?: string;
   component: "html";
   type?: string;
@@ -495,6 +499,7 @@ export interface SettingsStoryblok {
   header?: HeaderStoryblok[];
   footer?: FooterStoryblok[];
   seo?: SeoStoryblok[];
+  iconSprite?: string;
   type?: string;
   _uid: string;
   component: "settings";

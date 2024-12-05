@@ -44,12 +44,12 @@ const displayFont = localFont({
     },
     {
       path: "../token/fonts/Fredoka-Bold.woff2",
-      weight: "700",
+      weight: "bold",
       style: "normal",
     },
     {
       path: "../token/fonts/Fredoka-Bold.woff",
-      weight: "700",
+      weight: "bold",
       style: "normal",
     },
   ],
@@ -136,7 +136,7 @@ const interfaceFont = localFont({
     { path: "../token/fonts/Mulish-300.woff", weight: "300", style: "normal" },
   ],
   preload: true,
-  display: "optional",
+  display: "swap",
   variable: "--ks-font-family-interface",
   fallback: [
     "system-ui",
@@ -207,12 +207,12 @@ const displayFontPreview = localFont({
     },
     {
       path: "../token/fonts/Fredoka-Bold.woff2",
-      weight: "700",
+      weight: "bold",
       style: "normal",
     },
     {
       path: "../token/fonts/Fredoka-Bold.woff",
-      weight: "700",
+      weight: "bold",
       style: "normal",
     },
   ],

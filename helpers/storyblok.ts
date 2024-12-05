@@ -14,7 +14,6 @@ import { components } from "@/components";
 import { TraversalCallbackContext, traverse } from "object-traversal";
 import { IStoryblokBlock } from "@kickstartds/jsonschema2storyblok";
 import {
-  AssetStoryblok,
   GlobalReferenceStoryblok,
   GlobalStoryblok,
   MultilinkStoryblok,
@@ -51,10 +50,6 @@ export function isGlobal(blok: any): blok is GlobalStoryblok {
 
 export function isStoryblokLink(object: any): object is MultilinkStoryblok {
   return object && object?.linktype !== undefined;
-}
-
-export function isStoryblokAsset(object: any): object is AssetStoryblok {
-  return object && object.filename !== undefined;
 }
 
 export function isStoryblokStoryLinkObject(
@@ -96,9 +91,7 @@ export function storyProcessing(blok: Record<string, any>) {
     if (parent && key) {
       if (isStoryblokStoryLinkObject(value)) {
         parent[key] = `${
-          value.story?.full_slug === INDEX_SLUG
-            ? "/"
-            : value.cached_url || value.story?.full_slug
+          value.story?.full_slug === INDEX_SLUG ? "/" : value.story.full_slug
         }${value.anchor ? `#${value.anchor}` : ""}`;
       } else if (isStoryblokLink(value)) {
         if (value.linktype === "email") {
@@ -136,8 +129,13 @@ export function storyProcessing(blok: Record<string, any>) {
       if (key.includes("_")) {
         const [groupName] = key.split("_");
         if (parent.hasOwnProperty(`${groupName}_alt`)) {
-          parent[`${groupName}_alt`] ||= value.alt;
+          if (!parent[`${groupName}_alt`] || parent[`${groupName}_alt`] === "")
+            parent[`${groupName}_alt`] = value.alt;
         }
+      }
+
+      if (parent.hasOwnProperty("alt")) {
+        if (!parent["alt"] || parent["alt"] === "") parent["alt"] = value.alt;
       }
     }
   }
@@ -149,6 +147,9 @@ export function storyProcessing(blok: Record<string, any>) {
   }: TraversalCallbackContext) {
     if (parent && key && value && value.content && value.uuid) {
       parent[key] = value.content;
+      if (value.full_slug) {
+        parent[key]["slug"] = value.full_slug;
+      }
     }
   }
 
