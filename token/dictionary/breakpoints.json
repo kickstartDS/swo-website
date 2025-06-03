@@ -2,19 +2,23 @@
   "ks": {
     "breakpoint": {
       "phone": {
-        "value": "36em",
+        "value": "40em",
         "private": true
       },
       "tablet": {
-        "value": "48em",
+        "value": "60em",
         "private": true
       },
       "laptop": {
-        "value": "62em",
+        "value": "64em",
         "private": true
       },
       "desktop": {
         "value": "75em",
+        "private": true
+      },
+      "tv": {
+        "value": "122em",
         "private": true
       }
     }

@@ -3,9 +3,9 @@ import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 
-import DsaProviders from "@kickstartds/ds-agency-premium/providers";
-import { Header } from "@kickstartds/ds-agency-premium/header";
-import { Footer } from "@kickstartds/ds-agency-premium/footer";
+import DsaProviders from "@kickstartds/swo/providers";
+import { Header } from "@kickstartds/swo/header";
+import { Footer } from "@kickstartds/swo/footer";
 import { initStoryblok } from "@/helpers/storyblok";
 import { unflatten } from "@/helpers/unflatten";
 import Meta from "@/components/Meta";
@@ -15,8 +15,8 @@ import ComponentProviders from "@/components/ComponentProviders";
 import ImageSizeProviders from "@/components/ImageSizeProviders";
 import ImageRatioProviders from "@/components/ImageRatioProviders";
 
-import palette from "@kickstartds/ds-agency-premium/global.client.js";
-import "@kickstartds/ds-agency-premium/global.css";
+import palette from "@kickstartds/swo/global.client.js";
+import "@kickstartds/swo/global.css";
 import IconSprite from "@/token/IconSprite";
 import "@/token/tokens.css";
 import "@/index.scss";

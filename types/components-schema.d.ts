@@ -130,17 +130,19 @@ export interface CtaStoryblok {
   text?: string;
   highlightText?: boolean;
   colorNeutral?: boolean;
-  fullWidth?: boolean;
   buttons?: ButtonsStoryblok[];
   backgroundColor?: string;
   backgroundImage?: AssetStoryblok;
   image_src?: AssetStoryblok;
   image_padding?: boolean;
   image_alt?: string;
+  image_align?: "" | "center" | "top" | "bottom";
   order_mobileImageLast?: boolean;
   order_desktopImageLast?: boolean;
   textAlign?: "" | "left" | "center";
-  contentAlign?: "" | "center" | "top" | "bottom";
+  align?: "" | "center" | "top" | "bottom";
+  padding?: boolean;
+  inverted?: boolean;
   type?: string;
   _uid: string;
   component: "cta";
@@ -272,7 +274,8 @@ export interface HeroStoryblok {
   image_src?: AssetStoryblok;
   image_indent?: "" | "none" | "left" | "right";
   image_alt?: string;
-  textPosition?: "" | "center" | "below" | "left" | "right";
+  textPosition?: "" | "center" | "below" | "left" | "right" | "corner";
+  inverted?: boolean;
   type?: string;
   _uid: string;
   component: "hero";
@@ -285,6 +288,7 @@ export interface HtmlStoryblok {
   consentButtonLabel?: string;
   consentBackgroundImage?: AssetStoryblok;
   consentAspectRatio?: "" | "VALUE_16_9" | "VALUE_16_10" | "VALUE_4_3" | "VALUE_1_1";
+  inverted?: boolean;
   className?: string;
   component: "html";
   type?: string;
@@ -364,6 +368,7 @@ export interface LinksStoryblok {
   label?: string;
   href?: MultilinkStoryblok;
   newTab?: boolean;
+  ariaLabel?: string;
   _uid: string;
   component: "links";
 }
@@ -430,16 +435,10 @@ export interface QuestionsStoryblok {
 export interface SectionStoryblok {
   type?: string;
   width?: "" | "full" | "max" | "wide" | "default" | "narrow";
-  style?:
-    | ""
-    | "stagelights"
-    | "horizontalGradient"
-    | "verticalGradient"
-    | "accentTransition"
-    | "boldTransition"
-    | "symmetricGlow"
-    | "anchorGlow";
+  style?: "" | "framed" | "deko" | "colorful";
   backgroundColor?: "" | "default" | "accent" | "bold";
+  transition?: "" | "none" | "to_default" | "to_accent" | "to_bold" | "to_inverted";
+  backgroundImage?: AssetStoryblok;
   spotlight?: boolean;
   spaceBefore?: "" | "default" | "small" | "none";
   spaceAfter?: "" | "default" | "small" | "none";
@@ -581,6 +580,7 @@ export interface TeaserCardStoryblok {
   button_hidden?: boolean;
   image?: AssetStoryblok;
   imageRatio?: "" | "wide" | "landscape" | "square" | "unset";
+  campaignGreen?: boolean;
   type?: string;
   _uid: string;
   component: "teaser-card";
@@ -593,13 +593,13 @@ export interface TestimonialStoryblok {
   image_src?: AssetStoryblok;
   image_alt?: string;
   rating?: string;
-  type?: string;
   _uid: string;
   component: "testimonial";
 }
 
 export interface TestimonialsStoryblok {
   layout?: "" | "slider" | "list" | "alternating";
+  quoteSigns?: "" | "normal" | "large" | "none";
   testimonial?: TestimonialStoryblok[];
   type?: string;
   _uid: string;
@@ -644,7 +644,7 @@ export interface VideoCurtainStoryblok {
   video_srcMobile?: AssetStoryblok;
   video_srcTablet?: AssetStoryblok;
   video_srcDesktop?: AssetStoryblok;
-  textPosition?: "" | "center" | "left" | "right";
+  textPosition?: "" | "center" | "bottom" | "left" | "right" | "corner";
   type?: string;
   _uid: string;
   component: "video-curtain";

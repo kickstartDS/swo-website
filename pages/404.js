@@ -5,10 +5,10 @@ import { isImgUrl } from "@/helpers/apiUtils";
 import { fetchPageProps } from "@/helpers/storyblok";
 import { fontClassNames } from "@/helpers/fonts";
 import { HeadlineLevelProvider } from "@/components/headline/HeadlineLevelContext";
-import { Headline } from "@kickstartds/ds-agency-premium/components/headline/index.js";
-import { Page } from "@kickstartds/ds-agency-premium/components/page/index.js";
-import { Section } from "@kickstartds/ds-agency-premium/components/section/index.js";
-import { Text } from "@kickstartds/ds-agency-premium/components/text/index.js";
+import { Headline } from "@kickstartds/swo/components/headline/index.js";
+import { Page } from "@kickstartds/swo/components/page/index.js";
+import { Section } from "@kickstartds/swo/components/section/index.js";
+import { Text } from "@kickstartds/swo/components/text/index.js";
 
 export default function Custom404({ story }) {
   if (story && story.content) {

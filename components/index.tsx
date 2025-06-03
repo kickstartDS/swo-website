@@ -6,8 +6,8 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
 import { unflatten } from "@/helpers/unflatten";
-import { SectionContextDefault } from "@kickstartds/ds-agency-premium/section";
-import { Slider } from "@kickstartds/ds-agency-premium/slider";
+import { SectionContextDefault } from "@kickstartds/swo/section";
+import { Slider } from "@kickstartds/swo/slider";
 import editablePage from "./Page";
 import { ImageAutoSizeProvider } from "./ImageAutoSizeProvider";
 import {
@@ -89,7 +89,7 @@ export const editable =
   };
 
 const Hero = dynamic(() =>
-  import("@kickstartds/ds-agency-premium/hero").then((mod) => mod.Hero)
+  import("@kickstartds/swo/hero").then((mod) => mod.Hero)
 );
 
 export const components = {
@@ -100,28 +100,28 @@ export const components = {
   "blog-post": dynamic(() => import("./BlogPost")),
   "blog-teaser": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/blog-teaser").then(
+      import("@kickstartds/swo/blog-teaser").then(
         (mod) => mod.BlogTeaserContextDefault
       )
     )
   ),
   "blog-aside": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/blog-aside").then(
+      import("@kickstartds/swo/blog-aside").then(
         (mod) => mod.BlogAsideContextDefault
       )
     )
   ),
   "blog-author": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/blog-author").then(
+      import("@kickstartds/swo/blog-author").then(
         (mod) => mod.BlogAuthorContextDefault
       )
     )
   ),
   "blog-head": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/blog-head").then(
+      import("@kickstartds/swo/blog-head").then(
         (mod) => mod.BlogHeadContextDefault
       )
     )
@@ -129,84 +129,70 @@ export const components = {
   section: editable(SectionContextDefault, "components"),
   contact: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/contact").then(
+      import("@kickstartds/swo/contact").then(
         (mod) => mod.ContactContextDefault
       )
     )
   ),
   cta: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/cta").then(
-        (mod) => mod.CtaContextDefault
-      )
+      import("@kickstartds/swo/cta").then((mod) => mod.CtaContextDefault)
     )
   ),
   divider: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/divider").then(
+      import("@kickstartds/swo/divider").then(
         (mod) => mod.DividerContextDefault
       )
     )
   ),
   faq: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/faq").then(
-        (mod) => mod.FaqContextDefault
-      )
+      import("@kickstartds/swo/faq").then((mod) => mod.FaqContextDefault)
     )
   ),
   features: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/features").then(
+      import("@kickstartds/swo/features").then(
         (mod) => mod.FeaturesContextDefault
       )
     )
   ),
   feature: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/feature").then(
+      import("@kickstartds/swo/feature").then(
         (mod) => mod.FeatureContextDefault
       )
     )
   ),
   gallery: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/gallery").then(
+      import("@kickstartds/swo/gallery").then(
         (mod) => mod.GalleryContextDefault
       )
     )
   ),
   headline: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/headline").then(
-        (mod) => mod.Headline
-      )
+      import("@kickstartds/swo/headline").then((mod) => mod.Headline)
     )
   ),
   html: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/html").then(
-        (mod) => mod.HtmlContextDefault
-      )
+      import("@kickstartds/swo/html").then((mod) => mod.HtmlContextDefault)
     )
   ),
   split: editable(
-    dynamic(() =>
-      import("@kickstartds/ds-agency-premium/split").then((mod) => mod.Split)
-    )
+    dynamic(() => import("@kickstartds/swo/split").then((mod) => mod.Split))
   ),
   stats: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/stats").then(
-        (mod) => mod.StatsContextDefault
-      )
+      import("@kickstartds/swo/stats").then((mod) => mod.StatsContextDefault)
     )
   ),
   stat: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/stat").then(
-        (mod) => mod.StatContextDefault
-      )
+      import("@kickstartds/swo/stat").then((mod) => mod.StatContextDefault)
     )
   ),
   "info-table": editable(
@@ -218,43 +204,37 @@ export const components = {
   ),
   "teaser-card": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/teaser-card").then(
+      import("@kickstartds/swo/teaser-card").then(
         (mod) => mod.TeaserCardContextDefault
       )
     )
   ),
   testimonials: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/testimonials").then(
-        (mod) => mod.Testimonials
-      )
+      import("@kickstartds/swo/testimonials").then((mod) => mod.Testimonials)
     )
   ),
   testimonial: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/testimonial").then(
+      import("@kickstartds/swo/testimonial").then(
         (mod) => mod.TestimonialContextDefault
       )
     )
   ),
   text: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/text").then(
-        (mod) => mod.TextContextDefault
-      )
+      import("@kickstartds/swo/text").then((mod) => mod.TextContextDefault)
     )
   ),
   "image-text": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/image-text").then(
+      import("@kickstartds/swo/image-text").then(
         (mod) => mod.ImageTextContextDefault
       )
     )
   ),
   logos: editable(
-    dynamic(() =>
-      import("@kickstartds/ds-agency-premium/logos").then((mod) => mod.Logos)
-    )
+    dynamic(() => import("@kickstartds/swo/logos").then((mod) => mod.Logos))
   ),
   hero: editable((props: ComponentProps<typeof Hero>) => (
     <ImageAutoSizeProvider>
@@ -263,23 +243,19 @@ export const components = {
   )),
   mosaic: editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/mosaic").then(
-        (mod) => mod.MosaicContextDefault
-      )
+      import("@kickstartds/swo/mosaic").then((mod) => mod.MosaicContextDefault)
     )
   ),
   "video-curtain": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/video-curtain").then(
+      import("@kickstartds/swo/video-curtain").then(
         (mod) => mod.VideoCurtainContextDefault
       )
     )
   ),
   "image-story": editable(
     dynamic(() =>
-      import("@kickstartds/ds-agency-premium/image-story").then(
-        (mod) => mod.ImageStory
-      )
+      import("@kickstartds/swo/image-story").then((mod) => mod.ImageStory)
     )
   ),
   slider: editable(Slider, "components"),

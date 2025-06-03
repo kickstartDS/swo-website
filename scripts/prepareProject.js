@@ -6,7 +6,7 @@ const sizeOf = require("image-size");
 const StoryblokClient = require("storyblok-js-client");
 const { v4: uuidv4 } = require("uuid");
 const jsonpointer = require("jsonpointer");
-const designSystemPresets = require("@kickstartds/ds-agency-premium/presets.json");
+const designSystemPresets = require("@kickstartds/swo/presets.json");
 const generatedComponents = require("../cms/components.123456.json");
 const initialStory = require("../resources/story.json");
 const ffprobe = require("ffprobe");
@@ -35,7 +35,13 @@ const promiseThrottle = new PromiseThrottle({
 });
 
 const presetIdToComponentName = (id) =>
-  id.split("--").shift().split("-").slice(1).join("-");
+  id
+    .split("--")
+    .shift()
+    .split("-")
+    .slice(1)
+    .join("-")
+    .replaceAll("archetypes-", "");
 
 const groupToComponentName = (name) => name.split("/").pop().trim();
 
@@ -55,7 +61,7 @@ const upload = (signed_request, file) => {
 
 const signedUpload = async (fileName, assetFolderId) => {
   return new Promise(async (resolve) => {
-    const fullPath = `./node_modules/@kickstartds/ds-agency-premium/dist/static/${fileName}`;
+    const fullPath = `./node_modules/@kickstartds/swo/dist/static/${fileName}`;
     let size = "";
     if (fileName.includes("mp4")) {
       const probe = await ffprobe(fullPath, { path: ffprobeStatic.path });
@@ -75,7 +81,7 @@ const signedUpload = async (fileName, assetFolderId) => {
     );
     await upload(
       assetResponse.data,
-      "./node_modules/@kickstartds/ds-agency-premium/dist/static/" + fileName
+      "./node_modules/@kickstartds/swo/dist/static/" + fileName
     );
 
     return resolve({
@@ -380,8 +386,7 @@ const prepare = async () => {
     // Add demo content to space
     if (
       !stories.some(
-        (story) =>
-          story.name === "Getting Started" && story.slug === "getting-started"
+        (story) => story.name === "Getting Started" && story.slug === "home"
       )
     ) {
       await Storyblok.post(

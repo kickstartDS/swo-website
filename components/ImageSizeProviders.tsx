@@ -12,16 +12,13 @@ import { ImageSizeProvider, useImageSize } from "./ImageSizeContext";
 import {
   SectionContext,
   SectionContextDefault,
-} from "@kickstartds/ds-agency-premium/section";
-import {
-  LogosContext,
-  LogosContextDefault,
-} from "@kickstartds/ds-agency-premium/logos";
+} from "@kickstartds/swo/section";
+import { LogosContext, LogosContextDefault } from "@kickstartds/swo/logos";
 // TODO why does this import look different? Investigate!
 import {
   ImageStoryContext,
   ImageStoryContextDefault,
-} from "@kickstartds/ds-agency-premium/components/image-story/index.js";
+} from "@kickstartds/swo/components/image-story/index.js";
 import {
   PostMetaContext,
   PostMetaContextDefault,
@@ -29,7 +26,7 @@ import {
 import {
   BlogTeaserContext,
   BlogTeaserContextDefault,
-} from "@kickstartds/ds-agency-premium/blog-teaser";
+} from "@kickstartds/swo/blog-teaser";
 import calculated from "@/token/calculated";
 
 const SectionProvider: FC<PropsWithChildren> = (props) => {
@@ -87,7 +84,7 @@ const LogosProvider: FC<PropsWithChildren> = (props) => {
           HTMLAttributes<HTMLDivElement>
       >(function LogosImageSize(props, ref) {
         const size = useImageSize();
-        const gapSize = calculated.desktop["--dsa-logos__grid--gap-horizontal"];
+        const gapSize = calculated.desktop["--swo-logos__grid--gap-horizontal"];
         const logoSize = Math.ceil(
           (size - gapSize * (props.logosPerRow || 3)) / (props.logosPerRow || 3)
         );
@@ -116,7 +113,7 @@ const ImageStoryProvider: FC<PropsWithChildren> = (props) => {
       >(function ImageStoryImageSize(props, ref) {
         const size = useImageSize();
         const gapSize =
-          calculated.phone["--dsa-image-story--horizontal-padding"];
+          calculated.phone["--swo-image-story--horizontal-padding"];
         const imageSize = Math.ceil(size / 2 - gapSize);
 
         return (
@@ -169,7 +166,7 @@ const PostMetaProvider: FC<PropsWithChildren> = (props) => {
           HTMLAttributes<HTMLElement>
       >(function PostMetaImageSize(props, ref) {
         const avatarSize =
-          calculated.desktop["--dsa-blog-teaser__avatar--size"];
+          calculated.desktop["--swo-blog-teaser__avatar--size"];
         return (
           <ImageSizeProvider size={avatarSize}>
             <UpstreamPostMeta {...props} ref={ref} />

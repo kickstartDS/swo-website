@@ -27,18 +27,15 @@ import {
 } from "@kickstartds/content/lib/storytelling";
 import { StorytellingProps } from "@kickstartds/content/lib/storytelling/typing";
 
-import { BlogTeaserContext } from "@kickstartds/ds-agency-premium/blog-teaser";
-import { BlogAsideContext } from "@kickstartds/ds-agency-premium/blog-aside";
-import { BlogAuthorContext } from "@kickstartds/ds-agency-premium/blog-author";
-import { BlogHeadContext } from "@kickstartds/ds-agency-premium/blog-head";
-import { CtaContext } from "@kickstartds/ds-agency-premium/cta";
-import { FeatureContext } from "@kickstartds/ds-agency-premium/feature";
-import { StatContext } from "@kickstartds/ds-agency-premium/stat";
-import { TestimonialContext } from "@kickstartds/ds-agency-premium/testimonial";
-import {
-  HeroContextDefault,
-  HeroContext,
-} from "@kickstartds/ds-agency-premium/hero";
+import { BlogTeaserContext } from "@kickstartds/swo/blog-teaser";
+import { BlogAsideContext } from "@kickstartds/swo/blog-aside";
+import { BlogAuthorContext } from "@kickstartds/swo/blog-author";
+import { BlogHeadContext } from "@kickstartds/swo/blog-head";
+import { CtaContext } from "@kickstartds/swo/cta";
+import { FeatureContext } from "@kickstartds/swo/feature";
+import { StatContext } from "@kickstartds/swo/stat";
+import { TestimonialContext } from "@kickstartds/swo/testimonial";
+import { HeroContextDefault, HeroContext } from "@kickstartds/swo/hero";
 
 import { StoryblokSubComponent } from "./StoryblokSubComponent";
 import { TeaserProvider } from "./TeaserProvider";

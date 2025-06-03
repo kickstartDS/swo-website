@@ -4,13 +4,13 @@ import {
   StoryblokComponent,
   storyblokEditable,
 } from "@storyblok/react";
-import { Section } from "@kickstartds/ds-agency-premium/components/section/index.js";
-import { Split } from "@kickstartds/ds-agency-premium/components/split/index.js";
-import { BlogAside } from "@kickstartds/ds-agency-premium/components/blog-aside/index.js";
-import { Text } from "@kickstartds/ds-agency-premium/components/text/index.js";
-import { BlogHead } from "@kickstartds/ds-agency-premium/components/blog-head/index.js";
-import { Cta } from "@kickstartds/ds-agency-premium/components/cta/index.js";
-import { BlogPost as DsaBlogPost } from "@kickstartds/ds-agency-premium/components/blog-post/index.js";
+import { Section } from "@kickstartds/swo/components/section/index.js";
+import { Split } from "@kickstartds/swo/components/split/index.js";
+import { BlogAside } from "@kickstartds/swo/components/blog-aside/index.js";
+import { Text } from "@kickstartds/swo/components/text/index.js";
+import { BlogHead } from "@kickstartds/swo/components/blog-head/index.js";
+import { Cta } from "@kickstartds/swo/components/cta/index.js";
+import { BlogPost as DsaBlogPost } from "@kickstartds/swo/components/blog-post/index.js";
 
 type PageProps = {
   blok: Omit<ComponentProps<typeof DsaBlogPost>, "section"> &

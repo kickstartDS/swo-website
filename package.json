@@ -1,5 +1,5 @@
 {
-  "name": "@kickstartds/storyblok-starter-premium",
+  "name": "@kickstartds/swo-website",
   "version": "1.0.0",
   "license": "(MIT OR Apache-2.0)",
   "author": {
@@ -20,8 +20,8 @@
     "blurhashes": "mkdir -p public/blurhashes && node scripts/createBlurHashes.js",
     "init": "rimraf tmp && mkdir -p tmp/images && node scripts/prepareProject.js && npm run push-components && npm run generate-content-types",
     "update-previews": "node scripts/updatePreviews.js",
-    "dereference-schemas": "kickstartDS schema dereference --components-path node_modules/@kickstartds/ds-agency-premium/dist/components --cms-path components",
-    "generate-props": "kickstartDS schema types --components-path node_modules/@kickstartds/ds-agency-premium/dist/components --cms-path components --merge-schemas false",
+    "dereference-schemas": "kickstartDS schema dereference --components-path node_modules/@kickstartds/swo/dist/components --cms-path components",
+    "generate-props": "kickstartDS schema types --components-path node_modules/@kickstartds/swo/dist/components --cms-path components --merge-schemas false",
     "start": "next start",
     "lint": "next lint",
     "init-tokens": "kickstartDS tokens init --token-dictionary-path token/dictionary --branding-token-path token/branding-token.json",
@@ -32,7 +32,7 @@
     "generate-content-types": "dotenvx run -f .env.local -- npm run pull-content-schema && storyblok-generate-ts source=./types/components-schema.json target=./types/components-schema compilerOptions.unknownAny=true compilerOptions.additionalProperties=false",
     "push-components": "dotenvx run -f .env.local -- npm run storyblok-push-components",
     "storyblok-push-components": "storyblok push-components cms/components.123456.json --space $NEXT_STORYBLOK_SPACE_ID --presets-source cms/presets.123456.json",
-    "create-storyblok-config": "kickstartDS cms storyblok --components-path node_modules/@kickstartds/ds-agency-premium/dist/components --cms-path components --configuration-path cms --components blog-teaser contact cta divider faq features gallery hero html image-story image-text info-table logos mosaic slider stats teaser-card testimonials text video-curtain",
+    "create-storyblok-config": "kickstartDS cms storyblok --components-path node_modules/@kickstartds/swo/dist/components --cms-path components --configuration-path cms --components blog-teaser contact cta divider faq features gallery hero html image-story image-text info-table logos mosaic slider stats teaser-card testimonials text video-curtain",
     "bundle-static-assets": "node scripts/bundleStaticAssets.js",
     "storyblok-logout": "storyblok logout",
     "storyblok-login": "storyblok login"
@@ -43,7 +43,7 @@
     "@kickstartds/blog": "4.0.2",
     "@kickstartds/content": "4.1.1",
     "@kickstartds/core": "4.0.2",
-    "@kickstartds/ds-agency-premium": "^1.6.26",
+    "@kickstartds/swo": "^1.0.4",
     "@kickstartds/form": "4.0.2",
     "@storyblok/react": "^3.0.9",
     "@unpic/pixels": "^1.2.2",

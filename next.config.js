@@ -23,7 +23,7 @@ const nextConfig = {
     "@kickstartds/content",
     "@kickstartds/core",
     "@kickstartds/form",
-    "@kickstartds/ds-agency-premium",
+    "@kickstartds/swo",
   ],
 };
 

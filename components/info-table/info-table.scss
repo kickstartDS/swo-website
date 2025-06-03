@@ -1,9 +1,9 @@
 @use "./info-table-tokens.scss";
 
 table {
-  color: var(--dsa-table--color);
+  color: var(--swo-table--color);
   width: 100%;
-  font: var(--dsa-table--font);
+  font: var(--swo-table--font);
   border-spacing: 0px;
   border-top: var(--ks-border-width-default) solid var(--ks-border-color-accent);
   border-bottom: var(--ks-border-width-default) solid
