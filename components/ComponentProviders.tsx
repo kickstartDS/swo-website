@@ -43,6 +43,7 @@ import { useBlurHashes } from "./BlurHashContext";
 import { useImagePriority } from "./ImagePriorityContext";
 import { useImageSize } from "./ImageSizeContext";
 import { useImageRatio } from "./ImageRatioContext";
+import { PageTeaserContext } from "@kickstartds/swo/components/page-teaser/index.js";
 
 const Link = forwardRef<
   HTMLAnchorElement,
@@ -240,7 +241,12 @@ const ComponentProviders = (props: PropsWithChildren) => (
                             // @ts-expect-error
                             value={StoryblokSubComponent}
                           >
-                            {props.children}
+                            <PageTeaserContext.Provider
+                              // @ts-expect-error
+                              value={StoryblokSubComponent}
+                            >
+                              {props.children}
+                            </PageTeaserContext.Provider>
                           </BlogAuthorContext.Provider>
                         </BlogTeaserContext.Provider>
                       </BlogAsideContext.Provider>
