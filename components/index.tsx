@@ -273,4 +273,11 @@ export const components = {
       )
     )
   ),
+  "content-nav-card": editable(
+    dynamic(() =>
+      import("@kickstartds/swo/content-nav-card").then(
+        (mod) => mod.ContentNavCardContextDefault
+      )
+    )
+  ),
 };
