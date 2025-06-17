@@ -1547,6 +1547,83 @@
       "description": null
     },
     {
+      "id": 2620655,
+      "name": "Default",
+      "preset": {
+        "alt": "Image of a business team working",
+        "_uid": "97e02305-821c-4962-826b-d0053d672817",
+        "date": "12/30/2022",
+        "tags": [
+          {
+            "_uid": "b82586d1-2666-42a9-a12f-ca92fefac2c3",
+            "type": "tags",
+            "entry": "Technology",
+            "component": "tags"
+          },
+          {
+            "_uid": "975a430f-5abb-451e-b063-f8349fb0244b",
+            "type": "tags",
+            "entry": "AI",
+            "component": "tags"
+          }
+        ],
+        "type": "blog-head",
+        "image": "//a.storyblok.com/f/341150/1260x840/5fc5ac22a6/close-up-young-business-team-working.png",
+        "headline": "The Future of AI",
+        "component": "blog-head"
+      },
+      "component_id": 7412762,
+      "space_id": 341150,
+      "created_at": "2025-06-03T12:58:12.379Z",
+      "updated_at": "2025-06-03T12:58:12.379Z",
+      "image": "//a.storyblok.com/f/341150/1000x863/b6052e6d93/blog-blog-head-default.png",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
+      "id": 2620654,
+      "name": "Default",
+      "preset": {
+        "alt": "Image of a business team working",
+        "_uid": "02feff03-dfa7-4978-890c-b07deb7af465",
+        "date": "12/30/2022",
+        "tags": [
+          {
+            "_uid": "df21df42-79e0-413f-9430-4740109d2f23",
+            "type": "tags",
+            "entry": "Technology",
+            "component": "tags"
+          },
+          {
+            "_uid": "da20b5b8-3ff8-4beb-8f95-9a29eac9ff70",
+            "type": "tags",
+            "entry": "AI",
+            "component": "tags"
+          }
+        ],
+        "type": "blog-teaser",
+        "image": "//a.storyblok.com/f/341150/1260x840/5fc5ac22a6/close-up-young-business-team-working.png",
+        "headline": "The Future of AI",
+        "link_url": "https://example.com",
+        "component": "blog-teaser",
+        "link_text": "Read article",
+        "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
+        "author_name": "Jane Smith",
+        "readingTime": "5 min read",
+        "author_image": "//a.storyblok.com/f/341150/250x250/1477ca30d8/author-emily.png",
+        "author_title": "Senior AI Researcher"
+      },
+      "component_id": 7412760,
+      "space_id": 341150,
+      "created_at": "2025-06-03T12:58:11.403Z",
+      "updated_at": "2025-06-03T12:58:11.403Z",
+      "image": "//a.storyblok.com/f/341150/1000x504/6eb9449253/blog-blog-teaser-default.png",
+      "color": null,
+      "icon": null,
+      "description": null
+    },
+    {
       "id": 2620657,
       "name": "Default",
       "preset": {
@@ -1611,41 +1688,6 @@
       "description": null
     },
     {
-      "id": 2620655,
-      "name": "Default",
-      "preset": {
-        "alt": "Image of a business team working",
-        "_uid": "97e02305-821c-4962-826b-d0053d672817",
-        "date": "12/30/2022",
-        "tags": [
-          {
-            "_uid": "b82586d1-2666-42a9-a12f-ca92fefac2c3",
-            "type": "tags",
-            "entry": "Technology",
-            "component": "tags"
-          },
-          {
-            "_uid": "975a430f-5abb-451e-b063-f8349fb0244b",
-            "type": "tags",
-            "entry": "AI",
-            "component": "tags"
-          }
-        ],
-        "type": "blog-head",
-        "image": "//a.storyblok.com/f/341150/1260x840/5fc5ac22a6/close-up-young-business-team-working.png",
-        "headline": "The Future of AI",
-        "component": "blog-head"
-      },
-      "component_id": 7412762,
-      "space_id": 341150,
-      "created_at": "2025-06-03T12:58:12.379Z",
-      "updated_at": "2025-06-03T12:58:12.379Z",
-      "image": "//a.storyblok.com/f/341150/1000x863/b6052e6d93/blog-blog-head-default.png",
-      "color": null,
-      "icon": null,
-      "description": null
-    },
-    {
       "id": 2620628,
       "name": "Default",
       "preset": {
@@ -1659,48 +1701,6 @@
       "created_at": "2025-06-03T12:57:59.368Z",
       "updated_at": "2025-06-03T12:57:59.368Z",
       "image": "//a.storyblok.com/f/341150/770x100/1d075a8197/layout-divider-default.png",
-      "color": null,
-      "icon": null,
-      "description": null
-    },
-    {
-      "id": 2620654,
-      "name": "Default",
-      "preset": {
-        "alt": "Image of a business team working",
-        "_uid": "02feff03-dfa7-4978-890c-b07deb7af465",
-        "date": "12/30/2022",
-        "tags": [
-          {
-            "_uid": "df21df42-79e0-413f-9430-4740109d2f23",
-            "type": "tags",
-            "entry": "Technology",
-            "component": "tags"
-          },
-          {
-            "_uid": "da20b5b8-3ff8-4beb-8f95-9a29eac9ff70",
-            "type": "tags",
-            "entry": "AI",
-            "component": "tags"
-          }
-        ],
-        "type": "blog-teaser",
-        "image": "//a.storyblok.com/f/341150/1260x840/5fc5ac22a6/close-up-young-business-team-working.png",
-        "headline": "The Future of AI",
-        "link_url": "https://example.com",
-        "component": "blog-teaser",
-        "link_text": "Read article",
-        "teaserText": "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",
-        "author_name": "Jane Smith",
-        "readingTime": "5 min read",
-        "author_image": "//a.storyblok.com/f/341150/250x250/1477ca30d8/author-emily.png",
-        "author_title": "Senior AI Researcher"
-      },
-      "component_id": 7412760,
-      "space_id": 341150,
-      "created_at": "2025-06-03T12:58:11.403Z",
-      "updated_at": "2025-06-03T12:58:11.403Z",
-      "image": "//a.storyblok.com/f/341150/1000x504/6eb9449253/blog-blog-teaser-default.png",
       "color": null,
       "icon": null,
       "description": null

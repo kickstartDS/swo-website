@@ -259,4 +259,18 @@ export const components = {
     )
   ),
   slider: editable(Slider, "components"),
+  signpost: editable(
+    dynamic(() =>
+      import("@kickstartds/swo/signpost").then(
+        (mod) => mod.SignpostContextDefault
+      )
+    )
+  ),
+  "page-teaser": editable(
+    dynamic(() =>
+      import("@kickstartds/swo/page-teaser").then(
+        (mod) => mod.PageTeaserContextDefault
+      )
+    )
+  ),
 };
